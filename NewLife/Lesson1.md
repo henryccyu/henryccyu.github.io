@@ -1,3 +1,6 @@
+---
+permalink: /newlife/lesson1.html
+---
 1. 我是谁
 基督徒拥有两个不同的身份: 属地和属天的。
   
