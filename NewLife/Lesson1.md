@@ -30,7 +30,7 @@ permalink: /newlife/lesson1.html
 + 仁义的果子: [腓1.10-11](https://www.biblegateway.com/passage/?search=腓1.10-11&version=CUVMPS)
 + 光明的果子: [弗5.8-9](https://www.biblegateway.com/passage/?search=弗5.8-9&version=CUVMPS)
 + 圣灵的果子: [加5.22](https://www.biblegateway.com/passage/?search=加5.22&version=CUVMPS)
-+ 传福音的果子: [徒1.8](https://www.biblegateway.com/passage/?search=徒1.8&version=CUVMPS)
++ 传福音的果子: [徒1.8](https://www.biblegateway.com/passage/?search=徒1.8&version=CUVMPS)  
 [**结果子的秘诀**]
 + 常在基督里：[约15.5](https://www.biblegateway.com/passage/?search=约15.5&version=CUVMPS)
-+ [约12.24](https://www.biblegateway.com/passage/?search=约12.24&version=CUVMPS)
++ 轻看自己的性命：[约12.24](https://www.biblegateway.com/passage/?search=约12.24&version=CUVMPS)
