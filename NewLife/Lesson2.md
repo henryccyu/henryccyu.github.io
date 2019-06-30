@@ -14,7 +14,7 @@ permalink: /newlife/lesson2.html
 　來源：[提摩太後書3:15](https://www.biblegateway.com/passage/?search=提摩太後書3:15&version=CUVMPS)  
 　意義：[提摩太後書3:16-17](https://www.biblegateway.com/passage/?search=提摩太後書3:16-17&version=CUVMPS)  
 
-<img src="Guidance.jpg" style="max-width:60%">
+<img src="Guidance.jpg" style="max-width:60%;">
 
 2. 整本聖經的中心人物  
 　[約翰福音5:39](https://www.biblegateway.com/passage/?search=約翰福音5:39&version=CUVMPS)
