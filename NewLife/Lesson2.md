@@ -11,22 +11,22 @@ permalink: /newlife/lesson2.html
 
 一、神的話語 — 聖經
 1. 聖經的來源及意義  
-　來源：提摩太後書3:15  
-　意義：提摩太後書3:16-17  
+　來源：[提摩太後書3:15](https://www.biblegateway.com/passage/?search=提摩太後書3:15&version=CUVMPS)  
+　意義：[提摩太後書3:16-17](https://www.biblegateway.com/passage/?search=提摩太後書3:16-17&version=CUVMPS)  
 
 2. 整本聖經的中心人物  
-　約翰福音5:39
+　[約翰福音5:39](https://www.biblegateway.com/passage/?search=約翰福音5:39&version=CUVMPS)
 
 3. 基督徒對聖經應有的態度  
-　彼得前書2:2
+　[彼得前書2:2](https://www.biblegateway.com/passage/?search=彼得前書2:2&version=CUVMPS)
 
 + 有關聖經的7個比喻  
-1) 腳前的燈，路上的光 — 詩篇119:105  
-2) 純淨的靈奶 — 彼得前書2:2  
-3) 屬靈的糧食 — 耶利米書15:16  
-4) 屬靈的財富 — 詩篇119:14  
-5) 我們的謀士 — 詩篇119:24  
-6) 兩刃的利劍 — 希伯來書4:12  
-7) 我們的詩歌 — 詩篇119:54  
+1) 腳前的燈，路上的光 — [詩篇119:105](https://www.biblegateway.com/passage/?search=詩篇119:105&version=CUVMPS)  
+2) 純淨的靈奶 — [彼得前書2:2](https://www.biblegateway.com/passage/?search=彼得前書2:2&version=CUVMPS)  
+3) 屬靈的糧食 — [耶利米書15:16](https://www.biblegateway.com/passage/?search=耶利米書15:16&version=CUVMPS)  
+4) 屬靈的財富 — [詩篇119:14](https://www.biblegateway.com/passage/?search=詩篇119:14&version=CUVMPS)  
+5) 我們的謀士 — [詩篇119:24](https://www.biblegateway.com/passage/?search=詩篇119:24&version=CUVMPS)  
+6) 兩刃的利劍 — [希伯來書4:12](https://www.biblegateway.com/passage/?search=希伯來書4:12&version=CUVMPS)  
+7) 我們的詩歌 — [詩篇119:54](https://www.biblegateway.com/passage/?search=詩篇119:54&version=CUVMPS)  
 
 二、舊約與新約
