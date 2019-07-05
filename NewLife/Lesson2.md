@@ -77,10 +77,10 @@ permalink: /newlife/lesson2.html
 
 《圣经》学习中默想环节显得特别重要,但它只有与听道、读经、研经和背经等各环节和谐统一、相辅相助时才能有更大的功效。
 
-1. 听道 —— 罗马书10:17)  
-听道应有的态度：帖撒罗尼迦前书2:13，使徒行传17:11
+1. 听道 —— [罗马书10:17](https://www.biblegateway.com/passage/?search=罗马书10:17&version=CUVMPS)  
+听道应有的态度：[帖撒罗尼迦前书2:13](https://www.biblegateway.com/passage/?search=帖撒罗尼迦前书2:13&version=CUVMPS)，[使徒行传17:11](https://www.biblegateway.com/passage/?search=使徒行传17:11&version=CUVMPS)
 
-2. 读经 —— 耶利米书15:16  
+2. 读经 —— [耶利米书15:16](https://www.biblegateway.com/passage/?search=耶利米书15:16&version=CUVMPS)  
 **读经应有的态度**  
 1）用饥渴慕义的心来读经。  
 2）用敬虔祷告的心来读经。  
@@ -88,12 +88,12 @@ permalink: /newlife/lesson2.html
 4）用顺服的心志来读经,要明白神要我做什么。  
 5）用持之以恒的心系统地读整本《圣经》。  
 
-3. 研经 —— 使徒行传17:11  
+3. 研经 —— [使徒行传17:11](https://www.biblegateway.com/passage/?search=使徒行传17:11&version=CUVMPS)  
 研经就是在读经的基础上更进一步的分析、研究和应用《四、归纳式研经法》部分里，将详细地介绍研经的几个步骤。
 
-4. 背经 —— 诗篇119:9,11
+4. 背经 —— [诗篇119:9,11](https://www.biblegateway.com/passage/?search=诗篇119:9,11&version=CUVMPS)
 
-5. 默想 —— 诗篇1:1-2
+5. 默想 —— [诗篇1:1-2](https://www.biblegateway.com/passage/?search=诗篇1:1-2&version=CUVMPS)
 
 四、归纳式研经法
 
