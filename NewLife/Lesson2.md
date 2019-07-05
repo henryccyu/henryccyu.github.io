@@ -91,7 +91,9 @@ permalink: /newlife/lesson2.html
 3. 研经 —— [使徒行传17:11](https://www.biblegateway.com/passage/?search=使徒行传17:11&version=CUVMPS)  
 研经就是在读经的基础上更进一步的分析、研究和应用《四、归纳式研经法》部分里，将详细地介绍研经的几个步骤。
 
-4. 背经 —— [诗篇119:9,11](https://www.biblegateway.com/passage/?search=诗篇119:9,11&version=CUVMPS)
+4. 背经 —— [诗篇119:9,11](https://www.biblegateway.com/passage/?search=诗篇119:9,11&version=CUVMPS)  
+牢记神的话语,最好的方法是抽时间来背诵经文。只有反复地读,反复默想和背诵,才能牢牢记住经文。  
+《新生命》背经卡中的20条经文是有关福音的核心经文、《新生活》中的30条经文是有关信仰生活的核心经文,故此都必须牢记在心。这样,在生活中你会更深地体会到神话语中的安慰、良善、教导和能力。
 
 5. 默想 —— [诗篇1:1-2](https://www.biblegateway.com/passage/?search=诗篇1:1-2&version=CUVMPS)
 
