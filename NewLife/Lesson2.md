@@ -22,7 +22,7 @@ permalink: /newlife/lesson2.html
 3. 基督徒對聖經應有的態度  
 　[彼得前書2:2](https://www.biblegateway.com/passage/?search=彼得前書2:2&version=CUVMPS)
 
-+ 有關聖經的7個比喻  
+>有關聖經的7個比喻  
 1) 腳前的燈，路上的光 — [詩篇119:105](https://www.biblegateway.com/passage/?search=詩篇119:105&version=CUVMPS)  
 2) 純淨的靈奶 — [彼得前書2:2](https://www.biblegateway.com/passage/?search=彼得前書2:2&version=CUVMPS)  
 3) 屬靈的糧食 — [耶利米書15:16](https://www.biblegateway.com/passage/?search=耶利米書15:16&version=CUVMPS)  
