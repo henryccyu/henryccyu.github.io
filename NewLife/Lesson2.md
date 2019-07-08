@@ -88,7 +88,7 @@ permalink: /newlife/lesson2.html
 听道应有的态度：[帖撒罗尼迦前书2:13](https://www.biblegateway.com/passage/?search=帖撒罗尼迦前书2:13&version=CUVMPS)，[使徒行传17:11](https://www.biblegateway.com/passage/?search=使徒行传17:11&version=CUVMPS)
 
 2. 读经 —— [耶利米书15:16](https://www.biblegateway.com/passage/?search=耶利米书15:16&version=CUVMPS)  
-**读经应有的态度**  
+>读经应有的态度  
 1）用饥渴慕义的心来读经。  
 2）用敬虔祷告的心来读经。  
 3）用默想的心来读经,要清楚这是神对你个人直接的启示。  
