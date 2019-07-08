@@ -16,8 +16,9 @@ function convert()
         console.log(inputText);
         index = inputText.search(regex);
         if (index >= 0) {
-            console.log(index);
+            console.log(result);
             result += inputText.substring(0, index + 1) + ":";
+            console.log(result);
             inputText = inputText.substring(index + 2);
         }
     } while (index >= 0);
