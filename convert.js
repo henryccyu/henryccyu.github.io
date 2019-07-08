@@ -16,14 +16,14 @@ function convert()
         console.log("inputText: " + inputText);
         index = inputText.search(regex);
         if (index >= 0) {
-            console.log("result: " + result);
-            result += inputText.substring(0, index + 1) + ":";
+            result = result + inputText.substring(0, index + 1) + ":";
             console.log("result: " + result);
             inputText = inputText.substring(index + 2);
         }
     } while (index >= 0);
     
-    result += inputText;
+    result = result + inputText;
+    console.log("result: " + result);
     
     document.getElementById("markup").value = inputText;
 }
