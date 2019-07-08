@@ -4,6 +4,8 @@ function convert()
     var inputText = input.value; 
     var inputTextLines = inputText.split("\n");
 
+    console.log(inputText);
+    
     inputText = inputText.replace(/,/g, "，");
     inputText = inputText.replace(/[?]/g, "？");
     inputText = inputText.replace(/:/g, "：");
@@ -20,5 +22,6 @@ function convert()
         text = text.replace(/!/g, "！");
     }
     
+    console.log(inputText);
     document.getElementById("markup").value = inputText;
 }
