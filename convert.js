@@ -16,5 +16,5 @@ function convert()
         text = text.replace(/!/g, "！");
     }
     
-    document.getElementById("markup").value += text;
+    document.getElementById("markup").value = text;
 }
