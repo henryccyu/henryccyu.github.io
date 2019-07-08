@@ -3,7 +3,11 @@ function convert()
     var input = document.getElementById("input");
     var inputText = input.value; 
     var inputTextLines = inputText.split("\n");
-    var 
+
+    inputText = inputText.replace(/,/g, "，");
+    inputText = inputText.replace(/[?]/g, "？");
+    inputText = inputText.replace(/:/g, "：");
+    inputText = inputText.replace(/!/g, "！");
 
     //Patter matching for each line
     for (i = 0; i < inputTextLines.length; i++) { 
@@ -16,5 +20,5 @@ function convert()
         text = text.replace(/!/g, "！");
     }
     
-    document.getElementById("markup").value = text;
+    document.getElementById("markup").value = inputText;
 }
