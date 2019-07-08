@@ -5,7 +5,7 @@ function convert()
     var index = 0;
     var result = "";
 
-    console.log(inputText);
+    //console.log(inputText);
     
     inputText = inputText.replace(/,/g, "，");
     inputText = inputText.replace(/[?]/g, "？");
@@ -13,17 +13,17 @@ function convert()
     inputText = inputText.replace(/!/g, "！");
 
     do {
-        console.log("inputText: " + inputText);
+        //console.log("inputText: " + inputText);
         index = inputText.search(regex);
         if (index >= 0) {
-            result = result + inputText.substring(0, index + 1) + ":";
-            console.log("result: " + result);
+            result += inputText.substring(0, index + 1) + ":";
+            //console.log("result: " + result);
             inputText = inputText.substring(index + 2);
         }
     } while (index >= 0);
     
-    result = result + inputText;
-    console.log("result: " + result);
+    result += inputText;
+    //console.log("result: " + result);
     
-    document.getElementById("markup").value = inputText;
+    document.getElementById("markup").value = result;
 }
