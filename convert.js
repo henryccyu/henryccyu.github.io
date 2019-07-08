@@ -12,15 +12,16 @@ function convert()
     inputText = inputText.replace(/:/g, "：");
     inputText = inputText.replace(/!/g, "！");
 
-    while (index >= 0) {
+    do {
         console.log(inputText);
         index = inputText.search(regex);
-        if (index < 0)
-            break;
-        console.log(index);
-        result += inputText.substring(0, index + 1) + ":";
-        inputText = inputText.substring(index + 2);
-    }
+        if (index >= 0) {
+            console.log(index);
+            result += inputText.substring(0, index + 1) + ":";
+            inputText = inputText.substring(index + 2);
+        }
+    } while (index >= 0);
+    
     result += inputText;
     
     console.log(inputText);
