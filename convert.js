@@ -13,18 +13,17 @@ function convert()
     inputText = inputText.replace(/!/g, "！");
 
     do {
-        console.log(inputText);
+        console.log("inputText: " + inputText);
         index = inputText.search(regex);
         if (index >= 0) {
-            console.log(result);
+            console.log("result: " + result);
             result += inputText.substring(0, index + 1) + ":";
-            console.log(result);
+            console.log("result: " + result);
             inputText = inputText.substring(index + 2);
         }
     } while (index >= 0);
     
     result += inputText;
     
-    console.log(inputText);
     document.getElementById("markup").value = inputText;
 }
