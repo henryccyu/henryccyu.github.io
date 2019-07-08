@@ -13,7 +13,6 @@ permalink: /newlife/lesson2.html
 1. 聖經的來源及意義  
 來源：[提摩太後書3:15](https://www.biblegateway.com/passage/?search=提摩太後書3:15&version=CUVMPS)  
 意義：[提摩太後書3:16-17](https://www.biblegateway.com/passage/?search=提摩太後書3:16-17&version=CUVMPS)  
-
 <img src="https://henryccyu.github.io/2-1.jpg">
 
 2. 整本聖經的中心人物  
