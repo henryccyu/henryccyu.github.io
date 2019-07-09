@@ -1,5 +1,5 @@
 ---
-permalink: /HiddenManna/PrayersAgainstSatan.html
+permalink: /HiddenManna/PrayAgainstSatan.html
 ---
 <h2>十二. 反对撒但的祷告</h2>
 
