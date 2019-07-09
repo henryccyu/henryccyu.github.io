@@ -1,5 +1,5 @@
 ---
-permalink: /HiddenManna/Pray.html
+permalink: /HiddenManna/Prayers.html
 ---
 <h2>三. 祷告</h2>
 
