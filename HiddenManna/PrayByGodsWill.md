@@ -1,5 +1,5 @@
 ---
-permalink: /HiddenManna/PrayersByGodsWill.html
+permalink: /HiddenManna/PrayByGodsWill.html
 ---
 <h2>八. 凭着神的心愿而祷告</h2>
 
