@@ -51,4 +51,4 @@ permalink: /HiddenManna/All.html
 
 [读经之路](WayOfBibleReading.html)
 
-[读经一年一遍](WatchmanNee/OneYearBibleReadingPlan.html)
+[读经一年一遍](/WatchmanNee/OneYearBibleReadingPlan.html)
