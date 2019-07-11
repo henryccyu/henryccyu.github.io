@@ -1,4 +1,5 @@
 ---
+description: 隐藏的吗哪 - 倪柝声
 permalink: /WatchmanNee/HiddenManna.html
 ---
 <h2>隐藏的吗哪 - 倪柝声</h2>
@@ -26,29 +27,3 @@ permalink: /WatchmanNee/HiddenManna.html
 　　倪柝声
 
 　　一九二五年五月六日 于南京
-  
-[一. 什么是祈祷](/HiddenManna/WhatArePrayers.html)  
-[二. 何以我们必须祈祷呢？](/HiddenManna/WhyPrayers.html)  
-[三. 祷告](/HiddenManna/Prayers.html) 
-[四. 要这样祷告](/HiddenManna/PrayLikeThis.html)  
-[五. 奉主耶稣的名祷告](/HiddenManna/PrayInJesusName.html)  
-[六. 奉主耶稣的名─神的信托](/HiddenManna/InJesusName-GodsTrust.html)  
-[七. 祷告的诀窍](/HiddenManna/KeysToPrayers.html)  
-[八. 凭着神的心愿而祷告](/HiddenManna/PrayByGodsWill.html)  
-[九. 多方祷告，儆醒不倦](/HiddenManna/PrayCeaselessly.html)  
-[十. 祈祷最大的阻挡](/HiddenManna/BiggestObstacles.html)  
-[十一. 三次祷告的原则](/HiddenManna/RuleOfThreePrayers.html)  
-[十二. 反对撒但的祷告](/HiddenManna/PrayAgainstSatan.html)  
-[十三. 负担与祷告](/HiddenManna/BurdensAndPrayers.html)  
-[十四. 权柄的祷告](/HiddenManna/RightOfPrayers.html)  
-[十五. 祷告与神的工作](/HiddenManna/PrayersAndGodsWork.html)  
-[十六. 教会祷告的职事](/HiddenManna/CongregationalPrayers.html)  
-[十七. 儆醒祷告](/HiddenManna/BeAlertAndPray.html)  
-[十八. 几点关于祷告的问答](/HiddenManna/QandA.html)  
-[十九. 把基督的话丰丰富富的存在心里](/HiddenManna/StoreGodsWordsRichly.html) 
-[二十. 读圣经](/HiddenManna/BibleReading.html)  
-[二十一. 读经心得](/HiddenManna/BibleReadingAttainment.html)
-
-[读经之路](/HiddenManna/WayOfBibleReading.html)
-
-[读经一年一遍](OneYearBibleReadingPlan.html)
