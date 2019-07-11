@@ -1,5 +1,6 @@
 ---
 permalink: /HiddenManna/All.html
+title: 隐藏的吗哪 - 倪柝声
 ---
 <h2>隐藏的吗哪 - 倪柝声</h2>
 
