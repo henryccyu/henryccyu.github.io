@@ -1,5 +1,5 @@
 ---
-title: Watchman Nee's Prayers
+description: Watchman Nee's Prayers
 permalink: /WatchmanNee/NeesPrayers.html
 ---
 　
