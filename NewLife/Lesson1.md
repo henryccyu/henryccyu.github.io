@@ -1,5 +1,5 @@
 ---
-permalink: /Lesson1.html
+permalink: /lesson1.html
 ---
 <h2>基督徒的新生命</h2>
 
