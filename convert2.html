@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Markdown Conversion</title>
+        <script type="text/javascript" src="convert.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <table style="width: 100%">
+            <tr>
+                <th>
+                    <label>Raw Text</label><br>
+                    <textarea id="input" rows=20 style="width: 100%"></textarea>
+                </th>
+                <th>
+                    <label>Normalized Text</label><br>
+                    <textarea id="markup" rows=20 style="width: 100%"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                </th>
+                <th span=2>
+                    <button onclick="convert()">Normalize</button>
+                    <button onclick="getBibleGatewayLink()">BibleGateway</button>
+                </th>
+            </tr>
+        </table>        
+    </body>
+</html>
