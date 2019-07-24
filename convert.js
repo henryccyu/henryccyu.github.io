@@ -25,7 +25,5 @@ function convert()
     
     result += inputText;
     
-    //console.log("result: " + result);
-    
     document.getElementById("markup").value = result;
 }
