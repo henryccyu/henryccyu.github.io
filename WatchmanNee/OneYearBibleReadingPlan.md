@@ -1,5 +1,5 @@
 ---
-permalink： /WatchmanNee/OneYearBibleReadingPlan.html
+permalink: /WatchmanNee/OneYearBibleReadingPlan.html
 ---
 <h2>读经一年一遍</h2>
 
