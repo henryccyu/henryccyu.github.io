@@ -44,6 +44,11 @@ function getBibleGatewayLink()
 function ConvertBulletPoints(txt)
 {
     var result = "";
+    var bullet = "\u2022 ";
+
+    if (txt.indexOf("+ ") >= 0) {
+        bullet = "+ ";
+    }
 
     lines = txt.split("\n");
     for (i=0; i<lines.length; i++) {
