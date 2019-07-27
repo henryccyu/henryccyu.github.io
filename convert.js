@@ -1,16 +1,17 @@
 function convert()
 {
     var inputText = document.getElementById("input").value;
-    var regex = /[0-9]:[0-9]/g;
+    var regex = /[0-9]：[0-9]/g;
     var index = 0;
     var result = "";
 
     //console.log(inputText);
     
-    inputText = inputText.replace(/,/g, ",");
-    inputText = inputText.replace(/[?]/g, "?");
-    inputText = inputText.replace(/:/g, ":");
-    inputText = inputText.replace(/!/g, "!");
+    inputText = inputText.replace(/,/g, "，");
+    inputText = inputText.replace(/[?]/g, "？");
+    inputText = inputText.replace(/:/g, "：");
+    inputText = inputText.replace(/;/g, "；");
+    inputText = inputText.replace(/!/g, "！");
 
     do {
         //console.log("inputText: " + inputText);
