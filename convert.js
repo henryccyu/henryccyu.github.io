@@ -49,7 +49,7 @@ function ConvertBulletPoints(txt)
     for (i=0; i<lines.length; i++) {
         index = lines[i].indexOf(bullet);
         result += (index >= 0 ? "<li>" + lines[i].substring(index + 2, lines[i].length) + "</li>" : lines[i]);
-        if (!document.getElementById(“removeEmptyLines".checked || lines[i].length > 0) result += "\r\n";
+        if (!document.getElementById("removeEmptyLines".checked || lines[i].length > 0) result += "\r\n";
         console.log("result: " + result);
     }
 
