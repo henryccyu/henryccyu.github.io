@@ -5,3 +5,4 @@
   
 [基督徒的新生活](https://henryccyu.github.io/NewLiving)  
 [倪柝聲文集](https://henryccyu.github.io/WatchmanNee)
+[巴刻：一份圣洁习惯清单](https://mp.weixin.qq.com/s/-tJlwIbujsgt9uYm2X8sbQ)
