@@ -1,4 +1,4 @@
-[聖經 - 書卷](https://bibleplan.github.io/AllBooks.html)  
+[聖經 - 按書卷](https://bibleplan.github.io/AllBooks.html)  
 [ECCRedmond兩年讀經計劃日程](https://bibleplan.github.io/schedule.html)  
 [以西結書](https://bibleplan.github.io/Ezekiel.html)  
 [路加福音](https://bibleplan.github.io/Luke.html)  
