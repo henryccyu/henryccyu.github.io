@@ -12,6 +12,8 @@ function convert()
     inputText = inputText.replace(/:/g, "：");
     inputText = inputText.replace(/;/g, "；");
     inputText = inputText.replace(/!/g, "！");
+    inputText = inputText.replace(/（小錢）/g, "`小錢`");
+    inputText = inputText.replace(/（Zhuolin）/ig, "`Zhuolin`");
 
     do {
         //console.log("inputText: " + inputText);
