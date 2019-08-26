@@ -25,11 +25,48 @@ function convert()
     
     result += inputText;
     
-    result = ConvertBulletPoints(result);
+//    result = ConvertBulletPoints(result);
     result = ConvertNumberedList(result);
     
     //console.log("result: " + result);
     
+    document.getElementById("markup").value = result;
+}
+
+function convertBulletPoints()
+{
+	var inputText = document.getElementById("input").value;
+    var result = "";
+    var bullet = "\u2022 ";
+
+    if (inputText.indexOf("+ ") >= 0) {
+        bullet = "+ ";
+    }
+
+    lines = inputText.split("\n");
+    for (i=0; i<lines.length; i++) {
+        index = lines[i].indexOf(bullet);
+        result += (index >= 0 ? "<li>" + lines[i].substring(index + 2, lines[i].length) + "</li>" : lines[i]);
+        if (lines[i].length > 0) result += "\r\n";
+//        console.log("result: " + result);
+    }
+
+    document.getElementById("markup").value = result;
+}
+
+function normalizeLineEnding()
+{
+	var inputText = document.getElementById("input").value;
+    var result = "";
+
+    lines = inputText.split("\n");
+    for (i=0; i<lines.length; i++) {
+		result += lines[i];
+		if (lines[i].length > 0)
+			result += "  ";
+		result += "\r\n";
+    }
+
     document.getElementById("markup").value = result;
 }
 
