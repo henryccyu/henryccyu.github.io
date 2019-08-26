@@ -35,6 +35,15 @@ function convert()
 
 function getQianBinSharingTemplate()
 {
+    result = "---\r\n";
+    result += "layout: sharing\r\n";
+    result += "date: 2019-\r\n";
+    result += "title: \"讀經分享：【】\"\r\n";
+    result += "categories: sharing\r\n";
+    result += "weekNum: \r\n";
+    result += "dayNum: \r\n";
+    result += "permalink: /sharing/day1-wk62-sharing.html\r\n";
+    result += "---\r\n";
 }
 
 function getZhuolinSharingTemplate()
