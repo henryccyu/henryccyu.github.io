@@ -13,6 +13,8 @@ function convert()
     inputText = inputText.replace(/;/g, "；");
     inputText = inputText.replace(/!/g, "！");
     inputText = inputText.replace(/（小錢）/g, "`小錢`");
+    inputText = inputText.replace(/禱告：/g, "禱告：\r\n>");
+    inputText = inputText.replace(/提醒：/g, "提醒：\r\n>");
     inputText = inputText.replace(/（Zhuolin）/ig, "`Zhuolin`");
 
     do {
