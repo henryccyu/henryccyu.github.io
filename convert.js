@@ -33,6 +33,26 @@ function convert()
     document.getElementById("markup").value = result;
 }
 
+function getQianBinSharingTemplate()
+{
+}
+
+function getZhuolinSharingTemplate()
+{
+    var inputText = document.getElementById("input").value;
+    result = "---\r\n";
+    result += "layout: sharing\r\n";
+    result += "date: 2019-\r\n";
+    result += "title: \"每日靈修：\"\r\n";
+    result += "categories: sharing Zhuolin\r\n";
+    result += "weekNum: \r\n";
+    result += "dayNum: \r\n";
+    result += "permalink: /sharing/zhuolin/2019-sharing.html\r\n";
+    result += "author: Zhuolin\r\n";
+    result += "---\r\n";
+    document.getElementById("markup").value = result;
+}
+
 function getBibleGatewayLink()
 {
     var inputText = document.getElementById("input").value;
