@@ -44,11 +44,12 @@ function getQianBinSharingTemplate()
     result += "dayNum: \r\n";
     result += "permalink: /sharing/day-wk-sharing.html\r\n";
     result += "---\r\n";
+    
+    document.getElementById("markup").value = result;
 }
 
 function getZhuolinSharingTemplate()
 {
-    var inputText = document.getElementById("input").value;
     result = "---\r\n";
     result += "layout: sharing\r\n";
     result += "date: 2019-\r\n";
@@ -59,6 +60,7 @@ function getZhuolinSharingTemplate()
     result += "permalink: /sharing/zhuolin/day-wk-sharing.html\r\n";
     result += "author: Zhuolin\r\n";
     result += "---\r\n";
+    
     document.getElementById("markup").value = result;
 }
 
