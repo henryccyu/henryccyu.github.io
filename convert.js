@@ -26,7 +26,15 @@ function convert()
             inputText = inputText.substring(index + 2);
         }
     } while (index >= 0);
-    
+	
+    lines = inputText.split("\n");
+    for (i=0; i<lines.length; i++) {
+	result += lines[i];
+	if (lines[i].length > 0)
+		result += "  ";
+	result += "\r\n";
+    }
+	
     result += inputText;
     
 //    result = ConvertBulletPoints(result);
