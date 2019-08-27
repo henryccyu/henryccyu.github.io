@@ -12,8 +12,8 @@ function convert()
     inputText = inputText.replace(/;/g, "；");
     inputText = inputText.replace(/!/g, "！");
     inputText = inputText.replace(/（小錢）/g, "`小錢`");
-    inputText = inputText.replace(/禱告：/g, "禱告：\r\n>");
-    inputText = inputText.replace(/提醒：/g, "提醒：\r\n>");
+    inputText = inputText.replace(/禱告：/g, "禱告：\n>");
+    inputText = inputText.replace(/提醒：/g, "提醒：\n>");
     inputText = inputText.replace(/（Zhuolin）/ig, "`Zhuolin`");
 
     inputText = appendEndingSpaces(inputText);
@@ -29,12 +29,16 @@ function convert()
     document.getElementById("markup").value = result;
 }
 
-functin appendEndingSpaces(txt)
+function appendEndingSpaces(txt)
 {
-    lines = txt.split("\n");
-    result = "";
+    var result = "";
+	
+	lines = txt.split("\n");
     for (i=0; i<lines.length; i++) {
-	result += lines[i].length > 0 ? lines[i].replace(/\r\n/g, "  \r\n") : lines[i];
+	    result += lines[i];
+		if (lines[i].length > 0)
+			result += "  ";
+		result += "\r\n";
     }
 	
     return result;
@@ -43,6 +47,7 @@ functin appendEndingSpaces(txt)
 function useRomanCommaForVerses(txt)
 {
     var regex = /[0-9]：[0-9]/g;
+    var result = "";
 
     do {
         //console.log("txt: " + inputText);
@@ -54,7 +59,7 @@ function useRomanCommaForVerses(txt)
         }
     } while (index >= 0);
 	
-    return result;
+    return result + txt;
 }
 
 function convertBulletPoints()
