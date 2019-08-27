@@ -1,7 +1,6 @@
 function convert()
 {
     var inputText = document.getElementById("input").value;
-    var regex = /[0-9]：[0-9]/g;
     var index = 0;
     var result = "";
 
@@ -17,25 +16,10 @@ function convert()
     inputText = inputText.replace(/提醒：/g, "提醒：\r\n>");
     inputText = inputText.replace(/（Zhuolin）/ig, "`Zhuolin`");
 
-    do {
-        //console.log("inputText: " + inputText);
-        index = inputText.search(regex);
-        if (index >= 0) {
-            result += inputText.substring(0, index + 1) + ":";
-            //console.log("result: " + result);
-            inputText = inputText.substring(index + 2);
-        }
-    } while (index >= 0);
+    inputText = appendEndingSpaces(inputText);
+    inputText = useRomanCommaForVerses(inputText);
 	
-    lines = inputText.split("\n");
-    for (i=0; i<lines.length; i++) {
-	result += lines[i];
-	if (lines[i].length > 0)
-		result += "  ";
-	result += "\r\n";
-    }
-	
-    result += inputText;
+    result = inputText;
     
 //    result = ConvertBulletPoints(result);
     result = ConvertNumberedList(result);
@@ -43,6 +27,34 @@ function convert()
     //console.log("result: " + result);
     
     document.getElementById("markup").value = result;
+}
+
+functin appendEndingSpaces(txt)
+{
+    lines = txt.split("\n");
+    result = "";
+    for (i=0; i<lines.length; i++) {
+	result += lines[i].length > 0 ? lines[i].replace(/\r\n/g, "  \r\n") : lines[i];
+    }
+	
+    return result;
+}
+
+function useRomanCommaForVerses(txt)
+{
+    var regex = /[0-9]：[0-9]/g;
+
+    do {
+        //console.log("txt: " + inputText);
+        index = txt.search(regex);
+        if (index >= 0) {
+            result += txt.substring(0, index + 1) + ":";
+            //console.log("result: " + result);
+            txt = txt.substring(index + 2);
+        }
+    } while (index >= 0);
+	
+    return result;
 }
 
 function convertBulletPoints()
