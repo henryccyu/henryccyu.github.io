@@ -130,6 +130,34 @@ function getZhuolinSharingTemplate()
     document.getElementById("markup").value = result;
 }
 
+function getBiblePlanDailySummary()
+{
+    var inputText = document.getElementById("input").value;
+    var result = "";
+
+    lines = inputText.split("\n");
+    for (i=0; i<lines.length; i++) {
+		elem = lines[i].split(" ");
+		result += " <details>\r\n";
+		result += "  <summary>" 
+					+ elem[0] 
+					+ ". <a href=\"https://www.biblegateway.com/quicksearch/?quicksearch="
+					+ elem[1]
+					+ "&qs_version=CUVMPT\">"
+					+ elem[1]
+					+ "</a> - <a href=\"https://bibleplan.github.io/daily/"
+					+ elem[2]
+					+ "-daily.html\">"
+					+ elem[3]
+					+ "</a></summary>\r\n";
+		result += "  <ul>\r\n";
+		result += "  </ul>\r\n";
+		result += " </details>\r\n";
+	}
+
+    document.getElementById("markup").value = result;
+}
+
 function getBibleGatewayLink()
 {
     var inputText = document.getElementById("input").value;
