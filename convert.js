@@ -1,44 +1,39 @@
 function convert()
 {
-    var inputText = document.getElementById("input").value;
-    var index = 0;
-    var result = "";
-
-    //console.log(inputText);
-    
-    inputText = inputText.replace(/,/g, "，");
-    inputText = inputText.replace(/[?]/g, "？");
-    inputText = inputText.replace(/:/g, "：");
-    inputText = inputText.replace(/;/g, "；");
-    inputText = inputText.replace(/!/g, "！");
-    inputText = inputText.replace(/（小錢）/g, "\n`小錢`");
-    inputText = inputText.replace(/禱告：/g, "禱告：\n>");
-    inputText = inputText.replace(/提醒：/g, "提醒：\n>");
-    inputText = inputText.replace(/（Zhuolin）/ig, "`Zhuolin`");
-
-    inputText = appendEndingSpaces(inputText);
-    inputText = useRomanCommaForVerses(inputText);
-	
-    result = inputText;
-    
-//    result = ConvertBulletPoints(result);
-    result = ConvertNumberedList(result);
-    
-    //console.log("result: " + result);
-    
+    var result = normalize(document.getElementById("input").value);
+       
     document.getElementById("markup").value = result;
+}
+
+function normalize(inputText)
+{
+    var result = inputText.replace(/,/g, "，");
+    result = result.replace(/[?]/g, "？");
+    result = result.replace(/:/g, "：");
+    result = result.replace(/;/g, "；");
+    result = result.replace(/!/g, "！");
+    result = result.replace(/（小錢）/g, "\n`小錢`");
+    result = result.replace(/禱告：/g, "禱告：\n>");
+    result = result.replace(/提醒：/g, "提醒：\n>");
+    result = result.replace(/（Zhuolin）/ig, "`Zhuolin`");
+
+    result = appendEndingSpaces(result);
+    result = useRomanCommaForVerses(result);
+    result = ConvertNumberedList(result);
+
+    return result;
 }
 
 function appendEndingSpaces(txt)
 {
     var result = "";
 	
-	lines = txt.split("\n");
+    lines = txt.split("\n");
     for (i=0; i<lines.length; i++) {
-	    result += lines[i];
-		if (lines[i].length > 0)
-			result += "  ";
-		result += "\r\n";
+        result += lines[i];
+    	if (lines[i].length > 0)
+            result += "  ";
+        result += "\r\n";
     }
 	
     return result;
@@ -64,7 +59,7 @@ function useRomanCommaForVerses(txt)
 
 function convertBulletPoints()
 {
-	var inputText = document.getElementById("input").value;
+    var inputText = document.getElementById("input").value;
     var result = "";
     var bullet = "\u2022 ";
 
@@ -85,15 +80,15 @@ function convertBulletPoints()
 
 function normalizeLineEnding()
 {
-	var inputText = document.getElementById("input").value;
+    var inputText = document.getElementById("input").value;
     var result = "";
 
     lines = inputText.split("\n");
     for (i=0; i<lines.length; i++) {
-		result += lines[i];
-		if (lines[i].length > 0)
-			result += "  ";
-		result += "\r\n";
+        result += lines[i];
+	if (lines[i].length > 0)
+	    result += "  ";
+	result += "\r\n";
     }
 
     document.getElementById("markup").value = result;
@@ -101,7 +96,7 @@ function normalizeLineEnding()
 
 function getQianBinSharingTemplate()
 {
-    result = "---\r\n";
+    var result = "---\r\n";
     result += "layout: sharing\r\n";
     result += "date: 2019-\r\n";
     result += "title: \"讀經分享：【】\"\r\n";
@@ -116,17 +111,28 @@ function getQianBinSharingTemplate()
 
 function getZhuolinSharingTemplate()
 {
-    result = "---\r\n";
+    var inputText = document.getElementById("input").value;
+    var firstLine = inputText.split("\n")[0];
+    var dateText = firstLine.split(' ')[0];
+    var dt = new Date(dateText);
+    var dayOfWeek = dt.getDay();
+    var day = (dt.getDate() < 10 ? "0" : "") + dt.getDate();
+    var monthNum = dt.getMonth() + 1;
+    var month = (monthNum < 10 ? "0" : "") + monthNum;
+    var title = firstLine.substr(dateText.length + 1);
+    var result = "---\r\n";
     result += "layout: sharing\r\n";
-    result += "date: 2019-\r\n";
-    result += "title: \"每日靈修：\"\r\n";
+    result += "date: 2019-" + month + "-" + day +"\r\n";
+    result += "title: \"每日靈修：" + title + "\"\r\n";
     result += "categories: sharing Zhuolin\r\n";
     result += "weekNum: \r\n";
-    result += "dayNum: \r\n";
-    result += "permalink: /sharing/zhuolin/day-wk-sharing.html\r\n";
+    result += "dayNum: " + dayOfWeek + "\r\n";
+    result += "permalink: /sharing/zhuolin/day" + dayOfWeek + "-wk-sharing.html\r\n";
     result += "author: Zhuolin\r\n";
     result += "---\r\n";
     
+    result += normalize(inputText);
+	
     document.getElementById("markup").value = result;
 }
 
@@ -137,19 +143,19 @@ function getBiblePlanDailySummary()
 
     lines = inputText.split("\n");
     for (i=0; i<lines.length; i++) {
-		elem = lines[i].split(" ");
-		result += " <details>\r\n";
-		result += "  <summary>" 
-					+ elem[0] 
-					+ ". <a href=\"https://www.biblegateway.com/quicksearch/?quicksearch="
-					+ elem[1]
-					+ "&qs_version=CUVMPT\">"
-					+ elem[1]
-					+ "</a> - <a href=\"https://bibleplan.github.io/daily/"
-					+ elem[2]
-					+ "-daily.html\">"
-					+ elem[3]
-					+ "</a></summary>\r\n";
+	elem = lines[i].split(" ");
+	result += " <details>\r\n";
+	result += "  <summary>" 
+		+ elem[0] 
+		+ ". <a href=\"https://www.biblegateway.com/quicksearch/?quicksearch="
+		+ elem[1]
+		+ "&qs_version=CUVMPT\">"
+		+ elem[1]
+		+ "</a> - <a href=\"https://bibleplan.github.io/daily/"
+		+ elem[2]
+		+ "-daily.html\">"
+		+ elem[3]
+		+ "</a></summary>\r\n";
 		result += "  <ul>\r\n";
 		result += "  </ul>\r\n";
 		result += " </details>\r\n";
