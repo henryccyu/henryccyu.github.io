@@ -7,11 +7,7 @@ function convert()
 
 function normalize(inputText)
 {
-    var result = inputText.replace(/,/g, "，");
-    result = result.replace(/[?]/g, "？");
-    result = result.replace(/:/g, "：");
-    result = result.replace(/;/g, "；");
-    result = result.replace(/!/g, "！");
+    var result = useChinesePunctuation(inputText);
     result = result.replace(/（小錢）/g, "\n`小錢`");
     result = result.replace(/禱告：/g, "禱告：\n>");
     result = result.replace(/提醒：/g, "提醒：\n>");
@@ -22,6 +18,25 @@ function normalize(inputText)
     result = ConvertNumberedList(result);
 
     return result;
+}
+
+function useChinesePunctuation(inputText)
+{
+    var result = inputText.replace(/,/g, "，");
+    return result.replace(/[?]/g, "？")
+				 .replace(/:/g, "：")
+				 .replace(/;/g, "；")
+				 .replace(/!/g, "！");
+}
+
+function stitchParagraph()
+{
+    var result = document.getElementById("input").value;
+    result = result.replace(/[\r\n]/g, "");
+    result = useChinesePunctuation(result);
+    result = useRomanCommaForVerses(result);
+    result = ConvertNumberedList(result);
+    document.getElementById("markup").value = result;
 }
 
 function appendEndingSpaces(txt)
