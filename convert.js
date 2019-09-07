@@ -76,16 +76,13 @@ function convertBulletPoints()
 {
     var inputText = document.getElementById("input").value;
     var result = "";
-    var bullet = "\u2022 ";
-
-    if (inputText.indexOf("+ ") >= 0) {
-        bullet = "+ ";
-    }
+    var bullet = "+ ";
 
     lines = inputText.split("\n");
     for (i=0; i<lines.length; i++) {
         index = lines[i].indexOf(bullet);
-        result += (index >= 0 ? "<li>" + lines[i].substring(index + 2, lines[i].length) + "</li>" : lines[i]);
+	line = index >= 0 ? lines[i].substring(index + 2, lines[i].length) : lines[i];
+        result += "<li>" + line + "</li>";
         if (lines[i].length > 0) result += "\r\n";
 //        console.log("result: " + result);
     }
