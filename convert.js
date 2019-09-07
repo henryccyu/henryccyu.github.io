@@ -123,7 +123,7 @@ function getQianBinSharingTemplate()
     var result = "---\r\n";
     result += "layout: sharing\r\n";
     result += "date: 2019-" + month + "-" + day + "\r\n";
-    result += "title: \"讀經分享：【" + title "】\"\r\n";
+    result += "title: \"讀經分享：【" + title + "】\"\r\n";
     result += "categories: sharing\r\n";
     result += "weekNum: \r\n";
     result += "dayNum: " + dayOfWeek + "\r\n";
