@@ -122,7 +122,7 @@ function getQianBinSharingTemplate()
     var title = firstLine.split(' ')[-1];
     var result = "---\r\n";
     result += "layout: sharing\r\n";
-    result += "date: 2019-" + month + "-" + day " +\r\n";
+    result += "date: 2019-" + month + "-" + day + "\r\n";
     result += "title: \"讀經分享：【" + title "】\"\r\n";
     result += "categories: sharing\r\n";
     result += "weekNum: \r\n";
@@ -148,7 +148,7 @@ function getZhuolinSharingTemplate()
     var title = firstLine.substr(dateText.length + 1);
     var result = "---\r\n";
     result += "layout: sharing\r\n";
-    result += "date: 2019-" + month + "-" + day +"\r\n";
+    result += "date: 2019-" + month + "-" + day + "\r\n";
     result += "title: \"每日靈修：" + title + "\"\r\n";
     result += "categories: sharing Zhuolin\r\n";
     result += "weekNum: \r\n";
