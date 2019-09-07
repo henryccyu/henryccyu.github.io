@@ -111,16 +111,27 @@ function normalizeLineEnding()
 
 function getQianBinSharingTemplate()
 {
+    var inputText = document.getElementById("input").value;
+    var firstLine = inputText.split("\n")[0];
+    var dateText = firstLine.split(' ')[0];
+    var dt = new Date(dateText);
+    var dayOfWeek = dt.getDay();
+    var day = (dt.getDate() < 10 ? "0" : "") + dt.getDate();
+    var monthNum = dt.getMonth() + 1;
+    var month = (monthNum < 10 ? "0" : "") + monthNum;
+    var title = firstLine.split(' ')[-1];
     var result = "---\r\n";
     result += "layout: sharing\r\n";
-    result += "date: 2019-\r\n";
-    result += "title: \"讀經分享：【】\"\r\n";
+    result += "date: 2019-" + month + "-" + day " +\r\n";
+    result += "title: \"讀經分享：【" + title "】\"\r\n";
     result += "categories: sharing\r\n";
     result += "weekNum: \r\n";
-    result += "dayNum: \r\n";
-    result += "permalink: /sharing/day-wk-sharing.html\r\n";
+    result += "dayNum: " + dayOfWeek + "\r\n";
+    result += "permalink: /sharing/day" + dayOfWeek + "-wk-sharing.html\r\n";
     result += "---\r\n";
-    
+
+    result += normalize(inputText);
+
     document.getElementById("markup").value = result;
 }
 
