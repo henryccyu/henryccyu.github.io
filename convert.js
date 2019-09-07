@@ -37,17 +37,19 @@ function stitchParagraph()
     lines = inputText.split("\n");
     for (i = 0; i < lines.length; i++) 
     {
-    	if (lines[i].trim().length() == 0) {
-	    stitch = false;
-	} else {
-	    result += lines[i];
-	    if (stitch) {
-		result += "\r\n";
-	    } else {
-		stitch = true;
+    	if (lines[i].trim().length == 0) {
+            stitch = false;
+            result += "\r\n";
+        } else {
+            result += lines[i];
+        }
+
+	    if (!stitch) {
+            result += "\r\n";
+            stitch = true;
 	    }
-	}
     }
+
 //    result = result.replace(/[\r\n]/g, "");
     result = useChinesePunctuation(result);
     result = useRomanCommaForVerses(result);
@@ -126,21 +128,22 @@ function getQianBinSharingTemplate()
 {
     var inputText = document.getElementById("input").value;
     var firstLine = inputText.split("\n")[0];
-    var dateText = firstLine.split(' ')[0];
-    var dt = new Date(dateText);
-    var dayOfWeek = dt.getDay();
-    var day = (dt.getDate() < 10 ? "0" : "") + dt.getDate();
-    var monthNum = dt.getMonth() + 1;
+    var monthNum = firstLine.split("月")[0];
     var month = (monthNum < 10 ? "0" : "") + monthNum;
-    var title = firstLine.split(' ')[-1];
+    var dayNum = firstLine.split("月")[1].split("日")[0];
+    var day = (dayNum < 10 ? "0" : "") + dayNum;
+    var week = firstLine.split("日")[1].split("wk")[1].split(" ")[0];
+    var dt = new Date("2019-" + monthNum + "-" + dayNum);
+    var dayOfWeek = dt.getDay();
+    var title = firstLine.split(' ')[1];
     var result = "---\r\n";
     result += "layout: sharing\r\n";
     result += "date: 2019-" + month + "-" + day + "\r\n";
     result += "title: \"讀經分享：【" + title + "】\"\r\n";
     result += "categories: sharing\r\n";
-    result += "weekNum: \r\n";
+    result += "weekNum: " + week + "\r\n";
     result += "dayNum: " + dayOfWeek + "\r\n";
-    result += "permalink: /sharing/day" + dayOfWeek + "-wk-sharing.html\r\n";
+    result += "permalink: /sharing/day" + dayOfWeek + "-wk" + week + "-sharing.html\r\n";
     result += "---\r\n";
 
     result += normalize(inputText);
