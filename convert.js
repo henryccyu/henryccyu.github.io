@@ -26,7 +26,9 @@ function useChinesePunctuation(inputText)
     return result.replace(/[?]/g, "？")
 				 .replace(/:/g, "：")
 				 .replace(/;/g, "；")
-				 .replace(/!/g, "！");
+                 .replace(/!/g, "！")
+                 .replace(/（/g, "(")
+                 .replace(/）/g, ")");
 }
 
 function stitchParagraph()
