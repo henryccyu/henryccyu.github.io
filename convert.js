@@ -31,8 +31,24 @@ function useChinesePunctuation(inputText)
 
 function stitchParagraph()
 {
-    var result = document.getElementById("input").value;
-    result = result.replace(/[\r\n]/g, "");
+    var inputText = document.getElementById("input").value;
+    var result = "";
+    var stitch = true;
+    lines = inputText.split("\n");
+    for (i = 0; i < lines.length; i++) 
+    {
+    	if (lines[i].trim().length() == 0) {
+	    stitch = false;
+	} else {
+	    result += lines[i];
+	    if (stitch) {
+		result += "\r\n";
+	    } else {
+		stitch = true;
+	    }
+	}
+    }
+//    result = result.replace(/[\r\n]/g, "");
     result = useChinesePunctuation(result);
     result = useRomanCommaForVerses(result);
     result = ConvertNumberedList(result);
