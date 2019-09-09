@@ -8,10 +8,6 @@ function convert()
 function normalize(inputText)
 {
     var result = useChinesePunctuation(inputText);
-    result = result.replace(/（小錢）/g, "\n`小錢`");
-    result = result.replace(/禱告：/g, "禱告：\n>");
-    result = result.replace(/提醒：/g, "提醒：\n>");
-    result = result.replace(/（Zhuolin）/ig, "`Zhuolin`");
 
     result = appendEndingSpaces(result);
     result = useRomanCommaForVerses(result);
@@ -24,11 +20,11 @@ function useChinesePunctuation(inputText)
 {
     var result = inputText.replace(/,/g, "，");
     return result.replace(/[?]/g, "？")
-				 .replace(/:/g, "：")
-				 .replace(/;/g, "；")
-                 .replace(/!/g, "！")
-                 .replace(/（/g, "(")
-                 .replace(/）/g, ")");
+                .replace(/:/g, "：")
+                .replace(/;/g, "；")
+                .replace(/!/g, "！")
+                .replace(/（/g, "(")
+                .replace(/）/g, ")");
 }
 
 function stitchParagraph()
@@ -101,10 +97,9 @@ function convertBulletPoints()
     lines = inputText.split("\n");
     for (i=0; i<lines.length; i++) {
         index = lines[i].indexOf(bullet);
-	line = index >= 0 ? lines[i].substring(index + 2, lines[i].length) : lines[i];
+        line = index >= 0 ? lines[i].substring(index + 2, lines[i].length) : lines[i];
         result += "<li>" + line + "</li>";
         if (lines[i].length > 0) result += "\r\n";
-//        console.log("result: " + result);
     }
 
     document.getElementById("markup").value = result;
@@ -118,9 +113,9 @@ function normalizeLineEnding()
     lines = inputText.split("\n");
     for (i=0; i<lines.length; i++) {
         result += lines[i];
-	if (lines[i].length > 0)
-	    result += "  ";
-	result += "\r\n";
+        if (lines[i].length > 0)
+            result += "  ";
+        result += "\r\n";
     }
 
     document.getElementById("markup").value = result;
@@ -149,6 +144,9 @@ function getQianBinSharingTemplate()
     result += "---\r\n";
 
     result += normalize(inputText);
+    result = result.replace(/（小錢）/g, "\n`小錢`");
+    result = result.replace(/禱告：/g, "禱告：\n>");
+    result = result.replace(/提醒：/g, "提醒：\n>");
 
     document.getElementById("markup").value = result;
 }
@@ -176,6 +174,8 @@ function getZhuolinSharingTemplate()
     result += "---\r\n";
     
     result += normalize(inputText);
+    result = result.replace(/\(Zhuolin\)/ig, "`Zhuolin`");
+    result = result.replace(/（Zhuolin）/ig, "`Zhuolin`");
 	
     document.getElementById("markup").value = result;
 }
@@ -228,7 +228,8 @@ function ConvertBulletPoints(txt)
     lines = txt.split("\n");
     for (i=0; i<lines.length; i++) {
         index = lines[i].indexOf(bullet);
-        result += (index >= 0 ? "<li>" + lines[i].substring(index + 2, lines[i].length) + "</li>" : lines[i]);
+        line = index >= 0 ? lines[i].substring(index + 2, lines[i].length) : lines[i];
+        result += "<li>" + lines[i] + "</li>";
         if (!document.getElementById("removeEmptyLines").checked || lines[i].length > 0) result += "\r\n";
         console.log("result: " + result);
     }
