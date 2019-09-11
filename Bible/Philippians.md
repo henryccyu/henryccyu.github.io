@@ -1,7 +1,9 @@
 # 腓立比书
 
-腓立比書 1.1-26 [每日靈修：生命的目的](https://bibleplan.github.io/sharing/zhuolin/2018-11-08-sharing.html)  
-腓立比書 1.27-2.30 [每日靈修：生命的核心](https://bibleplan.github.io/sharing/zhuolin/2018-11-09-sharing.html)  
++ 腓立比書 1.1-26 
+[每日靈修：生命的目的](https://bibleplan.github.io/sharing/zhuolin/2018-11-08-sharing.html)  
++ 腓立比書 1.27-2.30 
+[每日靈修：生命的核心](https://bibleplan.github.io/sharing/zhuolin/2018-11-09-sharing.html)  
 腓立比書 3.1-4.3 [每日靈修：生命的得著](https://bibleplan.github.io/sharing/zhuolin/2018-11-10-sharing.html)  
 腓立比書 4.4-23 [每日靈修：生命的依靠](https://bibleplan.github.io/sharing/zhuolin/2018-11-12-sharing.html)  
 
