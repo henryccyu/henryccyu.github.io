@@ -5,6 +5,35 @@
 + 腓立比書 3.1-4.3 [每日靈修：生命的得著](https://bibleplan.github.io/sharing/zhuolin/2018-11-10-sharing.html)  
 + 腓立比書 4.4-23 [每日靈修：生命的依靠](https://bibleplan.github.io/sharing/zhuolin/2018-11-12-sharing.html)  
 
+I. Introduction (1:1–11) 
+A. Opening Greeting (1:1–2) 
+B. Thanksgiving (1:3–8) 
+C. Prayer (1:9–11) 
+
+II. Paul’s Chains Advance the Gospel (1:12–26) 
+A. The Results of Paul’s Imprisonment (1:12–14) 
+B. Paul’s Rivals (1:15–18) 
+C. Paul’s Confidence in Death and Life (1:19–26) 
+
+III. Unity and Humility (1:27—2:18) 
+A. Life Worthy of the Gospel (1:27–30) 
+B. Imitating Christ’s Humility (2:1–11) 
+C. Do Everything Without Grumbling (2:12–18) 
+
+IV. Timothy and Epaphroditus (2:19–30)
+
+V. Enemies of the Cross and Citizens of Heaven (3:1—4:3) 
+A. No Confidence in the Flesh (3:1–14) 
+B. Following Paul’s Example (3:15–21) 
+C. Closing Appeal for Steadfastness and Unity (4:1–3) 
+
+VI. Conclusions (4:4–23) 
+A. Final Exhortations (4:4–9) 
+B. Thanks for Their Gifts (4:10–20) 
+C. Final Greetings (4:21–23)
+
+I. Introduction (1:1–11) 
+A. Opening Greeting (1:1–2)
 1:1 基督耶稣的仆人保罗和提摩太，写信给凡住腓立比，在基督耶稣里的众圣徒和诸位监督、诸位执事。 2 愿恩惠、平安从神我们的父并主耶稣基督归于你们！
 
 3 我每逢想念你们，就感谢我的神； 4 每逢为你们众人祈求的时候，常是欢欢喜喜地祈求。 5 因为从头一天直到如今，你们是同心合意地兴旺福音。 6 我深信那在你们心里动了善工的必成全这工，直到耶稣基督的日子。 7 我为你们众人有这样的意念原是应当的，因你们常在我心里，无论我是在捆锁之中，是辩明证实福音的时候，你们都与我一同得恩。 
