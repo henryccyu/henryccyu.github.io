@@ -5,7 +5,7 @@
         ccc  
 
 1. a
-    1. aa
+    1) aa
         1. aaa  
         aaa1  
         aaa2
