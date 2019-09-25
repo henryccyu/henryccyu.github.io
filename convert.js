@@ -99,7 +99,7 @@ function convertBulletPoints()
         if (lines[i].length > 0) {
             index = lines[i].indexOf(bullet);
             line = index >= 0 ? lines[i].substring(index + 2, lines[i].length) : lines[i];
-            result += "   <li>" + line + "</li>";
+            result += "   <li>" + line.replace(/[ `]/g, "") + "</li>";
             if (lines[i].length > 0) result += "\r\n";
         }
     }
