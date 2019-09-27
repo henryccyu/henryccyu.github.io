@@ -2,12 +2,12 @@
 1 奉神旨意、蒙召做耶穌基督使徒的保羅，同兄弟所提尼， 2 寫信給在哥林多神的教會，就是在基督耶穌裡成聖、蒙召做聖徒的，以及所有在各處求告我主耶穌基督之名的人。基督是他們的主，也是我們的主。 3 願恩惠、平安從神我們的父並主耶穌基督歸於你們！  
 4 我常為你們感謝我的神，因神在基督耶穌裡所賜給你們的恩惠， 5 又因你們在他裡面凡事富足，口才、知識都全備。 6 正如我為基督作的見證在你們心裡得以堅固， 7 以致你們在恩賜上沒有一樣不及人的，等候我們的主耶穌基督顯現。 8 他也必堅固你們到底，叫你們在我們主耶穌基督的日子無可責備。 9 神是信實的，你們原是被他所召，好與他兒子我們的主耶穌基督一同得份。  
 2. Divisions in the Church (1:10—4:21)  
-    1. A Church Divided Over Leaders (1:10–17)   
-    2. Christ Crucified Is God’s Power and Wisdom (1:18—2:5)   
-    3. God’s Wisdom Revealed by the Spirit (2:6–16)   
-    4. The Church and Its Leaders (3:1–23)   
-    5. The Nature of True Apostleship (4:1–13)   
-    6. Paul’s Appeal and Warning (4:14–21)   
+    1) A Church Divided Over Leaders (1:10–17)   
+    2) Christ Crucified Is God’s Power and Wisdom (1:18—2:5)   
+    3) God’s Wisdom Revealed by the Spirit (2:6–16)   
+    4) The Church and Its Leaders (3:1–23)   
+    5) The Nature of True Apostleship (4:1–13)   
+    6) Paul’s Appeal and Warning (4:14–21)   
 3. Ethical Confusion in the Church (5:1—6:20)   
     1. Dealing With a Case of Incest (5:1–13)   
     2. Lawsuits Among Believers (6:1–11)   
