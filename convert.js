@@ -132,7 +132,7 @@ function getQianBinSharingTemplate()
     var dayNum = firstLine.split("月")[1].split("日")[0];
     var day = (dayNum < 10 ? "0" : "") + dayNum;
     var week = firstLine.split("日")[1].split("wk")[1].split(" ")[0];
-    var dt = new Date("2019-" + monthNum + "-" + dayNum);
+    var dt = new Date("2019/" + monthNum + "/" + dayNum);
     var dayOfWeek = dt.getDay();
     var title = firstLine.split(' ')[1];
     var result = "---\r\n";
