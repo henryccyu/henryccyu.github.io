@@ -1,4 +1,4 @@
-# 你的祷告显明你怎样读经
+# [你的祷告显明你怎样读经](https://mp.weixin.qq.com/s/zOWbZjqL1pCx5lTIeJ3c8g)
 
 >宾克是美国一位重要作家、教师和圣经学者，从1916年到1934，他在美国、澳大利亚和英国多个地方牧会。他主要从事文字工作，写出多本圣经教导的书籍和单张。直到他回去天家以后，他的书籍才被“真理旌旗”出版社出版并为广泛流传，使他成为二十世纪后半五十年最有影响力的福音派作家之一。这一期的长文选自他的一本小书《开卷有益》（[Profiting from the Word](https://www.amazon.com/dp/0851510329/ref=cm_sw_r_cp_apa_i_DPERDbQME90TZ)，或译，读经的益处）。
 >
@@ -138,7 +138,7 @@
 
 相关阅读：
 
-1、信心不是为了得救而必须“做”的一件事
+1、[信心不是为了得救而必须“做”的一件事](https://mp.weixin.qq.com/s/ksz_ynM8rqdA8misNuCVXw)
 
-2、莱尔：没有一个人未经祷告就得救
+2、[莱尔：没有一个人未经祷告就得救](https://mp.weixin.qq.com/s/uL5XdSsEq2Lg2UdrSPdJKQ)
 
