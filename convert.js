@@ -9,11 +9,11 @@ function normalize(inputText)
 {
     var result = useChinesePunctuation(inputText);
 
-    result = appendEndingSpaces(result);
     result = useRomanCommaForVerses(result);
     result = ConvertNumberedList(result);
     if (!document.getElementById("keepSpace").checked)
 		result = result.replace(/ /g, "").replace(/　/g, "");
+    result = appendEndingSpaces(result);
 
     return result;
 }
