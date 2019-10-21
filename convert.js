@@ -39,7 +39,7 @@ function stitchParagraph()
             stitch = false;
             result += "\r\n";
         } else {
-            result += lines[i];
+            result += lines[i] + (document.getElementById("english").checked ? " " : "");
         }
 
 	    if (!stitch) {
