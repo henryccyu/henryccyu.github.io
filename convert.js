@@ -20,6 +20,9 @@ function normalize(inputText)
 
 function useChinesePunctuation(inputText)
 {
+	if (document.getElementById("english").checked)
+		return inputText;
+	
     var result = inputText.replace(/,/g, "，");
     return result.replace(/[?]/g, "？")
                 .replace(/:/g, "：")
@@ -54,6 +57,11 @@ function stitchParagraph()
     result = useChinesePunctuation(result);
     result = useRomanCommaForVerses(result);
     result = ConvertNumberedList(result);
+	
+	// remove "-"
+	if (document.getElementById("english").checked)
+		result = result.replace(/- /g, "");
+	
     document.getElementById("markup").value = result;
 }
 
