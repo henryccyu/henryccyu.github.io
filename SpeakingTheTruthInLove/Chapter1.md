@@ -27,11 +27,11 @@ But it wasn't okay, and deep inside Tom felt a twinge of guilt. He'd just told F
 　Tom moved against himself once more when he told Fred, "It's okay. No harm done." That wasn't true, and Tom again damaged his integrity and compromised his sincerity by not being honest about how he felt. Tom suffered because he moved against himself as he tried to manage public opin ion about himself and to hide his feelings.  
 　Passivity may show itself physically or verbally. Tom's passivity was both.  
 
-*Physical Passivity*   
+**Physical Passivity**   
 
 Physical passivity is marked by a person's withdrawal from a situation. An individual may walk out, leave theroom, sleep too much, or withdraw by using alcoholor other drugs. Another way to be physically passive is to receive physical abuse without defense or protest.  
 
-*Verbal Passivity*   
+**Verbal Passivity**   
 
 　A verbally passive person "keeps quiet." If you're pas sive in your communications, you withhold feedback.  
 　Consider for a moment the importance of feedback. It would be very difficult, for example, to function without feedback from your environment. When you walk, certain muscles in your legs send information to the brain about the effects of your leg movements. Because you have feedback from different muscles about how far your leg has moved and where your leg is presently, you can take another step. Your muscles have communicated with your brain, and your brain has communicated with your muscles. Without this exchange of communication, you couldn't walk. You would collapse.  
@@ -45,15 +45,15 @@ Physical passivity is marked by a person's withdrawal from a situation. An indiv
 　Hank's behavior also moved against others because his refusal to entertain Tom's misgivings actually put the congregation in danger. Having never erected a 20-foot tree before, Hank wasn't aware of what he didn't know. Neither was he receptive to the doubts of others. By moving against Tom, Hank also moved against the safety and best interest of the congregation.  
 　Aggression may be physical, nonverbal, or verbal, or it may surface as passive aggression.  
 
-*Physical Aggression*   
+**Physical Aggression**   
 
 　You are all too familiar with physical acts of aggression from reading daily news reports of abused spouses, children, and older people. You hear of murders, assaults, driveby shootings, and gang warfare. You doubtlessly know more an you want to know about physical aggression   
 
-*Nonverbal Aggression*   
+**Nonverbal Aggression**   
 
 　Nonverbal aggression is familiar to anyone who knows the phrase "If looks could kill." Many aggressive communications take place without words. Individuals move against others simply by facial expression, by their gestures, or by their tone of voice. Consider how someone feels attacked when he or she says something and another responds with a sneer or a look of scorn. Hank's smirk was an instance of nonverbal aggression. Sometimes people shake their heads in disbelief or utter a disgusted snort, a barely audible "humph," or an exasperated, exaggerated sigh to show that they think what a person has just said is so not worth considering. People use these aggressive behaviors to move against others, trying to establish superiority over them.   
 
-*Verbal Aggression*   
+**Verbal Aggression**   
 
 　Most aggressive acts are verbal rather than physical, and many social situations are war zones where words are weapons. Verbal aggression takes several form:   
 + Insults. The word insult comes from a Latin word meaning "to leap upon." Some people verbally "leap upon" others, with words or by the tone of their voices. Sometimes people use taunts that are hartful not because of the actual meaning of the words, but because the intended meaning is the opposite of the spoken meaning: "Of course it is," they say in a condescending, sarcastic tone, implying, "Of course it isn't, you dummy."   
@@ -66,7 +66,7 @@ Physical passivity is marked by a person's withdrawal from a situation. An indiv
 　With all these ways to be verbally aggressive, it's no wonder that James wrote to the early Christians:   
     How great a forest is set ablaze by a small fire! And the tongue is a fire. The tongue is placed among our members as a world of iniquity; it stains the whole body, sets on fire the cycle of nature, and is itself set on fire by hell. For every species of beast and bird, of reptile and sea creature, can be tamed and has been tamed by the human species, but no one can tame the tongue -- a restless evil, full of deadly poison. With it we bless the Lord and Father, and with it we curse those who are made in the likeness of God. From the same mouth come blessing and cursing. My brothers and sisters, this ought not to be so (James 3:5b-10 NRSV)  
 
-*Passive Aggression*   
+**Passive Aggression**   
 
 　Passive aggression is a subtle kind of aggression, an underhanded way of moving against another person or manipulating others to get one's own way. Those who use passive aggression are sometimes called "powerful passives" because they use undercover means to get their way, to get even, and to express what they're not willing to say in a straightforward manner.   
 　Passive aggression may take several forms:   
