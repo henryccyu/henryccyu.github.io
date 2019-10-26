@@ -4,7 +4,7 @@
 　"That may be the biggest Christmas tree I've ever seen!"  
 　Hank Mason, head of the Property Maintenance Committee, stood admiring the 20-foot evergreen and allowed himself to bask for a moment in his excitement and satisfaction. "I'm glad we decided to have one big tree instead of two smaller ones," he added.  
 　Tom Warren, one of the committee members who was spending his Saturday morning helping set up the huge tree in the chancel, looked at the tree with some misgivings.   
-　"It sure does look nice," Tom said loudly enough for everyone to hear, then added in a somewhat uncertain tone, I only hope the tree stand is sturdy enough to hold it."   
+　"It sure does look nice," Tom said loudly enough for everyone to hear, then added in a somewhat uncertain tone, “I only hope the tree stand is sturdy enough to hold it."   
 　Tom waited, hoping that Hank would ask him about his concerns. Having been in charge of putting up Christmas trees at his previous congregation for the past six years, Tom knew all about the hazards of large, unstable Christmas trees. From experience, he had already learned that a tree that size needed guy wires to make sure it didn't fall. People could even be injured if such a large, unstable tree fell. But this was Tom's first Christmas at the new church, and he didn't want people to think he was some pushy know-it-all. He hoped Hank would pick up on his "hint."   
 　Hank picked up on the hint all right, but not in the way Tom intended. Shrugging off Tom's remark with a look of disdain, Hank exclaimed, "Don't be silly! That tree stand is sturdy enough to hold a tree twice that size."   
 　"We might need guy wires," Tom ventured hesitantly.  
@@ -27,75 +27,60 @@ But it wasn't okay, and deep inside Tom felt a twinge of guilt. He'd just told F
 　Tom moved against himself once more when he told Fred, "It's okay. No harm done." That wasn't true, and Tom again damaged his integrity and compromised his sincerity by not being honest about how he felt. Tom suffered because he moved against himself as he tried to manage public opin ion about himself and to hide his feelings.  
 　Passivity may show itself physically or verbally. Tom's passivity was both.  
 
-Physical Passivity   
+*Physical Passivity*   
 
 Physical passivity is marked by a person's withdrawal from a situation. An individual may walk out, leave theroom, sleep too much, or withdraw by using alcoholor other drugs. Another way to be physically passive is to receive physical abuse without defense or protest.  
 
-Verbal Passivity   
+*Verbal Passivity*   
 
-A verbally passive person "keeps quiet." If you're pas sive in your communications, you withhold feedback.  
+　A verbally passive person "keeps quiet." If you're pas sive in your communications, you withhold feedback.  
+　Consider for a moment the importance of feedback. It would be very difficult, for example, to function without feedback from your environment. When you walk, certain muscles in your legs send information to the brain about the effects of your leg movements. Because you have feedback from different muscles about how far your leg has moved and where your leg is presently, you can take another step. Your muscles have communicated with your brain, and your brain has communicated with your muscles. Without this exchange of communication, you couldn't walk. You would collapse.  
+　In the same way, when you withhold feedback in a personal relationship, you risk the collapse of that relationship. If you withhold needed information when you communicate, you create an atmosphere of uncertainty. The other person never really knows what you think or feel. He or she is left to assume what you're thinking and feeling, and assumptions can lead to disastrous misunderstandings and strained relationships.   
+　Verbal passivity also involves such behaviors as pretending to remember someone's name, lying, hinting, pretending to understand, or falsely saying, "That's okay." Christians are often tempted to say "I forgive you" prematurely, just to avoid the painful process of acknowledging and working through a sin and its consequences. It may take a long, painful time for the other to come to genuine repentance.   
+　Living in a predominately passive style is much like living out a lifelong game of "Mother, May I?" In "Mother, May I?" you can't make a move without the permission of the person who is "Mother." Similarly, when people adopt a passive style, they're constantly alert to the potential displeasure and disapproval of others and will fine-tune their lives and activities in order to gain the permission and approval of those they deem powerful.  
 
-Consider for a moment the importance of feedback. It would be very difficult, for example, to function without feedback from your environment. When you walk, certain muscles in your legs send information to the brain about the effects of your leg movements. Because you have feedback from different muscles about how far your leg has moved and where your leg is presently, you can take another step. Your muscles have communicated with your brain, and your brain has communicated with your muscles. Without this exchange of communication, you couldn't walk. You would collapse.  
+### Aggressive Behavior   
+　Aggressive behavior is behavior that moves against others. Aggressive behavior says, "I have the right to patronize you, put you down, dominate you, or humiliate you in order to get what I want." The aggressive person has few internal restraints and recognizes few external limits.   
+　Hank Mason behaved aggressively in his dealings with Tom. Specifically, his behavior moved against Tom when he said, "Don't be silly," dismissing Tom's concern. Granted, it isn't Hank's responsibility to chase down every hint Tom throws into the conversational arena, but some sensitivity to Tom's misgivings and a well-placed question or two might have shifted the focus from Hank's need to be in charge to a discussion of Tom's experience and suggestions.  
+　Hank's behavior also moved against others because his refusal to entertain Tom's misgivings actually put the congregation in danger. Having never erected a 20-foot tree before, Hank wasn't aware of what he didn't know. Neither was he receptive to the doubts of others. By moving against Tom, Hank also moved against the safety and best interest of the congregation.  
+　Aggression may be physical, nonverbal, or verbal, or it may surface as passive aggression.  
 
-In the same way, when you withhold feedback in a personal relationship, you risk the collapse of that relationship. If you withhold needed information when you communicate, you create an atmosphere of uncertainty. The other person never really knows what you think or feel. He or she is left to assume what you're thinking and feeling, and assumptions can lead to disastrous misunderstandings and strained relationships.   
+*Physical Aggression*   
 
-Verbal passivity also involves such behaviors as pretending to remember someone's name, lying, hinting, pretending to understand, or falsely saying, "That's okay." Christians are often tempted to say "I forgive you" prematurely, just to avoid the painful process of acknowledging and working through a sin and its consequences. It may take a long, painful time for the other to come to genuine repentance.   
+　You are all too familiar with physical acts of aggression from reading daily news reports of abused spouses, children, and older people. You hear of murders, assaults, driveby shootings, and gang warfare. You doubtlessly know more an you want to know about physical aggression   
 
-Living in a predominately passive style is much like living out a lifelong game of "Mother, May I?" In "Mother, May I?" you can't make a move without the permission of the person who is "Mother." Similarly, when people adopt a passive style, they're constantly alert to the potential displeasure and disapproval of others and will fine-tune their lives and activities in order to gain the permission and approval of those they deem powerful.  
+*Nonverbal Aggression*   
 
-Aggressive Behavior   
-Aggressive behavior is behavior that moves against others. Aggressive behavior says, "I have the right to patronize you, put you down, dominate you, or humiliate you in order to get what I want." The aggressive person has few internal restraints and recognizes few external limits.   
+　Nonverbal aggression is familiar to anyone who knows the phrase "If looks could kill." Many aggressive communications take place without words. Individuals move against others simply by facial expression, by their gestures, or by their tone of voice. Consider how someone feels attacked when he or she says something and another responds with a sneer or a look of scorn. Hank's smirk was an instance of nonverbal aggression. Sometimes people shake their heads in disbelief or utter a disgusted snort, a barely audible "humph," or an exasperated, exaggerated sigh to show that they think what a person has just said is so not worth considering. People use these aggressive behaviors to move against others, trying to establish superiority over them.   
 
-Hank Mason behaved aggressively in his dealings with Tom. Specifically, his behavior moved against Tom when he said, "Don't be silly," dismissing Tom's concern. Granted, it isn't Hank's responsibility to chase down every hint Tom throws into the conversational arena, but some sensitivity to Tom's misgivings and a well-placed question or two might have shifted the focus from Hank's need to be in charge to a discussion of Tom's experience and suggestions.  
+*Verbal Aggression*   
 
-Hank's behavior also moved against others because his refusal to entertain Tom's misgivings actually put the congregation in danger. Having never erected a 20-foot tree before, Hank wasn't aware of what he didn't know. Neither was he receptive to the doubts of others. By moving against Tom, Hank also moved against the safety and best interest of the congregation.  
+　Most aggressive acts are verbal rather than physical, and many social situations are war zones where words are weapons. Verbal aggression takes several form:   
++ Insults. The word insult comes from a Latin word meaning "to leap upon." Some people verbally "leap upon" others, with words or by the tone of their voices. Sometimes people use taunts that are hartful not because of the actual meaning of the words, but because the intended meaning is the opposite of the spoken meaning: "Of course it is," they say in a condescending, sarcastic tone, implying, "Of course it isn't, you dummy."   
++ Put-downs. The term put-down is a fitting description of verbal aggression. People use put-downs to place another in an inferior position by calling attention to faults or mistakes or by telling others something unflattering about the person while the person is present. A put-down is used to humiliate or demean another person.   
++ Profanity. Profanity often accompanies put-downs and other aggressive behaviors. Most people have become accustomed to hearing profanity and seldom think about what it means and how it affects interpersonal relations. Profanity almost automatically transforms what is said into aggressive communication. Consider the difference between these two statements made by a tired father to his son:   
+    "Would you please move your arm out of the way. I can't see the football game," or "Damn it, get your arm out of the way. I can't see."   
+　The usual excuse is that profanity supplies emphasis or forcefulness, and that's true. People often use profanity when they want to forcefully make their point, to help them manipulate or dominate an encounter. It's a "you'd-better-listen-to-this" communication.  
++ Blaming. The word blame originates in an old French word meaning "to speak evil of," and that's essentially what someone does when he or she places blame on another. Frequently, the root of blame is applying one's own personal "shoulds" or "oughts" to others. Others should do thus-and-so. Others ought to think so-and-so. And if they don't let me live their lives for them, then what happens is their fault. Blame usually escalates aggression. Certainly instances arise in which one person is truly to blame for a problem, but in most conflicts both people have contributed to the problem.   
++ Sarcasm. The word sarcasm in its Greek roots means "flesh tearing." Anyone who has felt the pain of a sarcastic remark will appreciate that apt description. Sarcasm tears psychological flesh. Sarcasm is always aggressive, and it almost always hurts much more than the physical pain of a slap or a cut. Sarcastic comments from your childhood made by a teacher, a parent, or a classmate may still hurt when you recall them today.  
+　With all these ways to be verbally aggressive, it's no wonder that James wrote to the early Christians:   
+    How great a forest is set ablaze by a small fire! And the tongue is a fire. The tongue is placed among our members as a world of iniquity; it stains the whole body, sets on fire the cycle of nature, and is itself set on fire by hell. For every species of beast and bird, of reptile and sea creature, can be tamed and has been tamed by the human species, but no one can tame the tongue -- a restless evil, full of deadly poison. With it we bless the Lord and Father, and with it we curse those who are made in the likeness of God. From the same mouth come blessing and cursing. My brothers and sisters, this ought not to be so (James 3:5b-10 NRSV)  
 
-Aggression may be physical, nonverbal, or verbal, or it may surface as passive aggression.  
+*Passive Aggression*   
 
-Physical Aggression   
-
-You are all too familiar with physical acts of aggression from reading daily news reports of abused spouses, children, and older people. You hear of murders, assaults, driveby shootings, and gang warfare. You doubtlessly know more an you want to know about physical aggression   
-
-Nonverbal Aggression   
-
-Nonverbal aggression is familiar to anyone who knows the phrase "If looks could kill." Many aggressive communications take place without words. Individuals move against others simply by facial expression, by their gestures, or by their tone of voice. Consider how someone feels attacked when he or she says something and another responds with a sneer or a look of scorn. Hank's smirk was an instance of nonverbal aggression. Sometimes people shake their heads in disbelief or utter a disgusted snort, a barely audible "humph," or an exasperated, exaggerated sigh to show that they think what a person has just said is so not worth considering. People use these aggressive behaviors to move against others, trying to establish superiority over them.   
-
-Verbal Aggression   
-
-Most aggressive acts are verbal rather than physical, and many social situations are war zones where words are weapons. Verbal aggression takes several form:   
-
-Insults. The word insult comes from a Latin word meaning "to leap upon." Some people verbally "leap upon" others, with words or by the tone of their voices. Sometimes people use taunts that are hartful not because of the actual meaning of the words, but because the intended meaning is the opposite of the spoken meaning: "Of course it is," they say in a condescending, sarcastic tone, implying, "Of course it isn't, you dummy."   
-
-Put-downs. The term put-down is a fitting description of verbal aggression. People use put-downs to place another in an inferior position by calling attention to faults or mistakes or by telling others something unflattering about the person while the person is present. A put-down is used to humiliate or demean another person.   
-
-Profanity. Profanity often accompanies put-downs and other aggressive behaviors. Most people have become accustomed to hearing profanity and seldom think about what it means and how it affects interpersonal relations. Profanity almost automatically transforms what is said into aggressive communication. Consider the difference between these two statements made by a tired father to his son:   
-
-"Would you please move your arm out of the way. I can't see the football game," or "Damn it, get your arm out of the way. I can't see."   
-
-The usual excuse is that profanity supplies emphasis or forcefulness, and that's true. People often use profanity when they want to forcefully make their point, to help them manipulate or dominate an encounter. It's a "you'd-better-listen-to-this" communication.  
-Blaming. The word blame originates in an old French word meaning "to speak evil of," and that's essentially what someone does when he or she places blame on another. Frequently, the root of blame is applying one's own personal "shoulds" or "oughts" to others. Others should do thus-and-so. Others ought to think so-and-so. And if they don't let me live their lives for them, then what happens is their fault. Blame usually escalates aggression. Certainly instances arise in which one person is truly to blame for a problem, but in most conflicts both people have contributed to the problem.   
-Sarcasm. The word sarcasm in its Greek roots means "flesh tearing." Anyone who has felt the pain of a sarcastic remark will appreciate that apt description. Sarcasm tears psychological flesh. Sarcasm is always aggressive, and it almost always hurts much more than the physical pain of a slap or a cut. Sarcastic comments from your childhood made by a teacher, a parent, or a classmate may still hurt when you recall them today.  
-  With all these ways to be verbally aggressive, it's no wonder that James wrote to the early Christians:   
-  How great a forest is set ablaze by a small fire! And the tongue is a fire. The tongue is placed among our members as a world of iniquity; it stains the whole body, sets on fire the cycle of nature, and is itself set on fire by hell. For every species of beast and bird, of reptile and sea creature, can be tamed and has been tamed by the human species, but no one can tame the tongue -- a restless evil, full of deadly poison. With it we bless the Lord and Father, and with it we curse those who are made in the likeness of God. From the same mouth come blessing and cursing. My brothers and sisters, this ought not to be so (James 3:5b-10 NRSV)  
-
-Passive Aggression   
-
-Passive aggression is a subtle kind of aggression, an underhanded way of moving against another person or manipulating others to get one's own way. Those who use passive aggression are sometimes called "powerful passives" because they use undercover means to get their way, to get even, and to express what they're not willing to say in a straightforward manner.   
-
-Passive aggression may take several forms:   
-Procrastinating, forgetting, dawdling. This kind of passive aggression looks a lot like a sit-down strike because in both instances people are attempting to get their way by inactivity. Despite promises and assurances that they'll do their best, they hold back and actually sabotage the goals and plans of others.   
-Pouting. People who pout are like a bean pot -- you know something is cooking because you can see the steam escape! Usually people who pout deny that anything is both ering them. If you ask what's wrong, they answer, "Nothing."   
-Silent treatment. Here's a new twist to an old saying:  
+　Passive aggression is a subtle kind of aggression, an underhanded way of moving against another person or manipulating others to get one's own way. Those who use passive aggression are sometimes called "powerful passives" because they use undercover means to get their way, to get even, and to express what they're not willing to say in a straightforward manner.   
+　Passive aggression may take several forms:   
++ Procrastinating, forgetting, dawdling. This kind of passive aggression looks a lot like a sit-down strike because in both instances people are attempting to get their way by inactivity. Despite promises and assurances that they'll do their best, they hold back and actually sabotage the goals and plans of others.   
++ Pouting. People who pout are like a bean pot -- you know something is cooking because you can see the steam escape! Usually people who pout deny that anything is both ering them. If you ask what's wrong, they answer, "Nothing."   
++ Silent treatment. Here's a new twist to an old saying:  
     Sticks and stones are hard on bones,  
     Aimed with an angry art.  
     Words can sting like anything,  
     But silence breaks the heart.   
+　A person who uses the silent treatment is trying to punish the other, trying to inflict pain. This passive-aggressive behavior is often successful because to be shunned and ignored is to have your existence denied; the silent treatment is a way of saying, "You're not even here." Such withholding of love and relationship is painful indeed.  
++ Manipulative tears. Those who use tears manipulatively generate them for the express purpose of getting their own way. Manipulative tears are not to be confused with heartfelt tears or tears shed in spite of one's attempt to keep from crying.  
 
-A person who uses the silent treatment is trying to punish the other, trying to inflict pain. This passive-aggressive behavior is often successful because to be shunned and ignored is to have your existence denied; the silent treatment is a way of saying, "You're not even here." Such withholding of love and relationship is painful indeed.  
-
- Manipulative tears. Those who use tears manipulatively generate them for the express purpose of getting their own way. Manipulative tears are not to be confused with heartfelt tears or tears shed in spite of one's attempt to keep from crying.  
-
-Assertive Behavior   
+### Assertive Behavior   
 
 Assertive behavior is integral and essential to the Christian lifestyle. Assertive behavior is behavior that honors the self while honoring others. The assertive person authentically cares for others and at the same time engages in God-pleasing self-care.   
 
