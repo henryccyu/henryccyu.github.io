@@ -1,5 +1,5 @@
-## SPEAKING THE TRUTH IN LOVE
-# Chapter 1 Passive, Aggressive,and Assertive   
+## SPEAKING THE TRUTH IN LOVE -- Chapter 1
+# Passive, Aggressive,and Assertive   
 
 "That may be the biggest Christmas tree I've ever seen!"  
 Hank Mason, head of the Property Maintenance Committee, stood admiring the 20-foot evergreen and allowed himself to bask for a moment in his excitement and satisfaction. "I'm glad we decided to have one big tree instead of two smaller ones," he added.  
