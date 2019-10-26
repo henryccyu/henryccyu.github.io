@@ -3,7 +3,7 @@
 
 　"That may be the biggest Christmas tree I've ever seen!"  
 　Hank Mason, head of the Property Maintenance Committee, stood admiring the 20-foot evergreen and allowed himself to bask for a moment in his excitement and satisfaction. "I'm glad we decided to have one big tree instead of two smaller ones," he added.  
-　Tom Warren, one of the committee members who was spending his Saturday mornThe usual excuse is that profanity suppliesing helping set up the huge tree in the chancel, looked at the tree with some misgivings.   
+　Tom Warren, one of the committee members who was spending his Saturday morning helping set up the huge tree in the chancel, looked at the tree with some misgivings.   
 　"It sure does look nice," Tom said loudly enough for everyone to hear, then added in a somewhat uncertain tone, “I only hope the tree stand is sturdy enough to hold it."   
 　Tom waited, hoping that Hank would ask him about his concerns. Having been in charge of putting up Christmas trees at his previous congregation for the past six years, Tom knew all about the hazards of large, unstable Christmas trees. From experience, he had already learned that a tree that size needed guy wires to make sure it didn't fall. People could even be injured if such a large, unstable tree fell. But this was Tom's first Christmas at the new church, and he didn't want people to think he was some pushy know-it-all. He hoped Hank would pick up on his "hint."   
 　Hank picked up on the hint all right, but not in the way Tom intended. Shrugging off Tom's remark with a look of disdain, Hank exclaimed, "Don't be silly! That tree stand is sturdy enough to hold a tree twice that size."   
