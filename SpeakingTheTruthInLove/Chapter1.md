@@ -1,31 +1,31 @@
 ## SPEAKING THE TRUTH IN LOVE -- Chapter 1
 # Passive, Aggressive,and Assertive   
 
-"That may be the biggest Christmas tree I've ever seen!"  
-Hank Mason, head of the Property Maintenance Committee, stood admiring the 20-foot evergreen and allowed himself to bask for a moment in his excitement and satisfaction. "I'm glad we decided to have one big tree instead of two smaller ones," he added.  
-Tom Warren, one of the committee members who was spending his Saturday morning helping set up the huge tree in the chancel, looked at the tree with some misgivings.   
-"It sure does look nice," Tom said loudly enough for everyone to hear, then added in a somewhat uncertain tone, I only hope the tree stand is sturdy enough to hold it."   
-Tom waited, hoping that Hank would ask him about his concerns. Having been in charge of putting up Christmas trees at his previous congregation for the past six years, Tom knew all about the hazards of large, unstable Christmas trees. From experience, he had already learned that a tree that size needed guy wires to make sure it didn't fall. People could even be injured if such a large, unstable tree fell. But this was Tom's first Christmas at the new church, and he didn't want people to think he was some pushy know-it-all. He hoped Hank would pick up on his "hint."   
-Hank picked up on the hint all right, but not in the way Tom intended. Shrugging off Tom's remark with a look of disdain, Hank exclaimed, "Don't be silly! That tree stand is sturdy enough to hold a tree twice that size."   
-"We might need guy wires," Tom ventured hesitantly.  
-"Guy wires!" Hank said with a smirk. "Take it easy. Some people always think something awful is going to happen. Let's just get this tree up. I've got other things to do today."   
-Tom felt the blood rushing to his face, an obvious confirmation of the anger and embarrassment he felt inside. Tom looked away for a moment, hoping Hank and the others hadn't noticed his discomfort at Hank's remarks. Tom had enough trouble handling put-downs outside of church Getting hit with one in the middle of the sanctuary, though, somehow made it seem even worse.  
-At that moment Fred, another helper, volunteered to get the boxes of decorations from the storage shed. "Want to help, Tom?"   
-"Sure," said Tom, glad for an excuse to leave.   
-Tom and Fred walked toward the storage building. Tom, don't feel bad about what Hank said. I don't think he realizes how he sounds."   
-Tom shrugged it off. "Oh, it's okay. No harm done."  
+　"That may be the biggest Christmas tree I've ever seen!"  
+　Hank Mason, head of the Property Maintenance Committee, stood admiring the 20-foot evergreen and allowed himself to bask for a moment in his excitement and satisfaction. "I'm glad we decided to have one big tree instead of two smaller ones," he added.  
+　Tom Warren, one of the committee members who was spending his Saturday morning helping set up the huge tree in the chancel, looked at the tree with some misgivings.   
+　"It sure does look nice," Tom said loudly enough for everyone to hear, then added in a somewhat uncertain tone, I only hope the tree stand is sturdy enough to hold it."   
+　Tom waited, hoping that Hank would ask him about his concerns. Having been in charge of putting up Christmas trees at his previous congregation for the past six years, Tom knew all about the hazards of large, unstable Christmas trees. From experience, he had already learned that a tree that size needed guy wires to make sure it didn't fall. People could even be injured if such a large, unstable tree fell. But this was Tom's first Christmas at the new church, and he didn't want people to think he was some pushy know-it-all. He hoped Hank would pick up on his "hint."   
+　Hank picked up on the hint all right, but not in the way Tom intended. Shrugging off Tom's remark with a look of disdain, Hank exclaimed, "Don't be silly! That tree stand is sturdy enough to hold a tree twice that size."   
+　"We might need guy wires," Tom ventured hesitantly.  
+　"Guy wires!" Hank said with a smirk. "Take it easy. Some people always think something awful is going to happen. Let's just get this tree up. I've got other things to do today."   
+　Tom felt the blood rushing to his face, an obvious confirmation of the anger and embarrassment he felt inside. Tom looked away for a moment, hoping Hank and the others hadn't noticed his discomfort at Hank's remarks. Tom had enough trouble handling put-downs outside of church Getting hit with one in the middle of the sanctuary, though, somehow made it seem even worse.  
+　At that moment Fred, another helper, volunteered to get the boxes of decorations from the storage shed. "Want to help, Tom?"   
+　"Sure," said Tom, glad for an excuse to leave.   
+　Tom and Fred walked toward the storage building. Tom, don't feel bad about what Hank said. I don't think he realizes how he sounds."   
+　Tom shrugged it off. "Oh, it's okay. No harm done."  
 But it wasn't okay, and deep inside Tom felt a twinge of guilt. He'd just told Fred a lie to cover up how he felt.   
 
 ### Passive Behavior   
 
-  Although Tom Warren sometimes behaves assertively or even aggressively, his preferred style of dealing with people is passive. The word passive means "not resisting" or "not acting." Originally, the word passive was derived from a Latin word meaning "to suffer," which is an accurate description of what often results from passive behavior.   
-  Passive behavior is behavior that moves against the self. Passive behavior says, "I'll give up anything to avoid displeasure and to gain approval." Passive people frequently give up important parts of their own personalities to avoid disapproval or criticism so o will like them.  
-  Certainly Tom Warren suffered that Saturday morning as he helped put up the Christmas tree. Tom's behavior was behavior that moved against himself, because he had knowledge and experience he wanted to offer, yet he behaved pas16 sively. He merely hinted at what he knew by his vague comment: "I only hope the tree stand is sturdy enough to hold it." Afraid people would think he was a pushy know it-all, he resorted to hinting, even when the safety of the congregation was at stake. This bothered Tom's conscience.  
-  Tom also suffered in the face of Hank's "Don't be silly" put-down. By not standing up for himself, Tom suffered the injustice and humiliation of Hank's attack.  
-  His body told him that all was not well by increasing the blood flow to his face. His face turned red, and he felt physically uncomfortable.  
-  Tom again behaved passively when he left the church to help Fred. Tom left Hank to supervise, relinquishing his opportunity to share his knowledge and contribute to the overall safety and success of the project.  
-  Tom moved against himself once more when he told Fred, "It's okay. No harm done." That wasn't true, and Tom again damaged his integrity and compromised his sincerity by not being honest about how he felt. Tom suffered because he moved against himself as he tried to manage public opin ion about himself and to hide his feelings.  
-  Passivity may show itself physically or verbally. Tom's passivity was both.  
+　Although Tom Warren sometimes behaves assertively or even aggressively, his preferred style of dealing with people is passive. The word passive means "not resisting" or "not acting." Originally, the word passive was derived from a Latin word meaning "to suffer," which is an accurate description of what often results from passive behavior.   
+　Passive behavior is behavior that moves against the self. Passive behavior says, "I'll give up anything to avoid displeasure and to gain approval." Passive people frequently give up important parts of their own personalities to avoid disapproval or criticism so o will like them.  
+　Certainly Tom Warren suffered that Saturday morning as he helped put up the Christmas tree. Tom's behavior was behavior that moved against himself, because he had knowledge and experience he wanted to offer, yet he behaved pas16 sively. He merely hinted at what he knew by his vague comment: "I only hope the tree stand is sturdy enough to hold it." Afraid people would think he was a pushy know it-all, he resorted to hinting, even when the safety of the congregation was at stake. This bothered Tom's conscience.  
+　Tom also suffered in the face of Hank's "Don't be silly" put-down. By not standing up for himself, Tom suffered the injustice and humiliation of Hank's attack.  
+　His body told him that all was not well by increasing the blood flow to his face. His face turned red, and he felt physically uncomfortable.  
+　Tom again behaved passively when he left the church to help Fred. Tom left Hank to supervise, relinquishing his opportunity to share his knowledge and contribute to the overall safety and success of the project.  
+　Tom moved against himself once more when he told Fred, "It's okay. No harm done." That wasn't true, and Tom again damaged his integrity and compromised his sincerity by not being honest about how he felt. Tom suffered because he moved against himself as he tried to manage public opin ion about himself and to hide his feelings.  
+　Passivity may show itself physically or verbally. Tom's passivity was both.  
 
 Physical Passivity   
 
