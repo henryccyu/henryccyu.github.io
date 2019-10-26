@@ -9,7 +9,7 @@
 　Hank picked up on the hint all right, but not in the way Tom intended. Shrugging off Tom's remark with a look of disdain, Hank exclaimed, "Don't be silly! That tree stand is sturdy enough to hold a tree twice that size."   
 　"We might need guy wires," Tom ventured hesitantly.  
 　"Guy wires!" Hank said with a smirk. "Take it easy. Some people always think something awful is going to happen. Let's just get this tree up. I've got other things to do today."   
-　Tom felt the blood rushing to his face, an obvious confirmation of the anger and embarrassment he felt inside. Tom looked away for a moment, hoping Hank and the others hadn't noticed his discomfort at Hank's remarks. Tom had enough trouble handling put-downs outside of church Getting hit with one in the middle of the sanctuary, though, somehow made it seem even worse.  
+　Tom felt the blood rushing to his face, an obvious confirmation of the anger and embarrassment he felt inside. Tom looked away for a moment, hoping Hank and the others hadn't noticed his discomfort at Hank's remarks. Tom had enough trouble handling put-downs outside of church. Getting hit with one in the middle of the sanctuary, though, somehow made it seem even worse.  
 　At that moment Fred, another helper, volunteered to get the boxes of decorations from the storage shed. "Want to help, Tom?"   
 　"Sure," said Tom, glad for an excuse to leave.   
 　Tom and Fred walked toward the storage building. Tom, don't feel bad about what Hank said. I don't think he realizes how he sounds."   
