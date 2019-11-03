@@ -103,5 +103,5 @@
 + 【價值定位】尼尼微雖然勢力充足，人數繁多，也被剪除，歸於無有。當我們思想周圍的世界和環境的時候，是否可以看到神的旨意和計劃在其中的工作？
 
 ## 筆記與生活回應：
-+ [每日靈修：萬不以有罪為無罪](https://bibleplan.github.io/sharing/day4-wk93-sharing.html)
-+ [讀經分享：【旋風】(https://bibleplan.github.io/sharing/zhuolin/day4-wk93-sharing.html)
++ [每日靈修：萬不以有罪為無罪](https://bibleplan.github.io/sharing/zhuolin/day4-wk93-sharing.html)
++ [讀經分享：【旋風】](https://bibleplan.github.io/sharing/day4-wk93-sharing.html)
