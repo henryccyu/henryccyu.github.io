@@ -5,6 +5,31 @@ function convert()
     document.getElementById("markup").value = result;
 }
 
+function getBsfVersesInChinese()
+{
+    var inputText = document.getElementById("input").value;
+    var result = "";
+	result = inputText.replace(/Genesis/g, "創世記")
+						.replace(/Galatians/g, "加拉太書")
+						.replace(/Luke/g, "路加福音")
+					  	.replace(/Acts/g, "使徒行傳")
+					  	.replace(/Colossians/g, "歌羅西書")
+					  	.replace(/Philemon/g, "腓利門書")
+					  	.replace(/1 Timothy/g, "提摩太前書")
+					  	.replace(/2 Timothy/g, "提摩太後書")
+					  	.replace(/Philippians/g, "腓立比書")
+					  	.replace(/1 John/g, "約翰一書")
+					  	.replace(/2 John/g, "約翰二書")
+					  	.replace(/3 John/g, "約翰三書")
+					  	.replace(/John/g, "約翰福音")
+					  	.replace(/Matthew/g, "馬太福音")
+					  	.replace(/Ephesians/g, "以弗所書")
+					  	.replace(/Romans/g, "羅馬書")
+					  	.replace(/Revelation/g, "啟示錄")
+
+    document.getElementById("markup").value = result;
+}
+
 function normalize(inputText)
 {
     var result = useChinesePunctuation(inputText);
@@ -200,22 +225,22 @@ function getBiblePlanDailySummary()
 
     lines = inputText.split("\n");
     for (i=0; i<lines.length; i++) {
-	elem = lines[i].split(" ");
-	result += " <details>\r\n";
-	result += "  <summary>" 
-		+ elem[0] 
-		+ ". <a href=\"https://www.biblegateway.com/quicksearch/?quicksearch="
-		+ elem[1]
-		+ "&qs_version=CUVMPT\">"
-		+ elem[1]
-		+ "</a> - <a href=\"https://bibleplan.github.io/daily/"
-		+ elem[2]
-		+ "-daily.html\">"
-		+ elem[3]
-		+ "</a></summary>\r\n";
-		result += "  <ul>\r\n";
-		result += "  </ul>\r\n";
-		result += " </details>\r\n";
+		elem = lines[i].split(" ");
+		result += " <details>\r\n";
+		result += "  <summary>" 
+			+ elem[0] 
+			+ ". <a href=\"https://www.biblegateway.com/quicksearch/?quicksearch="
+			+ elem[1]
+			+ "&qs_version=CUVMPT\">"
+			+ elem[1]
+			+ "</a> - <a href=\"https://bibleplan.github.io/daily/"
+			+ elem[2]
+			+ "-daily.html\">"
+			+ elem[3]
+			+ "</a></summary>\r\n";
+			result += "  <ul>\r\n";
+			result += "  </ul>\r\n";
+			result += " </details>\r\n";
 	}
 
     document.getElementById("markup").value = result;
@@ -224,8 +249,12 @@ function getBiblePlanDailySummary()
 function getBibleGatewayLink()
 {
     var inputText = document.getElementById("input").value;
+	var biblegatewayUrl = inputText.replace(/ /g, "+")
+									.replace(/:/g, "%3A")
+									.replace(/;/g, "%3B")
+
     //result = "<a href=\"https://www.biblegateway.com/quicksearch/?quicksearch=" + inputText + "&qs_version=CUVMPT\">" + inputText + "</a>\r\n";
-    var result = "[" + inputText + "](https://www.biblegateway.com/quicksearch/?quicksearch=" + inputText + "&qs_version=CUVMPT)";
+    var result = "[" + inputText + "](https://www.biblegateway.com/quicksearch/?quicksearch=" + biblegatewayUrl + "&qs_version=CUVMPT)";
     document.getElementById("markup").value = result;
 }
 
