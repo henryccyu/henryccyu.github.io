@@ -30,6 +30,8 @@
 ## 默想：我的故事
 + 【價值定位】耶穌基督為了我們的救贖，道成肉身，住在我們中間，充充滿滿地有恩典有真理。我是否願意效法耶穌基督的道成肉身，住在這個世界，成為有恩典也有真理的門徒？
 
+## 禱告
+
 ## 筆記與生活回應：
 + [每日靈修：醫治的光](https://bibleplan.github.io/sharing/zhuolin/day4-wk95-sharing.html)
 + [讀經分享：【太初】](https://bibleplan.github.io/sharing/day4-wk95-sharing.html)
