@@ -1,3 +1,5 @@
+[<上一日](/Bible/John/Day2.html) [<下一日](/Bible/John/Day4.html)
+
 # 約翰福音 2:13-3:36
 
 ## 問題：如何才能得永生？
