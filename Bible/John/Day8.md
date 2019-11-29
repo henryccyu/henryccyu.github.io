@@ -34,3 +34,5 @@
 + 【價值定位】耶穌說祂若榮耀自己，祂的榮耀就算不得什麼。榮耀祂的乃是父神。我們是為自己的榮耀做事，還是因為神的榮耀？聖靈如何提醒我們神的榮耀？
 
 ## 筆記與生活回應：
++ [每日靈修：好牧人與羊](https://bibleplan.github.io/sharing/zhuolin/day6-wk96-sharing.html)
++ [讀經分享：【牧人】](https://bibleplan.github.io/sharing/day6-wk96-sharing.html)
