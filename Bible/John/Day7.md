@@ -34,3 +34,4 @@
 
 ## 筆記與生活回應：
 + [每日靈修：時候未到](http://bibleplan.github.io/sharing/zhuolin/day4-wk96-sharing.html)
++ [讀經分享：【自由】](http://bibleplan.github.io/sharing/day4-wk96-sharing.html)
