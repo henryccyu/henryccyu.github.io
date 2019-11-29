@@ -1,3 +1,5 @@
+[<　上一日](/Bible/John/Day14.html) [下一日＞](/Bible/John/Day16.html)
+
 # 約翰福音 18
 
 ## 問題：猶大如何出賣了耶穌？
