@@ -29,3 +29,5 @@
 + 【服事忠誠】耶穌說祂是好牧人，好牧人為羊捨命。反思我們的愛，是否有捨棄自己，完全為人的愛心？
 
 ## 筆記與生活回應：
++ [每日靈修：暗暗地](https://bibleplan.github.io/sharing/zhuolin/day1-wk97-sharing.html)
++ [讀經分享：【復活】](https://bibleplan.github.io/sharing/day1-wk97-sharing.html)
