@@ -31,3 +31,4 @@
 ## 禱告：
 
 ## 筆記與生活回應：
++ [每日靈修：合而為一](https://bibleplan.github.io/sharing/zhuolin/day5-wk97-sharing.html)
