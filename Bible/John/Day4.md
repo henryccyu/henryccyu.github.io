@@ -1,3 +1,5 @@
+[<　上一日](/Bible/John/Day3.html) [下一日＞](/Bible/John/Day5.html)
+
 # 約翰福音 4
 
 ## 問題：我們應該怎樣敬拜父神？
