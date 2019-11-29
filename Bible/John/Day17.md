@@ -1,3 +1,5 @@
+[<　上一日](/Bible/John/Day16.html) [下一日＞](/Bible/John/Day18.html)
+
 # 約翰福音 20
 
 ## 讀經
