@@ -1,3 +1,5 @@
+[<　上一日](/Bible/John/Day12.html) [下一日＞](/Bible/John/Day14.html)
+
 # 約翰福音 14-15
 
 ## 問題：如何能到天父那裡去？
