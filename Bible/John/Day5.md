@@ -1,3 +1,5 @@
+[<　上一日](/Bible/John/Day4.html) [下一日＞](/Bible/John/Day6.html)
+
 # 約翰福音 5
 
 ## 問題：為什麼信耶穌就能出死入生？
