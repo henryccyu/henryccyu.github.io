@@ -38,3 +38,5 @@
 ## 禱告：
 
 ## 筆記與生活回應：
++ [每日靈修：真理的聖靈](https://bibleplan.github.io/sharing/zhuolin/day4-wk97-sharing.html)
++ [讀經分享：【平安】](https://bibleplan.github.io/sharing/day4-wk97-sharing.html)
