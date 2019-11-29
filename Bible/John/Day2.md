@@ -1,3 +1,5 @@
+[<　上一日](/Bible/John/Day1.html) [下一日＞](/Bible/John/Day3.html)
+
 # 約翰福音 1:19-2:12 
 
 ## 問題：施洗約翰如何為耶穌做見證？
