@@ -35,5 +35,6 @@
 ## 禱告：
 
 ## 筆記與生活回應：
-+ [每日靈修：彼此相愛](https://bibleplan.github.io/sharing/zhuolin/day3-wk97-sharing.html)
-+ [讀經分享：【洗腳】](https://bibleplan.github.io/sharing/day3-wk97-sharing.html)
++ [每日靈修：神的榮耀](https://bibleplan.github.io/sharing/zhuolin/day2-wk97-sharing.html)
++ [讀經分享：【榮耀】(https://bibleplan.github.io/sharing/day2-wk97-sharing.html)
+
