@@ -36,5 +36,5 @@
 
 ## 筆記與生活回應：
 + [每日靈修：神的榮耀](https://bibleplan.github.io/sharing/zhuolin/day2-wk97-sharing.html)
-+ [讀經分享：【榮耀】(https://bibleplan.github.io/sharing/day2-wk97-sharing.html)
++ [讀經分享：【榮耀】](https://bibleplan.github.io/sharing/day2-wk97-sharing.html)
 
