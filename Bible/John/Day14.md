@@ -1,3 +1,5 @@
+[<　上一日](/Bible/John/Day13.html) [下一日＞](/Bible/John/Day15.html)
+
 # 約翰福音 16-17
 
 ## 問題：聖靈來的時候要做什麼？
