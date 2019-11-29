@@ -36,3 +36,4 @@
 
 ## 筆記與生活回應：
 + [每日靈修：施洗约翰的动机](https://bibleplan.github.io/sharing/zhuolin/day5-wk95-sharing.html)
++ [讀經分享：【羔羊】](https://bibleplan.github.io/sharing/day5-wk95-sharing.html)
