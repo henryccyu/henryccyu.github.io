@@ -167,17 +167,18 @@ function getQianBinSharingTemplate()
     var dayNum = firstLine.split("月")[1].split("日")[0];
     var day = (dayNum < 10 ? "0" : "") + dayNum;
     var week = firstLine.split("日")[1].split("wk")[1].split(" ")[0];
-    var dt = new Date("2019/" + monthNum + "/" + dayNum);
+    var dt = new Date("2020/" + monthNum + "/" + dayNum);
     var dayOfWeek = dt.getDay();
     var title = firstLine.split(' ')[1];
     var result = "---\r\n";
     result += "layout: sharing\r\n";
-    result += "date: 2019-" + month + "-" + day + "\r\n";
+    result += "date: 2020-" + month + "-" + day + "\r\n";
     result += "title: \"讀經分享：【" + title + "】\"\r\n";
     result += "categories: sharing\r\n";
     result += "weekNum: " + week + "\r\n";
     result += "dayNum: " + dayOfWeek + "\r\n";
-    result += "permalink: /sharing/day" + dayOfWeek + "-wk" + week + "-sharing.html\r\n";
+    result += "permalink: /sharing/2020/wk" + weekday + "-day" + dayOfWeek + "-sharing.html\r\n";
+    result += "cycle: 2020\r\n";
     result += "---\r\n";
 
     result += normalize(inputText);
@@ -202,13 +203,14 @@ function getZhuolinSharingTemplate()
     var title = firstLine.substr(dateText.length + 1);
     var result = "---\r\n";
     result += "layout: sharing\r\n";
-    result += "date: 2019-" + month + "-" + day + "\r\n";
+    result += "date: 2020-" + month + "-" + day + "\r\n";
     result += "title: \"每日靈修：" + title + "\"\r\n";
     result += "categories: sharing Zhuolin\r\n";
     result += "weekNum: \r\n";
     result += "dayNum: " + dayOfWeek + "\r\n";
-    result += "permalink: /sharing/zhuolin/day" + dayOfWeek + "-wk-sharing.html\r\n";
+    result += "permalink: /sharing/zhuolin/2020/wk-day" + dayOfWeek + "-sharing.html\r\n";
     result += "author: Zhuolin\r\n";
+    result += "cycle: 2020\r\n";
     result += "---\r\n";
     
     result += normalize(inputText);
