@@ -169,15 +169,22 @@ function getQianBinSharingTemplate()
     var week = firstLine.split("日")[1].split("wk")[1].split(" ")[0];
     var dt = new Date("2020/" + monthNum + "/" + dayNum);
     var dayOfWeek = dt.getDay();
-    var title = firstLine.split(' ')[1];
+	var lines = inputText.split("\n");
+    var title;
     var result = "---\r\n";
+	for (var i = 0; i < lines.length; i++) {
+		if (lines[i].indexOf("默想：") == 0) {
+			title = lines[i].substring(3);
+			break;
+		}
+	};
     result += "layout: sharing\r\n";
     result += "date: 2020-" + month + "-" + day + "\r\n";
     result += "title: \"讀經分享：【" + title + "】\"\r\n";
     result += "categories: sharing\r\n";
     result += "weekNum: " + week + "\r\n";
     result += "dayNum: " + dayOfWeek + "\r\n";
-    result += "permalink: /sharing/2020/wk" + weekday + "-day" + dayOfWeek + "-sharing.html\r\n";
+    result += "permalink: /sharing/2020/wk" + week + "-day" + dayOfWeek + "-sharing.html\r\n";
     result += "cycle: 2020\r\n";
     result += "---\r\n";
 
