@@ -166,25 +166,24 @@ function getQianBinSharingTemplate()
     var month = (monthNum < 10 ? "0" : "") + monthNum;
     var dayNum = firstLine.split("月")[1].split("日")[0];
     var day = (dayNum < 10 ? "0" : "") + dayNum;
-    var week = firstLine.split("日")[1].split("wk")[1].split(" ")[0];
     var dt = new Date("2020/" + monthNum + "/" + dayNum);
     var dayOfWeek = dt.getDay();
-	var lines = inputText.split("\n");
+    var lines = inputText.split("\n");
     var title;
     var result = "---\r\n";
 	for (var i = 0; i < lines.length; i++) {
-		if (lines[i].indexOf("默想：") == 0) {
-			title = lines[i].substring(3);
-			break;
-		}
-	};
+        if (lines[i].trim().length == 2) {
+            title = lines[i].trim();
+            break;
+        }
+    };
     result += "layout: sharing\r\n";
     result += "date: 2020-" + month + "-" + day + "\r\n";
     result += "title: \"讀經分享：【" + title + "】\"\r\n";
     result += "categories: sharing\r\n";
-    result += "weekNum: " + week + "\r\n";
+    result += "weekNum: \r\n";
     result += "dayNum: " + dayOfWeek + "\r\n";
-    result += "permalink: /sharing/2020/wk" + week + "-day" + dayOfWeek + "-sharing.html\r\n";
+    result += "permalink: /sharing/2020/wk-day" + dayOfWeek + "-sharing.html\r\n";
     result += "cycle: 2020\r\n";
     result += "---\r\n";
 
@@ -193,6 +192,7 @@ function getQianBinSharingTemplate()
     result = result.replace(/\(小錢\)/g, "\n`小錢`");
     result = result.replace(/禱告：/g, "禱告：\n>");
     result = result.replace(/提醒：/g, "提醒：\n>");
+    result = result.replace(/家庭問答：/g, "家庭問答：\n>");
 
     document.getElementById("markup").value = result;
 }
