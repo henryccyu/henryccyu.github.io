@@ -200,7 +200,7 @@ function getQianBinSharingTemplate()
 function getZhuolinSharingTemplate()
 {
     var inputText = document.getElementById("input").value;
-    var firstLine = inputText.split("\n")[0];
+    var firstLine = inputText.split("\n")[0].trim();
     var dateText = firstLine.split(' ')[0];
     var dt = new Date(dateText.replace(/-/g, "/"));
     var dayOfWeek = dt.getDay();
