@@ -190,6 +190,7 @@ function getQianBinSharingTemplate()
     result += normalize(inputText);
     result = result.replace(/（小錢）/g, "\n`小錢`");
     result = result.replace(/\(小錢\)/g, "\n`小錢`");
+    result = result.replace(/默想：/g, "默想：\n>");
     result = result.replace(/禱告：/g, "禱告：\n>");
     result = result.replace(/提醒：/g, "提醒：\n>");
     result = result.replace(/家庭問答：/g, "家庭問答：\n>");
