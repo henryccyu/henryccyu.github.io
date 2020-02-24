@@ -5,6 +5,16 @@ function convert()
     document.getElementById("markup").value = result;
 }
 
+function for2020()
+{
+    var inputText = document.getElementById("input").value;
+    var result = inputText.replace("layout: daily2", "layout: daily2020")
+							.replace("permalink: /daily/wk", "permalink: /daily/2020/wk")
+							.replace("title", "cycle: 2020\ntitle")
+							.replace("BibleLinks.html", "BibleLinks2020.html");
+    document.getElementById("markup").value = result;
+}
+
 function getBsfVersesInChinese()
 {
     var inputText = document.getElementById("input").value;
