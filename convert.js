@@ -15,6 +15,12 @@ function for2020()
     document.getElementById("markup").value = result;
 }
 
+function getEccVideoLink()
+{
+    var inputText = document.getElementById("input").value;
+    document.getElementById("markup").value = "https://www.youtube.com/embed/" + inputText + "?autoplay=1";
+}
+
 function getBsfVersesInChinese()
 {
     var inputText = document.getElementById("input").value;
