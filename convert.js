@@ -15,6 +15,13 @@ function for2020()
     document.getElementById("markup").value = result;
 }
 
+function trimNumbers()
+{
+    var inputText = document.getElementById("input").value;
+    var result = inputText.replace(/[0-9]/g, "").replace(/ /g, "");
+    document.getElementById("markup").value = result;
+}
+
 function getEccVideoLink()
 {
     var inputText = document.getElementById("input").value;
