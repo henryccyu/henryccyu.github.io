@@ -11,7 +11,8 @@ function for2020()
     var result = inputText.replace("layout: daily2", "layout: daily2020")
 							.replace("permalink: /daily/wk", "permalink: /daily/2020/wk")
 							.replace("title", "cycle: 2020\ntitle")
-							.replace("BibleLinks.html", "BibleLinks2020.html");
+							.replace("BibleLinks.html", "BibleLinks2020.html")
+							.replace(/周/g, "週");
     document.getElementById("markup").value = result;
 }
 
@@ -55,7 +56,7 @@ function getBsfVersesInChinese()
 
 function normalize(inputText)
 {
-    var result = useChinesePunctuation(inputText);
+    var result = useChinesePunctuation(inputText).replace(/周/g, "週");
 
     result = useRomanCommaForVerses(result);
     result = ConvertNumberedList(result);
