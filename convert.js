@@ -9,10 +9,18 @@ function for2020()
 {
     var inputText = document.getElementById("input").value;
     var result = inputText.replace("layout: daily2", "layout: daily2020")
+							.replace("layout: daily", "layout: daily2020")
 							.replace("permalink: /daily/wk", "permalink: /daily/2020/wk")
 							.replace("title", "cycle: 2020\ntitle")
 							.replace("BibleLinks.html", "BibleLinks2020.html")
-							.replace(/周/g, "週");
+							.replace(/周/g, "週")
+							.replace("**問題：", "{%- include BibleLinks2020.html -%}\r\n### 問題：")
+							.replace("**默想：神的故事**", "### 默想：神的故事")
+							.replace("**默想：我的故事**", "### 默想：我的故事")
+							.replace("**【", "【")
+							.replace("】**", "】")
+							.replace("**禱告：**", "### 禱告：")
+							.replace("**筆記與回應：**", "### 筆記與生活回應：");
     document.getElementById("markup").value = result;
 }
 
