@@ -8,19 +8,18 @@ function convert()
 function getPrayersForCovid19()
 {
 	var header = "---\r\n"
-			+ "title: \"疫情中的禱告: \r\n\""
+			+ "title: \"疫情中的禱告: \"\r\n"
 			+ "permalink: /sharing/covid19/zhuolin/wk-day-prayer.html\r\n"
 			+ "auther: Zhuolin\r\n"
 			+ "---\r\n";
     var result = normalize(document.getElementById("input").value)
 							.replace("•感謝贊美(Praise)", "> **感謝贊美 (Praise)**  \r\n> ")
-							.replace("•優先事項(Priority)", ">\r\n> **優先事項 (Priority)**  \r\n>")
-							.replace("•供應(Provision)", ">\r\n> **供應 (Provision)**  \r\n>")
-							.replace("•饒恕(Pardon)", ">\r\n> **饒恕 (Pardon)**  \r\n>")
-							.replace("•保護(Protection)", ">\r\n> **保護 (Protection)**  \r\n>")
+							.replace("•優先事項(Priority)", ">\r\n> **優先事項 (Priority)**  \r\n> ")
+							.replace("•供應(Provision)", ">\r\n> **供應 (Provision)**  \r\n> ")
+							.replace("•饒恕(Pardon)", ">\r\n> **饒恕 (Pardon)**  \r\n> ")
+							.replace("•保護(Protection)", ">\r\n> **保護 (Protection)**  \r\n> ")
 							.replace(/•/g, ">\r\n> ")
-							.replace("疫情中的禱告 第", "### 疫情中的禱告 \r\n\r\n**第")
-							.replace("週第", "週\r\n**第");
+							.replace("疫情中的禱告 第", "## 疫情中的禱告: \r\n\r\n**第");
     document.getElementById("markup").value = header + result;
 }
 
