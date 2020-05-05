@@ -7,21 +7,25 @@ function convert()
 
 function getPrayersForCovid19()
 {
+	var inputText = document.getElementById("input").value
+	var lines = inputText.split('\n');
 	var header = "---\r\n"
-			+ "title: \"疫情中的禱告: \"\r\n"
+			+ "title: \"疫情中的禱告: " + lines[2] + "\"\r\n"
 			+ "permalink: /sharing/covid19/zhuolin/wk-day-prayer.html\r\n"
 			+ "auther: Zhuolin\r\n"
 			+ "---\r\n";
-    var result = normalize(document.getElementById("input").value)
-							.replace("感謝贊美(Praise)", "> **感謝贊美 (Praise)**  \r\n> ")
-							.replace("優先事項(Priority)", ">\r\n> **優先事項 (Priority)**  \r\n> ")
-							.replace("供應幫助(Provision)", ">\r\n> **供應幫助 (Provision)**  \r\n> ")
-							.replace("憐憫饒恕(Pardon)", ">\r\n> **憐憫饒恕 (Pardon)**  \r\n> ")
-							.replace("保抱守護(Protection)", ">\r\n> **保抱守護 (Protection)**  \r\n> ")
-							.replace("供應(Provision)", ">\r\n> **供應幫助 (Provision)**  \r\n> ")
-							.replace("饒恕(Pardon)", ">\r\n> **憐憫饒恕 (Pardon)**  \r\n> ")
-							.replace("保護(Protection)", ">\r\n> **保抱守護 (Protection)**  \r\n> ")
-							.replace(/•/g, "")
+    var result = normalize(inputText.replace(lines[1], "\n**" + lines[1] + "**")
+									.replace(lines[2], "**" + lines[2] + "**"))
+							.replace("感謝贊美(Praise)", "**感謝贊美 (Praise)**  \r\n>")
+							.replace("優先事項(Priority)", "**優先事項 (Priority)**  \r\n>")
+							.replace("供應幫助(Provision)", "**供應幫助 (Provision)**  \r\n>")
+							.replace("憐憫饒恕(Pardon)", "**憐憫饒恕 (Pardon)**  \r\n>")
+							.replace("保抱守護(Protection)", "**保抱守護 (Protection)**  \r\n>")
+							.replace("供應(Provision)", "**供應幫助 (Provision)**  \r\n>")
+							.replace("饒恕(Pardon)", "**憐憫饒恕 (Pardon)**  \r\n>")
+							.replace("保護(Protection)", "**保抱守護 (Protection)**  \r\n>")
+							.replace(/•/g, ">\r\n>")
+							.replace(/^ +/g, "　")
 							.replace("疫情中的禱告 第", "## 疫情中的禱告\r\n第");
     document.getElementById("markup").value = header + result;
 }
@@ -213,6 +217,34 @@ function normalizeLineEnding()
 function getQianBinSharingTemplate()
 {
     var inputText = document.getElementById("input").value;
+	if (inputText.length == 0) {
+		document.getElementById("markup").value = "---"
+					+ "\r\n"
+					+ "layout: sharing"
+					+ "\r\n"
+					+ "date: "
+					+ "\r\n"
+					+ "title: \"讀經分享： \""
+					+ "\r\n"
+					+ "categories: sharing"
+					+ "\r\n"
+					+ "weekNum: "
+					+ "\r\n"
+					+ "dayNum: "
+					+ "\r\n"
+					+ "permalink: /sharing/2020/wk-day-sharing.html"
+					+ "\r\n"
+					+ "cycle: 2020"
+					+ "\r\n"
+					+ "---"
+					+ "\r\n"
+					+ "\r\n"
+					+ "\r\n"
+					+ "\r\n"
+					+ "`小錢`";
+		return;
+	}
+
     var firstLine = inputText.split("\n")[0];
     var monthNum = firstLine.split("月")[0];
     var month = (monthNum < 10 ? "0" : "") + monthNum;
