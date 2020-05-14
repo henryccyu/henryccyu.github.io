@@ -16,6 +16,7 @@ function getPrayersForCovid19()
 			+ "---\r\n";
     var result = normalize(inputText.replace(lines[1], "\n**" + lines[1] + "**")
 									.replace(lines[2], "**" + lines[2] + "**"))
+							.replace(/經文：/, "\r\n經文：")
 							.replace("感謝贊美(Praise)", "**感謝贊美 (Praise)**  \r\n>")
 							.replace("優先事項(Priority)", "**優先事項 (Priority)**  \r\n>")
 							.replace("供應幫助(Provision)", "**供應幫助 (Provision)**  \r\n>")
@@ -25,7 +26,9 @@ function getPrayersForCovid19()
 							.replace("饒恕(Pardon)", "**憐憫饒恕 (Pardon)**  \r\n>")
 							.replace("保護(Protection)", "**保抱守護 (Protection)**  \r\n>")
 							.replace(/•/g, ">\r\n>")
-							.replace(/^ +/g, "　")
+							.replace(/^ +>/gm, ">")
+							.replace(/^ +/gm, "　")
+							.replace(/^Zhuolin/gm, "`2020- Zhuolin`")
 							.replace("疫情中的禱告 第", "## 疫情中的禱告\r\n第");
     document.getElementById("markup").value = header + result;
 }
@@ -224,7 +227,7 @@ function getQianBinSharingTemplate()
 					+ "\r\n"
 					+ "date: "
 					+ "\r\n"
-					+ "title: \"讀經分享： \""
+					+ "title: \"讀經分享：(視頻)\""
 					+ "\r\n"
 					+ "categories: sharing"
 					+ "\r\n"
@@ -239,6 +242,8 @@ function getQianBinSharingTemplate()
 					+ "---"
 					+ "\r\n"
 					+ "\r\n"
+					+ "\r\n"
+					+ "[YouTube視頻]()\r\n"
 					+ "\r\n"
 					+ "\r\n"
 					+ "`小錢`";
@@ -306,8 +311,10 @@ function getZhuolinSharingTemplate()
     result += "---\r\n";
     
     result += normalize(inputText);
-    result = result.replace(/\(Zhuolin\)/ig, "`Zhuolin`");
-    result = result.replace(/（Zhuolin）/ig, "`Zhuolin`");
+    result = result.replace(/\(Zhuolin\)/ig, "`Zhuolin`")
+				   .replace(/（Zhuolin）/ig, "`Zhuolin`");
+	if (result.indexOf("`Zhuolin`") < 0)
+		result = result.replace(/^Zhuolin/gm, "`Zhuolin`");
 	
     document.getElementById("markup").value = result;
 }
