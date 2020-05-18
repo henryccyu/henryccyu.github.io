@@ -19,10 +19,11 @@ function getPrayersForCovid19()
 							.replace(/經文：/, "\r\n經文：")
 							.replace("感謝贊美(Praise)", "**感謝贊美 (Praise)**  \r\n>")
 							.replace("優先事項(Priority)", "**優先事項 (Priority)**  \r\n>")
-							.replace("供應幫助(Provision)", "**供應幫助 (Provision)**  \r\n>")
+							.replace("供應幫助(Provision)", "**幫助供應 (Provision)**  \r\n>")
+							.replace("幫助供應(Provision)", "**幫助供應 (Provision)**  \r\n>")
 							.replace("憐憫饒恕(Pardon)", "**憐憫饒恕 (Pardon)**  \r\n>")
 							.replace("保抱守護(Protection)", "**保抱守護 (Protection)**  \r\n>")
-							.replace("供應(Provision)", "**供應幫助 (Provision)**  \r\n>")
+							.replace("供應(Provision)", "**幫助供應 (Provision)**  \r\n>")
 							.replace("饒恕(Pardon)", "**憐憫饒恕 (Pardon)**  \r\n>")
 							.replace("保護(Protection)", "**保抱守護 (Protection)**  \r\n>")
 							.replace(/•/g, ">\r\n>")
@@ -47,7 +48,9 @@ function for2020()
 							.replace("默想：神的故事", "### 默想：神的故事")
 							.replace("默想：我的故事", "### 默想：我的故事")
 							.replace("禱告：", "### 禱告：")
-							.replace("筆記與回應：", "### 筆記與生活回應：");
+							.replace("筆記與回應：", "### 筆記與生活回應：")
+							.replace(/### ###/g, "###")
+							.replace("### {%- include BibleLinks2020.html", "{%- include BibleLinks2020.html");
     document.getElementById("markup").value = result;
 }
 
