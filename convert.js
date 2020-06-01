@@ -38,7 +38,6 @@ function for2020()
 {
     var inputText = document.getElementById("input").value;
     var result = inputText.replace("layout: daily2", "layout: daily2020")
-							.replace("layout: daily", "layout: daily2020")
 							.replace("permalink: /daily/wk", "permalink: /daily/2020/wk")
 							.replace("title", "cycle: 2020\ntitle")
 							.replace("BibleLinks.html", "BibleLinks2020.html")
@@ -100,7 +99,7 @@ function normalize(inputText)
     result = ConvertNumberedList(result);
 	result = result.replace(/^-/gm, "—");
     if (!document.getElementById("keepSpace").checked)
-		result = result.replace(/ /g, "").replace(/　/g, "");
+		result = result.replace(/ /g, "");
     result = appendEndingSpaces(result);
 
     return result;
@@ -249,7 +248,6 @@ function getQianBinSharingTemplate()
 					+ "\r\n"
 					+ "[YouTube視頻]()\r\n"
 					+ "\r\n"
-					+ "\r\n"
 					+ "`小錢`";
 		return;
 	}
@@ -295,13 +293,13 @@ function getZhuolinSharingTemplate()
 {
     var inputText = document.getElementById("input").value;
     var firstLine = inputText.split("\n")[0].trim();
-    var dateText = firstLine.split(' ')[0];
+    var dateText = inputText.split("\n")[1].trim();
     var dt = new Date(dateText.replace(/-/g, "/"));
     var dayOfWeek = dt.getDay();
     var day = (dt.getDate() < 10 ? "0" : "") + dt.getDate();
     var monthNum = dt.getMonth() + 1;
     var month = (monthNum < 10 ? "0" : "") + monthNum;
-    var title = firstLine.substr(dateText.length + 1);
+    var title = firstLine.split(' ').slice(-1)[0];
     var result = "---\r\n";
     result += "layout: sharing\r\n";
     result += "date: 2020-" + month + "-" + day + "\r\n";
