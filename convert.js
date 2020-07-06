@@ -42,6 +42,7 @@ function for2020()
 							.replace("title", "cycle: 2020\ntitle")
 							.replace("BibleLinks.html", "BibleLinks2020.html")
 							.replace(/周/g, "週")
+							.replace(/週圍/g, "周圍")
 							.replace(/\*\*/g, "")
 							.replace("問題：", "{%- include BibleLinks2020.html -%}\r\n\r\n### 問題：")
 							.replace("默想：神的故事", "### 默想：神的故事")
@@ -93,7 +94,7 @@ function getBsfVersesInChinese()
 
 function normalize(inputText)
 {
-    var result = useChinesePunctuation(inputText).replace(/周/g, "週");
+    var result = useChinesePunctuation(inputText).replace(/周/g, "週").replace(/週圍/g, "周圍");
 
     result = useRomanCommaForVerses(result);
     result = ConvertNumberedList(result);
