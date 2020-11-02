@@ -48,9 +48,15 @@ function for2020()
 							.replace("默想：神的故事", "### 默想：神的故事")
 							.replace("默想：我的故事", "### 默想：我的故事")
 							.replace("禱告：", "### 禱告：")
+							.replace("### 祷告", "### 禱告")
 							.replace("筆記與回應：", "### 筆記與生活回應：")
+							.replace("笔记与回应：", "### 筆記與生活回應：")
 							.replace(/### ###/g, "###")
 							.replace("### {%- include BibleLinks2020.html", "{%- include BibleLinks2020.html");
+    if (result.indexOf("cycle: ") == -1)
+    {
+    	result = result.replace("layout: ", "cycle: 2020\nlayout: ");
+    }
     document.getElementById("markup").value = result;
 }
 
