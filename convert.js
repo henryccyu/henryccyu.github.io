@@ -99,6 +99,12 @@ function getBsfVersesInChinese()
     document.getElementById("markup").value = result;
 }
 
+function IsDigit(charCode)
+{
+	var charCodeZero = "0".charCodeAt(0);
+	var charCodeNine = "9".charCodeAt(0);
+	return charCode >= charCodeZero && charCode <= charCodeNine;
+}
 function normalize(inputText)
 {
     var result = useChinesePunctuation(inputText).replace(/周/g, "週").replace(/週圍/g, "周圍");
@@ -106,6 +112,16 @@ function normalize(inputText)
     result = useRomanCommaForVerses(result);
     result = ConvertNumberedList(result);
 	result = result.replace(/^-/gm, "—");
+	var arr = result.split("：");
+	var st;
+	for (i = 0; i < arr.length - 1; i++)
+	{
+		if (IsDigit(arr[i].charCodeAt(arr[i].length - 1)) && IsDigit(arr[i+1].charCodeAt(0)))
+		    st += arr[i] + ":";
+		else
+		    st += arr[i] + "：";
+	}
+	result = st + arr[-1];
     if (!document.getElementById("keepSpace").checked)
 		result = result.replace(/ /g, "");
     result = appendEndingSpaces(result);
