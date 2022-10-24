@@ -357,7 +357,7 @@ function getZhuolinSharingTemplate2()
 	var result = "---\r\n" +
 				"layout: sharing\r\n" +
 				"date: 2022-\r\n" +
-				"title: \"新增靈修： \"\r\n" +
+				"title: \"新增靈修：\"\r\n" +
 				"categories: sharing Zhuolin\r\n" +
 				"weekNum: \r\n" +
 				"dayNum: \r\n" +
@@ -373,7 +373,7 @@ function getZhuolinSharingTemplate3()
 	var result = "---\r\n" +
 				"layout: sharing\r\n" +
 				"date: 2022-\r\n" +
-				"title: \"親子導讀： \"\r\n" +
+				"title: \"親子導讀：\"\r\n" +
 				"categories: sharing Zhuolin\r\n" +
 				"weekNum: \r\n" +
 				"dayNum: 1\r\n" +
