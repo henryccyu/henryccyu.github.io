@@ -34,6 +34,13 @@ function getPrayersForCovid19()
     document.getElementById("markup").value = header + result;
 }
 
+function for2022()
+{
+    var inputText = document.getElementById("input").value;
+    // var result = inputText.replace("2020", "2022")
+    document.getElementById("markup").value = inputText.replace(/2020/g, "2022");
+}
+
 function for2020()
 {
     var inputText = document.getElementById("input").value;
@@ -113,7 +120,7 @@ function normalize(inputText)
     result = ConvertNumberedList(result);
 	result = result.replace(/^-/gm, "—");
 	var arr = result.split("：");
-	var st;
+	var st = "";
 	for (i = 0; i < arr.length - 1; i++)
 	{
 		if (IsDigit(arr[i].charCodeAt(arr[i].length - 1)) && IsDigit(arr[i+1].charCodeAt(0)))
@@ -121,7 +128,7 @@ function normalize(inputText)
 		else
 		    st += arr[i] + "：";
 	}
-	result = st + arr[-1];
+	result = st + arr[arr.length - 1];
     if (!document.getElementById("keepSpace").checked)
 		result = result.replace(/ /g, "");
     result = appendEndingSpaces(result);
@@ -343,6 +350,59 @@ function getZhuolinSharingTemplate()
 		result = result.replace(/^Zhuolin/gm, "`Zhuolin`");
 	
     document.getElementById("markup").value = result;
+}
+
+function getZhuolinSharingTemplate2()
+{
+	var result = "---\r\n" +
+				"layout: sharing\r\n" +
+				"date: 2022-\r\n" +
+				"title: \"新增靈修： \"\r\n" +
+				"categories: sharing Zhuolin\r\n" +
+				"weekNum: \r\n" +
+				"dayNum: \r\n" +
+				"permalink: /sharing/zhuolin/2022/wk-day-sharing2.html\r\n" +
+				"author: Zhuolin\r\n" +
+				"cycle: 2022\r\n" +
+				"---\r\n";
+	document.getElementById("markup").value = result;
+}
+
+function getZhuolinSharingTemplate3()
+{
+	var result = "---\r\n" +
+				"layout: sharing\r\n" +
+				"date: 2022-\r\n" +
+				"title: \"親子導讀： \"\r\n" +
+				"categories: sharing Zhuolin\r\n" +
+				"weekNum: \r\n" +
+				"dayNum: 1\r\n" +
+				"permalink: /sharing/zhuolin/2022/wk-day-sharing3.html\r\n" +
+				"author: Zhuolin\r\n" +
+				"cycle: 2022\r\n" +
+				"---\r\n" +
+				"\r\n" +
+				"1. 打印經文。  \r\n" +
+				"2. 一起禱告開始。  \r\n" +
+				"3. 讓孩子讀，勾畫重點，紀錄下自己想問的問題。  \r\n" +
+				"4. 討論時間，請孩子分享自己的問題。討論、紀錄。經文引導列在下面。  \r\n" +
+				"5. 應用分享（不可缺）。應用部分也列在下面。  \r\n" +
+				"6. 禱告結束。\r\n" +
+				"\r\n" +
+				"#### 今天的經文可以引導的方向：\r\n" +
+				"\r\n" +
+				"\r\n" +
+				"\r\n" +
+				"#### 應用部分\r\n" +
+				"\r\n" +
+				"1. 今天的經文和後面的分享討論，給你印象最深的是哪一點？  \r\n" +
+				"2. 如果反省一下你自己的生命，你認識到你自己的什麼掙扎，是跟沒有意識到與上面的1中所分享的相關的。  \r\n" +
+				"3. 從這一點你有什麼思考？你覺得遇到同樣的掙扎的時候，你可以怎樣提醒自己？\r\n" +
+				"\r\n" +
+				"琢琳\r\n" +
+				"\r\n" +
+				"附：[親子導讀簡介](https://bibleplan.github.io/ParentChild-BibleStudyIntro.html)\r\n";
+	document.getElementById("markup").value = result;
 }
 
 function getBiblePlanDailySummary()
