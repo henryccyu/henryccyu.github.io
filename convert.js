@@ -376,7 +376,7 @@ function getZhuolinSharingTemplate3()
 				"title: \"親子導讀：\"\r\n" +
 				"categories: sharing Zhuolin\r\n" +
 				"weekNum: \r\n" +
-				"dayNum: 1\r\n" +
+				"dayNum: \r\n" +
 				"permalink: /sharing/zhuolin/2022/wk-day-sharing3.html\r\n" +
 				"author: Zhuolin\r\n" +
 				"cycle: 2022\r\n" +
