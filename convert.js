@@ -255,31 +255,21 @@ function getQianBinSharingTemplate()
 {
     var inputText = document.getElementById("input").value;
 	if (inputText.length == 0) {
-		document.getElementById("markup").value = "---"
-					+ "\r\n"
-					+ "layout: sharing"
-					+ "\r\n"
-					+ "date: "
-					+ "\r\n"
-					+ "title: \"讀經分享：(視頻)\""
-					+ "\r\n"
-					+ "categories: sharing"
-					+ "\r\n"
-					+ "weekNum: "
-					+ "\r\n"
-					+ "dayNum: "
-					+ "\r\n"
-					+ "permalink: /sharing/2020/wk-day-sharing.html"
-					+ "\r\n"
-					+ "cycle: 2020"
-					+ "\r\n"
-					+ "---"
-					+ "\r\n"
-					+ "\r\n"
-					+ "\r\n"
-					+ "[YouTube視頻]()\r\n"
-					+ "\r\n"
-					+ "`小錢`";
+		document.getElementById("markup").value = "---\r\n" +
+			"cycle: 2022\r\n" +
+			"categories: sharing\r\n" +
+			"layout: sharing\r\n" +
+			"date: 2022-\r\n" +
+			"title: \"神學梳理：\"\r\n" +
+			"weekNum: \r\n" +
+			"dayNum: \r\n" +
+			"permalink: /sharing/2022/wk-day-sharing.html\r\n" +
+			"---\r\n" +
+			"\r\n" +
+			"[](https://eccseattle.github.io/media/sharing/2022/wk/2022--bin.m4a)\r\n" +
+			"\r\n" +
+			"`小錢`\r\n" +
+			"\r\n";
 		return;
 	}
 
