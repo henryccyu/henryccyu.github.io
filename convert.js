@@ -259,14 +259,14 @@ function getQianBinSharingTemplate()
 			"cycle: 2022\r\n" +
 			"categories: sharing\r\n" +
 			"layout: sharing\r\n" +
-			"date: 2022-\r\n" +
+			"date: 2023-\r\n" +
 			"title: \"神學梳理：\"\r\n" +
 			"weekNum: \r\n" +
 			"dayNum: \r\n" +
 			"permalink: /sharing/2022/wk-day-sharing.html\r\n" +
 			"---\r\n" +
 			"\r\n" +
-			"[](https://eccseattle.github.io/media/sharing/2022/wk/2022--bin.m4a)\r\n" +
+			"[](https://eccseattle.github.io/media/sharing/2022/wk/2023--bin.m4a)\r\n" +
 			"\r\n" +
 			"`小錢`\r\n" +
 			"\r\n";
