@@ -346,7 +346,7 @@ function getZhuolinSharingTemplate2()
 {
 	var result = "---\r\n" +
 				"layout: sharing\r\n" +
-				"date: 2022-\r\n" +
+				"date: 2023-\r\n" +
 				"title: \"新增靈修：\"\r\n" +
 				"categories: sharing Zhuolin\r\n" +
 				"weekNum: \r\n" +
