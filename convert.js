@@ -254,7 +254,7 @@ function normalizeLineEnding()
 function getQianBinSharingTemplate()
 {
     var inputText = document.getElementById("input").value;
-	if (inputText.length == 0) {
+	if (inputText.length >= 0) {
 		document.getElementById("markup").value = "---\r\n" +
 			"cycle: 2022\r\n" +
 			"categories: sharing\r\n" +
@@ -347,7 +347,7 @@ function getZhuolinSharingTemplate2()
 	var result = "---\r\n" +
 				"layout: sharing\r\n" +
 				"date: 2023-\r\n" +
-				"title: \"新增靈修：\"\r\n" +
+				"title: \"親子導讀：\"\r\n" +
 				"categories: sharing Zhuolin\r\n" +
 				"weekNum: \r\n" +
 				"dayNum: \r\n" +
