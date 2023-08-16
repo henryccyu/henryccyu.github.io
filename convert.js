@@ -81,7 +81,7 @@ function getEccVideoLink()
     document.getElementById("markup").value = "https://www.youtube.com/embed/" + inputText + "?autoplay=1";
 }
 
-function getBsfVersesInChinese()
+function getBsfVersesInChinese_real()
 {
     var inputText = document.getElementById("input").value;
     var result = "";
@@ -102,6 +102,26 @@ function getBsfVersesInChinese()
 					  	.replace(/Ephesians/g, "以弗所書")
 					  	.replace(/Romans/g, "羅馬書")
 					  	.replace(/Revelation/g, "啟示錄")
+
+    document.getElementById("markup").value = result;
+}
+
+function getBsfVersesInChinese()
+{
+    var inputText = document.getElementById("input").value;
+    var result = "";
+	var lines = inputText.split('\n')
+	for (i = 0; i < lines.length; i++) {
+		result += "{\r";
+		var columns = lines[i].split('\t')
+		result += '\t"id": "' + columns[0] + '",\r';
+		result += '\t"progress": 100' + ',\r';
+		result += '\t"deploymentStatus": "' + columns[4] + '",\r';
+		result += '\t"createdTime": "' + columns[1] + '",\r';
+		result += '\t"startTime": "' + columns[2] + '",\r';
+		result += '\t"endTime": "' + columns[3] + '"\r';
+		result += "},\r";
+	}
 
     document.getElementById("markup").value = result;
 }
