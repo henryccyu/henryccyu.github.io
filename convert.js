@@ -271,61 +271,64 @@ function normalizeLineEnding()
     document.getElementById("markup").value = result;
 }
 
+function getNumberOfWeek(dateText)
+{
+    var date = new Date(dateText);
+    var time = date.getTime();
+    // Calculate the week number by dividing the time by the number of milliseconds in a week
+    var weekNumber = Math.ceil(((time - new Date(date.getFullYear(), 0, 1).getTime()) / 86400000 + 1) / 7);
+    return weekNumber + (date.getFullYear() % 2) * 52;
+}
+
+function getDateInfo(dateText)
+{
+    var date = new Date(dateText);
+    var year = date.getFullYear();
+    var month = date.getMonth();
+    var monthText = month + 1;
+    if (month < 10)
+        monthText = "0" + monthText;
+    var day = date.getDate();
+    var dayText = day;
+    if (day < 10)
+        dayText = "0" + dayText;
+    dateText = year + "-" + monthText + "-" + dayText;
+    var cycle = year - year % 2;
+    var numberOfWeek = getNumberOfWeek(date);
+    var numberOfDay = date.getDay();
+    if (numberOfDay == 0)
+        numberOfDay = 7;
+
+    var DateInfo = {
+        dateText: dateText,
+        numberOfWeek: numberOfWeek,
+        numberOfDay: numberOfDay,
+        cycle: cycle
+    }
+
+    return DateInfo;
+}
+
 function getQianBinSharingTemplate()
 {
     var inputText = document.getElementById("input").value;
-	if (inputText.length >= 0) {
-		document.getElementById("markup").value = "---\r\n" +
-			"cycle: 2022\r\n" +
-			"categories: sharing\r\n" +
-			"layout: sharing\r\n" +
-			"date: 2023-\r\n" +
-			"title: \"神學梳理：\"\r\n" +
-			"weekNum: \r\n" +
-			"dayNum: \r\n" +
-			"permalink: /sharing/2022/wk-day-sharing.html\r\n" +
-			"---\r\n" +
-			"\r\n" +
-			"[](https://eccseattle.github.io/media/sharing/2022/wk/2023--bin.m4a)\r\n" +
-			"\r\n" +
-			"`小錢`\r\n" +
-			"\r\n";
-		return;
-	}
-
-    var firstLine = inputText.split("\n")[0];
-    var monthNum = firstLine.split("月")[0];
-    var month = (monthNum < 10 ? "0" : "") + monthNum;
-    var dayNum = firstLine.split("月")[1].split("日")[0];
-    var day = (dayNum < 10 ? "0" : "") + dayNum;
-    var dt = new Date("2020/" + monthNum + "/" + dayNum);
-    var dayOfWeek = dt.getDay();
-    var lines = inputText.split("\n");
-    var title;
-    var result = "---\r\n";
-	for (var i = 0; i < lines.length; i++) {
-        if (lines[i].trim().length == 2) {
-            title = lines[i].trim();
-            break;
-        }
-    };
-    result += "layout: sharing\r\n";
-    result += "date: 2020-" + month + "-" + day + "\r\n";
-    result += "title: \"讀經分享：【" + title + "】\"\r\n";
-    result += "categories: sharing\r\n";
-    result += "weekNum: \r\n";
-    result += "dayNum: " + dayOfWeek + "\r\n";
-    result += "permalink: /sharing/2020/wk-day" + dayOfWeek + "-sharing.html\r\n";
-    result += "cycle: 2020\r\n";
-    result += "---\r\n";
-
-    result += normalize(inputText);
-    result = result.replace(/（小錢）/g, "\n`小錢`");
-    result = result.replace(/\(小錢\)/g, "\n`小錢`");
-    result = result.replace(/默想：/g, "默想：\n>");
-    result = result.replace(/禱告：/g, "禱告：\n>");
-    result = result.replace(/提醒：/g, "提醒：\n>");
-    result = result.replace(/家庭問答：/g, "家庭問答：\n>");
+    var dateInfo = getDateInfo(inputText.split(' ')[0]);
+    var title = inputText.split(' ')[1];
+    var result = "---\r\n" +
+                "cycle: " + dateInfo.cycle + "\r\n" +
+                "categories: sharing\r\n" +
+                "layout: sharing\r\n" +
+                "date: " + dateInfo.dateText + "\r\n" +
+                "title: \"神學梳理：" + title + "\"\r\n" +
+                "weekNum: " + dateInfo.numberOfWeek + "\r\n" +
+                "dayNum: " + dateInfo.numberOfDay + "\r\n" +
+                "permalink: /sharing/2022/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-sharing.html\r\n" +
+                "---\r\n" +
+                "\r\n" +
+                "[" + title + "](https://eccseattle.github.io/media/sharing/" + dateInfo.cycle + "/wk/" + dateInfo.numberOfWeek + "/" + dateInfo.dateText + "-bin.m4a)\r\n" +
+                "\r\n" +
+                "`小錢`\r\n" +
+                "\r\n";
 
     document.getElementById("markup").value = result;
 }
@@ -364,14 +367,18 @@ function getZhuolinSharingTemplate()
 
 function getZhuolinSharingTemplate2()
 {
+    var inputText = document.getElementById("input").value;
+    var dateInfo = getDateInfo(inputText.split(' ')[0]);
+    var title = inputText.split(' ')[1];
+
 	var result = "---\r\n" +
 				"layout: sharing\r\n" +
-				"date: 2023-\r\n" +
-				"title: \"親子導讀：\"\r\n" +
+				"date: " + dateInfo.dateText + "\r\n" +
+				"title: \"親子導讀：" + title + "\"\r\n" +
 				"categories: sharing Zhuolin\r\n" +
-				"weekNum: \r\n" +
-				"dayNum: \r\n" +
-				"permalink: /sharing/zhuolin/2022/wk-day-sharing2.html\r\n" +
+				"weekNum: " + dateInfo.numberOfWeek + "\r\n" +
+				"dayNum: " + dateInfo.numberOfDay + "\r\n" +
+				"permalink: /sharing/zhuolin/" + dateInfo.cycle + "/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-sharing2.html\r\n" +
 				"author: Zhuolin\r\n" +
 				"cycle: 2022\r\n" +
 				"---\r\n";
