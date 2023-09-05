@@ -37,6 +37,31 @@ function getPrayersForCovid19()
 function for2022()
 {
     var inputText = document.getElementById("input").value;
+    var lines = inputText.split('\n');
+    var language = "language: Chinese";
+    var category = "categories: daily";
+    var title = "";
+    var date = "";
+
+    for (var i = 0; i < lines.length; i++)
+    {
+        if (lines[i].indexOf("language:") >= 0)
+            language = lines[i];
+        if (lines[i].indexOf("categories:") >= 0)
+            category = lines[i];
+        if (lines[i].indexOf("date:") >= 0)
+            date = lines[i].substring(6).trim();
+        if (lines[i].indexOf("title:") >= 0)
+        {
+            if (lines[i].indexOf("Week") > 0) // English
+                title = lines[i].replaceAll('"', '').split(": ");
+            else if (lines[i].indexOf("每日靈修") > 0)
+                title = lines[i].replaceAll('"', '').split("每日靈修：");
+            else
+                title = lines[i].replaceAll('"', '').split(" ");
+            title = title[title.length - 1];
+        }
+    }
     // var result = inputText.replace("2020", "2022")
     document.getElementById("markup").value = inputText.replace(/2020/g, "2022");
 }
