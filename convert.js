@@ -330,7 +330,7 @@ function getNumberOfWeek(dateText)
 
 function getDateInfo(dateText)
 {
-    var date = new Date(dateText);
+    var date = new Date(dateText.replaceAll('-', '/'));
     var year = date.getFullYear();
     var month = date.getMonth();
     var monthText = month + 1;
