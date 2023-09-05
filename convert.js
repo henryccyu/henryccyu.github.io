@@ -334,7 +334,7 @@ function getDateInfo(dateText)
     var year = date.getFullYear();
     var month = date.getMonth();
     var monthText = month + 1;
-    if (month < 10)
+    if (month < 9)
         monthText = "0" + monthText;
     var day = date.getDate();
     var dayText = day;
