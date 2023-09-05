@@ -40,18 +40,25 @@ function for2022()
     var lines = inputText.split('\n');
     var language = "language: Chinese";
     var category = "categories: daily";
+    var layout = "layout: daily"
     var title = "";
-    var date = "";
-
-    for (var i = 0; i < lines.length; i++)
+    var dateText = "";
+	var content = "";
+	var isMetaData = false;
+	
+	for (var i = 0; i < lines.length; i++)
     {
-        if (lines[i].indexOf("language:") >= 0)
+		if (lines[i].indexOf("---") >= 0)
+			isMetaData = !isMetaData
+        else if (lines[i].indexOf("language:") >= 0)
             language = lines[i];
-        if (lines[i].indexOf("categories:") >= 0)
+        else if (lines[i].indexOf("categories:") >= 0)
             category = lines[i];
-        if (lines[i].indexOf("date:") >= 0)
-            date = lines[i].substring(6).trim();
-        if (lines[i].indexOf("title:") >= 0)
+        else if (lines[i].indexOf("layout:") >= 0)
+            layout = lines[i];
+        else if (lines[i].indexOf("date:") >= 0)
+            dateText = lines[i].substring(6).trim();
+        else if (lines[i].indexOf("title:") >= 0)
         {
             if (lines[i].indexOf("Week") > 0) // English
                 title = lines[i].replaceAll('"', '').split(": ");
@@ -61,9 +68,25 @@ function for2022()
                 title = lines[i].replaceAll('"', '').split(" ");
             title = title[title.length - 1];
         }
+		else if (!isMetaData && lines[i].indexOf("---") < 0)
+			content += lines[i] + "\r\n"
     }
-    // var result = inputText.replace("2020", "2022")
-    document.getElementById("markup").value = inputText.replace(/2020/g, "2022");
+
+    var result = "";
+    var dateInfo = getDateInfo(dateText)
+    var titleText = "每日靈修：" + title
+    result += '---\r\n'
+            + "cycle: " + dateInfo.cycle + "\r\n"
+            + layout + "\r\n"
+            + category + "\r\n"
+            + "title: " + titleText + "\r\n"
+            + "date: " + dateInfo.dateText + "\r\n"
+            + "weekNum: " + dateInfo.numberOfWeek + "\r\n"
+            + "dayNum: " + dateInfo.numberOfDay + "\r\n"
+            + "permalink: /sharing/zhuolin/" + dateInfo.cycle + "/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-sharing.html\r\n"
+            + "---\r\n"
+
+    document.getElementById("markup").value = result + content;
 }
 
 function for2020()
