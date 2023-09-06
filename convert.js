@@ -39,12 +39,13 @@ function for2022()
     var inputText = document.getElementById("input").value;
     var lines = inputText.split('\n');
     var language = "language: Chinese";
-    var category = "categories: daily";
+    var categoryText = "categories: daily";
     var layout = "layout: daily"
     var title = "";
     var dateText = "";
 	var content = "";
 	var isMetaData = false;
+    var dateInfo
 	
 	for (var i = 0; i < lines.length; i++)
     {
@@ -53,11 +54,14 @@ function for2022()
         else if (lines[i].indexOf("language:") >= 0)
             language = lines[i];
         else if (lines[i].indexOf("categories:") >= 0)
-            category = lines[i];
+            categoryText = lines[i];
         else if (lines[i].indexOf("layout:") >= 0)
             layout = lines[i];
         else if (lines[i].indexOf("date:") >= 0)
+        {
             dateText = lines[i].substring(6).trim();
+            dateInfo = getDateInfo(dateText)
+        }
         else if (lines[i].indexOf("title:") >= 0)
         {
             if (lines[i].indexOf("Week") > 0) // English
@@ -69,21 +73,33 @@ function for2022()
             title = title[title.length - 1];
         }
 		else if (!isMetaData && lines[i].indexOf("---") < 0)
-			content += lines[i] + "\r\n"
+        {
+            if (lines[i].indexOf('BibleLinks') >= 0)
+                content += '\r\n{% include BibleLinks' + dateInfo.cycle + '.html %}\r\n'
+            else
+			    content += lines[i] + "\r\n"
+        }
     }
 
     var result = "";
-    var dateInfo = getDateInfo(dateText)
+    var category = categoryText.split(' ')[1]
     var titleText = "每日靈修：" + title
+    var permalinkRoot = '/sharing/zhuolin/'
+    if (language.indexOf("English") >= 0)
+    {
+        titleText = '"' + dateInfo.cycle + '-' + (dateInfo.cycle+1) + ' Week ' + dateInfo.numberOfWeek + ' Day ' + dateInfo.numberOfDay + ': ' + title + '"'
+        permalinkRoot = '/en/' + category + '/'
+    }
     result += '---\r\n'
             + "cycle: " + dateInfo.cycle + "\r\n"
             + layout + "\r\n"
-            + category + "\r\n"
+            + categoryText + "\r\n"
+            + language + "\r\n"
             + "title: " + titleText + "\r\n"
             + "date: " + dateInfo.dateText + "\r\n"
             + "weekNum: " + dateInfo.numberOfWeek + "\r\n"
             + "dayNum: " + dateInfo.numberOfDay + "\r\n"
-            + "permalink: /sharing/zhuolin/" + dateInfo.cycle + "/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-sharing.html\r\n"
+            + "permalink: " + permalinkRoot + dateInfo.cycle + "/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-sharing.html\r\n"
             + "---\r\n"
 
     document.getElementById("markup").value = result + content;
@@ -324,7 +340,7 @@ function getNumberOfWeek(dateText)
     var date = new Date(dateText);
     var time = date.getTime();
     // Calculate the week number by dividing the time by the number of milliseconds in a week
-    var weekNumber = Math.ceil(((time - new Date(date.getFullYear(), 0, 1).getTime()) / 86400000 + 1) / 7);
+    var weekNumber = Math.ceil(((time - new Date(date.getFullYear(), 0, 1).getTime()) / 86400000) / 7);
     return weekNumber + (date.getFullYear() % 2) * 52;
 }
 
