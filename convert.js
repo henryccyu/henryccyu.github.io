@@ -85,10 +85,13 @@ function for2022()
     var category = categoryText.split(' ')[1]
     var titleText = "每日靈修：" + title
     var permalinkRoot = '/sharing/zhuolin/'
-    if (language.indexOf("English") >= 0)
+    if (category == "daily" && language.indexOf("English") >= 0)
     {
         titleText = '"' + dateInfo.cycle + '-' + (dateInfo.cycle+1) + ' Week ' + dateInfo.numberOfWeek + ' Day ' + dateInfo.numberOfDay + ': ' + title + '"'
         permalinkRoot = '/en/' + category + '/'
+    } else if (category == "daily" && language.indexOf("Chinese") >= 0) {
+        titleText = '第' + dateInfo.numberOfWeek + '週 第' + dateInfo.numberOfDay + '天 ' + title
+        permalinkRoot = '/' + category + '/'
     }
     result += '---\r\n'
             + "cycle: " + dateInfo.cycle + "\r\n"
@@ -99,7 +102,7 @@ function for2022()
             + "date: " + dateInfo.dateText + "\r\n"
             + "weekNum: " + dateInfo.numberOfWeek + "\r\n"
             + "dayNum: " + dateInfo.numberOfDay + "\r\n"
-            + "permalink: " + permalinkRoot + dateInfo.cycle + "/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-sharing.html\r\n"
+            + "permalink: " + permalinkRoot + dateInfo.cycle + "/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-" + category + ".html\r\n"
             + "---\r\n"
 
     document.getElementById("markup").value = result + content;
