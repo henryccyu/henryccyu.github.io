@@ -362,6 +362,11 @@ function getDateInfo(dateText)
     dateText = year + "-" + monthText + "-" + dayText;
     var cycle = year - year % 2;
     var numberOfWeek = getNumberOfWeek(date);
+    var numberOfWeekText = numberOfWeek;
+    if (numberOfWeek < 10)
+	numberOfWeekText = "00" + numberOfWeekText;
+    else if (numberOfWeek < 100)
+	numberOfWeekText = "0" + numberOfWeekText;
     var numberOfDay = date.getDay();
     if (numberOfDay == 0)
         numberOfDay = 7;
@@ -369,6 +374,7 @@ function getDateInfo(dateText)
     var DateInfo = {
         dateText: dateText,
         numberOfWeek: numberOfWeek,
+	numberOfWeekText: numberOfWeekText,
         numberOfDay: numberOfDay,
         cycle: cycle
     }
@@ -392,7 +398,7 @@ function getQianBinSharingTemplate()
                 "permalink: /sharing/2022/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-sharing.html\r\n" +
                 "---\r\n" +
                 "\r\n" +
-                "[" + title + "](https://eccseattle.github.io/media/sharing/" + dateInfo.cycle + "/wk/" + dateInfo.numberOfWeek + "/" + dateInfo.dateText + "-bin.m4a)\r\n" +
+                "[" + title + "](https://eccseattle.github.io/media/sharing/" + dateInfo.cycle + "/wk" + dateInfo.numberOfWeekText + "/" + dateInfo.dateText + "-bin.m4a)\r\n" +
                 "\r\n" +
                 "`小錢`\r\n" +
                 "\r\n";
@@ -568,3 +574,4 @@ function ConvertNumberedList(txt)
 
     return result;
 }
+
