@@ -85,10 +85,13 @@ function for2022()
     var category = categoryText.split(' ')[1]
     var titleText = "每日靈修：" + title
     var permalinkRoot = '/sharing/zhuolin/'
-    if (language.indexOf("English") >= 0)
+    if (category == "daily" && language.indexOf("English") >= 0)
     {
         titleText = '"' + dateInfo.cycle + '-' + (dateInfo.cycle+1) + ' Week ' + dateInfo.numberOfWeek + ' Day ' + dateInfo.numberOfDay + ': ' + title + '"'
         permalinkRoot = '/en/' + category + '/'
+    } else if (category == "daily" && language.indexOf("Chinese") >= 0) {
+        titleText = '第' + dateInfo.numberOfWeek + '週 第' + dateInfo.numberOfDay + '天 ' + title
+        permalinkRoot = '/' + category + '/'
     }
 
     if (layout.indexOf("daily") >= 0)
@@ -103,7 +106,7 @@ function for2022()
             + "date: " + dateInfo.dateText + "\r\n"
             + "weekNum: " + dateInfo.numberOfWeek + "\r\n"
             + "dayNum: " + dateInfo.numberOfDay + "\r\n"
-            + "permalink: " + permalinkRoot + dateInfo.cycle + "/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-sharing.html\r\n"
+            + "permalink: " + permalinkRoot + dateInfo.cycle + "/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-" + category + ".html\r\n"
             + "---\r\n"
 
     document.getElementById("markup").value = result + content;
@@ -363,6 +366,11 @@ function getDateInfo(dateText)
     dateText = year + "-" + monthText + "-" + dayText;
     var cycle = year - year % 2;
     var numberOfWeek = getNumberOfWeek(date);
+    var numberOfWeekText = numberOfWeek;
+    if (numberOfWeek < 10)
+	numberOfWeekText = "00" + numberOfWeekText;
+    else if (numberOfWeek < 100)
+	numberOfWeekText = "0" + numberOfWeekText;
     var numberOfDay = date.getDay();
     if (numberOfDay == 0)
         numberOfDay = 7;
@@ -370,6 +378,7 @@ function getDateInfo(dateText)
     var DateInfo = {
         dateText: dateText,
         numberOfWeek: numberOfWeek,
+	numberOfWeekText: numberOfWeekText,
         numberOfDay: numberOfDay,
         cycle: cycle
     }
@@ -393,7 +402,7 @@ function getQianBinSharingTemplate()
                 "permalink: /sharing/2022/wk" + dateInfo.numberOfWeek + "-day" + dateInfo.numberOfDay + "-sharing.html\r\n" +
                 "---\r\n" +
                 "\r\n" +
-                "[" + title + "](https://eccseattle.github.io/media/sharing/" + dateInfo.cycle + "/wk/" + dateInfo.numberOfWeek + "/" + dateInfo.dateText + "-bin.m4a)\r\n" +
+                "[" + title + "](https://eccseattle.github.io/media/sharing/" + dateInfo.cycle + "/wk" + dateInfo.numberOfWeekText + "/" + dateInfo.dateText + "-bin.m4a)\r\n" +
                 "\r\n" +
                 "`小錢`\r\n" +
                 "\r\n";
@@ -569,3 +578,4 @@ function ConvertNumberedList(txt)
 
     return result;
 }
+
