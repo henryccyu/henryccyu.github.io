@@ -90,6 +90,10 @@ function for2022()
         titleText = '"' + dateInfo.cycle + '-' + (dateInfo.cycle+1) + ' Week ' + dateInfo.numberOfWeek + ' Day ' + dateInfo.numberOfDay + ': ' + title + '"'
         permalinkRoot = '/en/' + category + '/'
     }
+
+    if (layout.indexOf("daily") >= 0)
+        layout = "layout: daily" + dateInfo.cycle;
+
     result += '---\r\n'
             + "cycle: " + dateInfo.cycle + "\r\n"
             + layout + "\r\n"
