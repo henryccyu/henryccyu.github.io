@@ -174,3 +174,116 @@ something.
 _Prayer_: Lord, I whiplash back and forth between too much introspection and too little. Cure this in me with the gospel. Your
 unconditional love for me in Christ keeps me from either trying to earn your love through self-examination or fearing to do it at all.
 Amen.
+
+## April 22
+> The human spirit can endure in sickness, but a crushed spirit who can bear? (18:14)
+
+**THE CRUSHED SPIRIT**. As we have seen, Proverbs sees that the emotional and physical health are integral and both important. But this
+text adds nuance to that. It teaches that without physical well-being, life is hard, and without any joy, it is unbearable.98
+
+What is the implication? There's nothing more important than maintaining your inward, spiritual life. A broken body can be
+sustained with difficulty by a strong spirit, but a broken spirit cannot be sustained by even the physically strongest person in the
+world. We are taught that our happiness is based on external things such as beauty, health, money, and status. Here we are being told,
+"No, it has nothing to do with your outward circumstances. Happiness is determined by how you deal with your circumstances from
+inside, how you process, how you address, and how you view them."
+
+Is there anything that is crushing your spirit?
+
+_Prayer_: Lord, I do blame my circumstances for my unhappiness, and that makes me secretly resentful toward you. But my joy is
+largely determined by where I rest my heart. Free me from enslavement to circumstance. Let me rest my hope and heart in you.
+Amen.
+
+## April 23
+> A happy heart inakes the face cheerful, but heartache crushes the spirit. The discerning heart seeks knowledge, but the mouth of a fool feeds on
+folly. (15:13-14)
+
+**HAPPINESS IS A CHOICE**. Remember that the "heart" in the Bible is not the emotions but our trusts and attitudes. The happy heart,
+we are told here, is the discerning heart, filled with wise convictions and commitments. 15:13-14, then, is telling us that the wise
+heart leads to cheerful emotions, and the foolish heart to crushed emotions. The principle is a subtle one but important. It means,
+ultimately, that happiness is a choice. Our "thoughts and attitudes...not the circumstances, are decisive.
+
+We have gone far enough in the book of Proverbs to see, however, that we are not talking about mere stoicism, a simple clamping
+down of emotions through willpower. The heart consists of the attitudes and stances toward life. We can choose to reflect with our
+mind and to fire our imagination through art, singing, and worship all so that the truths and realities of God and of his grace and
+promises fill our view.
+
+What is making you unhappy? How can the insights of these proverbs help you today?
+
+_Prayer_: Lord, I am so, so spiritually weak, that in order to live the life I should, I need both a mind convinced by solid arguments and
+an imagination fired with the beauty of your character and story. Show me how to bring both into my life. Amen.
+
+## April 24
+> Better a patient person than a warrior, one with self-control than one who takes a city. (16:32)
+
+**SELF-CONTROL: THE IMPORTANCE**. A warrior knew how to conquer and master a whole city. But these proverbs argue that even better
+is the patient, self-controlled person who knows how to conquer and master himself. This means that is it harder to master yourself
+than to master others, or even a whole nation. There are too many examples of world beaters who won prizes or literally conquered
+nations but who could not control their tempers, their tongues, or their emotions.
+
+In ancient times people with self-control and prudence were highly admired over those who followed whim and passion. Today self-
+control is often seen as unhealthy. Following one's passion, feeling one's anger, and being spontaneous are all valued in the world of
+the creative and sophisticated. Yet so many of our most famous celebrities, following this pattern, have made a shipwreck of their
+lives. As we have seen, biblical wisdom is all about the goodness of emotion, yet it is God's Word, not our intuitions and feelings, that
+must be sovereign.
+
+Where has a lack of self-control brought trouble into your life?
+
+_Prayer_: Lord, the last of the "fruit of the Spirit" (Galatians 5: 22-23), self-control, seems to be also the slowest to grow in me. I can be
+loving and even humble before I can get control of my tongue and behavior. I repent and ask you to show me the way forward. Amen.
+
+## April 25
+> Like a city whose walls are broken through is a person who lacks self-control. (25:28)
+
+**SELF-CONTROL**: THE PROBLEM. Without a wall the residents of ancient cities were vulnerable to attacks by bands of robbers, other
+nations' armies, and even animals. A person who lacks self-control is just as defenseless. If you can't control your appetite for food,
+you will ruin your body. If you can't control your tongue or temper, you will say things that can't be unsaid or taken back. If you can't
+control your sexual desires, you will ruin relationships. If you are impulsive and imprudent, not thinking things out, you will make
+rash decisions. If you can't say no to people, you will overpromise and either be exhausted and overextended or have a life filled with
+disillusioned people and broken relationships.
+
+A city doesn't have to be completely without a wall in order to be sacked. The wall just needs to be broken through at one point to let
+the enemy in. So a lack of self-control-even in just one area of life is a life-threatening problem.
+
+Where is your "wall" broken or most vulnerable? In what area of life do you most need self-control?
+
+_Prayer_: Lord, help me to do a survey of my life the way ancient soldiers examined their city wall. Show me where I most need
+fortification in my self-control. I have an idea, but I want to take time to examine myself with your help. Amen.
+
+## April 26
+> The naine of the LORD is a fortified tower; the righteous run to it and are safe. The wealth of the rich is their fortified city; they imagine it a wall
+too high to scale. (18:10-11)
+
+**SELF-CONTROL**: THE SOLUTION. In ancient times a wall was a safe place in an attack, but a fortified tower was even better. These two
+proverbs indicate that everyone has a place of ultimate security, a "fortification," something about which they say, "If I have that, I'll
+be safe." The wealthy, the powerful, the beautiful all think that these things are their "towers."
+
+But the wise person runs into the name of the Lord. In the Bible, God's name is a way of speaking of his nature and attributes. To run
+into God's name is to deliberately rehearse and tell yourself who he is. Jesus asked his fearful disciples in the storm, "Where is your
+faith?" He chastised them for failing to remember all that they had seen him do (Luke 8:25). If you panic, you are failing to remember
+(to "run into") his power, his wisdom, his love for you. Self-control in any situation is the critical ability to both recognize and choose
+the important thing over the urgent thing. To honor, trust in, and please God is always the most important thing.
+
+What are you facing right now that is difficult? What attribute of God might you be forgetting and might help greatly if you
+remembered it?
+
+_Prayer_: Lord, the more you are on the periphery of my thoughts and feelings, the less self-control I have. The more you are in the
+center, vividly before the eyes of my heart and attention, the more I can control myself. Lord, grab and hold my attention, moment by
+moment, so I can live as I should. Amen.
+
+## April 27
+> Evildoers are snared by their own sin, but the righteous shout for joy and are glad. (29:6)
+
+**SHOUT FOR JOY**. Because God's creation has an order within it, evildoers are snared by their own sin. But, as we have seen, the arcs of sin
+and righteousness toward their destinies can be very long. For the time being, sin may bring prosperity and righteousness may lead
+to suffering. In fact, it is only in eternity that sin receives its full retribution and goodness its complete reward.
+
+So evildoers may not be "snared" for a long time. But there is no reason for believers to wait until the end to shout for joy and be glad.
+Indeed, anyone leading a wise life, regardless of the inevitable difficulties, will have times of shout-out-loud joy and laughter. In his
+very first miraculous sign, Jesus revealed himself to be Lord of the feast, who comes to bring us festal joy (John 2:1-11). Every time we
+participate in the Lord's supper, we are literally getting a foretaste of that final, endless, incomparable feast that has been guaranteed
+to us by his death and resurrection (Isaiah 25:6-8; Revelation 19:6-8). Here is the joy that we can access anytime.
+
+When was the last time you experienced shout-out-loud joy in God? Has it been too long?
+
+_Prayer_: Lord, at the wedding feast of Cana (John 2) you sat among the joyous, thinking of your coming sorrow. But you went to the
+cross so we can sit here surrounded by sorrows, sipping the coming joy. How I praise you for your great salvation. Amen.
