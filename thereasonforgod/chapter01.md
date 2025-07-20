@@ -15,5 +15,15 @@ One way to deal with the divisiveness of religion has been to control or even fo
 
 Going hand in hand with such efforts was a widespread belief in the late nineteenth and early twentieth century that religion would weaken and die out as the human race became more technologically advanced. This view saw religion as playing a role in human evolution. We once needed religion to help us cope with a very frightening, incomprehensible world. But as we become more scientifically sophisticated and more able to understand and control our own environment, our need for religion would diminish, it was thought.4
 
-But this has not happened, and this "secularization thesis" is now largely discredited.≤ Virtually all major religions are grow-
+But this has not happened, and this "secularization thesis" is now largely discredited.≤ Virtually all major religions are grow-ing in number of adherents. Christianity's growth, especially in the developing world, has been explosive. There are now six times more Anglicans in Nigeria alone than there are in all of the United States. There are more Presbyterians in Ghana than in the United States and Scotland combined. Korea has gone from 1 percent to 40 percent Christian in a hundred years, and experts believe the same thing is going to happen in China. If there are half a billion Chinese Christians fifty years from now, that will change the course of human history. In most cases, the Christianity that is growing is not the more secularized, belief-thin versions predicted by the soci-ologists. Rather, it is a robust supernaturalist kind of faith, with belief in miracles, Scriptural authority, and personal conversion.
+Because of the vitality of religious faith in the world, efforts to suppress or control it often serve only to make it stronger. When the Chinese Communists expelled Western missionaries after World War II, they thought they were killing off Christianity in China. Instead, this move only served to make the leadership of the Chinese church more indigenous and therefore to strengthen it.
+
+Religion is not just a temporary thing that helped us adapt to our environment. Rather it is a permanent and central aspect of the human condition. This is a bitter pill for secular, nonreligious people to swallow. Everyone wants to think that they are in the mainstream, that they are not extremists. But robust religious beliefs dominate the world. There is no reason to expect that to
+change.
+
+**2. Condemn religion**
+
+Religion is not going away and its power cannot be dimin-ished by government control. But can't we—via education and argument— find ways to socially discourage religions that claim to have "the truth" and that try to convert others to their beliefs? Couldn't we find ways to urge all of our citizens, whatever their religious beliefs, to admit that each religion or faith is just one of many equally valid paths to God and ways to live in the world?
+
+This approach creates an environment in which it is considered unenlightened and outrageous to make exclusive religious claims,
 
