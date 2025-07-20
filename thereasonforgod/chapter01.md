@@ -1,12 +1,9 @@
-DURING my nearly two decades in New York City, I've had numerous opportunities to ask people, "What is your biggest problem with Christianity? What troubles you the
-most about its beliefs or how it is practiced?" One of the most frequent answers I have heard over the years can be summed up in one word: exclusivity.
+DURING my nearly two decades in New York City, I've had numerous opportunities to ask people, "What is your biggest problem with Christianity? What troubles you the most about its beliefs or how it is practiced?" One of the most frequent answers I have heard over the years can be summed up in one word: exclusivity.
+
 I was once invited to be the Christian representative in a panel discussion at a local college along with a Jewish rabbi and a Muslim imam. The panelists were asked to discuss the differences among religions. The conversation was courteous, intelligent, and respectful in tone. Each speaker affirmed that there were significant, irreconcilable differences between the major faiths. A case in point was the person of Jesus. We all agreed on the statement: "If Christians are right about Jesus being God, then Muslims and Jews fail in a serious way to love God as God really is, but if Muslims and Jews are right that Jesus is not God but rather a teacher or prophet, then Christians fail in a serious way to love God as God really is." The bottom line was—we couldn't all be equally right about the nature of God.
+
 Several of the students were quite disturbed by this. One student insisted that what mattered was to believe in God and to be aloving person yourself. To insist that one faith has a better grasp of the truth than others was intolerant. Another student looked at us clerics and said in his frustration, "We will never come to know peace on earth if religious leaders keep on making such exclusive claims!" It is widely believed that one of the main barriers to world peace is religion, and especially the major traditional religions with their exclusive claims to superiority. It may surprise you that though I am a Christian minister I agree with this. Religion, generally speak-ing, tends to create a slippery slope in the heart. Each religion informs its followers that they have "the truth," and this naturally leads them to feel superior to those with differing beliefs. Also, a religion tells its followers that they are saved and connected to God by devotedly performing that truth. This moves them to separate from those who are less devoted and pure in life. Therefore, it is easy for one religious group to stereotype and caricature other ones. Once this situation exists it can easily spiral down into the violence against them.
-Once we recognize how religion erodes peace on earth, what can we do about it? There are three approaches that civic and cultural leaders around the world are using to address the divisiveness of religion. There are calls to outlaw religion, condemn religion, or at least to radically privatize it.? Many people are investing great hope in them. 
-
-Unfortunately, I don't believe any of them will be effective.
-
-Indeed, I'm afraid they will only aggravate the situation.
+Once we recognize how religion erodes peace on earth, what can we do about it? There are three approaches that civic and cultural leaders around the world are using to address the divisiveness of religion. There are calls to outlaw religion, condemn religion, or at least to radically privatize it.? Many people are investing great hope in them. Unfortunately, I don't believe any of them will be effective. Indeed, I'm afraid they will only aggravate the situation.
 
 **1. Outlaw religion**
 
@@ -27,20 +24,25 @@ Religion is not going away and its power cannot be dimin-ished by government con
 
 This approach creates an environment in which it is considered unenlightened and outrageous to make exclusive religious claims, even in personal conversations. It does so by stating and restating certain axioms that eventually achieve the status of common sense. Those who deviate from them are stigmatized as foolish or dangerous. Unlike the first strategy, this approach to the divisiveness of religion is having some effect. It cannot ultimately succeed, however, because at its heart is a fatal inconsistency, even perhaps a hypocrisy, that will eventually lead to the collapse of this way of thinking. What follows are several of these axioms and the problems with each.
 
-"All major religions are equally valid and basically teach the same thing."
+**_"All major religions are equally valid and basically teach the same thing."_**
+
 This assertion is so common that one journalist recently wrote that anyone who believed that "there are inferior religions" is a right-wing extremist.? Do we really want to say that the Branch Davidians or religions requiring child sacrifice are not inferior to any other faith? The great majority of people would almost certainly agree that they are.
 
 Most people who assert the equality of religions have in mind the major world faiths, not splinter sects. This was the form of the objection I got from the student the night I was on the panel.
 
 He contended that doctrinal differences between Judaism, Islam, Christianity, Buddhism, and Hinduism were superficial and insig-nificant, that they all believed in the same God. But when I asked him who that God was, he described him as an all-loving Spirit in the universe. The problem with this position is its inconsistency. It insists that doctrine is unimportant, but at the same time assumes doctrinal beliefs about the nature of God that are at loggerheads with those of the all the major faiths. Buddhism doesn't believe in a personal God at all. Judaism, Christianity, and Islam believe in a God who holds people accountable for their beliefs and practices and whose attributes could not be all reduced to love. Ironically, the insistence that doctrines do not matter is really a doctrine itself. It holds a specific view of God, which is touted as superior and more enlightened than the beliefs of most major religions. So the proponents of this view do the very thing they forbid in others.
 
-"Each religion sees part of spiritual truth, but none can see the whole truth."
-Sometimes this point is illustrated with the story of the blind men and the elephant. Several blind men were walking along and came upon an elephant that allowed them to touch and feel it.
-"This creature is long and flexible like a snake" said the first blind man, holding the elephant's trunk. "Not at all—it is thick and round like a tree trunk," said the second blind man, feeling the elephant's leg. "No, it is large and flat," said the third blind man, touching the elephant's side. Each blind man could feel only part of the elephant
-—none could envision the entire elephant. In the same way, it is argued, the religions of the world each have a grasp on part of the truth about spiritual reality, but none can see the whole elephant or claim to have a comprehensive vision of the truth.
+**_"Each religion sees part of spiritual truth, but none can see the whole truth."_**
+
+Sometimes this point is illustrated with the story of the blind men and the elephant. Several blind men were walking along and came upon an elephant that allowed them to touch and feel it. "This creature is long and flexible like a snake" said the first blind man, holding the elephant's trunk. "Not at all—it is thick and round like a tree trunk," said the second blind man, feeling the elephant's leg. "No, it is large and flat," said the third blind man, touching the elephant's side. Each blind man could feel only part of the elephant —- none could envision the entire elephant. In the same way, it is argued, the religions of the world each have a grasp on part of the truth about spiritual reality, but none can see the whole elephant or claim to have a comprehensive vision of the truth.
+
 This illustration backfires on its users. The story is told from the point of view of someone who is not blind. How could you know that each blind man only sees part of the elephant unless you claim to be able to see the whole elephant?
-There is an appearance of humility in the protestation that the truth is much greater than any one of us can grasp, but if this is used to invalidate all claims to discern the truth it is in fact an arrogant claim to a kind of knowledge which is superior to lall others]... We have to ask: "What is the [absolute) vantage ground from which you claim to be able to relativize all the absolute claims these different scriptures make?"8
+
+> There is an appearance of humility in the protestation that the truth is much greater than any one of us can grasp, but if this is used to invalidate all claims to discern the truth it is in fact an arrogant claim to a kind of knowledge which is superior to lall others]... We have to ask: "What is the [absolute) vantage ground from which you claim to be able to relativize all the absolute claims these different scriptures make?"8
+
 How could you possibly know that no religion can see the whole truth unless you yourself have the superior, comprehensive knowledge of spiritual reality you just claimed that none of the religions have?
-"Religious belief is too culturally and historically conditioned to be 'truth.'"
+
+**_"Religious belief is too culturally and historically conditioned to be 'truth.'"_**
+
 When I first came to New York City nearly twenty years ago, I more often heard the objection that all religions are equally true.
 Now, however, I'm more likely to be told that all religions are eauallv false. The obiection goes like this: "All moral and spiritual
