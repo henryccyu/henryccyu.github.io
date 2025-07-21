@@ -1,4 +1,4 @@
-# THERE CAN'T BE JUST ONE TRUE RELIGION
+# One: THERE CAN'T BE JUST ONE TRUE RELIGION
 _"How could there be just one true faith?" asked Blair, a twenty-four-year-old woman living in Manhattan. "It's arrogant to say your religion is superior and try to convert everyone else to it. Surely all the religions are equally good and valid for meeting the needs of their particular followers."_
 
 _"Religious exclusivity is not just narrow-it's dangerous," added Geoff, a twentysomething British man also living in New York City. "Religion has led to untold strife, division, and conflict. It may be the greatest enemy of peace in the world. If Christians continue to insist that they have 'the truth' —and if other religions do this as well-the world will never know peace."1_
