@@ -1,1 +1,1 @@
-[Chapter 1](chapter01.html)
+1. [THERE CAN'T BE JUST ONE TRUE RELIGION](chapter01.html)
