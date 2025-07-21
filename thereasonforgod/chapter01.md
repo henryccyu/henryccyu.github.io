@@ -1,10 +1,7 @@
-ONE
-THERE CAN'T BE JUST ONE
-TRUE RELIGION
-"How could there be just one true faith?" asked Blair, a twenty-four-year-old woman living in Manhattan. "It's arrogant to say your religion is superior and try to convert everyone else to it.
-Surely all the religions are equally good and valid for meeting the needs of their particular followers."
-"Religious exclusivity is not just narrow-it's dangerous," added Geoff, a twentysomething British man also living in New York City.
-"Religion has led to untold strife, division, and conflict. It may be the greatest enemy of peace in the world. If Christians continue to insist that they have 'the truth' —and if other religions do this as well-the world will never know peace."1
+# THERE CAN'T BE JUST ONE TRUE RELIGION
+_"How could there be just one true faith?" asked Blair, a twenty-four-year-old woman living in Manhattan. "It's arrogant to say your religion is superior and try to convert everyone else to it. Surely all the religions are equally good and valid for meeting the needs of their particular followers."_
+
+_"Religious exclusivity is not just narrow-it's dangerous," added Geoff, a twentysomething British man also living in New York City. "Religion has led to untold strife, division, and conflict. It may be the greatest enemy of peace in the world. If Christians continue to insist that they have 'the truth' —and if other religions do this as well-the world will never know peace."1_
 
 During my nearly two decades in New York City, I've had numerous opportunities to ask people, "What is your biggest problem with Christianity? What troubles you the most about its beliefs or how it is practiced?" One of the most frequent answers I have heard over the years can be summed up in one word: exclusivity.
 
