@@ -1,3 +1,11 @@
+ONE
+THERE CAN'T BE JUST ONE
+TRUE RELIGION
+"How could there be just one true faith?" asked Blair, a twenty-four-year-old woman living in Manhattan. "It's arrogant to say your religion is superior and try to convert everyone else to it.
+Surely all the religions are equally good and valid for meeting the needs of their particular followers."
+"Religious exclusivity is not just narrow-it's dangerous," added Geoff, a twentysomething British man also living in New York City.
+"Religion has led to untold strife, division, and conflict. It may be the greatest enemy of peace in the world. If Christians continue to insist that they have 'the truth' —and if other religions do this as well-the world will never know peace."1
+
 During my nearly two decades in New York City, I've had numerous opportunities to ask people, "What is your biggest problem with Christianity? What troubles you the most about its beliefs or how it is practiced?" One of the most frequent answers I have heard over the years can be summed up in one word: exclusivity.
 
 I was once invited to be the Christian representative in a panel discussion at a local college along with a Jewish rabbi and a Muslim imam. The panelists were asked to discuss the differences among religions. The conversation was courteous, intelligent, and respectful in tone. Each speaker affirmed that there were significant, irreconcilable differences between the major faiths. A case in point was the person of Jesus. We all agreed on the statement: "If Christians are right about Jesus being God, then Muslims and Jews fail in a serious way to love God as God really is, but if Muslims and Jews are right that Jesus is not God but rather a teacher or prophet, then Christians fail in a serious way to love God as God really is." The bottom line was—we couldn't all be equally right about the nature of God.
