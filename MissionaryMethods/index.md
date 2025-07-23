@@ -17,7 +17,7 @@
 
 ## PART IV - St. Paul’s Method of Dealing  with Organized Churches
 10. [Authority and Discipline](10_AuthorityAndDiscipline.html)
-11. [Unity]()
+**11. [Unity](chapter11.html)**
 
 ## PART V - Conclusions
 12. [Principles and Spirit]()
