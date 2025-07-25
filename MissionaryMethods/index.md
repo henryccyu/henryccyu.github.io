@@ -20,6 +20,6 @@
 **11. [Unity](chapter11.html)**
 
 ## PART V - Conclusions
-**12. [Principles and Spirit]()**
-**13. [Application]()**
+**12. [Principles and Spirit]()**  
+**13. [Application]()**  
 **14. [Epilogue a Present-Day Contrast]()**
