@@ -1,1 +1,2 @@
 1. [THERE CAN'T BE JUST ONE TRUE RELIGION](chapter01.html)
+2. [How COULD A GOOD GOD ALLOW SUFFERING?](chapter02.html)
