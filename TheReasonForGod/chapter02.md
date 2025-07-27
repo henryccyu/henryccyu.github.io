@@ -1,4 +1,4 @@
-# TWO How COULD A GOOD GOD ALLOW SUFFERING?
+# TWO - How COULD A GOOD GOD ALLOW SUFFERING?
 "I just don't believe the God of Christianity exists," said Hil lary, an undergrad English major. "God allows terrible suffering in the world. So he might be either all-powerful but not good enough to end evil and suffering, or else he might be all-good but not powerful enough to end evil and suffering.
 
 Either way the all-good, all-powerful God of the Bible couldn't exist."
