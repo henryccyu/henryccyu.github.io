@@ -1,3 +1,14 @@
+How Could a Good God Allow Suffering?
+29
+at the stake at Oxford in 1555 for their Protestant convictions.
+As the flames leapt up, Latimer was heard to say calmly, "Be of good comfort, Mr. Ridley, and play the man! We shall this day light such a candle by God's grace, in England, as I trust never shall be put out."
+Why was Jesus so much more overwhelmed by his death than
+others have been, even more than his own followers?
+The Suffering of God
+To understand Jesus's suffering at the end of the gospels, we must remember how he is introduced at their beginning. The gospel writer John, in his first chapter, introduces us to the mysterious but crucial concept of God as tri-personal. The Son of God was not created but took part in creation and has lived throughout all eternity "in the bosom of the Father" (John 1:18)—that is, in a relationship of absolute intimacy and love. But at the end of his life he was cut off from the Father.
+There may be no greater inner agony than the loss of a relationship we desperately want. If a mild acquaintance turns on you, condemns and criticizes you, and says she never wants to see you again, it is painful. If someone you're dating does the same thing, it is qualitatively more painful. But if your spouse does this to you, or if one of your parents does this to you when you're still a child, the psychological damage is infinitely worse. just spousal love or parental love that has lasted several years, but the infinite love of the Father that Jesus had from all eternity.
+Jesus's sufferings would have been eternally unbearable. Christian theology has always recognized that Jesus bore, as the substitute in our place, the endless exclusion from God that the stitute in our place, the endless exclusion from God that the
+
 # TWO - How COULD A GOOD GOD ALLOW SUFFERING?
 
 _"I just don't believe the God of Christianity exists," said Hil lary, an undergrad English major. "God allows terrible suffering in the world. So he might be either all-powerful but not good enough to end evil and suffering, or else he might be all-good but not powerful enough to end evil and suffering. Either way the all-good, all-powerful God of the Bible couldn't exist."_
