@@ -3,7 +3,7 @@
 [以西結書](https://bibleplan.github.io/Ezekiel.html)  
 [路加福音](https://bibleplan.github.io/Luke.html)  
 
-[简易祈祷法](ShortAndEasyMethodOfPrayer.html)
+[简易祈祷法](ShortAndEasyMethodOfPrayer.html)  
 [Center Church - Tim Keller](https://henryccyu.github.io/CenterChurch)  
 [Missionary Methods - St Paul's or Ours - Allen Roland](https://henryccyu.github.io/MissionaryMethods)  
 [The Reason for God - Tim Keller](https://henryccyu.github.io/TheReasonForGod)  
