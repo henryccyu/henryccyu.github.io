@@ -1,1 +1,6 @@
-[6. THE BATTLE FOR HOLINESS](chapter06.html)
+1. [Chapter 1](chapter01.html)
+2. [Chapter 2](chapter01.html)
+3. [Chapter 3](chapter01.html)
+4. [Chapter 4](chapter01.html)
+5. [Chapter 5](chapter01.html)
+6. [THE BATTLE FOR HOLINESS](chapter06.html)
