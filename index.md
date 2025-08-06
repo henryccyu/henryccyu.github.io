@@ -3,6 +3,8 @@
 [以西結書](https://bibleplan.github.io/Ezekiel.html)  
 [路加福音](https://bibleplan.github.io/Luke.html)  
 
+[务要了解深居你内心的敌人 - Jerry Bridges](https://jianzhengjc.com/jingxuanwenzhang/128419.html)
+
 [简易祈祷法](ShortAndEasyMethodOfPrayer.html)  
 [Center Church - Tim Keller](https://henryccyu.github.io/CenterChurch)  
 [Missionary Methods - St Paul's or Ours - Allen Roland](https://henryccyu.github.io/MissionaryMethods)  
