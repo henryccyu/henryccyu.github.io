@@ -1,5 +1,5 @@
 ## CHAPTER SIX THE BATTLE FOR HOLINESS
-So I find this law at work: When I want to do good, evil is right there with me. - ROMANS 7:21
+> So I find this law at work: When I want to do good, evil is right there with me. - ROMANS 7:21
 
 Through our union with Christ in His death we are delivered from the dominion of sin. But we still find sin struggling to gain mastery over us, as Paul depicted so vividly: "When I want to do good, evil is right there with me" (Romans 7:21). We may not like the fact that we have this lifelong struggle with sin, but the more we realize and accept it, the better equipped we will be to deal with it. The more we discover about the strength of indwelling sin, the less we feel its effects.
 To the extent that we discover this law of sin within ourselves, we will abhor and fight against it.
