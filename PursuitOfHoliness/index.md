@@ -1,5 +1,5 @@
 1. [HOLINESS IS FOR YOU](chapter01.html)
-2. [Chapter 2](chapter02.html)
+2. [THE HOLINESS OF GOD](chapter02.html)
 3. [Chapter 3](chapter03.html)
 4. [Chapter 4](chapter04.html)
 5. [Chapter 5](chapter05.html)
