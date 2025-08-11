@@ -6,8 +6,10 @@
 [务要了解深居你内心的敌人 - Jerry Bridges](https://jianzhengjc.com/jingxuanwenzhang/128419.html)
 
 [简易祈祷法](https://henryccyu.github.io/ShortAndEasyMethodOfPrayer.html)  
+[Only Jesus - John McArthur](https://henryccyu.github.io/OnlyJesus.html)  
 [The Pursuit of Holiness - Jerry Bridges](https://henryccyu.github.io/PursuitOfHoliness/)  
 [Center Church - Tim Keller](https://henryccyu.github.io/CenterChurch)  
+
 [Missionary Methods - St Paul's or Ours - Allen Roland](https://henryccyu.github.io/MissionaryMethods)  
 [The Reason for God - Tim Keller](https://henryccyu.github.io/TheReasonForGod)  
 [基督徒的新生活](https://henryccyu.github.io/NewLiving)  
