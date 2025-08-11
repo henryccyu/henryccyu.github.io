@@ -1,0 +1,44 @@
+## CHAPTER SIXTEEN HOLINESS IN AN UNHOLY WORLD
+> My prayer is not that you take them out of the world but that you protect them from the evil one.
+>
+> -- JOHN 17:15
+
+All believers must live their Christian lives in the context of an unholy world. Some face extraordinary temptation as they live in the midst of a flagrantly sinful atmosphere. The student in the university dormitory or the man or woman on a military base or aboard ship must often live in an environment polluted with sensuality, wantonness, and lust. The businessman or -woman is often under tremendous pressure to compromise ethical and legal standards to
+satisfy the greed and dishonesty of associates. Unless the Christian is prepared for such evil assaults on his mind and heart, he will have great difficulty maintaining personal holiness.
+
+James said that part of true religion consists in keeping ourselves "from being polluted by the world" (James 1:27), and Paul urged us to "come out from them and be separate" (2 Corinthians 6:17). How should the believer respond when he finds himself surrounded on every hand by the unrelenting pressures of a sinful world?
+
+It is clear from our Lord's prayer that He does not intend for us to withdraw from contact with the world of non-Christians (John 17:15). Instead, He said we are to be "the salt of the earth" and "the light of the world" (Matthew 5:13-14). The writers of the New Testament take it for granted that Christians will live in the midst of an unholy world. (See such passages as 1 Corinthians 5:9-10; Philippians 2:14-15; 1 Peter 2:12, and 3:15-16.) And we are
+never told that it will be easy to live in a godless environment. Instead, we are warned to expect ridicule and abuse (John 15:19; 2 Timothy 3:12; 1 Peter 4:3-4).
+
+Instead of withdrawing from contact with the world, we must strive to resist its influence. To do this we must first of all resolve to live by the convictions God has given us from His Word. We cannot be like Mr. Talkative in Pilgrim's Progress who prided himself on being adaptable to any kind of company and any kind of talk. He was like a chameleon who changes his color every time he changes his environment. Some of us have known people who
+had two vocabularies-one among Christians and another among their associates of the world.
+
+The convictions we develop about God's will for a holy life must be rock-ribbed enough to withstand the ridicule of the ungodly and the pressures they put on us to conform to their unholy ways. I still remember the taunts of my fellow officers aboard ship who teased me unmercifully about a large obscene picture they had prominently displayed in the officers' dining room.
+
+One helpful reinforcement to living according to our convictions is to identify ourselves with Christ openly, wherever we find ourselves in the world. This must be done in a gracious yet clear-cut manner. Going aboard a new ship, I sought to identify myself as a Christian by the simple, wordless act of carrying my Bible openly when going ashore on "liberty." A student in a university dormitory can do the same thing by leaving his Bible out to be seen
+by all who come into his room. This open identification with Christ helps to spare us from the temptation of adapting to our sinful environment as Mr. Talkative did.
+
+But even though we resolve to live in the world by the convictions God has given us from His Word, and we openly identify ourselves with Christ, we still are often subjected to the pollution of unholy surroundings. The lewd pictures everywhere, the obscene jokes told in our presence, and the endless recounting and boasting of immoral activities by those who do them, all serve to drag our minds down into the filth of this world. To this list we could
+add the dishonest shortcuts taken by business associates, the constant gossiping of our neighbors and coworkers, and the lies and half-truths we hear all around us.
+
+The Bible is our best defense against this pollution. David said, "How can a young man keep his way pure? By living according to your word" (Psalm 119:9). The Bible will cleanse our minds of the defilement of the world if we meditate on its teachings. It will also serve as a continual warning to us not to succumb to frequent temptations to indulge our eyes and thoughts in the immorality around us. I know a man who attended a godless, humanistic
+university. To guard his mind from the corrupting influences of that environment, he determined to spend as much time in the Word of God as he did in his studies. Today that man is a missionary leader who has had a profound impact on hundreds of lives.
+
+Such passages of Scripture as "Hell and destruction are never full; so the eyes of man are never satisfied" (Proverbs 27:20, KJV), and "Nor should there be obscenity, foolish talk or coarse joking, which are out of place, but rather thanksgiving" (Ephesians 5:4) are verses we can memorize and meditate on as we find ourselves in corrupt surroundings.
+
+Our reaction to the sinful world around us, however, must be more than just defensive. We must be concerned not only for our own purity of mind and heart, but also for the eternal destiny of those who would pollute us. God has left us in the world to be both salt and light (Matthew 5:13-14). The use of salt as a metaphor to describe our relationship to the world teaches us that Christians are to be a preserving power, an antiseptic, an agent to
+prevent and retard decay. Dr. William Hendriksen says, "Salt combats deterioration. Similarly Christians, by showing themselves to be Christians indeed, are constantly combatting moral and spiritual decay.... To be sure, the world is wicked. Yet God alone knows how far more corrupt it would be without the restraining example, life, and prayers of the saints."[1]
+
+As the "light of the world" we are the bearers of the good news of salvation. Jesus Himself is the true light and, just as it was said of John the Baptist, we are to be "a witness to testify concerning that light" (John 1:7-9). A Christian who witnesses in a spirit of genuine concern for another person is not likely to be corrupted by that person's immorality. And through gracious, loving concern, he may perhaps win that person to the Savior.
+
+We do not act as the salt of the earth or shine as the light of the world by necessarily denouncing the sins of our worldly associates. Our own holy life will serve as a sufficient rebuke, and our interest in others at this point is not their conduct but their need of Jesus Christ as their Savior. Henry Clay Trumbull was, among other things, a great personal evangelist. One day he found himself seated on a train next to a young man who was drinking quite
+heavily. Each time the young man opened his bottle, he offered a drink to Mr. Trumbull, who declined with thanks. Finally the young man said to Mr. Trumbull, "You must think I'm a pretty rough fellow." Mr. Trumbull's gracious reply, "I think you're a very generous-hearted fellow," opened the way for an earnest conversation with the young man about his need to commit himself to Christ.[2]
+
+After Jesus called Matthew the tax collector to Himself and was eating in Matthew's house with a number of his friends, the Pharisees complained, "Why do you eat and drink with tax collectors and sinners?' Jesus answered them, 'It is not the healthy who need a doctor, but the sick. I have not come to call the righteous, but sinners to repentance"" (Luke 5:30-32). Surely this is what God would have us do as we shine as lights in the world.
+
+Finally, despite all the suggestions in this chapter, there may be a time when the corrupt environment becomes intolerable; where we, like Lot, become tormented by the lawless deeds we see and hear (2 Peter 2:7-8; Genesis 19). Such a situation may occur, for example, in a coed dormitory where unmarried couples are living in open immorality, or in a business situation where there is unceasing pressure to break the law or compromise Christian
+principles. In these circumstances, we should prayerfully consider the need to leave that ungodly situation. (I realize this may not be humanly possible in a military situation, but we can resort to prayer, since with God all things are possible.)
+
+Maintaining personal holiness in an unholy world is admittedly difficult. The foregoing suggestions are not intended to make the problem seem easy, but to offer some practical help for a tough problem. Above all, we must look to Jesus who, though He ate with tax collectors and sinners, was Himself "holy, blameless, pure, set apart from sinners, exalted above the heavens" (Hebrews 7:26). And we must claim His promise that "No temptation has
+seized you except what is common to man. And God is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out so that you can stand up under it" (1 Corinthians 10:13).
