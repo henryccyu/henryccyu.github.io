@@ -1,4 +1,4 @@
-[Introduction COME AND DIE](into.html)  
+[Introduction COME AND DIE](intro.html)  
 [Chapter 1](chapter01.html)  
 [Chapter 2](chapter02.html)  
 [Chapter 3](chapter03.html)  
