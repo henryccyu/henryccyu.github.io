@@ -4,3 +4,7 @@
 4. [THE HOLINESS OF CHRIST](chapter04.html)
 5. [A CHANGE OF KINGDOMS](chapter05.html)
 6. [THE BATTLE FOR HOLINESS](chapter06.html)
+7. [第七章](chapter07.html)
+8. [第8章](chapter08.html)
+9. [第9章](chapter09.html)
+10. [第10章](chapter10.html)
