@@ -3,6 +3,9 @@
 [以西結書](https://bibleplan.github.io/Ezekiel.html)  
 [路加福音](https://bibleplan.github.io/Luke.html)  
 
+[圣经综合解读](https://cmcbiblereading.com/)
+[「每日讀經，與主同行」](https://bibleplan.github.io/)
+
 [务要了解深居你内心的敌人 - Jerry Bridges](https://jianzhengjc.com/jingxuanwenzhang/128419.html)
 
 [简易祈祷法](https://henryccyu.github.io/ShortAndEasyMethodOfPrayer.html)  
@@ -16,4 +19,4 @@
 [倪柝聲文集](https://henryccyu.github.io/WatchmanNee)  
 [巴刻：一份圣洁习惯清单](https://mp.weixin.qq.com/s/-tJlwIbujsgt9uYm2X8sbQ)
 
-[Sharing Gospal](https://henryccyu.github.io/SharingGospal.html)
+[传福音心得](https://henryccyu.github.io/SharingGospal.html)
