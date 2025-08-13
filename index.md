@@ -6,8 +6,8 @@
 [圣经综合解读](https://cmcbiblereading.com/)
 [「每日讀經，與主同行」](https://bibleplan.github.io/)
 
-[务要了解深居你内心的敌人 - Jerry Bridges](https://jianzhengjc.com/jingxuanwenzhang/128419.html)
-[VictoryOverVice](https://henryccyu.github.io/VictoryOverVice)
+[务要了解深居你内心的敌人 - Jerry Bridges](https://jianzhengjc.com/jingxuanwenzhang/128419.html)  
+[Victory Over Vice](https://henryccyu.github.io/VictoryOverVice)  
 [简易祈祷法](https://henryccyu.github.io/ShortAndEasyMethodOfPrayer.html)  
 [Only Jesus - John McCarthur](https://henryccyu.github.io/OnlyJesus.html)  
 [The Pursuit of Holiness - Jerry Bridges](https://henryccyu.github.io/PursuitOfHoliness/)  
