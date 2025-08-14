@@ -1,10 +1,9 @@
+[「每日讀經，與主同行」](https://bibleplan.github.io/)  
 [聖經 - 各書卷](https://bibleplan.github.io/AllBooks.html)  
-[ECCRedmond兩年讀經計劃日程](https://bibleplan.github.io/schedule.html)  
-[以西結書](https://bibleplan.github.io/Ezekiel.html)  
-[路加福音](https://bibleplan.github.io/Luke.html)  
+[以西結書](https://bibleplan.github.io/daily/2022/wk87-day3-daily.html)  
+[路加福音](https://bibleplan.github.io/daily/2022/wk6-day2-daily.html)  
 
 [圣经综合解读](https://cmcbiblereading.com/)
-[「每日讀經，與主同行」](https://bibleplan.github.io/)
 
 [务要了解深居你内心的敌人 - Jerry Bridges](https://jianzhengjc.com/jingxuanwenzhang/128419.html)  
 [Victory Over Vice](https://henryccyu.github.io/VictoryOverVice)  
