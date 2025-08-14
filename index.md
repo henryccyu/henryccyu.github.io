@@ -17,6 +17,7 @@
 
 [Church Planting Movement](https://henryccyu.github.io/ChurchPlantingMovement)  
 [Missionary Methods - St Paul's or Ours - Allen Roland](https://henryccyu.github.io/MissionaryMethods)  
+[No Shortcut To Success](https://henryccyu.github.io/NoShortcutToSuccess)  
 
 [基督徒的新生活](https://henryccyu.github.io/NewLiving)  
 [传福音心得](https://henryccyu.github.io/SharingGospal.html)
