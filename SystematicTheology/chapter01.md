@@ -266,45 +266,208 @@ error.... When men lose the life of religion, they can believe the most monstrou
 
 Since it is the Holy Spirit who gives us the ability rightly to understand Scripture, we need to realize that the proper thing to do, particularly when we are unable to understand some passage or some doctrine of Scripture, is to pray for God's help. Often what we need is not more data but more insight into the data we already have available. This insight is given only by the Holy Spirit (cf. 1 Cor. 2:14; Eph. 1:17-19).
 
-2. We Should Study Systematic Theology with Humility
+**2. We Should Study Systematic Theology with Humility**
+
 Peter tells us, "Clothe yourselves, all of you, with humility toward one another, for 'God opposes the proud, but gives grace to the humble'" (1 Peter 5:5). Those who study systematic theology will learn many things about the teachings of Scripture that are perhaps not known or not known well by other Christians in their churches or by relatives who are older in the Lord than they are. They may also find that they understand things about Scripture that some
 of their church officers do not understand and that even their pastor has perhaps forgotten or never learned well.
+
 In all of these situations it would be very easy to adopt an attitude of pride or superiority toward others who have not made such a study. But how ugly it would be if anyone were to use this knowledge of God's Word simply to win arguments or to put down a fellow Christian in conversation or to make another believer feel insignificant in the Lord's work. James's counsel is good for us at this point: "Let every person be quick to hear, slow to speak, slow to anger;
 for the anger of man does not produce the righteousness of God" (James 1:19-20). He tells us that one's understanding of Scripture is to be imparted in humility and love:
-Who is wise and understanding among you? By his good conduct let him show his works in the meekness of wisdom.... But the wisdom from above is first pure, then peaceable, gentle, open to reason, full of mercy and good fruits, impartial and sincere. And a harvest of righteousness is sown in peace by those who make peace. (James 3:13, 17-18)
+> Who is wise and understanding among you? By his good conduct let him show his works in the meekness of wisdom.... But the wisdom from above is first pure, then peaceable, gentle, open to reason, full of mercy and good fruits, impartial and sincere. And a harvest of righteousness is sown in peace by those who make peace. (James 3:13, 17-18)
+
 Systematic theology rightly studied will not lead to the knowledge that "puffs up" (1 Cor. 8:1) but to humility and love for others.
-3. We Should Study Systematic Theology with Reason
+
+**3. We Should Study Systematic Theology with Reason**
+
 First, it is right for us to reason from Scripture. We find in the New Testament that Jesus and the New Testament authors often quote a verse of Scripture and then draw logical conclusions from it. They reason from Scripture. It is therefore not wrong to use human understanding, human logic, and human reason to draw conclusions from the statements of Scripture. Nevertheless, when we reason and draw what we think to be correct logical deductions from
 Scripture, we sometimes make mistakes. The deductions we draw from the statements of Scripture are not equal to the statements of Scripture in certainty or authority, for our ability to reason and draw conclusions is not the ultimate standard of truth-only Scripture is.
+
 What then are the limits on our use of our reasoning abilities to draw deductions from the statements of Scripture? The fact that reasoning to conclusions that go beyond the mere statements of Scripture is appropriate and even necessary for studying Scripture, and the fact that Scripture itself is the ultimate standard of truth, combine to indicate to us that we are free to use our reasoning abilities to draw deductions from any passage of Scripture so long as these
 deductions do not contradict the clear teaching of some other passage of Scripture.14
+
 This principle safeguards against our misguided or incorrect logical deductions from Scripture. Our supposedly logical deductions may be erroneous, but Scripture is not erroneous. Thus, for example, we may read Scripture and find that God the Father is called God (1 Cor. 1:3), that God the Son is called God (John 20:28; Titus 2:13), and that God the Holy Spirit is called God (Acts 5:3-4). We might deduce from this that there are three Gods! But then we find the
 Bible explicitly teaching us that God is one (Deut. 6:4; James 2:19). Thus we conclude that what we thought to be a valid logical deduction about three Gods was wrong and that Scripture teaches both (a) that there are three separate persons (Father, Son, and Holy Spirit), each of whom is fully God, and (b) that there is one God. But how can this be? In our human experience, we understand what it means to know three separate persons-three friends, for example.
 But these three friends are three separate beings. How can God be three persons and yet one being?
+
 Second, Christian theology can tolerate a paradox, but God never asks us to believe a contradiction. We cannot understand exactly how these two statements about God can both be true, so together they constitute a paradox ("a seemingly contradictory statement that may nonetheless be true").15 We can tolerate a paradox (such as "God is three persons and one God") because we have confidence that ultimately God knows fully the truth about himself and about
 the nature of reality and that in his understanding the different elements of a paradox are fully reconciled,16 even though at this point God's thoughts are higher than our thoughts (Isa. 55:8-9). But a true contradiction (such as, "God is three persons and God is not three persons") would imply ultimate contradiction in God's understanding of himself or of reality, and this cannot be.
+
 When the psalmist says, "The sum of your word is truth, and every one of your righteous rules endures forever" (Ps. 119:160), he implies that God's words are not only true individually but also viewed together as a whole. Viewed collectively, their "sum" is also "truth." Ultimately, there is no internal contradiction either in Scripture or in God's own thoughts.
-4. We Should Study Systematic Theology with Help from Others
+
+**4. We Should Study Systematic Theology with Help from Others**
+
 We need to be thankful that God has put teachers in the church ("God has appointed in the church first apostles, second prophets, third teachers..." [1 Cor. 12:28]). We should allow those with gifts of teaching to help us understand Scripture. This means that we should make use of systematic theologies and other books written by some of the teachers God has given to the church over the course of its history. It also means that our study of theology should
 include talking with other Christians about the things we study. Among those with whom we talk will often be some with gifts of teaching who can explain biblical teachings clearly and help us to understand more easily. In fact, some of the most effective learning in systematic theology courses in colleges and seminaries often occurs outside the classroom in informal conversations among students who are attempting to understand Bible doctrines for themselves.
-5. We Should Study Systematic Theology by Collecting and Understanding All the Relevant Passages of Scripture on Any Topic
+
+**5. We Should Study Systematic Theology by Collecting and Understanding All the Relevant Passages of Scripture on Any Topic**
+
 This point was mentioned in our definition of systematic theology at the beginning of the chapter, but the actual process needs to be described here. How does one go about making a doctrinal summary of what all the passages of Scripture teach on a certain topic?
+
 For topics covered in this book, many people will find that studying the relevant chapters in this book (and other systematic theology books) and reading the Bible verses noted in those chapters is enough. But some people will want to do further study of Scripture on a particular topic or study some new topic not covered here. How could a student go about using the Bible to research its teachings on some new subject, perhaps one not discussed explicitly in
 any of his or her systematic theology textbooks?
+
 The process would look like this: (1) Find all the relevant verses. The best help in this step is a good concordance or Bible search program, which enables one to look up key words and find the verses in which the subject is treated. For example, in studying what it means that man is created in the image and likeness of God, one needs to find all the verses in which image and likeness and create occur. (The words man and God occur too often to be useful for a
 concordance search.) In studying the doctrine of prayer, many words could be looked up (pray, prayer, intercede, petition, supplication, confess, confession, praise, thanks, thanksgiving, etc.)—and perhaps the list of verses would grow too long to be manageable, so that the student would have to skim the concordance entries or search results without looking up the verses, or the search would probably have to be divided into sections or limited in some other way. Verses
 can also be found by thinking through the overall history of the Bible and then turning to sections where there would be information on the topic at hand. For example, a student studying prayer would want to read passages like the one about Hannah's prayer for a son (1 Sam. 1), Solomon's prayer at the dedication of the temple (1 Kings 8), Jesus' prayer in the Garden of Gethsemane (Matt. 26 and parallels), and so forth. Then in addition to using a concordance or a
 search program and reading other passages that one can find on the subject, checking the relevant sections in some systematic theology books will often bring to light other verses that had been missed, sometimes because none of the key words used for the concordance were in those verses.17
+
 (2) The second step is to read, take notes, and summarize the points made in the relevant verses. Sometimes a theme will be repeated often and the summary of the various verses will be relatively easy. At other times, there will be verses difficult to understand, and the student will need to take some time to study a verse in depth (just by reading the verse in context over and over or by using specialized tools such as commentaries and dictionaries) until a
 satisfactory understanding is reached.
+
 (3) Finally, the teachings of the various verses should be summarized into one or more points that the Bible affirms about that subject. The summary does not have to take the exact form of anyone else's conclusions on the subject, because we each may see things in Scripture that others have missed, or we may organize the subject differently or emphasize different things.
+
 On the other hand, at this point it is also helpful to read related sections, if any can be found, in several systematic theology books. This provides a useful check against error and oversight, and often makes one aware of alternative perspectives and arguments that may cause us to modify or strengthen our position. If a student finds that others have argued for strongly differing conclusions, then these other views need to be stated fairly and then answered.
 Sometimes other theology books will alert us to historical or philosophical considerations that have been raised before in the history of the church, and these will provide additional insight or warnings against error.
+
 The process outlined above is possible for any Christian who can read his or her Bible and can look up words in a concordance or use a Bible search program. Of course people will become faster and more accurate in this process with time and experience and Christian maturity, but it would be a tremendous help to the church if Christians generally would give much more time to searching out topics in Scripture for themselves and drawing conclusions in the
 way outlined above. The joy of discovery of biblical themes would be richly rewarding. Especially pastors and those who lead Bible studies would find added freshness in their understanding of Scripture and in their teaching.
-6. We Should Study Systematic Theology with Rejoicing and Praise
+
+**6. We Should Study Systematic Theology with Rejoicing and Praise**
+
 The study of theology is not merely a theoretical exercise of the intellect. It is a study of the living God and of the wonders of all his works in creation and redemption. We cannot study this subject dispassionately! We must love all that God is, all that he says and all that he does. "You shall love the LORD your God with all your heart" (Deut. 6:5). Our response to the study of the theology of Scripture should be that of the psalmist who said, "How precious to me are
 your thoughts, O God!" (Ps. 139:17). In the study of the teachings of God's Word, it should not surprise us if we often find our hearts spontaneously breaking forth in expressions of praise and delight like those of the psalmist:
-The precepts of the LORD are right,
-rejoicing the heart. (Ps. 19:8)
-In the way of your testimonies I delight
+
+The precepts of the LORD are right,  
+rejoicing the heart. (Ps. 19:8)  
+In the way of your testimonies I delight  
+as much as in all riches. (Ps. 119:14)  
+How sweet are your words to my taste,  
+sweeter than honey to my mouth! (Ps. 119:103)  
+Your testimonies are my heritage forever,  
+for they are the joy of my heart. (Ps. 119:111)  
+I rejoice at your word  
+like one who finds great spoil. (Ps. 119:162)  
+
+Often in the study of theology the response of the Christian should be similar to that of Paul in reflecting on the long theological argument that he has just completed at the end of Romans 11:32. He breaks forth into joyful praise at the richness of the doctrine which God has enabled him to express:
+
+Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are his judgments and how inscrutable his ways!  
+"For who has known the mind of the Lord,  
+or who has been his counselor?"  
+"Or who has given a gift to him  
+that he might be repaid?"  
+For from him and through him and to him are all things. To him be glory forever. Amen. (Rom. 11:33-36)  
+
+## QUESTIONS FOR PERSONAL APPLICATION
+These questions at the end of each chapter focus on application to life. Because I think doctrine is to be felt at the emotional level as well as understood at the intellectual level, in many chapters I have included some questions about how a reader feels regarding a point of doctrine. I think these questions will prove quite valuable for those who take the time to reflect on them.
+1. In what ways (if any) has this chapter changed your understanding of what systematic theology is? What was your attitude toward the study of systematic theology before reading this chapter? What is your attitude now?
+2. What is likely to happen to a church or denomination that gives up learning systematic theology for a generation or longer? Has that been true of your church?
+3. Are there any doctrines listed on the table of contents for which a fuller understanding would help to solve a personal difficulty in your life at the present time? What are the spiritual and emotional dangers that you personally need to be aware of in studying systematic theology?
+4. Pray for God to make this study of basic Christian doctrines a time of spiritual growth and deeper fellowship with him, and a time in which you understand and apply the teachings of Scripture rightly.
+
+**Special Terms**
+- apologetics
+- biblical theology
+- Christian ethics
+- contradiction
+- doctrine
+- dogmatic theology
+- historical theology
+- major doctrine
+- minor doctrine
+- New Testament theology
+- Old Testament theology
+- paradox
+- philosophical theology
+- presupposition
+- systematic theology
+
+### BIBLIOGRAPHY
+
+In these bibliographies I have usually listed only works written from what would today be called a conservative evangelical position. This is because the purpose of this section is to give the student ready access to other treatments of each topic by theologians who share with this book the same general convictions about the nature of Scripture that all of it is totally truthful and that it is God's unique and absolutely authoritative Word
+to us. Once we step outside of that conviction, the variety of theological positions becomes amazingly large, and sufficient bibliographies are easily found in the more recent works cited below. (However, I have also included two representative Roman Catholic works because of the great influence of the Roman Catholic Church in almost every society in the world.)
+
+Writers are grouped according to broad denominational categories, and the writers within the groups are arranged chronologically. Of course, the categories below are not airtight, for there is often overlap—many Anglicans and many Baptists are theologically Reformed, while others in those groups are theologically Arminian; many Dispensationalists are also Baptists, while others are Presbyterians, and so forth. Yet
+the categories are fairly representative of distinguishable theological traditions within evangelicalism.
+
+Dates given are the dates of publication of the final edition of each author's systematic theology or major theological writing. Where no single major theological work was published, the dates represent the years during which the author was actively teaching and writing about systematic theology. Complete bibliographical data may be found on pp. 1489-96.
+
+**SECTIONS IN EVANGELICAL SYSTEMATIC THEOLOGIES**
+1. Anglican (Episcopalian)
+   | | |
+   |---|---|
+   | 1882-92 | Litton, 1-8 |
+   | 1930 | Thomas, xvii-xxviii, 146-52 |
+   | 2001 | Packer, xi-xiii |
+   | 2013 | Bird, 19-86 |
+   | 2014 | Bray, 27-68 |
+   
+2. Arminian (Wesleyan or Methodist)
+   | | |
+   |---|---|
+   | 1875-76 | Pope, 1:3-32, 42-46 |
+   | 1892-94 | Miley, 1:2-54 |
+   | 1940 | Wiley, 1:13-123 |
+   | 1960 | Purkiser, 19-38 |
+   | 1983 | Carter, 1:19-101 |
+   | 1992 | Oden, 1:11-14, 375-406 |
+   | 2002 | Cottrell, 9-36 |
+   
+3. Baptist
+   | | |
+   |---|---|
+   | 1767 | Gill, 1:vii-xxx |
+   | 1887 | Boyce, 1-8 |
+   | 1907 | Strong, 1-51 |
+   | 1976-83 | Henry, 1:13-411;6:7-34 |
+   | 1987-94 | Lewis and Demarest, 1:13-123 |
+   | 1990-95 | Garrett, 1-48 |
+   | 2007 | Akin, 2-71 |
+   | 2013 | Erickson, xi-117 |
+
+4. Dispensational
+   | | |
+   |---|---|
+   | 1947 | Chafer, 1:3-17 |
+   | 1949 | Thiessen, 1-20 |
+   | 1986 | Ryrie, 9-22 |
+   | 2002-2005 | Geisler, 1:15-226 |
+   | 2017 | MacArthur and Mayhue, 33-68 |
+
+5. Lutheran
+   | | |
+   |---|---|
+   | 1917-24 | Pieper, 1:3-190 |
+   | 1934 | Mueller, 1-89 |
+
+6. Reformed (or Presbyterian)
+   | | |
+   |---|---|
+   | 1559 | Calvin, 1:3-33, 35-43 (prefaces and 1.1-2) |
+   | 1679-85 | Turretin, IET, 1:1-54 |
+   | 1724-58 | Edwards, 2:157-63 |
+   | 1871-73 | Hodge, 1:1-150 |
+   | 1878 | Dabney, 133-44 |
+   | 1887-1921 | Warfield, SSW, 2:207-320 |
+   | 1894 | Shedd, 43-84 |
+   | 1910 | Vos, 1:vii-x |
+   | 1937-66 | Murray, CW, 1:3-8, 169-73; CW, 4:1-21 |
+   | 1938 | Berkhof, Intro., 15-128, 170-86 |
+   | 1998 | Reymond, xxv-xxxvi |
+   | 2008 | Van Genderen and Velema, 1-19 |
+   | 2011 | Horton, 13-34 |
+   | 2013 | Culver, 1-18 |
+   | 2013 | Frame, 3-52 |
+   | 2016 | Allen and Swain, 1-6 |
+   | 2017 | Barrett, 43-66 |
+   | 2019 | Letham, 33-38 |
+
+7. Renewal (or charismatic/Pentecostal)
+   | | |
+   |---|---|
+   | 1988-92 | Williams, 1:11-28 |
+   | 1993 | Menzies and Horton, 9-13 |
+   | 1995 | Horton, 7-60 |
+   | 2008 | Duffield and Van Cleave, 5-6 |
+
+**SECTIONS IN REPRESENTATIVE ROMAN CATHOLIC SYSTEMATIC THEOLOGIES**
+
+1. Roman Catholic: Traditional
+   | | |
+   |---|---|
+   | 1955 | Ott, 1-10 |
+
+2. Roman Catholic: Post-Vatican II
+   | | |
+   |---|---|
+   | 1980 | McBrien, 1:3-78, 183-200 |
+   | 2012 | CCC, pp. 1-16, paragraphs 1-25 |
