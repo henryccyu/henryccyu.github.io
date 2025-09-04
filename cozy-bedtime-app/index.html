@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>温馨夜晚 - 你的睡前小憩之地</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #f4e4c1;
+            overflow-x: hidden;
+            min-height: 100vh;
+            transition: all 2s ease;
+        }
+
+        body.cozy {
+            background: linear-gradient(135deg, #2c1810 0%, #4a2c17 50%, #6b3e07 100%);
+        }
+
+        .app-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* Floating particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: rgba(255, 223, 186, 0.6);
+            border-radius: 50%;
+            animation: float 8s infinite linear;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 1rem;
+            z-index: 10;
+            position: relative;
+        }
+
+        .app-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 20px rgba(255, 223, 186, 0.3);
+        }
+
+        .app-subtitle {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            z-index: 10;
+            position: relative;
+        }
+
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeInUp 2s ease 0.5s forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cozy-spaces {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .space-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 223, 186, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .space-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 30px rgba(255, 223, 186, 0.2);
+        }
+
+        .space-card.active {
+            background: rgba(255, 223, 186, 0.2);
+            border-color: rgba(255, 223, 186, 0.5);
+            transform: scale(1.02);
+        }
+
+        .space-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .space-name {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .space-description {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            line-height: 1.4;
+        }
+
+        .controls {
+            display: none;
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .controls.active {
+            display: block;
+        }
+
+        .control-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .control-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: #f4e4c1;
+        }
+
+        .slider {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #f4e4c1;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(255, 223, 186, 0.5);
+        }
+
+        .slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #f4e4c1;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 0 10px rgba(255, 223, 186, 0.5);
+        }
+
+        .breathing-exercise {
+            display: none;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .breathing-exercise.active {
+            display: block;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .breathing-circle {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgba(255, 223, 186, 0.5);
+            border-radius: 50%;
+            margin: 2rem auto;
+            position: relative;
+            background: radial-gradient(circle, rgba(255, 223, 186, 0.1) 0%, transparent 70%);
+        }
+
+        .breathing-circle::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            height: 50%;
+            background: rgba(255, 223, 186, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: breathe 4s infinite ease-in-out;
+        }
+
+        @keyframes breathe {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.5); }
+        }
+
+        .breathing-text {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            animation: breatheText 4s infinite ease-in-out;
+        }
+
+        @keyframes breatheText {
+            0%, 100% { opacity: 0.6; }
+            25% { opacity: 1; }
+            75% { opacity: 1; }
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            background: rgba(255, 223, 186, 0.2);
+            color: #f4e4c1;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 223, 186, 0.3);
+            font-family: inherit;
+        }
+
+        .btn:hover {
+            background: rgba(255, 223, 186, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 223, 186, 0.2);
+        }
+
+        .sleep-timer {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(10px);
+            display: none;
+        }
+
+        .sleep-timer.active {
+            display: block;
+        }
+
+        /* Audio visualization */
+        .audio-viz {
+            display: none;
+            justify-content: center;
+            align-items: flex-end;
+            height: 60px;
+            gap: 3px;
+            margin: 1rem 0;
+        }
+
+        .audio-viz.active {
+            display: flex;
+        }
+
+        .audio-bar {
+            width: 4px;
+            background: rgba(255, 223, 186, 0.6);
+            border-radius: 2px;
+            animation: audioWave 1s infinite ease-in-out alternate;
+        }
+
+        .audio-bar:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+
+        .audio-bar:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes audioWave {
+            0% { height: 10px; }
+            100% { height: 40px; }
+        }
+
+        @media (max-width: 768px) {
+            .cozy-spaces {
+                grid-template-columns: 1fr;
+            }
+            
+            .app-title {
+                font-size: 2rem;
+            }
+            
+            .controls {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="app-container">
+        <header class="header">
+            <h1 class="app-title">温馨夜晚</h1>
+            <p class="app-subtitle">你的睡前小憩之地</p>
+        </header>
+
+        <main class="main-content">
+            <div class="welcome-message" id="welcomeMessage">
+                欢迎回家。让我们为今夜创造一个完美的温馨空间。<br>
+                选择最能让你感到舒适的环境。
+            </div>
+
+            <div class="cozy-spaces" id="cozySpaces">
+                <div class="space-card" data-space="fireplace">
+                    <span class="space-icon">🔥</span>
+                    <h3 class="space-name">温馨小屋</h3>
+                    <p class="space-description">壁炉轻柔的噼啪声，木屋静谧的安宁，远处森林的天籁</p>
+                </div>
+                
+                <div class="space-card" data-space="rain">
+                    <span class="space-icon">🌧️</span>
+                    <h3 class="space-name">雨夜时光</h3>
+                    <p class="space-description">雨滴轻敲窗棂，远雷温柔低吟，室内温暖如春</p>
+                </div>
+                
+                <div class="space-card" data-space="ocean">
+                    <span class="space-icon">🌊</span>
+                    <h3 class="space-name">海边小屋</h3>
+                    <p class="space-description">远方海浪轻拍，海鸟偶尔啁啾，海风轻抚窗帘</p>
+                </div>
+                
+                <div class="space-card" data-space="library">
+                    <span class="space-icon">📚</span>
+                    <h3 class="space-name">静谧书房</h3>
+                    <p class="space-description">书页轻翻的沙沙声，古钟滴答作响，低语般的故事声</p>
+                </div>
+            </div>
+
+            <div class="controls" id="controls">
+                <div class="control-group">
+                    <label class="control-label">环境音量</label>
+                    <input type="range" class="slider" id="volumeSlider" min="0" max="100" value="60">
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">温暖程度</label>
+                    <input type="range" class="slider" id="warmthSlider" min="0" max="100" value="70">
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">屏幕亮度</label>
+                    <input type="range" class="slider" id="brightnessSlider" min="10" max="100" value="40">
+                </div>
+
+                <div class="audio-viz" id="audioViz">
+                    <div class="audio-bar"></div>
+                    <div class="audio-bar"></div>
+                    <div class="audio-bar"></div>
+                    <div class="audio-bar"></div>
+                    <div class="audio-bar"></div>
+                    <div class="audio-bar"></div>
+                    <div class="audio-bar"></div>
+                </div>
+            </div>
+
+            <div class="breathing-exercise" id="breathingExercise">
+                <h3>温柔呼吸</h3>
+                <p class="breathing-text" id="breathingText">慢慢吸气...然后呼出...</p>
+                <div class="breathing-circle"></div>
+                <p>跟随这温柔的节奏。让你的呼吸自然地慢下来。</p>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn" id="breathingBtn">开始温柔呼吸</button>
+                <button class="btn" id="timerBtn">设置睡眠定时</button>
+                <button class="btn" id="storyBtn">睡前故事</button>
+            </div>
+        </main>
+    </div>
+
+    <div class="sleep-timer" id="sleepTimer">
+        睡眠定时: <span id="timerDisplay">--:--</span>
+    </div>
+
+    <script>
+        // App state
+        let currentSpace = null;
+        let breathingActive = false;
+        let timerActive = false;
+        let timerMinutes = 30;
+        let timerInterval = null;
+
+        // Initialize particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 20;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Space selection
+        document.getElementById('cozySpaces').addEventListener('click', (e) => {
+            const spaceCard = e.target.closest('.space-card');
+            if (!spaceCard) return;
+
+            // Remove active class from all cards
+            document.querySelectorAll('.space-card').forEach(card => {
+                card.classList.remove('active');
+            });
+
+            // Add active class to selected card
+            spaceCard.classList.add('active');
+            currentSpace = spaceCard.dataset.space;
+
+            // Show controls
+            document.getElementById('controls').classList.add('active');
+            document.getElementById('audioViz').classList.add('active');
+
+            // Update welcome message
+            document.getElementById('welcomeMessage').innerHTML = 
+                `完美的选择。你的${spaceCard.querySelector('.space-name').textContent}已经准备好了。<br>调整设置，让它变得更加完美。`;
+
+            // Add cozy class to body for warmer colors
+            document.body.classList.add('cozy');
+
+            // Simulate audio playing
+            setTimeout(() => {
+                if (document.getElementById('audioViz').classList.contains('active')) {
+                    document.getElementById('audioViz').style.display = 'flex';
+                }
+            }, 500);
+        });
+
+        // Breathing exercise
+        document.getElementById('breathingBtn').addEventListener('click', () => {
+            const breathingExercise = document.getElementById('breathingExercise');
+            const breathingText = document.getElementById('breathingText');
+            
+            if (!breathingActive) {
+                breathingExercise.classList.add('active');
+                breathingActive = true;
+                document.getElementById('breathingBtn').textContent = '停止呼吸练习';
+                
+                // Breathing text cycle
+                const breathingCycle = () => {
+                    if (!breathingActive) return;
+                    
+                    breathingText.textContent = '慢慢吸气...';
+                    setTimeout(() => {
+                        if (!breathingActive) return;
+                        breathingText.textContent = '轻柔屏息...';
+                        setTimeout(() => {
+                            if (!breathingActive) return;
+                            breathingText.textContent = '慢慢呼出，放松...';
+                            setTimeout(() => {
+                                if (breathingActive) breathingCycle();
+                            }, 2000);
+                        }, 1000);
+                    }, 2000);
+                };
+                
+                breathingCycle();
+            } else {
+                breathingExercise.classList.remove('active');
+                breathingActive = false;
+                document.getElementById('breathingBtn').textContent = '开始温柔呼吸';
+            }
+        });
+
+        // Sleep timer
+        document.getElementById('timerBtn').addEventListener('click', () => {
+            if (!timerActive) {
+                const minutes = prompt('多少分钟后入睡？(默认: 30分钟)', '30');
+                if (minutes && !isNaN(minutes)) {
+                    timerMinutes = parseInt(minutes);
+                    startSleepTimer();
+                }
+            } else {
+                stopSleepTimer();
+            }
+        });
+
+        function startSleepTimer() {
+            timerActive = true;
+            document.getElementById('timerBtn').textContent = '停止定时';
+            document.getElementById('sleepTimer').classList.add('active');
+            
+            let timeLeft = timerMinutes * 60;
+            
+            const updateTimer = () => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                document.getElementById('timerDisplay').textContent = 
+                    `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                if (timeLeft <= 0) {
+                    // Timer finished - gradually fade everything
+                    document.body.style.opacity = '0';
+                    setTimeout(() => {
+                        alert('晚安好梦... 🌙');
+                        stopSleepTimer();
+                        document.body.style.opacity = '1';
+                    }, 2000);
+                    return;
+                }
+                
+                timeLeft--;
+            };
+            
+            updateTimer();
+            timerInterval = setInterval(updateTimer, 1000);
+        }
+
+        function stopSleepTimer() {
+            timerActive = false;
+            document.getElementById('timerBtn').textContent = '设置睡眠定时';
+            document.getElementById('sleepTimer').classList.remove('active');
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+        }
+
+        // Story button
+        document.getElementById('storyBtn').addEventListener('click', () => {
+            const stories = [
+                "很久很久以前，在一个宁静的森林空地里，住着一只温柔的猫头鹰，它会唱最美妙的摇篮曲...",
+                "想象你走在月光花园里，每朵花都散发着柔和的光芒，空气中弥漫着薰衣草的香味...",
+                "在海边的一座温馨小屋里，老灯塔守护者点亮明灯，为夜行的旅人指引方向...",
+                "想象自己漂浮在星空下宁静的湖面上，感受完全的安全与平静..."
+            ];
+            
+            const randomStory = stories[Math.floor(Math.random() * stories.length)];
+            alert(randomStory + "\n\n(在完整版应用中，这将是舒缓的语音故事)");
+        });
+
+        // Slider controls
+        document.getElementById('volumeSlider').addEventListener('input', (e) => {
+            const volume = e.target.value;
+            // In a real app, this would control actual audio volume
+            console.log('音量:', volume);
+        });
+
+        document.getElementById('warmthSlider').addEventListener('input', (e) => {
+            const warmth = e.target.value;
+            // Adjust warmth of colors based on slider
+            const warmthPercent = warmth / 100;
+            document.body.style.filter = `sepia(${warmthPercent * 0.3}) brightness(${0.7 + warmthPercent * 0.3})`;
+        });
+
+        document.getElementById('brightnessSlider').addEventListener('input', (e) => {
+            const brightness = e.target.value;
+            document.body.style.opacity = brightness / 100;
+        });
+
+        // Initialize app
+        createParticles();
+        
+        // Welcome message that changes over time
+        setTimeout(() => {
+            const welcomeMsg = document.getElementById('welcomeMessage');
+            if (welcomeMsg.innerHTML.includes('欢迎回家')) {
+                welcomeMsg.innerHTML = '慢慢来，不要着急。<br>找到今夜最能让你感到平静的环境。';
+            }
+        }, 10000);
+    </script>
+</body>
+</html>
