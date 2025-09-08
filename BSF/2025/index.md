@@ -11,3 +11,5 @@
 - [第8日](Day8.html)
 - [第9日](Day9.html)
 - [第10日](Day10.html)
+
+[導論](00_Intro.html)
