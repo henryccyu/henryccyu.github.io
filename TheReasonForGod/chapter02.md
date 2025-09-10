@@ -81,33 +81,77 @@ limbs cut off. Contrast that with the demeanor of Jesus, who is depicted as prof
 sorrow to the point of death" (Mark 14:33-34). Luke describes Jesus before his death as being in "agony” and describes a man with all the signs of being in physical shock (Luke 22:44). Matthew, Mark, and Luke all
 show Jesus trying to avoid death, asking the Father if there isn't some way out of it (“If it be your will...take this cup from me”—Mark 14:36; Luke 22:42). Finally, on the cross itself, Jesus does not, as the Maccabean
 martyrs, confidently call onlookers to be faithful to God. Rather, he cries out that God has forsaken him (Matthew 27:46).
+
 On the cross, Jesus suffered a three-hour-long death by slow suffocation and blood loss. As terribly painful as that was, there have been far more excruciating and horrible deaths that martyrs have faced with
 far greater confidence and calmness. Two famous examples are Hugh Latimer and Nicholas Ridley, who were burned at the stake at Oxford in 1555 for their Protestant convictions. As the flames leapt up, Latimer
 was heard to say calmly, "Be of good comfort, Mr. Ridley, and play the man! We shall this day light such a candle by God's grace, in England, as I trust never shall be put out."
+
 Why was Jesus so much more overwhelmed by his death than others have been, even more than his own followers?
-The Suffering of God
+
+## The Suffering of God
 To understand Jesus's suffering at the end of the gospels, we must remember how he is introduced at their beginning. The gospel writer John, in his first chapter, introduces us to the mysterious but crucial concept
 of God as tri-personal. The Son of God was not created but took part in creation and has lived throughout all eternity "in the bosom of the Father" (John 1:18)—that is, in a relationship of absolute intimacy and love.
 But at the end of his life he was cut off from the Father.
+
 There may be no greater inner agony than the loss of a relationship we desperately want. If a mild acquaintance turns on you, condemns and criticizes you, and says she never wants to see you again, it is painful.
 If someone you're dating does the same thing, it is qualitatively more painful. But if your spouse does this to you, or if one of your parents does this to you when you're still a child, the psychological damage is
 infinitely worse.
+
 We cannot fathom, however, what it would be like to lose not just spousal love or parental love that has lasted several years, but the infinite love of the Father that Jesus had from all eternity. Jesus's sufferings
 would have been eternally unbearable. Christian theology has always recognized that Jesus bore, as the substitute in our place, the endless exclusion from God that the human race has merited. In the Garden
 of Gethsemane, even the beginning and foretaste of this experience began to put Jesus into a state of shock. New Testament scholar Bill Lane writes: "Jesus came to be with the Father for an interlude before his
 betrayal, but found hell rather than heaven opened before him, and he staggered." On the cross, Jesus's cry of dereliction "My God, my God, why have you forsaken me?"—is a deeply relational statement. Lane
 writes: "The cry has a ruthless authenticity... Jesus did not die renouncing God. Even in the inferno of abandonment he did not surrender his faith in God but expressed his anguished prayer in a cry of affirmation,
 'My God, my God.""2 Jesus still uses the language of intimacy-"my God"-even as he experiences infinite separation from the Father.
-Redemption and Suffering
+
+## Redemption and Suffering
 The death of Jesus was qualitatively different from any other death. The physical pain was nothing compared to the spiritual experience of cosmic abandonment. 10 Christianity alone among the world religions
 claims that God became uniquely and fully human in Jesus Christ and therefore knows firsthand despair, rejection, loneliness, poverty, bereavement, torture, and imprisonment. On the cross he went beyond even
 the worst human suffering and experienced cosmic rejection and pain that exceeds ours as infinitely as his knowledge and power exceeds ours. In his death, God suffers in love, identifying with the abandoned and
 godforsaken. Why did he do it? The Bible says that Jesus came on a rescue mission for creation. He had to pay for our sins so that someday he can end evil and suffering without ending us.
+
 Let's see where this has brought us. If we again ask the question: "Why does God allow evil and suffering to continue?" and we look at the cross of Jesus, we still do not know what the answer is. However, we
 now know what the answer isn't. It can't be that he doesn't love us. It can't be that he is indifferent or detached from our condition. God takes our misery and suffering so seriously that he was willing to take it on
 himself. Albert Camus understood this when he wrote:
-[Christ] the god-man suffers too, with patience. Evil and death can no longer be entirely imputed to him since he suffers and dies. The night on Golgotha is so important in the history of man
+> [Christ] the god-man suffers too, with patience. Evil and death can no longer be entirely imputed to him since he suffers and dies. The night on Golgotha is so important in the history of man
 only because, in its shadows, the divinity ostensibly abandoned its traditional privilege, and lived through to the end, despair included, the agony of death. Thus is explained the "Lama sabachthani"
 and the frightful doubt of Christ in agony.12
-So, if we embrace the Christian teaching that Jesus is God and that he went to the Cross, then we have deep consolation and strength to face the brutal realities of life on earth. We can know that God is truly
-Immanuel God with us even in our worst sufferings.
+
+So, if we embrace the Christian teaching that Jesus is God and that he went to the Cross, then we have deep consolation and strength to face the brutal realities of life on earth. We can know that God is truly Immanuel--God with us--even in our worst sufferings.
+
+## Resurrection and Suffering
+I think we need something more than knowing God is with us in our difficulties. We also need hope that our suffering is "not in vain." Have you ever noticed how desperate the families of lost loved ones are to say
+that? They work to reform laws or change social conditions that led to the death. They need to believe that the death of their loved ones has led to new life, that the injustice has led to greater justice.
+
+For the one who suffers, the Christian faith provides as a resource not just its teaching on the Cross but also the fact of the resurrection. The Bible teaches that the future is not an immaterial "paradise" but a
+new heaven and a new earth. In Revelation 21, we do not see human beings being taken out of this world into heaven, but rather heaven coming down and cleansing, renewing, and perfecting this material world.
+The secular view of things, of course, sees no future restoration after death or history. And Eastern religions believe we lose our individuality and return to the great All-soul, so our material lives in this world are
+gone forever. Even religions that believe in a heavenly paradise consider it a consolation for the losses and pain of this life and all the joys that might have been.
+
+The Biblical view of things is resurrection-not a future that is just a consolation for the life we never had but a restoration of the life you always wanted. This means that every horrible thing that ever happened
+will not only be undone and repaired but will in some way make the eventual glory and joy even greater.
+
+A few years ago I had a horrible nightmare in which I dreamed that everyone in my family had died. When I awoke my relief was enormous but there was much more than just relief. My delight in each
+member of my family was tremendously enriched. I looked at each one and realized how grateful I was for them, how deeply I loved them. Why? My joy had been greatly magnified by the nightmare. My delight
+upon awaking took the terror up into itself, as it were, so that in the end my love for them was only greater for my having lost them and found them again. This same dynamic is at work when you lose some
+possession you take for granted. When you find it again (having thought it was gone forever) you cherish and appreciate it in a far deeper way.
+
+In Greek (specifically Stoic) philosophy there was a belief that history was an endless cycle. Every so often the universe would wind down and burn up in a great conflagration called a palengenesia, after which
+history, having been purified, started over. But in Matthew 19:28 Jesus spoke of his return to earth as the palingenesis. "I tell you the truth, at the renewal of all things (Greek palingenesis), the Son of Man will sit
+on his glorious throne." This was a radically new concept. Jesus insisted that his return will be with such power that the very material world and universe will be purged of all decay and brokenness. All will be
+healed and all might-have-beens will be.
+
+Just after the climax of the trilogy The Lord of the Rings, Sam Gamgee discovers that his friend Gandalf was not dead (as he thought) but alive. He cries, "I thought you were dead! But then I thought I was dead
+myself! Is everything sad going to come untrue?"13 The answer of Christianity to that question is yes. Everything sad is going to come untrue and it will somehow be greater for having once been broken and lost.
+
+Embracing the Christian doctrines of the incarnation and Cross brings profound consolation in the face of suffering. The doctrine of the resurrection can instill us with a powerful hope. It promises that we
+will get the life we most longed for, but it will be an infinitely more glorious world than if there had never been the need for bravery, endurance, sacrifice, or salvation.14
+
+Dostoevsky put it perfectly when he wrote:
+> I believe like a child that suffering will be healed and made up for, that all the humiliating absurdity of human contradictions will vanish like a pitiful mirage, like the despicable fabrication of the
+impotent and infinitely small Euclidean mind of man, that in the world's finale, at the moment of eternal harmony, something so precious will come to pass that it will suffice for all hearts, for the
+comforting of all resentments, for the atonement of all the crimes of humanity, of all the blood that they've shed; that it will make it not only possible to forgive but to justify all that has happened.15
+
+More succinctly, C. S. Lewis wrote:
+> They say of some temporal suffering, “No future bliss can make up for it," not knowing that Heaven, once attained, will work backwards and turn even that agony into a glory.16
+This is the ultimate defeat of evil and suffering. It will not only be ended but so radically vanquished that what has happened will only serve to make our future life and joy infinitely greater.
