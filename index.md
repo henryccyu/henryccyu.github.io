@@ -3,6 +3,8 @@
 [以西結書](https://bibleplan.github.io/daily/2022/wk87-day3-daily.html)  
 [路加福音](https://bibleplan.github.io/daily/2022/wk6-day2-daily.html)  
 
+[BSF 2025](https://henryccyu.github.io/BSF/2025)  
+
 [罗马书 每周总结（琢琳）](https://henryccyu.github.io/Zhuolin/wk87_Romans_PowerOfGospel.html)  
 [罗马书 每周总结（琢琳）](https://henryccyu.github.io/Zhuolin/wk86_Romans_HeartOfDiscipleship.html)
 
