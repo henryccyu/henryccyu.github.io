@@ -1,4 +1,4 @@
-# THREE CHRISTIANITY IS A STRAITJACKET
+# THREE - CHRISTIANITY IS A STRAITJACKET
 "Christians believe that they have the absolute truth that everyone else has to believe-or else," said Keith, a young artist living in Brooklyn. "That attitude endangers everyone's freedom."
 "Yes," agreed Chloe, another young artist. "A 'one-Truth-fits all' approach is just too confining. The Christians I know don't seem to have the freedom to think for themselves. I believe each individual
 must determine truth for him-or herself."
