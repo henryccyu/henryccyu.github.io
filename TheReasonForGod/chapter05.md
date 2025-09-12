@@ -1,4 +1,4 @@
-# FIVE HOW CAN A LOVING GOD SEND PEOPLE TO HELL?
+# FIVE - HOW CAN A LOVING GOD SEND PEOPLE TO HELL?
 "I doubt the existence of a judgmental God who requires blood to pacify his wrath," said a frowning Hartmut, a graduate student from Germany. "Someone had to die before the Christian God would
 pardon us. But why can't he just forgive? And then there's all those places in the Old Testament where God commands that people be slaughtered."
 "All that is troubling, I agree," responded Josie, who worked for an art gallery in Soho. "But I have even more of a problem with the doctrine of hell. The only God that is believable to me is a God of love.
