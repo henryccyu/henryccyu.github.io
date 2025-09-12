@@ -1,4 +1,4 @@
-# FOUR THE CHURCH Is Responsible FOR SO MUCH INJUSTICE
+# FOUR - THE CHURCH Is Responsible FOR SO MUCH INJUSTICE
 "I have to doubt any religion that has so many fanatics and hypocrites," insisted Helen, a law student. "There are so many people who are not religious at all who are more kind and even more moral
 than many of the Christians I know."
 
