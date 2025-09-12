@@ -1,4 +1,4 @@
-# SEVEN YOU CAN'T TAKE THE BIBLE LITERALLY
+# SEVEN - YOU CAN'T TAKE THE BIBLE LITERALLY
 "I see much of the Bible's teaching as historically inaccurate," said Charles, an investment banker. "We can't be sure the Bible's account of events is what really happened."
 
 "I'm sure you're right, Charles," answered Jaclyn, a woman working in finance. “But my biggest problem with the Bible is that it is culturally obsolete. Much of the Bible's social teaching (for example,
