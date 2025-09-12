@@ -164,3 +164,19 @@ Despite popular books like those of Dennett, Dawkins, and Harris, which try to u
 those like Thomas Nagel. Leon Wieseltier, the literary editor of The New Republic, points out the flaw in the clue-killer argument in his review of Dennett's book Breaking the Spell.
 [Dennett] portrays reason in service to natural selection, and as a product of natural selection. But if reason is a product of natural selection, then how much confidence can we have in a rational
 argument for natural selection? The power of reason is owed to the independence of reason, and to nothing else.... Evolutionary biology cannot invoke the power of reason even as it destroys it.22
+
+If you don't believe in God, not only are all these things profoundly inexplicable, but your view-that there is no God-would lead you not to expect them. Though you have little reason to believe your rational faculties work, you go on using them. You have no basis for believing that nature will go on regularly, but you continue
+to use inductive reasoning and language. You have no good reason to trust your senses that love and beauty matter, but you keep on doing it. C. S. Lewis puts this vividly:
+> You can't, except in the lowest animal sense, be in love with a girl if you know (and keep on remembering) that all the beauties both of her person and of her character are a momentary and accidental pattern produced by the collision of atoms, and that your own response to them is only a sort of psychic
+phosphorescence arising from the behavior of your genes. You can't go on getting very serious pleasure from music if you know and remember that its air of significance is a pure illusion, that you like it only because your nervous system is irrationally conditioned to like it.20
+
+Of course none of the clues we have been looking for actually proves God. Every one of them is rationally avoidable. However, their cumulative effect is, I think, provocative and potent. Though the secular view of the world is rationally possible, it doesn't make as much sense of all these things as the view that God exists. That's
+why we call them clues. The theory that there is a God who made the world accounts for the evidence we see better than the theory that there is no God. Those who argue against the existence of God go right on using induction, language, and their cognitive faculties, all of which make far more sense in a universe in which a God
+has created and supports them all by his power.
+
+## Beyond the Clues
+I can imagine someone saying at this point, "So, it's all inconclusive! All you are saying is that, on the whole, God probably exists, but nobody can make an airtight case. That means no one can know if there's a God or not."
+
+I don't agree.
+
+In the next chapter I want to do something very personal. I don't want to argue why God may exist. I want to demonstrate that you already know that God does exist. I'd like to convince the reader that, whatever you may profess intellectually, belief in God is an unavoidable, "basic" belief that we cannot prove but can't not know. We know God is there. That is why even when we believe with all our minds that life is meaningless, we simply can't live that way. We know better.
