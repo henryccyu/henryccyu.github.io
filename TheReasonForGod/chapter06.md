@@ -1,4 +1,4 @@
-# SIX SCIENCE HAS DISPROVED CHRISTIANITY
+# SIX - SCIENCE HAS DISPROVED CHRISTIANITY
 "My scientific training makes it difficult if not impossible to accept the teachings of Christianity," said Thomas, a young Asian medical resident. "As a believer in evolution, I can't accept the Bible's
 prescientific accounts of the origin of life."
 
