@@ -1,4 +1,4 @@
-# EIGHT THE CLUES OF GOD
+# EIGHT - THE CLUES OF GOD
 If one puts aside the existence of God and the survival after life as too doubtful...one has to make up one's mind as to the use of life. If death ends all, if I have neither to hope for good nor to fear evil, I
 must ask myself what I am here for, and how in these circumstances I must conduct myself. Now the answer is plain, but so unpalatable that most will not face it. There is no meaning for life, and [thus]
 life has no meaning.  
