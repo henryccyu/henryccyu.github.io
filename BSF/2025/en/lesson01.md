@@ -40,11 +40,11 @@ The book of Ezekiel contains God’s timely message, delivered through His proph
 
 The rest of Ezekiel’s book captures the outworking of the vision and commission we are studying this week. Ezekiel demonstrated the faithfulness of a humble servant who simply spoke what God declared to be true, including God’s rightful authority to judge sin. **Although the book contains many sobering predictions of coming judgment,¹ Ezekiel’s challenging mission and messages also offer hope.** He criticized Israel’s leaders for failing as shepherds of the people, but he promised a new shepherd from David’s house will rule.² God prophesied through Ezekiel that His people would return to their homeland after exile.³ He offered a beautifully symbolic picture of the spiritual restoration of God’s people.⁴ Ezekiel also described reconstruction of God’s temple and restoration of worship, likely pointing to the future time when God reigns on earth.⁵
 
-¹ Messages of coming judgment: Ezekiel 4–32
-² New shepherd: Ezekiel 34
-³ Return to homeland prophesied: Ezekiel 36
-⁴ God’s people restored: Ezekiel 11:14-25; 37–39
-⁵ Worship reinstated: Ezekiel 40–48
+_¹ Messages of coming judgment: Ezekiel 4–32  
+² New shepherd: Ezekiel 34  
+³ Return to homeland prophesied: Ezekiel 36  
+⁴ God’s people restored: Ezekiel 11:14-25; 37–39  
+⁵ Worship reinstated: Ezekiel 40–48_
 
 #### Who Is Ezekiel?
 
@@ -56,8 +56,8 @@ The rest of Ezekiel’s book captures the outworking of the vision and commissio
 
 Sin brings consequences. **Because the Israelites disregarded God and rebelled against Him, He sent enemy nations to take them captive.** First the Northern Kingdom of Israel fell to Assyria in 722 BC.⁶ Then the Southern Kingdom of Judah fell to the Babylonians, culminating in Jerusalem’s fall in 586 BC.⁷ God sent prophets, including Ezekiel, to help His people make sense of their dire circumstances. The term “Israelites” often refers to the people from both the Northern and Southern Kingdoms. Though the divided kingdom suffered under different nations, God sent all His people into exile because of their sin. Our study enters Israel’s history during the Babylonian exile as God continued to speak to His people and work out His plan for them.
 
-⁶ Israel’s fall to Assyria: 2 Kings 17:1-23
-⁷ Judah’s fall to Babylon: 2 Kings 24–25; 2 Chronicles 36
+_⁶ Israel’s fall to Assyria: 2 Kings 17:1-23  
+⁷ Judah’s fall to Babylon: 2 Kings 24–25; 2 Chronicles 36_
 
 -----
 
@@ -73,9 +73,9 @@ The word of the Lord came in a powerful vision to Ezekiel, a 30-year-old man who
 
 **Ezekiel’s prophetic ministry began with a majestic vision of God’s glory.** The Bible records other messengers who glimpsed God’s glory.¹⁰ In every case, the prophets struggled to adequately describe the sensory details they saw and heard. Certainly, the symbolism within those visions can be difficult to interpret. Ezekiel’s vision uniquely roils with kinetic energy—constant movement and activity he could scarcely capture—in sharp contrast to Isaiah’s more static vision of God in His temple. Ezekiel’s vision seems more troubling than comforting, focusing on God’s coming judgment. Yet the fast-moving details within Ezekiel’s vision reveal powerful truths about God. His vision emerges with three distinct elements: the four living creatures, the wheels, and the throne of God’s glory.
 
-⁸ Exile: 2 Kings 24:8-16
-⁹ Daniel: Ezekiel 14:14, 20
-¹⁰ Visions of God’s glory: Exodus 33:12-23; Isaiah 6:1-4; Revelation 4
+_⁸ Exile: 2 Kings 24:8-16  
+⁹ Daniel: Ezekiel 14:14, 20  
+¹⁰ Visions of God’s glory: Exodus 33:12-23; Isaiah 6:1-4; Revelation 4_
 
 ### The Four Living Creatures – 1:4-14
 
@@ -90,10 +90,10 @@ Ezekiel saw a windstorm with flashing lightning coming from the north. For Israe
 
 **These mysterious, terrifying creatures could dart in multiple directions without turning.** Verse 12 tells us the creatures went straight ahead, wherever the Spirit would go. Brilliant light, like fire or burning torches, accompanied their decisive movements.
 
-¹¹ Enemies from the north: Isaiah 14:31; Jeremiah 1:13-15; 4:6; Joel 2:20
-¹² John’s vision: Revelation 4:6-9
-¹³ Cherubim: Ezekiel 10
-¹⁴ Guardians of God’s holiness: Genesis 3:24; Exodus 25:18-22; 26:1; 1 Samuel 4:4; 2 Kings 19:15; Psalm 99:1
+_¹¹ Enemies from the north: Isaiah 14:31; Jeremiah 1:13-15; 4:6; Joel 2:20  
+¹² John’s vision: Revelation 4:6-9  
+¹³ Cherubim: Ezekiel 10  
+¹⁴ Guardians of God’s holiness: Genesis 3:24; Exodus 25:18-22; 26:1; 1 Samuel 4:4; 2 Kings 19:15; Psalm 99:1_
 
 ### The Wheels – 1:15-21
 
@@ -115,9 +115,9 @@ God often communicates with people in pictures:
 
 **This scene certainly depicts God’s authority, power, and sovereignty—His rightful place as humanity’s judge.**
 
-¹⁵ God’s fiery judgment: Genesis 19:24-26; 1 Kings 18:38-29; Matthew 13:40-42; 1 Corinthians 3:13
-¹⁶ Expanse: Genesis 1:6-8
-¹⁷ Rainbow: Genesis 9:13
+_¹⁵ God’s fiery judgment: Genesis 19:24-26; 1 Kings 18:38-29; Matthew 13:40-42; 1 Corinthians 3:13  
+¹⁶ Expanse: Genesis 1:6-8  
+¹⁷ Rainbow: Genesis 9:13_
 
 -----
 
@@ -131,11 +131,11 @@ God’s inexpressible glory exalts Him far above us in every way. However, God h
 
 Without understanding God’s power, holiness, presence, and glory, we fail to recognize our personal accountability to Him. Understanding God’s glory helps us recognize the wonder of His compassion toward our helpless estate and our need to turn to Christ for salvation. **The God who transcends us in every way reaches to us, despite our sinfulness.** In eternity, God’s children will fully grasp and eternally praise their glorious God and exalted Savior.⁵ How does Ezekiel’s vision open your eyes to God’s unlimited power, rightful authority, and abiding presence?
 
-¹ Humbled before God: Genesis 17:3; Isaiah 6:1-8; Acts 9:4; Revelation 1:17
-² God’s glory in creation: Genesis 1; Psalms 8; 19:1-2; Romans 1:18-25
-³ God’s glory revealed to His people: Exodus 24:16; 33:18-23; 40:34; Leviticus 9:23; Isaiah 6:1-5
-⁴ Jesus Christ reveals God’s glory: Matthew 17:1-13; John 1:1-18; 1 Timothy 3:16; Hebrews 1:3
-⁵ Eternal praise: Romans 11:36; 2 Peter 3:18; Revelation 7:12
+_¹ Humbled before God: Genesis 17:3; Isaiah 6:1-8; Acts 9:4; Revelation 1:17  
+² God’s glory in creation: Genesis 1; Psalms 8; 19:1-2; Romans 1:18-25  
+³ God’s glory revealed to His people: Exodus 24:16; 33:18-23; 40:34; Leviticus 9:23; Isaiah 6:1-5  
+⁴ Jesus Christ reveals God’s glory: Matthew 17:1-13; John 1:1-18; 1 Timothy 3:16; Hebrews 1:3  
+⁵ Eternal praise: Romans 11:36; 2 Peter 3:18; Revelation 7:12_
 
 Ezekiel saw God’s glory, not on Mount Sinai or in Jerusalem’s temple, but right there in Babylon. God had not abandoned His people, though their persistent rebellion promised even more judgment. Ezekiel described what he saw as “the appearance of the likeness of the glory of the Lord.” The sensory expressions, spiritual significance, and practical reality of his people’s plight before this great God left Ezekiel undone; he immediately fell face down. How can any sinner stand before such a God?
 
@@ -167,7 +167,7 @@ What would such obedience bring to Ezekiel’s life? Did God promise a smooth pa
 
 God does not hold back hard truth as He calls His people to wholehearted commitment to Him. God does not leave us to figure things out on our own. God gives His Word to His people. He empowers them to stand and speak through His Spirit. **God seeks and speaks to rebellious people.** Israel’s story—and ours—reveals persistent rebellion and God’s consistent faithfulness.
 
-¹⁸ Scroll ingested: Ezekiel 3:1-3
+_¹⁸ Scroll ingested: Ezekiel 3:1-3_
 
 -----
 
@@ -188,7 +188,3 @@ Before Ezekiel uttered one prophetic word or completed one prophetic action, God
 We cannot understand God’s presence and power until we accurately assess our own position before Him. The book of Ezekiel’s opening scene confirmed God’s greatness but flattened Ezekiel. However, God did not leave Ezekiel paralyzed in helplessness but simultaneously called him to stand and enabled him to do so. **God must work in us what He requires of us.** On our own, we would remain useless to Him. But in grace and mercy, through His Son, God enables us to stand in His presence, hear His words, and contribute to His cause. How have you experienced God’s greatness? Do you realize your position before Him? If you are God’s child by faith in Christ, God raises you to stand in His presence and fills you with His Spirit. What does this mean in your life today?
 
 The Israelites’ unrepentant sin and failure to respond to God’s gracious warnings resulted in their exile in Babylon. God told Ezekiel that despite his diligent messages, the people would remain obstinate and hard-hearted. Ezekiel was to listen to God and speak for Him whether the people listened or not. Like Ezekiel, believers have a message of hope to share that people often refuse to hear. The validity of God’s message cannot be measured by humanity’s response. As God’s ambassadors, we need not sugarcoat the gospel to make it palatable and acceptable. With grace and diligence, God still calls His people to speak His truth boldly inside and outside the Church, with gracious words and a heart of love. While many may reject the gospel, some will believe. **Those who listen to God and speak for Him are called to faithfully proclaim the truth, leaving the results to Him.** How do you respond when people reject you, your message, or your Savior? How firmly do you believe in the power of the gospel? An undeterred determination to speak God’s truth, in the power of His Spirit, represents every believer’s privilege and opportunity.
-
------
-
-*All Scripture quotations in this publication are from the HOLY BIBLE, NEW INTERNATIONAL VERSION ® NIV ® Copyright © 1973, 1978, 1984, 2011 by Biblica, Inc.®. Used by permission. All rights reserved worldwide.*
