@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同理心的训练（二）回应</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow: hidden;
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide {
+            display: none;
+            width: 90%;
+            max-width: 1000px;
+            height: 85vh;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide h1 {
+            color: #4a90e2;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 15px;
+        }
+
+        .slide h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-left: 5px solid #4a90e2;
+            padding-left: 15px;
+        }
+
+        .slide h3 {
+            color: #34495e;
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .slide ul {
+            line-height: 1.8;
+            margin-left: 20px;
+        }
+
+        .slide li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .slide li::before {
+            content: "▸";
+            color: #4a90e2;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+
+        .objective-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .content-box {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .warning-box {
+            background: #ffe6e6;
+            border: 2px solid #ff6b6b;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .example-box {
+            background: #f8f9fa;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            background: rgba(255,255,255,0.9);
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .nav-btn:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .slide-counter {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: rgba(255,255,255,0.9);
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #333;
+            z-index: 1000;
+        }
+
+        .emphasis {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .section-divider {
+            border-top: 3px solid #4a90e2;
+            margin: 30px 0;
+            padding-top: 20px;
+        }
+
+        .practice-section {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .response-example {
+            background: #e8f5e8;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide-counter">
+            <span id="current-slide">1</span> / <span id="total-slides">25</span>
+        </div>
+
+        <!-- Slide 1: Title -->
+        <div class="slide active">
+            <h1>同理心的训练（二）</h1>
+            <h1 style="color: #e74c3c;">回应</h1>
+            <div class="center-text" style="margin-top: 50px;">
+                <p style="font-size: 1.5em; color: #666;">龚振成</p>
+                <p style="font-size: 1.2em; color: #888; margin-top: 40px;">版权所有：信望爱生命关怀</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Objectives -->
+        <div class="slide">
+            <h1>单元目的</h1>
+            <div class="objective-box">
+                <h3>学习目标：</h3>
+                <ul>
+                    <li>学习合宜的回应</li>
+                    <li>帮助学员把同理心融入到回应的心态和技巧中</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 3: Content Overview -->
+        <div class="slide">
+            <h1>单元内容</h1>
+            <div class="content-box">
+                <h3>主要内容：</h3>
+                <ul>
+                    <li>认识不合宜的回应</li>
+                    <li>学习合宜的回应</li>
+                </ul>
+                <br>
+                <h3>详细内容：</h3>
+                <ul>
+                    <li><strong>A. 回应的技巧</strong></li>
+                    <li><strong>B. 回应的方式</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 4: What are inappropriate responses -->
+        <div class="slide">
+            <h1>01 什么是不合宜的回应？</h1>
+            <div class="warning-box">
+                <h3>如果你的关怀者说以下话时，你会有何感受？</h3>
+                <ol>
+                    <li>我很了解你的心情。</li>
+                    <li>哎呀！不要这么想，不要担心，不会有事的！</li>
+                    <li>你要看开一点就没事啦！</li>
+                    <li>我认识另一病人比你更严重，但他还是勇敢积极地对抗…</li>
+                    <li>你是不是以前…，所以现在才…</li>
+                    <li>你要听我的（你应该）…，你就会…</li>
+                    <li>你对神一定要有信心，神会医治你的。</li>
+                    <li>神允许这病临到你，是要…。</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Slide 5: Inappropriate attitudes -->
+        <div class="slide">
+            <h1>不合宜的心态</h1>
+            <ul style="font-size: 1.2em; line-height: 2;">
+                <li>自以为是</li>
+                <li>否定对方的想法和感受</li>
+                <li>忽略或淡化对方的困难或苦楚</li>
+                <li>希望对方赶快度过或越过困苦</li>
+                <li>把对方与自己或第三者比较</li>
+                <li>替对方寻找问题的原因、答案或解决办法</li>
+                <li>把苦难或疾病神圣化</li>
+                <li>借机传教却忽略对方心灵和其他的需求</li>
+            </ul>
+        </div>
+
+        <!-- Slide 6: Demonstration background -->
+        <div class="slide">
+            <h1>示范短片的背景</h1>
+            <div class="example-box">
+                <p style="font-size: 1.3em; line-height: 1.8;">
+                    大明是小谢和她丈夫老李的朋友。先前老李抗癌时，大明曾经去看过他，但之后有好几个月没有再联络了。最近大明路过老李家附近，顺便去拜访一下。
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 7: Bad example -->
+        <div class="slide">
+            <h1>不好的示范</h1>
+            <h2>不解人意的回应</h2>
+            <div class="warning-box">
+                <ul style="font-size: 1.2em;">
+                    <li>否定老李已过世的事实</li>
+                    <li>把老李与第三者比较</li>
+                    <li>当小谢难过时感到不自在</li>
+                    <li>不合宜的肢体动作</li>
+                    <li>批评论断</li>
+                    <li>自以为是地想帮忙</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 8: Providing appropriate responses -->
+        <div class="slide">
+            <h1>02 提供合宜的回应</h1>
+            <div class="content-box">
+                <h3>重要性：</h3>
+                <ul>
+                    <li>关怀者的回应会影响关怀的品质</li>
+                    <li>用心聆听并以同理心回应能使对方感受到被理解和被接纳，会对关怀者产生信任，愿意接受关怀。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 9: Response techniques -->
+        <div class="slide">
+            <h1>A 回应的技巧</h1>
+            <div class="section-divider">
+                <h2>主要技巧包括：</h2>
+                <ul style="font-size: 1.2em;">
+                    <li><strong>开启谈话</strong></li>
+                    <li><strong>简述语意的回应</strong></li>
+                    <li><strong>提出问题</strong></li>
+                    <li><strong>回应的技巧要点</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 10: Opening conversation -->
+        <div class="slide">
+            <h1>开启谈话</h1>
+            <ul style="font-size: 1.2em; line-height: 1.8;">
+                <li><strong>问候和说明</strong></li>
+                <li>先尊称对方，介绍自己</li>
+                <li>从所观察到的人、事、物作简短的开场白</li>
+                <li>渐渐把话题转入对方目前的状况和需要</li>
+                <li>或从上次谈话中的重点或存留的问题谈起</li>
+            </ul>
+        </div>
+
+        <!-- Slide 11: Summarizing responses -->
+        <div class="slide">
+            <h1>简述语意的回应</h1>
+            <ul style="font-size: 1.1em; line-height: 1.8;">
+                <li>聆听一段话后把你所听到的做摘要和整合，用你自己的话精简地叙述给对方听。</li>
+                <li>回应你听到的事实、感受、想法和心灵需求。</li>
+                <li>帮助对方从你的回应中听到他自己的心声（如同照镜子），理清他的思绪。</li>
+                <li>让对方澄清你听到的是不是他想要表达的。</li>
+            </ul>
+        </div>
+
+        <!-- Slide 12: Responding to facts -->
+        <div class="slide">
+            <h1>回应事实</h1>
+            <div class="example-box">
+                <h3>被关怀者：</h3>
+                <p>『我丈夫在癌症晚期的时候，虽然他身体很虚弱，很不舒服，可是他仍然坚持要继续做治疗，在化疗期间他忍受很多痛苦的副作用，我觉得他太辛苦了，可是我知道他很努力地想要活下去，因为他舍不得离开我们。』</p>
+            </div>
+            <div class="response-example">
+                <h3>回应事实：</h3>
+                <p>『你丈夫在疾病的末期仍然坚持继续接受各种治疗，因为他想延长他和你们在一起的时间。』</p>
+            </div>
+        </div>
+
+        <!-- Slide 13: Responding to feelings -->
+        <div class="slide">
+            <h1>回应感受</h1>
+            <div class="example-box">
+                <h3>被关怀者：</h3>
+                <p>『我丈夫在癌症晚期的时候，虽然他身体很虚弱，很不舒服，可是他仍然坚持要继续做治疗，在化疗期间他忍受很多痛苦的副作用，我觉得他太辛苦了，可是我知道他很努力地想要活下去，因为他舍不得离开我们。』</p>
+            </div>
+            <div class="response-example">
+                <h3>回应感受：</h3>
+                <p>『你丈夫为了活下去，愿意忍受治疗的各种副作用，你看了觉得很心疼，也很难过。』</p>
+            </div>
+        </div>
+
+        <!-- Slide 14: Responding to spiritual confession -->
+        <div class="slide">
+            <h1>回应心灵告白</h1>
+            <div class="example-box">
+                <h3>被关怀者：</h3>
+                <p>『我丈夫在癌症晚期的时候，虽然他身体很虚弱，很不舒服，可是他仍然坚持要继续做治疗，在化疗期间他忍受很多痛苦的副作用，我觉得他太辛苦了，可是我知道他很努力地想要活下去，因为他舍不得离开我们。』</p>
+            </div>
+            <div class="response-example">
+                <h3>回应心灵告白：</h3>
+                <p>『当你看见你丈夫很痛苦的时候你心里面很挣扎，因为你希望他能够留下来，但你又不忍心看到他受这么多的苦，这实在是两难。』</p>
+            </div>
+        </div>
+
+        <!-- Slide 15: Asking questions -->
+        <div class="slide">
+            <h1>提出问题</h1>
+            <ul style="font-size: 1.2em; line-height: 1.8;">
+                <li>从你所听到的和你想知道更多的讯息问起</li>
+                <li>表示你对对方说的话有兴趣</li>
+                <li>帮助对方有更多、更深入的探讨和分享</li>
+                <li><strong>开放式问句</strong>（要对方再多说一些内容时）</li>
+                <li><strong>封闭式问句</strong>（要向对方澄清某个讯息时）</li>
+            </ul>
+        </div>
+
+        <!-- Slide 16: Open-ended questions -->
+        <div class="slide">
+            <h1>开放式问句</h1>
+            <div class="content-box">
+                <p>当关怀者想鼓励对方多分享，并更多地了解对方的想法、感受、问题和需要时。</p>
+                <h3>例如，使用下列句型：</h3>
+                <ul>
+                    <li><strong>能否（could）</strong><br>你能否告诉我你今天的心情？</li>
+                    <li><strong>什么（what）</strong><br>你听到这个消息时，你有什么反应？</li>
+                    <li><strong>如何（how）</strong><br>你打算如何处理这个问题呢？</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 17: Closed-ended questions -->
+        <div class="slide">
+            <h1>封闭式问句</h1>
+            <div class="warning-box">
+                <h3>使用场合：</h3>
+                <ul>
+                    <li>期待对方的回答是很简短的</li>
+                    <li>为了澄清具体的讯息</li>
+                    <li>想把岔开的谈话拉回到主题</li>
+                    <li>帮助对方从另一个角度看问题</li>
+                    <li>通常以"是不是""是否"开头</li>
+                </ul>
+                <h3>例句：</h3>
+                <ul>
+                    <li>你的意思是…</li>
+                    <li>你当时的感觉是不是…</li>
+                    <li>你是否想(考虑)过…</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 18: B Response methods -->
+        <div class="slide">
+            <h1>B 回应的方式</h1>
+            <div class="section-divider">
+                <h2>主要方式：</h2>
+                <ul style="font-size: 1.3em;">
+                    <li><strong>简述语意 + 问问题</strong></li>
+                    <li><strong>针对式问句</strong></li>
+                    <li><strong>回应的技巧</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 19: Summary + Questions -->
+        <div class="slide">
+            <h1>简述语意 + 问问题</h1>
+            <ul style="font-size: 1.2em; line-height: 1.8;">
+                <li>使用简述语意回应对方所陈述的内容、感受、想法、心灵告白，以便对他身、心、灵的需求有清楚的理解和同理</li>
+                <li>然后使用开放式的问句鼓励对方再多分享一些，使我们对他的想法和需求有更深入的了解。</li>
+            </ul>
+        </div>
+
+        <!-- Slide 20: Practice examples -->
+        <div class="slide">
+            <h1>练习回应听到的内容</h1>
+            <div class="practice-section">
+                <h3>案例：</h3>
+                <p>"我的肠胃科医生说他怀疑我肝部超音波的阴影可能是肿瘤。因此他安排了一连串的检查，包括验血、电脑断层扫描和肝穿刺。"</p>
+                
+                <div class="response-example">
+                    <h4>简述语意：</h4>
+                    <p>『你的医生为了进一步诊断你肝部超音波的阴影，帮你安排了一系列的检查。』</p>
+                    
+                    <h4>开放式的问句：</h4>
+                    <p>（询问感受）『当你听到这个初步诊断时，你有什么感受？』</p>
+                    <p>（询问对方对检查的理解）『医生如何跟你解释这些检查的内容和过程？』</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 21: Good example demonstration -->
+        <div class="slide">
+            <h1>比较好的示范</h1>
+            <h2>善解人意的回应</h2>
+            <div class="content-box">
+                <ul style="font-size: 1.2em;">
+                    <li>接受老李已过世的事实</li>
+                    <li>问问题了解老李最后的情况</li>
+                    <li>专注地聆听小谢，表达同理</li>
+                    <li>适当的肢体动作表达安慰</li>
+                    <li>简述语意+问问题</li>
+                    <li>接纳小谢的想法，不评论</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 22: After-class practice -->
+        <div class="slide">
+            <h1>03 课后练习</h1>
+            <div class="practice-section">
+                <h3>练习步骤：</h3>
+                <ul style="font-size: 1.2em;">
+                    <li>找一位伙伴练习聆听和回应的技巧</li>
+                    <li>请对方分享一个喜悦、难过、或痛苦的经历</li>
+                    <li>请使用今天学到的技巧来聆听和回应</li>
+                    <li>练习10分钟后，请分享的那位伙伴根据关怀者的表现提供一些意见</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 23: Evaluation criteria -->
+        <div class="slide">
+            <h1>对关怀者的评估</h1>
+            <div class="warning-box">
+                <h3>评估问题：</h3>
+                <ul style="font-size: 1.2em; line-height: 1.8;">
+                    <li>他/她是好的聆听者吗？</li>
+                    <li>他/她了解被关怀者的需求吗？</li>
+                    <li>他/她是否表达了同理心、接纳、尊重？</li>
+                    <li>他/她擅自给意见吗？</li>
+                    <li>他/她有否表现他/她个人的居心或目的？</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 24: Summary -->
+        <div class="slide">
+            <h1>04 总结</h1>
+            <div class="content-box">
+                <ul style="font-size: 1.2em; line-height: 1.8;">
+                    <li>聆听与回应是关怀最重要的基本技巧</li>
+                    <li>回应包括简述语意（反映和澄清对方的心声）以及问问题</li>
+                    <li>开放式和封闭式的问句有不同的目的</li>
+                    <li>真诚、不论断、不操纵对方，提供接纳和安全感，赢得对方的信任</li>
+                    <li>不要怕说错话—如果有，就道歉；也可以再问对方他实际的感受</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 25: Thank you -->
+        <div class="slide">
+            <h1 class="center-text">谢谢观看</h1>
+            <div class="center-text" style="margin-top: 50px;">
+                <p style="font-size: 1.3em; color: #666;">愿这些技巧帮助您成为更好的关怀者</p>
+                <div style="margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+                    <p style="color: #888; font-size: 0.9em;">版权所有：信望爱生命关怀</p>
+                    <p style="color: #888; font-size: 0.9em;">请勿传递或翻印</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">◀ 上一页</button>
+        <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">下一页 ▶</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        document.getElementById('total-slides').textContent = totalSlides;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+            
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = currentSlide === 0;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+        }
+
+        function changeSlide(n) {
+            if (currentSlide + n >= 0 && currentSlide + n < totalSlides) {
+                showSlide(currentSlide + n);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+            if (e.key === 'Home') showSlide(0);
+            if (e.key === 'End') showSlide(totalSlides - 1);
+        });
+
+        // Initialize
+        showSlide(0);
+
+        // Auto-resize text for better display
+        function adjustFontSize() {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach(slide => {
+                const height = slide.scrollHeight;
+                const maxHeight = slide.clientHeight;
+                if (height > maxHeight) {
+                    const currentSize = parseFloat(window.getComputedStyle(slide).fontSize);
+                    slide.style.fontSize = (currentSize * 0.9) + 'px';
+                }
+            });
+        }
+
+        window.addEventListener('resize', adjustFontSize);
+        window.addEventListener('load', adjustFontSize);
+    </script>
+</body>
+</html>
