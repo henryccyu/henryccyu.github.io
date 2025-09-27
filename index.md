@@ -27,3 +27,4 @@
 
 [基督徒的新生活](https://henryccyu.github.io/NewLiving)  
 [传福音心得](https://henryccyu.github.io/SharingGospal.html)
+[信望爱关怀](https://henryccyu.github.io/FaithHopeLoveCaring)
