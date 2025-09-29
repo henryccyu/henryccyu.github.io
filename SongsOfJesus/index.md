@@ -1,0 +1,3 @@
+[詩篇 65:1-4](https://henryccyu.github.io/SongsOfJesus/Pslams65_1to4.html)
+[詩篇 65:5-8](https://henryccyu.github.io/SongsOfJesus/Pslams65_5to8.html)
+[詩篇 65:9-13](https://henryccyu.github.io/SongsOfJesus/Pslams65_9to13.html)
