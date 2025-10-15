@@ -10,7 +10,7 @@
 
 [圣经综合解读](https://cmcbiblereading.com/)
 
-[忘我的自由](https://henryccyu.github.io/FreedomOfSelfForgetfullness)  
+[忘我的自由 - Tim Keller](https://henryccyu.github.io/FreedomOfSelfForgetfullness)  
 [务要了解深居你内心的敌人 - Jerry Bridges](https://jianzhengjc.com/jingxuanwenzhang/128419.html)  
 [Victory Over Vice](https://henryccyu.github.io/VictoryOverVice)  
 [简易祈祷法](https://henryccyu.github.io/ShortAndEasyMethodOfPrayer.html)  
