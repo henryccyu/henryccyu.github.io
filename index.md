@@ -5,8 +5,8 @@
 
 [BSF 2025](https://henryccyu.github.io/BSF/2025)  
 
-[罗马书 每周总结（琢琳）](https://henryccyu.github.io/Zhuolin/wk87_Romans_PowerOfGospel.html)  
-[罗马书 每周总结（琢琳）](https://henryccyu.github.io/Zhuolin/wk86_Romans_HeartOfDiscipleship.html)
+[罗马书 第87周总结（琢琳）](https://henryccyu.github.io/Zhuolin/wk87_Romans_PowerOfGospel.html)  
+[罗马书 第86周总结（琢琳）](https://henryccyu.github.io/Zhuolin/wk86_Romans_HeartOfDiscipleship.html)
 
 [圣经综合解读](https://cmcbiblereading.com/)
 
