@@ -1,8 +1,66 @@
+# 2. 耶稣的差传大计
+
+### 一、 主宣教的原则 (The Principles of Jesus' Mission)
+
+姜武城牧师从《马可福音》第 5 章 1-20 节的经文出发，总结了耶稣宣教的四个核心原则：
+
+#### 1. 世界上没有一处地方是主耶稣不愿意去的 [[00:38](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=38)]
+* **挑战传统观念：** 犹太人认为湖的东边格拉森是“不洁净”之地，从小被教导不能去。但耶稣却特意带着门徒从西边到东边去 [[00:50](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=50)]。
+* **强调普世性：** 耶稣教导门徒，世界上每一个地方都是我们工作的“工场” [000:01:58]。
+* **宣教士的榜样：** 提到五位前往南美厄瓜多尔开荒宣教、最终殉道的年轻宣教士，他们的牺牲敲开了当地福音的门 [[02:27](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=147)]。
+
+#### 2. 世界上没有一个破碎的生命是主耶稣不愿意医治的 [[04:51](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=291)]
+* **破碎生命的写照：** 耶稣所医治的那个被鬼附之人，衣不蔽体、不愿受助、昼夜呼叫，正是现代社会许多心灵破碎之人的写照 [[04:59](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=299)]。
+* **生命的宝贵：** 耶稣允许鬼附在 2000 只猪身上，猪群投海淹死 [[06:58](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=418)]。这表明主看一个破碎的人的生命比世上任何财富（2000 只猪）更加宝贵 [[07:07](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=427)]。牧师借此提醒信徒，在财富面前是否看重人的灵魂和差传事工 [[07:27](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=447)]。
+
+#### 3. 世界上没有一个黑暗的权势是主耶稣不能够胜过的 [[08:35](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=515)]
+* **鬼的承认：** 连鬼也承认耶稣是神的儿子，知道主耶稣的权柄胜过它 [[08:44](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=524)]。
+* **能力来源：** 宣教工作的突破不在于人的学问或能力，而是依靠主的全柄 [[09:47](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=587)]。主说：“天上地下所有的权柄都赐给我了，所以你们要去” [[10:35](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=635)]。
+
+#### 4. 世界上没有一个人是主耶稣不愿意使用的 [[10:55](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=655)]
+* **医治后的使用：** 那个被医治的人要求与主同在，但主却差派他回到家乡亲友当中，为耶稣做见证 [[11:04](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=664)]。
+* **突破自我限制：** 主会使用缺乏学问、口才、甚至刚信主的人 [[11:41](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=701)]。只要我们愿意顺服，主就会使用我们 [[12:08](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=728)]。
+
+### 二、 主宣教的蓝图和能源 (The Blueprint and Power Source)
+
+#### 1. 宣教的蓝图：普世宣教 [[15:57](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=957)]
+* **使徒行传 1:8 的真义：** 主的大使命（耶路撒冷、犹太全地、撒马利亚、直到地极）不是一个**渐进性**的顺序，而是**同时性**的 [[14:08](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=848)]。即近处和远方要同时并进 [[16:00](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=960)]。
+
+#### 2. 宣教的能源：依靠圣灵 [[16:23](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=983)]
+* **能力与命令：** 大使命是一个不可能靠使徒自身完成的任务，但主应许：“但圣灵降临在你们身上，你们就必得着能力” [[17:35](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1055)]。
+* **圣灵的工作：** 圣灵拆派工人、开启传道之门、引人悔罪 [[17:58](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1078)]。宣教离了圣灵，什么都不能做 [[18:09](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1089)]。
+* **被圣灵充满的方法：** 祷告祈求 (路 11:13) 和顺服 (徒 5:32) [[18:43](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1123)]。
+
+### 三、 主和门徒宣教的榜样 (The Example of Jesus and His Disciples)
+
+主和门徒的宣教榜样是带来“**宣教人力、城墙、城市、国度和种族的突破**”，以及“**生命的见证**”。
+
+| 宣教的突破 | 榜样内容 | 经文/例子 |
+| :--- | :--- | :--- |
+| **人力**的突破 | 主与我们同去，以致门徒成为宣教的强人 [[25:29](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1529)]。 | 苏格兰宣教士马利，因圣灵充满而刚强壮胆，在非洲作了大事 [[24:04](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1444)]。 |
+| **教会四面墙**的突破 | 走出去，打破福音前线和后方（如欧美）的分界线，进入世人当中传福音 [[26:10](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1570)]。 | 基督徒火车司机被提醒向同工传福音 [[28:43](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1723)]。 |
+| **城市/国度**的突破 | 突破城市和国度的限制，走遍各城各乡，直到地极 [[30:11](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1811)]。 | 宣道会创始人着眼于未曾听闻福音的地区 [[30:57](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1857)]；使徒保罗将福音带到欧洲 [[32:03](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1923)]。 |
+| **种族**的突破 | 突破种族藩篱，向混杂的撒马利亚人传福音 [[33:01](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1981)]。 | 宣教士艾伟德 (Gladys Aylward) 突破民族障碍到中国宣教 [[33:47](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=2027)]。 |
+| **生命**的见证 | 用生命经历的改变来做见证，影响周围的人同得福音的好处 [[35:33](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=2133)]。 | 加拿大医生戴医师和师母为照顾台湾麻风病患，奉献一生，用生命影响了无数人 [[36:48](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=2208)]。 |
+
+视频总结道，宣教工作就是用我们的生命来传福音 [[40:39](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=2439)]，这个生命的见证完全是主在我们身上奇妙的大改变所成就的 [[40:53](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=2453)]。
+
+---
+
+# 3. 神州传播 大海啊能否告诉我
+
+歌曲和文字记录的核心主题是：**纪念为中国奉献生命的宣教士。**
+
+* **对宣教士的致敬：** 歌词以对“大海”的提问开始，询问有多少宣教士来到中国 [[00:10](http://www.youtube.com/watch?v=x1x6smTm9Lc&t=10)]。
+* **宣教士的奉献：** 歌颂他们虽然语言不同、肤色不同，但却深爱着中国，并将生命献给了中国 [[00:29](http://www.youtube.com/watch?v=x1x6smTm9Lc&t=29)]。
+* **他们的影响：** 歌词将宣教士比喻为“一粒麦子”，他们的牺牲祝福了苦难中的国家，并为中国带来了“今天的春天”和“满山遍野”的景象 [[01:10](http://www.youtube.com/watch?v=x1x6smTm9Lc&t=70)]。
+* **呼吁铭记：** 提醒听众要永远记得，他们是“上帝的使者”，带着爱来到中国，过着“高举燃烧的生活” [[01:35](http://www.youtube.com/watch?v=x1x6smTm9Lc&t=95)]。
+
+---
+
 # 4. 普世差传的趋势、挑战与契机
 
 **21 世纪是华人的世纪** [[00:33](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=33)]，这对华人教会和信徒参与宣教工作带来了巨大的机会。他从四个趋势和四个挑战两方面进行了分享。
-
----
 
 ### **普世差传的四大趋势 (Four Global Mission Trends)**
 
@@ -26,8 +84,6 @@
 4.  **翻译圣经 (Bible Translation)**
     * 圣经是神的话语，但世界上仍有约 **2,000 种语言** 还没有他们自己文字的圣经 [[16:38](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=998)]。
     * 威克里夫圣经翻译会 (Wycliffe Bible Translators) 设定目标，希望能在 **2025 年** 之前开始所有需要圣经语言的翻译工作 [[18:00](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=1080)]。
-
----
 
 ### **普世差传的四大挑战 (Four Global Mission Challenges)**
 
@@ -93,6 +149,8 @@
 * **呼召年輕人**：他特別呼籲和挑戰年輕人投入跨文化宣教，因為他們更有彈性學習新的語言和文化 [[27:41](http://www.youtube.com/watch?v=IuJEZ5a4KUo&t=1661)]。
 * **神學機構與教會的合作**：建議神學院多推廣給平信徒的在職培訓，允許他們一邊工作、一邊侍奉、一邊讀神學 [[34:53](http://www.youtube.com/watch?v=IuJEZ5a4KUo&t=2093)]。
 
+---
+
 # 6. 宣教模式與策略
 
 ### 宣教模式的多樣性與考慮因素
@@ -128,8 +186,6 @@
 
 ### 案例應用
 
-影片最後以兩個實際案例說明多元宣教模式的應用：
-
 1.  **庫爾德自治區（伊拉克北部）** [[23:32](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1412)]
     * 庫爾德人曾是基教國家後轉為穆斯林，曾極度封閉。
     * 2003年伊拉克戰役後出現開放窗口。
@@ -144,6 +200,7 @@
     * 約三成索馬里人離國到肯尼亞、埃及甚至香港工作。
     * **流動人口宣教：** 索馬里人多為男性，在外賺錢寄回國，地位較高。若他們在海外信主，回鄉後對家鄉的影響力會很大。在香港，例如在重慶大廈，就可以接觸索馬里人，建立信任和關係，進行本地跨文化宣教 [[37:07](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=2227)]。
 
+---
 
 # 7. 教会动员篇: 七个动员策略
 
