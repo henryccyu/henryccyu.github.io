@@ -1,3 +1,55 @@
+# 6. 宣教模式與策略
+
+### 宣教模式的多樣性與考慮因素
+
+牧師強調，由於普世宣教面臨巨大的**文化多樣性**，宣教士需要採取不同的宣教策略和模式 [[00:48](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=48)]：
+
+* **地理與生活模式的差異：** 山區、漁村、大城市等不同地區，其生活模式和面對的困難截然不同，因此宣教士落地生根的身份和方式也需調整 [[01:00](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=60)]。
+* **宗教和世界觀的差異：** 不同的宗教（如佛教、印度教、伊斯蘭教）有其獨特的思考模式和世界觀，宣教策略必須有效應對 [[01:37](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=97)]。
+* **派遣基地（教會）的多樣性：** 宣教策略不應只考慮工場，也應考慮派遣教會的文化背景和優勢。例如，西方流行的「英語教學宣教」（TESL）可能對日本有效，但對其他派遣國家的宣教士而言，效果可能不同 [[04:24](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=264)]。
+* **時代性與全球化：** 宣教模式需要與時俱進，考慮當前的全球化趨勢 [[05:33](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=333)]。
+    * **人口移動（流動人口）：** 留學生、外籍工人、難民等移動人口加速了全球化，是宣教的重要視角 [[06:42](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=402)]。
+    * **城市化：** 全球超過 50% 的人口居住在城市，城市宣教需要了解當地的民生和需求 [[07:53](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=473)]。
+    * **虛擬化：** 社交媒體和網絡的影響力巨大，教會需要思考虛擬宣教的可能性，並將線上（online）接觸轉化為線下（offline）實際關係 [[08:35](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=515)]。
+
+### 整全的宣教視野（宣教模式的平衡）
+
+影片提出一個更**整全（holistic）**的宣教模式，主張平衡傳統、延伸和創意宣教 [[15:06](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=906)]：
+
+* **傳統宣教模式：** 開荒佈道、植堂建教會等直接傳講福音的方式 [[15:17](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=917)]。
+* **延伸宣教模式：** 醫療宣教、教育、聖經翻譯等 [[15:48](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=948)]。
+* **創意宣教模式：** 營商宣教、虛擬宣教、平信徒帶著專業到各地傳福音等 [[16:09](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=969)]。
+
+### 宣教團隊的角色和後方支持
+
+羅牧師用足球隊比喻宣教工作，強調需要整全的思考，不只關注前線（前鋒），也要重視中場和後衛（後方支援）[[17:06](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1026)]：
+
+* **前線宣教（前鋒）：** 各種專業（如農業、商業、教育、醫療）的宣教模式 [[18:56](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1136)]。
+* **前線支持（中場）：** 為前線宣教士提供電腦、行政、維修等支援工作 [[19:12](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1152)]。
+* **後方支持（後衛）：**
+    * **拆派者：** 提供經驗傳承和顧問意見，協助堂會拆派宣教士 [[20:52](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1252)]。
+    * **專業關顧：** 提供宣教士督導、跨文化經驗的專業輔導等 [[21:34](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1294)]。
+    * **本地跨文化事工：** 在本地接待和關懷流動人口 [[23:09](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1389)]。
+
+### 案例應用
+
+影片最後以兩個實際案例說明多元宣教模式的應用：
+
+1.  **庫爾德自治區（伊拉克北部）** [[23:32](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1412)]
+    * 庫爾德人曾是基教國家後轉為穆斯林，曾極度封閉。
+    * 2003年伊拉克戰役後出現開放窗口。
+    * 可行的宣教模式：
+        * **教育/學術宣教：** 擁有博士學位者可在國際英語大學任教 [[27:30](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1650)]。
+        * **營商宣教：** 投資醫療、教育、農業、建築，利用十年免稅期等優惠 [[28:39](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1719)]。
+        * **NGO/社區重建：** 成立非營利機構，進行醫療復康、孤兒院、職業培訓，甚至協助清理地雷 [[29:53](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1793)]。
+    * 2016年伊斯蘭國入侵後，許多庫爾德人成為難民，難民事工成為新的宣教模式 [[30:34](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1834)]。
+
+2.  **索馬里** [[34:57](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=2097)]
+    * 索馬里國家不平安、內戰不斷、經濟崩潰。
+    * 約三成索馬里人離國到肯尼亞、埃及甚至香港工作。
+    * **流動人口宣教：** 索馬里人多為男性，在外賺錢寄回國，地位較高。若他們在海外信主，回鄉後對家鄉的影響力會很大。在香港，例如在重慶大廈，就可以接觸索馬里人，建立信任和關係，進行本地跨文化宣教 [[37:07](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=2227)]。
+
+
 # 7. 教会动员篇: 七个动员策略
 
 
