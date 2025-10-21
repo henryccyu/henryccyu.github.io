@@ -1,3 +1,56 @@
+# 4. 普世差传的趋势、挑战与契机
+
+**21 世纪是华人的世纪** [[00:33](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=33)]，这对华人教会和信徒参与宣教工作带来了巨大的机会。他从四个趋势和四个挑战两方面进行了分享。
+
+---
+
+### **普世差传的四大趋势 (Four Global Mission Trends)**
+
+1.  **重视福音未及之民 (Focusing on Unreached Peoples)**
+    * 宣教工作的重点在于那些福音力量不足以传遍整个地区或民族的地方，即“福音未及之民” [[01:42](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=102)]。
+    * 他特别提到了一个位于北纬 10 度至 40 度之间的矩形区域，涵盖了非洲、中东、亚洲等地区，居住着约 **48 亿人口** [[02:23](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=143)]，包括穆斯林、印度教徒、佛教徒和共产国家的人民。
+    * 他指出，当今世界上有两大需要福音的群体：
+        * **华人群体**：包括中国大陆的 13 亿多人口和海外 4,000 多万华裔 [[04:06](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=246)]。
+        * **穆斯林群体**：全世界约有 17 亿穆斯林，且增长迅速 [[05:33](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=333)]。
+
+2.  **培训基督徒领袖与教导人员 (Training Christian Leaders and Teachers)**
+    * 今天的宣教策略不仅仅是差派宣教士去传福音和建立教会，更重要的是 **训练当地的基督徒** 成为“得人的渔夫” [[07:01](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=421)]。
+    * 宣教的特色是“**从全世界去到全世界**” [[08:33](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=513)]，每个地方在接受福音的同时，也应有能力差出宣教士。
+    * 例如，中国大陆的教会有一个目标，希望到 **2030 年** 能派出 **2 万位宣教士** [[08:10](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=490)]。
+
+3.  **本地跨文化的福音工作 (Local Cross-Cultural Evangelism)**
+    * 由于交通便利和全球人口迁徙，许多不同国籍、不同信仰的人群（如打工者、留学生、难民）来到了我们居住的城市 [[10:23](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=623)]。
+    * 这为本地教会提供了在“家门口”进行跨文化宣教的机会，被称为 **Glocal (全球本地化)** [[11:43](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=703)]。
+    * 在难民营中传福音是一个很好的契机，因为难民在逃难中更容易思考人生信仰的问题 [[14:21](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=861)]。
+
+4.  **翻译圣经 (Bible Translation)**
+    * 圣经是神的话语，但世界上仍有约 **2,000 种语言** 还没有他们自己文字的圣经 [[16:38](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=998)]。
+    * 威克里夫圣经翻译会 (Wycliffe Bible Translators) 设定目标，希望能在 **2025 年** 之前开始所有需要圣经语言的翻译工作 [[18:00](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=1080)]。
+
+---
+
+### **普世差传的四大挑战 (Four Global Mission Challenges)**
+
+1.  **需要更广泛的人才 (Need for a Wider Range of Talents)**
+    * 在许多不欢迎基督教信仰的“福音未及之民”地区，宣教士无法以传道人的身份进入。
+    * 因此，教会需要有 **专业技能**（如教师、医护人员、商人）并接受过神学和宣教训练的基督徒，以**职业人士**的身份进入当地服侍，即“带职宣教” [[20:20](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=1220)]。
+
+2.  **以爱心来做宣教 (Missions Must Be Done with Love)**
+    * 在一个“爱心渐渐冷淡”的时代，宣教不能依靠“暴力征战”，而必须是 **“用爱心、用热泪苦心来赢取众人的心”** [[23:43](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=1423)]。
+    * 基督徒的爱心服侍能够感动人，为福音开启道路，缩短人们寻求基督的路程 [[25:30](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=1530)]。
+
+3.  **先做主的门徒，才能使人做门徒 (Be a Disciple First to Make Disciples)**
+    * 大使命的重点是要使**万民做主的门徒**，而不仅仅是信主受洗 [[26:25](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=1585)]。
+    * 宣教士必须自己先成为完全顺服主话语的门徒，并以自己的生命、经历和挣扎来影响和带领他人 [[27:01](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=1621)]。
+
+4.  **鼓励、帮助三分之二的世界投入宣教 (Encourage the Two-Thirds World to Engage in Missions)**
+    * 大使命是赐给每一位基督徒的，不单是西方教会或华人教会 [[30:03](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=1803)]。
+    * 挑战在于鼓励和帮助“三分之二世界”（发展中国家）的信徒，让他们积极地投入宣教服侍，支持和差派自己的宣教士 [[31:56](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=1916)]。
+
+翁牧师最后呼吁听众思想：**神对你有何呼召？** 你是否愿意用你的专业去到福音未及之民当中，或者以祷告和奉献支持宣教士，把握住神给华人的机会，完成主的大使命 [[33:43](http://www.youtube.com/watch?v=pVJEdtnNEbA&t=2023)]。
+
+---
+
 # 5. 門徒訓練與跨文化宣教
 
 ### 1. 宣教士的自我介紹與門徒訓練的定義
