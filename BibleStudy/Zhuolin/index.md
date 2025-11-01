@@ -1,5 +1,5 @@
-- [提摩太前书]
-- [提摩太后书]
-- [提多书]
-- [腓利门书]
+- [提摩太前书](1Timothy.html)
+- [提摩太后书](2Timothy.html)
+- [提多书](Titus.html)
+- [腓利门书](Philemon.html)
 - [希伯来书]
