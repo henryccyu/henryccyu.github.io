@@ -2,6 +2,7 @@
 [聖經 - 各書卷](https://bibleplan.github.io/AllBooks.html)  
 [以西結書](https://bibleplan.github.io/daily/2022/wk87-day3-daily.html)  
 [路加福音](https://bibleplan.github.io/daily/2022/wk6-day2-daily.html)  
+[每日灵修](https://henryccyu.github.io/BibleStudy/Zhuolin)  
 
 [BSF 2025](https://henryccyu.github.io/BSF/2025)  
 
