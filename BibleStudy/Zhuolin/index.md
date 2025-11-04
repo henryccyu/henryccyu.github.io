@@ -1,5 +1,5 @@
-- [帖撒羅尼迦前書](1Thessalonisians.html)
-- [帖撒羅尼迦後書](2Thessalonisians.html)
+- [帖撒羅尼迦前書](1Thessalonians.html)
+- [帖撒羅尼迦後書](2Thessalonians.html)
 - [提摩太前书](1Timothy.html)
 - [提摩太后书](2Timothy.html)
 - [提多书](Titus.html)
