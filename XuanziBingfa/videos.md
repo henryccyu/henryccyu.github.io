@@ -355,3 +355,138 @@
 5.  **设立普世祷告日：** 设立固定的普世祷告日（如借鉴世界地球日），唤醒教会对动荡世界的关注和守望（[[39:40](http://www.youtube.com/watch?v=ueZTyfhlDFo&t=2380)]）。
 
 ---
+
+# 10. 陈伟娟牧师 连心桥宣教士 蒙召成为宣教士的心路历程
+
+### 一、 确认宣教呼召的三个途径
+
+陈牧师分享了神引导她走上宣教之路的三个主要凭证：
+
+* **从祷告中而来 [[00:53](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=53)]：**
+    * 在神学院学习时，对宣教的负担越来越重，意识到宣教是每个教会的使命。
+    * 通过与同学定期祷告，为世界宣教士和各方面需要代祷，使她对宣教的负担不断加深 [[01:56](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=116)]。
+    * 借着海外实习的经历，让她与宣教士一起生活，更肯定了这是神给她的呼召 [[02:45](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=165)]。
+* **客观环境的印证 [[03:19](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=199)]：**
+    * **个人特质/恩赐：** 宣教士夫妇的评估认为她非常合适 [[04:54](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=294)]，并且她发现自己能适应当地文化，与当地弟兄姊妹有美好相处和沟通，并享受宣教生活 [[04:08](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=248)]。
+    * **教会的认定：** 教会理解并认同她的心志，是神计划的一部分 [[05:19](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=319)]。
+    * **家人的支持：** 母亲虽然不舍，但也认定她的呼召是“从神而来的” [[06:04](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=364)]。
+* **圣经话语的印证 [[06:35](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=395)]：**
+    * 在她对前景充满恐惧和忧虑时，神使用《诗篇》37篇3-5节与她说话，让她知道要单单倚靠祂，祂就会成就她心里所想的 [[07:18](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=438)]。
+
+### 二、 清楚呼召的重要性与挑战
+
+* **呼召是重要的根基 [[08:26](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=506)]：** 当宣教士在工场遇到人际关系、身体、事工挑战等**无法预计的困难**时，对初衷呼召的回想，能帮助他们不灰心、不动摇，并**继续走下去** [[08:37](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=517)]。
+* **预备的重要性 [[10:55](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=655)]：** 宣教士需要接受宣教课程、跨文化训练 [[11:10](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=670)]，学习如何在跨文化中生存下来，以及同工间的沟通、自我的接纳等，这比单纯的神学训练更重要 [[12:02](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=722)]。
+* **呼召的成脱力（拖住力量） [[23:27](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1407)]：** 清晰的呼召是属灵争战中的力量，使宣教士**遇难不退**，帮助他们面对：
+    * 学习新语言的困难，如听写讲的挑战 [[24:03](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1443)]。
+    * 工场文化差异的冲击，避免在“文化冲击期”盲目同化而失去自我价值 [[24:45](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1485)]。
+    * 宣教团队同工的磨合、事奉的疲累 [[25:57](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1557)]。
+* **困难中的成长 [[29:05](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1745)]：** 神容许困难临到，是为了调整错误的态度、磨练品格、打开眼界认识祂，并让宣教士经历祂的爱和大能。
+
+### 三、 宣教大业的三方协作
+
+向普世传福音是“宣教大业”，绝不是个别基督徒能独自完成的，需要三方紧密合作：
+
+1.  **教会 [[17:28](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1048)]：** 教会是宣教士的代表，将宣教士拆派出去，并在后方全力支援，包括**经济**、**关怀代祷**、**探访**宣教士父母等 [[17:35](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1055)]。
+2.  **差会 [[17:51](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1071)]：** 负责与教会合作拆派宣教士的独立组织，扮演了关键的支持角色：
+    * **出发前：** 协助身心评估、办理签证、**经费筹划**（与其他教会共同参与） [[18:06](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1086)]。
+    * **工场上：** 关怀督导、协办短宣、转达代祷信息、安排述职、退休指引、甚至**政变措施**等 [[18:34](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1114)]。
+3.  **宣教工场：** 宣教士在工场上进行福音工作。
+
+**选择差会时**，应考虑差会所专注的**事工对象**（如华人工场）是否与自己的呼召吻合 [[15:00](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=900)]，以及差会是否有**良好的支援架构**，能为宣教士提供持续的祷告支持和沟通 [[15:38](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=938)]。
+
+---
+
+# 11. 关顾宣教士的重要性 刘雅璧总干事
+
+以下是视频的主要要点：
+
+### 一、 关顾宣教士的重要性（破除迷思）
+
+* **宣教士是普通人 [[00:54](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=54)]：** 很多人以为宣教士灵命高超，不需要关顾，这是一个迷思。
+* **宣教是属灵争战 [[01:32](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=92)]：** 宣教士深入魔鬼的“地盘”征战，不能单靠自己。他们是前线打仗的军队，非常需要**后方的支援**和**同伴同行** [[01:45](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=105)]。
+* **圣经基础 [[02:04](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=124)]：** 即使是神重用的宣教士保罗，在宣教过程中也面临忧虑、挂心、沮丧和反对 [[03:32](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=212)]，因此需要关顾、祷告和支持。哥林多教会的肢体**司提反一家**探访保罗，补上了“弟兄姊妹不在身边的遗憾”，使保罗得到快乐和安慰 [[04:00](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=240)]。
+
+### 二、 整全关顾的理念：“点、线、面”
+
+#### 1. **点：关顾的对象 [[04:46](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=286)]**
+* **宣教士本人：** 包括单身的宣教士（容易感到孤单，需要有人同行） [[05:34](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=334)]。
+* **宣教士家庭：** 包括宣教士夫妇和他们的**儿女**（在陌生环境中生活挑战大） [[06:04](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=364)]。
+* **宣教士的父母：** 通常在原居地，年迈生病时需要有人代为关顾，让宣教士能够安心侍奉 [[06:51](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=411)]。
+
+#### 2. **线：宣教士的生涯线 [[07:34](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=454)]**
+关顾应贯穿宣教士侍奉的**每一个阶段**：
+* **蒙召与预备 [[07:48](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=468)]：** 陪伴寻找神的心意、协助申请、训练预备（需要有人陪同祷告、聆听心声、探访父母） [[10:29](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=629)]。
+* **工场侍奉 [[08:47](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=527)]：** 适应新环境（如学习语言）、开荒事工、长期侍奉的疲乏（需要有牧者或熟识的弟兄姊妹去探访、聆听、属灵指引） [[11:53](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=713)]。
+* **述职与危机 [[09:07](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=547)]：** 遇到天灾、战争、患病等危机时，需要有不同的关顾去帮助他们面对 [[09:13](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=553)]。
+* **退休与回归 [[09:49](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=589)]：** 离开工场或回国定居，需要重新适应原居地生活（需要帮助找住处、重新投入教会生活、提供经济支援） [[10:02](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=602)]。
+
+#### 3. **面：不同层面的关顾者 [[14:15](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=855)]**
+关顾工作需要**教会、差会**和**不同群体**的合作，组成一个关顾网络：
+* **家人朋友和工场伙伴 [[15:00](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=900)]：** 是重要的同行者和守望者 [[16:16](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=976)]。
+* **差会与教会 [[16:43](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1003)]：** 扮演**拆派者**的角色。
+* **专业人员 [[16:54](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1014)]：** 包括心理辅导员、医疗人员、**财务投资人员**（关注退休生活）、牧者（属灵导引）、儿童教育专家等。
+* **宣教士自我关顾 [[18:07](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1087)]：** 懂得在忙碌中平衡工作和休息。
+* **天父的关顾 [[18:43](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1123)]（最核心）：** 宣教士需要与天父建立亲密关系，在困难中得着能力。
+
+### 三、 关顾的五个主要方面 [[20:22](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1222)]
+
+1.  **精神与祷告的支援 [[20:40](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1240)]：** 定期联络宣教士，聆听他们的分享和难处，给予鼓励、勉励和属灵指引，并一同祷告。
+2.  **通讯与后勤的支援 [[22:42](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1362)]：** 协助宣教士更广地发布**代祷信**，以及实际的事工支援（如制作主日学短片 [[23:31](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1411)]）、**关顾宣教士父母**（如陪伴看医生、节庆探访） [[24:52](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1492)]。
+3.  **经济上的支援 [[25:22](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1522)]：** 提供生活经费，或在**“以商宣教”（BAM）**模式中进行经济投资 [[25:49](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1549)]。
+4.  **架构的支援 [[26:19](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1579)]：** 教会和差会建立关顾宣教士的制度，如设立**祷告文化**、安排定期**退修**和**述职**时间、购买**保险**和**退休金**等 [[26:31](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1591)]。
+5.  **重归原居地的支援 [[27:37](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1657)]：** 帮助宣教士适应原居地生活，如找房子、重投教会大家庭等 [[27:51](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1671)]。
+
+### 四、 订立实践方案（行动步骤）
+
+1.  **认识与定位 [[29:43](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1783)]：** 认识自己和教会肢体在关顾中的角色，以及你所关心的宣教士正处于哪个**生涯阶段**、有何**性格**、面对何种**挑战**，以便配对合适的关顾者 [[30:38](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1838)]。
+2.  **邀请与推动 [[33:24](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=2004)]：** 在教会中分享关顾的重要性，邀请和推动弟兄姊妹参与。
+3.  **组织与持续 [[33:55](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=2035)]：** 找合适的人制定**关顾架构和制度**，设立**宣教士祷告小组**，并组织**宣教士资源小组**提供实际支援，并长期持续地做下去 [[34:08](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=2048)]。
+
+---
+
+# 12. 好的，这段名为《Chapter 12 Video 许顺明牧师1080p》的视频（[http://www.youtube.com/watch?v=u33SHnXpgEg](http://www.youtube.com/watch?v=u33SHnXpgEg)）是“宣子兵法”第12课，主题是**“如何成为一个大使命的基督徒”**。
+
+讲员许顺明牧师在分享中首先引述了美国一项关于基督徒对“大使命”（The Great Commission）认知度的研究，指出很多基督徒对大使命不熟悉或不理解，并强调大使命是教会事工的重点 [[01:14](http://www.youtube.com/watch?v=u33SHnXpgEg&t=74)]。
+
+接着，他从圣经中总结了基督徒在完成大使命上的七个**“画像”（角色）**：
+
+1.  **做福音使者的基督徒 (Gospel Messengers)** [[03:09](http://www.youtube.com/watch?v=u33SHnXpgEg&t=189)]
+    * 领受救恩的人就成为传扬救恩的人 [[03:33](http://www.youtube.com/watch?v=u33SHnXpgEg&t=213)]。
+    * 福音的大能包括：基督为我们做了什么（受死、复活、再来）[[04:40](http://www.youtube.com/watch?v=u33SHnXpgEg&t=280)]，基督要在我们身上做什么（重生、更新、内住）[[05:02](http://www.youtube.com/watch?v=u33SHnXpgEg&t=302)]，以及基督要透过我们来做什么（成为他的见证、荣耀他、影响世代）[[05:27](http://www.youtube.com/watch?v=u33SHnXpgEg&t=327)]。
+    * 福音不仅是救恩的福音，也包括国度的福音 [[05:49](http://www.youtube.com/watch?v=u33SHnXpgEg&t=349)]。
+
+2.  **使人做门徒的基督徒** [[06:03](http://www.youtube.com/watch?v=u33SHnXpgEg&t=363)]
+    * 大使命的核心是要使人做主的门徒（Make Disciples），而不是交朋友（Make Friends）[[06:29](http://www.youtube.com/watch?v=u33SHnXpgEg&t=389)]。
+    * 门徒与朋友的区别：朋友因共同兴趣吸引，门徒因共同关注神的事而相聚 [[09:47](http://www.youtube.com/watch?v=u33SHnXpgEg&t=587)]；朋友彼此影响，以达到自己的标准，门徒彼此影响，以接受上帝的标准和生命目标 [[09:59](http://www.youtube.com/watch?v=u33SHnXpgEg&t=599)]。
+
+3.  **做基督大使的基督徒 (Ambassadors of Christ)** [[11:11](http://www.youtube.com/watch?v=u33SHnXpgEg&t=671)]
+    * 大使是官方人员，代表派遣者说话和行事，传达的不是自己的意见或要求 [[11:54](http://www.youtube.com/watch?v=u33SHnXpgEg&t=714)]。
+    * 基督徒是基督的代表，传讲和好（和解）的福音 [[11:29](http://www.youtube.com/watch?v=u33SHnXpgEg&t=689)]。
+
+4.  **做宣教精兵的基督徒** [[13:21](http://www.youtube.com/watch?v=u33SHnXpgEg&t=801)]
+    * 基督徒真正的敌人是撒旦，我们被卷入一场属灵的争战 [[13:40](http://www.youtube.com/watch?v=u33SHnXpgEg&t=820)]。
+    * 要和基督耶稣同受磨难，穿戴上帝所赐的全副军装 [[14:32](http://www.youtube.com/watch?v=u33SHnXpgEg&t=872)]。
+    * 宣教精兵要有“为天国的千秋大业、扩大上帝的国”而受苦的士气和热忱 [[15:09](http://www.youtube.com/watch?v=u33SHnXpgEg&t=909)]。
+
+5.  **做生命见证的基督徒 (Martyrs)** [[17:22](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1042)]
+    * 宣教不是做了多少，而是你是一个怎么样的人 [[18:02](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1082)]。
+    * “见证”在原文也有“殉道者”的意思 [[18:13](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1093)]。
+    * 要随时准备好为福音的缘故受亏损、被占便宜，甚至为**主而死**，才能真正为**主而活** [[18:39](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1119)]。
+    * 基督徒是**活的祭物**，隐含有死（牺牲）的意义，但经过神火焚烧后又活过来 [[20:40](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1240)]。
+
+6.  **做宣教管家的基督徒 (Missionary Stewards)** [[24:55](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1495)]
+    * 人是本于神，属于神，一切所拥有的资源、智慧、恩赐、时间、金钱等都是上帝的赏赐 [[25:30](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1530)]。
+    * 管家没有所有权，有一天要交账 [[25:59](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1559)]。
+    * 领受的一切恩惠不应只为自己、亲人、教会或国家用，乃是**为普世而用** [[27:08](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1628)]。
+    * 成为宣教管家可以通过阅读宣教杂志、参加聚会、奉献经费等方式来拓展见识 [[27:36](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1656)]。
+
+7.  **做胸怀普世的基督徒 (World Christians)** [[28:27](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1707)]
+    * 宣教人是认识神、爱神、敬畏神、侍奉神、效法神的人 [[29:10](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1750)]。
+    * 宣教人不仅关注本地需要，也关注普世的需要 [[29:40](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1780)]。
+    * 要拥有**双焦眼镜**，远（普世）的近（周遭）的都看得到 [[31:38](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1898)]。
+    * 从普世起，从本地做起；从普世体验，从本地训练；从普世牺牲，从本地委身 [[31:55](http://www.youtube.com/watch?v=u33SHnXpgEg&t=1915)]。
+
+**总结：**
+大使命不是让我们来做**选择**的，而是**命令**我们来**顺服**的 [[34:44](http://www.youtube.com/watch?v=u33SHnXpgEg&t=2084)]。当我们遵行主的命令、成为大使命的基督徒时，就会经历到祂“常与我们同在”的应许，直到世界的末了 [[35:39](http://www.youtube.com/watch?v=u33SHnXpgEg&t=2139)]。
+http://googleusercontent.com/youtube_content/2
