@@ -1,3 +1,34 @@
+# 1. 跨文化宣教的圣经基础 龙维耐医生
+
+以下是视频的要点总结：
+
+### 1. 上帝的心意：从旧约到新约（救赎历史）
+
+* **贯穿始终的旨意：** 上帝的心意是连贯的，从旧约拣选以色列人开始，到新约建立祂的教会，最终目的都是要让祂的子民成为**万邦万国的祝福** [[00:13](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=13)]，[[01:27](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=87)]。
+* **“有先就有后”的原则：** 上帝先赐福给亚伯拉罕及其后裔（以色列人），但祝福的目的并不仅止于此，而是要通过他们将救恩传遍天下，使所有民族得福 [[04:06](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=246)]。
+* **救赎的行动：** 圣经从头到尾都在展现耶和华上帝不断地在医治和拯救，这是一个持续推进的**救赎历史**（Heilsgeschichte） [[02:21](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=141)]。
+
+### 2. 信徒的身份和角色（君尊的祭司）
+
+* **被拣选的目的：** 引用《诗篇》67篇，上帝的怜悯和赐福，是为了“好叫世界得知你的道路，万国得知你的救恩” [[01:36](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=96)]，[[06:11](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=371)]。
+* **新约的祭司：** 根据《彼得前书》2章9节，信徒是被拣选的族类，是**君尊的祭司** [[06:27](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=387)]。
+* **祭司的职分：** 祭司的身份是站在上帝与人群当中，将人带到上帝面前，为万族万民祷告，成为上帝与万民之间的**桥梁** [[09:04](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=544)]，[[09:57](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=597)]。被拣选是为了**宣扬**那召我们出黑暗入光明者的美德 [[07:25](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=445)]。
+
+### 3. 宣教的模式：来与去
+
+* **旧约的模式（“来吧”）：** 旧约以色列人本应坚守在敬拜中心（圣殿），打开门户让万邦万国“来”到他们当中敬拜上帝 [[12:41](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=761)]。但他们失败了，甚至藐视外邦人 [[13:05](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=785)]。
+* **新约的模式（“去”）：** 新约的主流模式是**大使命**（马太福音28章），强调要**“去”**，使万民作主的门徒 [[13:15](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=795)]，[[13:50](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=830)]。
+* **更完整的模式：** 宣教是“去”，但在建立教会后，教会内部的聚集（“来吧”）是为了同工，再一起“去”更远的地方传福音 [[14:07](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=847)]。
+
+### 4. 圣殿的教导与今日的应用
+
+* **万国祷告的殿：** 建造圣殿时，所罗门王就明白圣殿也应是“**万民祷告的殿**” [[16:23](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=983)]。
+* **洁净圣殿的意义：** 耶稣洁净圣殿，愤怒的原因在于犹太人为着自己的买卖和利益，霸占了**外邦人院**（外邦人唯一可以祷告和敬拜的地方） [[19:54](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=1194)]，阻碍了外邦人接触上帝的机会 [[20:16](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=1216)]。
+* **对今日教会的提醒：** 今天，教会和信徒的生命是新的圣殿 [[21:44](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=1304)]。教会不应只顾自身的好处，也必须有其**“外邦人院”**（宣教事工/项目），让万族万民有机会借着信徒的努力得知上帝的救恩 [[21:57](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=1317)]，[[22:23](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=1343)]。
+* **宣教的基石：** 跨文化宣教的圣经基础是**耶和华上帝普世的宣教心意**，而不仅仅是新约的大使命 [[23:18](http://www.youtube.com/watch?v=QXPV5tdwNl0&t=1398)]。
+
+---
+
 # 2. 耶稣的差传大计
 
 ### 一、 主宣教的原则 (The Principles of Jesus' Mission)
