@@ -6,6 +6,8 @@
 
 [BSF 2025](https://henryccyu.github.io/BSF/2025)  
 
+[宣子兵法视频](XuanziBingfa/videos.html)
+
 [罗马书 第87周总结（琢琳）](https://henryccyu.github.io/Zhuolin/wk87_Romans_PowerOfGospel.html)  
 [罗马书 第86周总结（琢琳）](https://henryccyu.github.io/Zhuolin/wk86_Romans_HeartOfDiscipleship.html)
 
