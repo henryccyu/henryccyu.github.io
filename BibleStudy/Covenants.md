@@ -1,0 +1,20 @@
+# 表六：旧约与新约的对比
+
+## TABLE 6: COMPARISON OF THE OLD AND NEW COVENANTS
+
+|旧约 O.C. under Moses                                                              |新约 N.C. in Christ                                                    |应用 Application                                                                                 |
+|---------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+|有罪的人须献上祭与礼、无罪的基督自我牺性<br>Gifts and sacrifices by those guilty of sin              |Self-sacrifice by the guiltless Christ                               |基督为你而死<br>Christ died for you                                                                  |
+|敬拜时专注于物质的殿、建造人们去敬拜的地方<br>Focused on a physical building where one goes to worship|注重基督在信徒心中的统领<br>Focuses on reign of Christ in the hearts of believers|神直接介入你的生命中<br>God directly involved in your life                                               |
+|影儿<br>A shadow                                                                   |实体、真像<br>A reality                                                   |不是短暂的,乃是永恒的<br>Not temporal, but eternal                                                       |
+|有限的应许<br>Limited promises                                                        |无尽的应许<br>Limitless promises                                          |我们可以信靠神的诸应许<br>We can trust God’s promises to us                                               |
+|人守不了诺言或约章<br>Failed agreement by people                                          |基督信实地守住其诺言<br>Faithful agreement by Christ                           |人不能守约，基督却能<br>Christ can keep the agreement where people couldn’t                              |
+|外表的标准与规条<br>External standards and rules                                         |内里的标准——新心<br>Internal standards—a new heart                          |神看行为与动机——我们是向神不是向规条交账<br>God sees both actions and motives—we are accountable to God, not rules|
+|有限制地亲近神<br>Limited access to God                                                 |无限制地亲近神<br>Unlimited access to God                                   |神是可亲近、随时都在的<br>God is personally available                                                     |
+|出于惧怕<br>Based on fear                                                            |出于爱与宽恕<br>Based on love and forgiveness                              |神的赦免，使我们的失败不至将约毁去<br>Forgiveness keeps our failures from destroying the agreement              |
+|法制上洁净<br>Legal cleansing                                                         |个人得以洁净<br>Personal cleansing                                         |神的洁净，最为完全<br>God’s cleansing is complete                                                       |
+|不断的献祭<br>Continual sacrifice                                                     |决定性的献祭<br>Conclusive sacrifice                                       |基督的牺牲是完美且是最后<br>Christ’s sacrifice is perfect and final                                        |
+|服从规条<br>Obey the rules                                                           |服侍永活神<br>Serve the living God                                        |我们有的是与神的关系而不是教条<br>We have a relationship, not regulations                                     |
+|要每年重申<br>Repeated yearly                                                         |由基督的死成全<br>Completed by Christ’s death                               |基督的死可适用于你的罪<br>Christ’s death can be applied to your sin                                       |
+|人为的努力<br>Human effort                                                            |神的恩惠<br>God’s grace                                                  |由神的爱为你而发动<br>Initiated by God’s love for you                                                   |
+|只适用于某些人<br>Available to some                                                     |凡人均可得<br>Available to all                                            |你也可以得到<br>Available to you                                                                     |
