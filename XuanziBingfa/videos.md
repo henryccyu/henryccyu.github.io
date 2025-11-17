@@ -478,7 +478,7 @@
 
 ---
 
-# 12. 好的，这段名为《Chapter 12 Video 许顺明牧师1080p》的视频（[http://www.youtube.com/watch?v=u33SHnXpgEg](http://www.youtube.com/watch?v=u33SHnXpgEg)）是“宣子兵法”第12课，主题是**“如何成为一个大使命的基督徒”**。
+# 12. 如何成为一个大使命的基督徒
 
 讲员许顺明牧师在分享中首先引述了美国一项关于基督徒对“大使命”（The Great Commission）认知度的研究，指出很多基督徒对大使命不熟悉或不理解，并强调大使命是教会事工的重点 [[01:14](http://www.youtube.com/watch?v=u33SHnXpgEg&t=74)]。
 
@@ -522,4 +522,3 @@
 
 **总结：**
 大使命不是让我们来做**选择**的，而是**命令**我们来**顺服**的 [[34:44](http://www.youtube.com/watch?v=u33SHnXpgEg&t=2084)]。当我们遵行主的命令、成为大使命的基督徒时，就会经历到祂“常与我们同在”的应许，直到世界的末了 [[35:39](http://www.youtube.com/watch?v=u33SHnXpgEg&t=2139)]。
-http://googleusercontent.com/youtube_content/2
