@@ -1,5 +1,7 @@
 [「每日讀經，與主同行」](https://bibleplan.github.io/)  
 [聖經 - 各書卷](https://bibleplan.github.io/AllBooks.html)  
+[BibleGateway.com](https://www.biblegateway.com)  
+
 [以西結書](https://bibleplan.github.io/daily/2022/wk87-day3-daily.html)  
 [路加福音](https://bibleplan.github.io/daily/2022/wk6-day2-daily.html)  
 [每日灵修](https://henryccyu.github.io/BibleStudy/Zhuolin)  
