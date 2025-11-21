@@ -1,1 +1,1 @@
-[耶稣的策略](JesusTraining/JesusStrategy.html)
+[耶稣的策略](JesusStrategy.html)
