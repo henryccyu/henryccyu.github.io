@@ -2,7 +2,7 @@
 - [Episode 2 - Who is Jesus](episode02.html)
 - [Episode 3 - Why Did Jesus Die](episode03.html)
 - [Episode 4 - How Can I Have Faith](episode04.html)
-- [Episode 5 - ](episode05.html)
+- [Episode 5 - Why and How Should I Pray](episode05.html)
 - [Episode 6 - ](episode06.html)
 - [Episode 7 - ](episode07.html)
 - [Episode 8 - ](episode08.html)
