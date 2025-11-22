@@ -8,6 +8,7 @@
 
 - [BSF 2025](https://henryccyu.github.io/BSF/2025)  
 
+- [Alpha Course](https://henryccyu.github.io/AlphaDiscussion/en/)
 - [宣子兵法视频](XuanziBingfa/videos.html)
 - [耶稣的宣教策略](JesusTraining/JesusStrategy.html)
 
