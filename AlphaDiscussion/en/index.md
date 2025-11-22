@@ -6,7 +6,7 @@
 - [Episode 6 - How and Why Should I Read the Bible](episode06.html)
 - [Episode 7 - ](episode07.html)
 - [Episode 8 - ](episode08.html)
-- [Episode 9 - ](episode09.html)
+- [Episode 9 - Who Is The Holy Spirit](episode09.html)
 - [Episode 10 - What Does the Holy Spirit Do](episode10.html)
 - [Episode 11 - ](episode11.html)
 - [Episode 12 - ](episode12.html)
