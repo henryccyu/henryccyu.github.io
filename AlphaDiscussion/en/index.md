@@ -3,7 +3,7 @@
 - [Episode 3 - Why Did Jesus Die](episode03.html)
 - [Episode 4 - How Can I Have Faith](episode04.html)
 - [Episode 5 - Why and How Should I Pray](episode05.html)
-- [Episode 6 - ](episode06.html)
+- [Episode 6 - How and Why Should I Read the Bible](episode06.html)
 - [Episode 7 - ](episode07.html)
 - [Episode 8 - ](episode08.html)
 - [Episode 9 - ](episode09.html)
