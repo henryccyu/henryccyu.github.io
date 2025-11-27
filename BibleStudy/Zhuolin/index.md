@@ -5,3 +5,6 @@
 - [提多书](Titus.html)
 - [腓利门书](Philemon.html)
 - [希伯来书](Hebrews.html)
+- [雅各书](James.html)
+- [彼得前书](1Peter.html)
+- [彼得后书](2Peter.html)
