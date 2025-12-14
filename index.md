@@ -6,7 +6,8 @@
 - [路加福音](https://bibleplan.github.io/daily/2022/wk6-day2-daily.html)  
 - [每日灵修](https://henryccyu.github.io/BibleStudy/Zhuolin)  
 
-- [BSF 2025](https://henryccyu.github.io/BSF/2025)  
+- [BSF 2025 - 被掳与归回](https://henryccyu.github.io/BSF/2025)
+- [BSF 2024 - 启示录](https://henryccyu.github.io/BSF/2024-Revelation)
 
 - [Alpha Course](https://henryccyu.github.io/AlphaDiscussion/en/)
 - [宣子兵法视频](XuanziBingfa/videos.html)
