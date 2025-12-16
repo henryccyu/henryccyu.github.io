@@ -5,7 +5,7 @@
 - [以西結書](https://bibleplan.github.io/daily/2022/wk87-day3-daily.html)  
 - [路加福音](https://bibleplan.github.io/daily/2022/wk6-day2-daily.html)  
 - [每日灵修](https://henryccyu.github.io/BibleStudy/Zhuolin)  
-- [谦理之行 - 每周经文回顾](https://henryccyu.github.io/QianLiZhixing/WeeklyReviews)
+- [谦理之行 - 每周经文回顾](https://henryccyu.github.io/ECC/QianLiZhixing/WeeklyReviews)
 
 - [BSF 2025 - 被掳与归回](https://henryccyu.github.io/BSF/2025)
 - [BSF 2024 - 启示录](https://henryccyu.github.io/BSF/2024-Revelation)
