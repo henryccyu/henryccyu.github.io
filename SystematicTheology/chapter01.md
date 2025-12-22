@@ -1,473 +1,277 @@
-# CHAPTER 1 Introduction to Systematic Theology
-> What is systematic theology?  
-> Why should Christians study it?  
-> How should we study it?
+# 第一章 系统神学导论
 
-## EXPLANATION AND SCRIPTURAL BASIS
-### A. DEFINITION OF SYSTEMATIC THEOLOGY
-What is systematic theology? Many different definitions have been given, but for the purposes of this book the following definition will be used: systematic theology is any study that answers the question, "What does the whole Bible teach us today?" about any given topic.¹
+*什么是系统神学？*
 
-This definition indicates that systematic theology involves collecting and understanding all the relevant passages in the Bible on various topics and then summarizing their teachings clearly so that we know what to believe about each topic. However, it is important to state at once that the study of church history (including the
-great creeds of the church and the writings of major theologians in church history) and the study of philosophy can often be of great benefit in helping us understand what the whole Bible in fact does teach about various topics. But they do not contain any authority greater than or equal to the authority of Scripture.
+*为什么基督徒应该学习它？*
 
-**1. Relationship to Other Disciplines**
+*我们应该如何学习它？*
 
-As my definition indicates, the emphasis of this book will not be on historical theology2 (a historical study of how Christians in different periods have understood various theological topics) or philosophical theology (studying theological topics largely without use of the Bible, but using the tools and methods of philosophical
-reasoning and what can be known about God from observing the universe) or apologetics (providing a defense of the truthfulness of the Christian faith for the purpose of convincing unbelievers). These three subjects, which are worthwhile subjects for Christians to pursue, are sometimes also included in a broader definition of the
-term systematic theology. In fact, some consideration of historical, philosophical, and apologetic matters will be found at points throughout this book. This is because historical study informs us of the insights gained and the mistakes made by others previously in understanding Scripture; philosophical study helps us understand
-right and wrong thought forms common in our culture and others; and apologetic study helps us bring the teachings of Scripture to bear on the objections raised by unbelievers. But these areas of study are not the focus of this volume, which rather interacts directly with the biblical text in order to understand what the Bible itself
-says to us about various theological subjects.
+## 解释与圣经基础
 
-If someone prefers to use the term systematic theology in the broader sense (including especially historical theology and philosophy, as well as apologetics) instead of the narrow sense that has been defined above, it will not make much difference. Those who use the narrower definition will agree that these other areas of study
-definitely contribute in a positive way to our understanding of systematic theology, and those who use the broader definition will certainly agree that historical theology, philosophical theology, and apologetics can be distinguished from the process of collecting and synthesizing all the relevant Scripture passages for various topics.
-Moreover, even though historical and philosophical studies do contribute to our understanding of theological questions, only Scripture has the final authority to define what we are to believe,2 and it is therefore appropriate to spend some time focusing on the process of analyzing the teaching of Scripture itself.
+### A. 系统神学的定义
 
-Systematic theology, as we have defined it, also differs from Old Testament theology, New Testament theology, and biblical theology. These three disciplines organize their topics historically and in the order the topics are presented in the Bible. Therefore, in Old Testament theology, one might ask, "What does Deuteronomy teach
-about prayer?" or "What do the Psalms teach about prayer?" or "What does Isaiah teach about prayer?" or even, "What does the whole Old Testament teach about prayer, and how is that teaching developed over the history of the Old Testament?" In New Testament theology one might ask, "What does John's gospel teach about
-prayer?" or "What does Paul teach about prayer?" or even "What does the New Testament teach about prayer and what is the historical development of that teaching as it progresses through the New Testament?"
+什么是系统神学？虽然已经有许多不同的定义，但为了本书的目的，将使用以下定义：**系统神学是对"整本圣经今天对任何给定主题教导了什么？"这一问题的研究。**¹
 
-_Biblical theology_ has a technical meaning in theological studies. It is the larger category that contains both Old Testament theology and New Testament theology as we have defined them above. Biblical theology gives special attention to the teachings of individual authors and sections of Scripture and to the place of each teaching
-in the historical development of Scripture.4 So one might ask, "What is the historical development of the teaching about prayer as it is seen throughout the history of the Old Testament and then of the New Testament?" Of course, this question comes very close to the question, "What does the whole Bible teach us today about
-prayer?" (which would be systematic theology by our definition). It then becomes evident that the boundary lines between these various disciplines often overlap at the edges, and parts of one study blend into the next. Yet there is still a difference, for biblical theology traces the historical development of a doctrine and the way one's
-place in that historical development affects one's understanding and application of that particular doctrine. Biblical theology also focuses on the understanding of each doctrine that the individual biblical authors and their original hearers or readers possessed.
+这个定义表明，系统神学涉及收集和理解圣经中关于各种主题的所有相关经文，然后清晰地总结它们的教导，以便我们知道对每个主题应该相信什么。然而，必须立即指出的是，对**教会历史**（包括教会的伟大信经和教会历史中主要神学家的著作）的研究，以及对**哲学**的研究，通常能够极大地帮助我们理解整本圣经实际上对各种主题的教导。但它们所包含的权威性并不大于或等于圣经的权威性。
 
-Systematic theology, on the other hand, makes use of the material of biblical theology and often builds on the results of biblical theology. At some points, especially where great detail and care is needed in the development of a doctrine, systematic theology will even use a biblical-theological method, analyzing the development
-of each doctrine through the historical development of Scripture. But the focus of systematic theology remains different: its focus is on the collection and then the summary of the teaching of all the biblical passages on a particular subject. Thus systematic theology asks, for example, "What does the whole Bible teach us today about
-prayer?" It attempts to summarize the teaching of Scripture in a brief, understandable, and very carefully formulated statement.
+#### 1. 与其他学科的关系
 
-**2. Application to Life**
+正如我的定义所表明的，本书的重点不会放在**历史神学²**（对不同时期的基督徒如何理解各种神学主题的历史研究）或**哲学神学**（主要不使用圣经，而是使用哲学推理的工具和方法以及通过观察宇宙可以了解到的关于上帝的知识来研究神学主题）或**护教学**（为基督教信仰的真实性提供辩护，以说服非信徒）。这三个学科都是基督徒值得追求的，有时也包含在**系统神学**这一术语的更广泛定义中。事实上，在本书的各个部分都会发现对历史、哲学和护教学问题的一些考虑。这是因为历史研究告诉我们其他人以前在理解圣经时获得的见解和犯下的错误；哲学研究帮助我们理解我们的文化和其他文化中常见的正确和错误的思想形式；护教学研究帮助我们将圣经的教导应用于非信徒提出的反对意见。但这些研究领域不是本卷的重点，本卷的重点是直接与圣经文本互动，以理解圣经本身对我们讲述的关于各种神学主题的内容。
 
-Furthermore, systematic theology focuses on summarizing each doctrine as it should be understood by present-day Christians. This will sometimes involve the use of terms and even concepts that were not used by any individual biblical author but that are the proper result of combining the teachings of two or more biblical
-authors on a particular subject. The terms Trinity, incarnation, and deity of Christ, for example, are not found in the Bible, but they usefully summarize biblical concepts.
+如果有人更喜欢在更广泛的意义上使用**系统神学**这一术语（特别是包括历史神学和哲学，以及护教学），而不是上面定义的狭义意义，那么不会有太大区别。那些使用更狭义定义的人会同意，这些其他研究领域肯定会以积极的方式为我们对系统神学的理解做出贡献，而那些使用更广泛定义的人肯定会同意，历史神学、哲学神学和护教学可以与收集和综合各种主题的所有相关圣经经文的过程区分开来。此外，尽管历史和哲学研究确实有助于我们理解神学问题，但只有圣经具有定义我们应该相信什么的最终权威性²，因此适当地花一些时间专注于分析圣经本身的教导过程。
 
-Defining systematic theology to include "what the whole Bible teaches us today” implies that application to life is a necessary part of the proper pursuit of systematic theology. Thus a doctrine under consideration is seen in terms of its practical value for living the Christian life. Nowhere in Scripture do we find doctrine studied
-for its own sake or isolated from life. The biblical writers consistently apply their teaching to life. Even those books of the Bible that have the most doctrinal content (such as Romans, Ephesians, and Hebrews) contain much material that is also directly applicable to the Christian life. Therefore, any Christian reading this book should
-find his or her Christian life enriched and deepened during this study; indeed, if personal spiritual growth does not occur, then the book has not been written properly by the author or the material has not been rightly studied by the reader.
+系统神学，正如我们所定义的，也不同于**旧约神学**、**新约神学**和**圣经神学**。这三个学科按历史顺序和圣经中呈现主题的顺序来组织其主题。因此，在旧约神学中，人们可能会问："申命记对祷告教导了什么？"或"诗篇对祷告教导了什么？"或"以赛亚书对祷告教导了什么？"或者甚至，"整个旧约对祷告的教导是什么，以及这种教导在旧约历史中是如何发展的？"在新约神学中，人们可能会问："约翰福音对祷告教导了什么？"或"保罗对祷告教导了什么？"或者甚至"新约对祷告的教导是什么，以及这种教导在新约中逐步发展的历史发展是什么？"
 
-**3. Systematic Theology and Disorganized Theology: The Key Differences**
+**圣经神学**在神学研究中具有技术性含义。它是包含旧约神学和新约神学的更大类别，正如我们在上面定义的那样。圣经神学特别关注圣经**个别作者和章节**的教导，以及每个教导在圣经**历史发展**中的位置⁴。因此，人们可能会问："在整个旧约的历史中，然后是新约的历史中，关于祷告的教导的历史发展是什么？"当然，这个问题非常接近这个问题："整本圣经今天对祷告的教导是什么？"（这将是根据我们的定义的**系统神学**）。然后很明显，这些不同学科之间的界限经常在边缘重叠，一个研究领域的部分内容融入另一个研究领域。然而，圣经神学追踪了一个特定教义在整个圣经历史发展过程中的**历史发展**，而系统神学专注于对一个特定教义的**历史发展**的理解和应用。圣经神学还关注对个别圣经作者和他们的原始听众或读者所拥有的每个教义的理解。
 
-If we use this definition of systematic theology, it will be seen that most Christians actually do systematic theology (or at least make systematic-theological statements) many times a week. For example: “The Bible says that everyone who believes in Jesus Christ will be saved." "The Bible says that Jesus Christ is the only way to
-God." "The Bible says that Jesus is coming again." These are all summaries of what Scripture says, and as such, they are systematic-theological statements. In fact, every time a Christian says something about what the whole Bible says, he or she is in a sense doing systematic theology-according to our definition-by thinking about
-various topics and answering the question, "What does the whole Bible teach us today?"5
+另一方面，系统神学利用圣经神学的材料，并经常建立在圣经神学的结果之上。在某些方面，特别是在一个教义的发展中需要极大的细节和关注的地方，系统神学甚至会使用圣经神学方法，分析一个教义在整个圣经历史发展中的发展。但系统神学的焦点仍然不同：它的焦点是收集然后总结圣经中关于特定主题的所有经文的教导。因此，系统神学例如会问："整本圣经今天对祷告的教导是什么？"它试图以简短、易懂且非常仔细制定的陈述来总结圣经的教导。
 
-How then does this book differ from the "systematic theology" that most Christians do? First, it treats biblical topics in a carefully organized way to guarantee that all important topics will receive thorough consideration. This organization also provides one sort of check against inaccurate analysis of individual topics, for it means
-that all other doctrines that are treated can be compared with each topic for consistency in methodology and absence of contradictions in the relationships between the doctrines. This also helps to ensure balanced consideration of complementary doctrines: Christ's deity and humanity are studied together, for example, as are
-God's sovereignty and man's responsibility, so that wrong conclusions will not be drawn from an imbalanced emphasis on only one aspect of the full biblical presentation.
+#### 2. 应用于生活
 
-In fact, the adjective systematic in systematic theology should be understood to mean something like "carefully organized by topics," with the understanding that the topics studied will be seen to fit together in a consistent way, and will include all the major doctrinal topics of the Bible. Thus systematic should be thought of as
-the opposite of "randomly arranged" or "disorganized." In systematic theology topics are treated in an orderly or "systematic" way.
+此外，系统神学专注于总结每个教义，因为它应该被当今的基督徒理解。这有时会涉及使用任何个别圣经作者都未使用的术语甚至概念，但这些术语甚至概念是结合两个或更多圣经作者关于特定主题的教导的适当结果。例如，**三位一体**、**道成肉身**和**基督的神性**这些术语在圣经中找不到，但它们有用地总结了圣经概念。
 
-A second difference between this book and the way most Christians do systematic theology is that it treats topics in much more detail than most Christians do. For example, as a result of regular reading of the Bible an ordinary Christian may make the theological statement, "The Bible says that everyone who believes in Jesus Christ
-will be saved." That is a perfectly true summary of a major biblical teaching. However, in this book we devote several pages to elaborating more precisely what it means to "believe in Jesus Christ," and twelve chapters (chapters 32–43) are devoted to explaining what it means to "be saved" in all of the many implications of that term.
+将系统神学定义为包括"整本圣经**今天对我们**的教导"意味着应用于生活是正确追求系统神学的必要部分。因此，正在考虑的教义是根据其对基督徒生活的实用价值来看待的。我们在圣经中找不到为了自己的缘故而研究的教义，或与生活隔离的教义。圣经作者始终将他们的教导应用于生活。即使是圣经中具有最多教义内容的书卷（如罗马书、以弗所书和希伯来书）也包含许多直接适用于基督徒生活的材料。因此，任何阅读本书的基督徒都应该在这项研究中发现他或她的基督徒生活得到了丰富和加深；实际上，如果个人的属灵成长没有发生，那么本书就没有被作者正确地写出来，或者材料没有被读者正确地研究。
 
-Third, a formal study of systematic theology will make it possible to formulate summaries of biblical teachings with much more accuracy than Christians would normally arrive at without such a study. In systematic theology, summaries of biblical teachings must be worded precisely to guard against misunderstandings and to
-exclude false teachings.
+#### 3. 系统神学与混乱神学：关键区别
 
-Fourth, a good theological analysis must find and treat fairly all the relevant Bible passages for each particular topic, not just some or a few of the relevant passages. This often means that it must depend on the results of careful exegesis (or interpretation) of Scripture as generally agreed upon by evangelical interpreters, or when
-there are significant differences of interpretation, systematic theology will include detailed exegesis.
+如果我们使用这个系统神学的定义，就会发现大多数基督徒实际上每周都会多次进行系统神学（或者至少做出系统神学陈述）。例如："圣经说，凡相信耶稣基督的人都将得救。""圣经说，耶稣基督是通往上帝的唯一道路。""圣经说，耶稣将再来。"这些都是圣经所说内容的总结，因此，它们是系统神学陈述。实际上，每次基督徒说出整本圣经所说的内容时，他或她在某种意义上都在进行系统神学——根据我们的定义——通过思考各种主题并回答"整本圣经今天对我们的教导是什么？"这个问题⁵。
 
-**4. Beliefs Must Be Based on Scripture, Not Human Authorities or Traditions**
+那么，本书与大多数基督徒所做的"系统神学"有何不同？首先，它以**精心组织的方式**处理圣经主题，以确保所有重要主题都会得到彻底考虑。这种组织还提供了一种针对个别主题进行不准确分析的检查，因为这意味着所有其他被处理的教义都可以与每个主题进行比较，以检查方法论的一致性和教义之间关系的无矛盾性。这也有助于确保对互补教义的平衡考虑：例如，基督的神性和人性一起研究，上帝的主权和人的责任也一起研究，这样就不会从对完整圣经呈现的仅一个方面的不平衡强调中得出错误的结论。
 
-Because of the large number of topics covered in a study of systematic theology and because of the great detail with which these topics are analyzed, it is inevitable that someone studying a systematic theology text or taking a course in systematic theology for the first time will have many of his or her personal beliefs challenged
-or modified, refined or enriched. It is of utmost importance therefore that each person beginning such a course firmly resolve to abandon as false any idea found to be clearly contradicted by the teaching of Scripture. But it is also very important for each person to resolve not to believe any individual doctrine simply because this
-textbook or any other textbook or teacher says that it is true, unless this book or the instructor in a course can convince the student from the text of Scripture itself. It is Scripture alone and not "conservative evangelical tradition" or any other human authority that must function as the normative authority for what we should believe.
+实际上，系统神学中的形容词**系统的**应该被理解为意味着类似于"按主题精心组织"，理解是所研究的主题将被看作以一致的方式组合在一起，并将包括圣经的所有主要教义主题。因此，**系统的**应该被认为与"随机排列"或"混乱的"相反。在系统神学中，主题以有序或"系统的"方式处理。
 
-**5. What Are Doctrines?**
+本书与大多数基督徒进行系统神学的方式之间的第二个区别是，它比大多数基督徒**更详细地**处理主题。例如，作为定期阅读圣经的结果，普通基督徒可能会做出神学陈述："圣经说，凡相信耶稣基督的人都将得救。"这是对主要圣经教导的完全正确的总结。然而，在本书中，我们用了几页来详细阐述"相信耶稣基督"⁶的含义，以及十二章（第32-43章）来解释"得救"在所有含义中意味着什么。
 
-In this book, the word doctrine will be understood in the following way: a doctrine is what the whole Bible teaches us today about some particular topic. This definition is directly related to our earlier definition of systematic theology, since it shows that a "doctrine" is simply the result of the process of doing systematic theology
-with regard to one particular topic. Understood in this way, doctrines can be very broad or very narrow. We can speak of "the doctrine of God" as a major doctrinal category, including a summary of all that the Bible teaches us today about God. Such a doctrine would be exceptionally large. On the other hand, we may also speak more
-narrowly of the doctrine of God's eternity or the doctrine of the Trinity or the doctrine of God's justice.Z
+第三，正式研究系统神学将使得能够以**更加准确**的方式制定圣经教导的总结，而不是基督徒在没有这样的研究的情况下通常会得出的结论。在系统神学中，圣经教导的总结必须措辞准确，以防止误解并排除错误的教导。
 
-The book is divided into seven major sections according to seven major doctrines:
-- Part 1: The Doctrine of the Word of God
-- Part 2: The Doctrine of God
-- Part 3: The Doctrine of Man in the Image of God
-- Part 4: The Doctrines of Christ and the Holy Spirit
-- Part 5: The Doctrine of the Application of Redemption
-- Part 6: The Doctrine of the Church
-- Part 7: The Doctrine of the Future
----
+第四，良好的神学分析必须找到并公平对待**所有相关的圣经经文**，以处理每个特定主题，而不仅仅是一些或少数相关经文。这通常意味着它必须依赖于圣经的仔细释经（或解释）的结果，正如福音派解释者普遍同意的那样，或者当存在重大的解释分歧时，系统神学将包括详细的释经。
 
-Within each of these major doctrinal categories many more specific teachings have been selected as appropriate for inclusion. Generally these meet at least one of the following three criteria: (1) they are doctrines that are most emphasized in Scripture; (2) they are doctrines that have been most significant throughout the history
-of the church and have been important for all Christians at all times; (3) they are doctrines that have become important for Christians in the present situation in the history of the church (even though some of these doctrines may not have been of such great interest earlier in church history). Some examples of doctrines in the third
-category would be the doctrine of the inerrancy of Scripture, the doctrine of baptism in the Holy Spirit, the doctrine of Satan and demons with particular reference to spiritual warfare, the doctrine of spiritual gifts in the New Testament age, and the doctrine of the creation of man as male and female in relation to the understanding
-of roles appropriate to men and women today. Because of their relevance to the contemporary situation, doctrines such as these have received greater emphasis in the present volume than in other systematic theology textbooks.
+#### 4. 信念必须基于圣经，而不是人的权威或传统
 
-**6. The Difference between Systematic Theology and Christian Ethics**
+由于系统神学研究中涵盖的主题数量众多，以及分析这些主题的细节，不可避免地，首次学习系统神学教科书或参加系统神学课程的人会发现他或她的许多个人信念受到挑战或修改、精炼或丰富。因此，每个开始这样课程的人坚决决心放弃任何被圣经的教导明确反驳的任何想法是极其重要的。但同样非常重要的是，每个人都决心不相信任何个别**教义**，仅仅因为本教科书或任何其他教科书或教师说它是真的，除非本书或课程中的教师能够从圣经文本本身说服学生。仅有圣经，而不是"保守的福音派传统"或任何其他人的权威，必须作为我们应该相信什么的规范权威。
 
-Although there is inevitably some overlap between the study of theology and the study of ethics, I have tried to maintain a distinction in emphasis. The emphasis of systematic theology is on what God wants us to believe and to know, while the emphasis in Christian ethics is on what God wants us to do and what attitudes he
-wants us to have. Such a distinction is reflected in the following definition: Christian ethics is any study that answers the question, "What does the whole Bible teach us about which acts, attitudes, and personal character traits receive God's approval, and which do not?" Thus theology tells us what we should believe while ethics tells us how
-we should live. There is some overlap in topics between theology and ethics (for example, marriage could be treated in both), but in general terms, theology focuses on beliefs while ethics focuses on situations in life.
+#### 5. 什么是教义？
 
-A textbook on ethics, for example, would discuss topics such as marriage and divorce, lying and telling the truth, stealing and ownership of property, abortion, birth control, homosexuality, the role of civil government, discipline of children, capital punishment, war, care for the poor, racial discrimination, and so forth. Of course
-there is some overlap: theology must be applied to life (therefore it is often ethical to some degree). And ethics must be based on proper ideas of God and his world (therefore it is theological to some degree).
+在本书中，**教义**一词将以以下方式理解：**教义是整本圣经今天对某个特定主题的教导**。这个定义直接关系到我们之前对系统神学的定义，因为它表明"教义"只是对一个特定主题进行系统神学的过程的结果。以这种方式理解，教义可以非常宽泛或非常狭窄。我们可以说"上帝的教义"作为一个主要的教义类别，包括圣经今天对上帝所教导的一切的总结。这样的教义将特别大。另一方面，我们也可以更狭义地谈论三位一体的教义或上帝的公义的教义或上帝的正义的教义⁷。
 
-This book will emphasize systematic theology, though it will not hesitate to apply theology to life where such application comes readily. Still, for a thorough treatment of Christian ethics, see my companion book, Christian Ethics: An Introduction to Biblical Moral Reasoning.
+本书分为七个主要部分，对应七个主要教义：
 
-**B. INITIAL ASSUMPTIONS OF THIS BOOK**
+**第1部分**：上帝话语的教义
 
-We begin with two assumptions or presuppositions: (1) the Bible is true and is, in fact, our only absolute standard of truth, and (2) the God who is spoken of in the Bible exists, and he is who the Bible says he is—the Creator of heaven and earth and all things in them. These two presuppositions, of course, are always open to
-adjustment or modification or deeper confirmation, but at this point, these two assumptions form the point at which we begin.
+**第2部分**：上帝的教义
 
-**C. WHY SHOULD CHRISTIANS STUDY THEOLOGY?**
+**第3部分**：按照上帝形象造的人的教义
 
-Why should Christians study systematic theology? That is, why should we engage in the process of collecting and summarizing the teachings of many individual Bible passages on particular topics? Why is it not sufficient simply to continue reading the Bible regularly every day of our lives?
+**第4部分**：基督和圣灵的教义
 
-**1. The Basic Reason**
+**第5部分**：救赎应用的教义
 
-Many answers have been given to this question, but too often they leave the impression that systematic theology somehow can "improve" on the Bible by doing a better job of organizing its teachings or explaining them more clearly than the Bible itself has done. Thus we may begin implicitly to deny the clarity of Scripture (see
-chapter 6) or the sufficiency of Scripture (see chapter 8).
+**第6部分**：教会的教义
 
-However, in the Great Commission, Jesus commanded his disciples and now commands us also to teach believers to observe all that he commanded: "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded
-you. And behold, I am with you always, to the end of the age" (Matt. 28:19-20).2 Now to teach all that Jesus commanded, in a narrow sense, is simply to teach the content of the oral teaching of Jesus as it is recorded in the gospel narratives. However, in a broader sense, "all that Jesus commanded" includes the interpretation and
-application of his life and teachings, because in the book of Acts it is implied that it contains a narrative of what Jesus continued to do and teach through the apostles after his resurrection (note that Acts 1:1 speaks of "all that Jesus began to do and teach"). "All that Jesus commanded" can also include the Epistles, since they were
-written under the supervision of the Holy Spirit and were also considered to be a "command of the Lord" (1 Cor. 14:37; see also John 14:26; 16:13; 1 Thess. 4:15; 2 Peter 3:2; and Rev. 1:1-3). Thus in a larger sense, "all that Jesus commanded" includes all of the New Testament.
+**第7部分**：未来的教义
 
-Furthermore, when we consider that the New Testament writings endorse the absolute confidence Jesus had in the authority and reliability of the Old Testament Scriptures as God's words (see chapter 4), and when we realize that the New Testament Epistles also endorse this view of the Old Testament as absolutely authoritative
-words of God, then it becomes evident that we cannot teach "all that Jesus commanded" without including all of the Old Testament (rightly understood in the various ways in which it applies to the new covenant age in the history of redemption) as well.
+在这些主要教义类别中的每一个中，都选择了许多更具体的教导作为适合包含的内容。一般来说，这些至少满足以下三个标准中的一个：(1) 它们是圣经中最强调的教义；(2) 它们是在整个教会历史中对所有基督徒最重要的教义；(3) 它们是在教会历史现状中对基督徒变得重要的教义（尽管其中一些教义可能在教会历史早期并没有如此大的兴趣）。第三类教义的一些例子是圣经无误的教义、圣灵施洗的教义、关于撒但和邪灵的教义（特别是关于属灵争战的参考）、新约时代属灵恩赐的教义，以及关于男人和女人按照上帝形象被造的教义，与理解今天男人和女人适当角色的关系。由于它们与当代情况的相关性，这些教义在本卷中获得了比其他系统神学教科书更大的强调。
 
-The task of fulfilling the Great Commission includes therefore not only evangelism but also teaching. And the task of teaching all that Jesus commanded us is, in a broad sense, the task of teaching what the whole Bible says to us today. To effectively teach ourselves and to teach others what the whole Bible says, it is necessary to
-collect and summarize all the Scripture passages on a particular subject.
+#### 6. 系统神学与基督教伦理学之间的区别
 
-For example, if someone asks me, "What does the Bible teach about Christ's return?" I could say, "Just keep reading your Bible and you'll find out." But if the questioner begins reading at Genesis 1:1, it will be a long time before he or she finds the answer to that question. By that time many other questions will have needed answers,
-and the list of unanswered questions will begin to grow very long indeed. What does the Bible teach about the work of the Holy Spirit? What does the Bible teach about prayer? What does the Bible teach about sin? There simply is not time in our lifetimes to read through the entire Bible looking for an answer for ourselves every time
-a doctrinal question arises. Therefore, for us to learn what the Bible says, it is very helpful to have the benefit of the work of others who have searched through Scripture and found answers to these various topics.
+尽管神学研究和伦理学研究之间不可避免地存在一些重叠，但我试图在强调上保持区别。系统神学的重点是上帝希望我们**相信**和**知道**什么，而**基督教伦理学**的重点是上帝希望我们**做**什么以及他希望我们拥有什么**态度**。这样的区别反映在以下定义中：**基督教伦理学是回答"整本圣经对哪些行为、态度和个人品格特征获得上帝的认可，以及哪些不获得？"这个问题的任何研究⁸**。因此，神学告诉我们应该**相信**什么，而伦理学告诉我们应该如何**生活**。神学和伦理学的主题之间存在一些重叠（例如，婚姻可以在两者中都处理），但一般来说，神学关注信念，而伦理学关注生活中的情况。
 
-We can teach others most effectively if we can direct them to the most relevant passages and suggest an appropriate summary of the teachings of those passages. Then the person who questions us can inspect those passages quickly for himself or herself and learn much more rapidly what the teaching of the Bible is on a particular
-subject. Thus the necessity of systematic theology for teaching what the Bible says comes about primarily because we are finite in our memory and in the amount of time at our disposal.
+例如，伦理学教科书会讨论诸如婚姻和离婚、说谎和说真话、偷窃和财产所有权、堕胎、节育、同性恋、政府的作用、儿童纪律、资本惩罚、战争、关心穷人、种族歧视等主题。当然，存在一些重叠：神学必须应用于生活（因此在某种程度上通常是伦理的）。伦理学必须基于对上帝和他的世界的正确观念（因此在某种程度上是神学的）。
 
-The basic reason for studying systematic theology, then, is that it enables us to teach ourselves and others what the whole Bible says, thus fulfilling the "teaching" part of the Great Commission.
+本书将强调系统神学，尽管它不会犹豫在这种应用很容易出现的地方将神学应用于生活。尽管如此，为了彻底处理基督教伦理学，请参阅我的配套书籍《基督教伦理学：圣经道德推理导论》。
 
-**2. The Benefits to Our Lives**
+### B. 本书的初始假设
 
-Although the basic reason for studying systematic theology is that it is a means of obedience to our Lord's command, there are some additional specific benefits that come from such study.
+我们从两个假设或**预设**开始：(1) 圣经是真实的，实际上是我们唯一的绝对真理标准，以及 (2) 圣经中所说的上帝存在，他就是圣经所说的那样——天地万物的创造者。当然，这两个预设总是可以进行调整、修改或更深入的确认，但在这一点上，这两个假设构成了我们开始的起点。
 
-First, studying theology helps us overcome our wrong ideas. If there were no sin in our hearts, we could read the Bible from cover to cover, and although we would not immediately learn everything in the Bible, we would most likely learn only true things about God and his creation. Every time we read it we would learn more true
-things, and we would not rebel or refuse to accept anything we found written there. But with sin in our hearts and with false beliefs rampant in our cultures, we retain some rebelliousness against God. At various points there are for all of us-biblical teachings that for one reason or another we do not want to accept. The study of
-systematic theology is of help in overcoming those rebellious ideas.
+### C. 为什么基督徒应该学习神学？
 
-For example, suppose there is someone who does not want to believe that Jesus is personally coming back to earth again. Perhaps we could show this person one or two verses that speak of Jesus' return to earth, but the person might still find a way to evade the force of those verses or read a different meaning into them. But if we
-collect twenty-five or thirty verses that say that Jesus is coming back to earth personally and write them all out on paper, our friend who hesitated to believe in Christ's return is much more likely to be persuaded by the breadth and diversity of biblical evidence for this doctrine. Of course, we all have areas like that, areas where our
-understanding of the Bible's teaching is inadequate. In these areas, it is helpful for us to be confronted with the total weight of the teaching of Scripture on that subject, so that we will more readily be persuaded even against our initial wrongful inclinations.
+为什么基督徒应该学习系统神学？也就是说，我们为什么应该参与收集和总结关于特定主题的许多个别圣经经文的教导的过程？为什么仅仅在我们生活中的每一天继续定期阅读圣经是不够的？
 
-Second, studying systematic theology helps us to be able to make better decisions later on new questions of doctrine that may arise. We cannot know what new doctrinal controversies will arise in the churches in which we will live and minister ten, twenty, or thirty years from now, if the Lord does not return before then. These
-new doctrinal controversies will sometimes include questions that no one has faced very carefully before. Christians will be asking, “What does the whole Bible say about this subject?" (The precise nature of biblical inerrancy and the appropriate understanding of biblical teaching on gifts of the Holy Spirit are two examples of
-questions that have arisen in the past fifty years with much more forcefulness than ever before in the history of the church.)
+# 第一章
 
-Whatever the new doctrinal controversies are in future years, those who have learned systematic theology well will be much better able to answer the new questions that arise. The reason for this is that everything the Bible says is somehow related to everything else the Bible says (for it all fits together in a consistent way, at
-least within God's own understanding of reality, and in the nature of God and creation as they really are). Thus the new question will be related to much that has already been learned from Scripture. The more thoroughly that earlier material has been learned, the better able we will be to deal with those new questions.
+# 系统神学导论
 
-This benefit extends even more broadly. We face problems of applying Scripture to life in many more contexts than formal doctrinal discussions. What does the Bible teach about husband-wife relationships? About raising children? About witnessing to a friend at work? What principles does Scripture give us for studying
-psychology or economics or the natural sciences? How does it guide us in spending money or in saving or in tithing? In every area of inquiry certain theological principles will come to bear, and those who have learned well the theological teachings of the Bible will be much better able to make decisions that are pleasing to God.
+*什么是系统神学？*
 
-A helpful analogy at this point is that of a jigsaw puzzle. If the puzzle represents "what the whole Bible teaches us today about everything," then a course in systematic theology would be like filling in the border and some of the major items pictured in the puzzle. But we will never know everything that the Bible teaches about
-everything, so our jigsaw puzzle will have many gaps, many pieces that remain to be put in. Solving a new real-life problem is analogous to filling in another section of the jigsaw puzzle: the more pieces one has in place correctly, the easier it is to fit new pieces in, and the less apt one is to make mistakes. In this book the goal is
-to enable Christians to put into their "theological jigsaw puzzle" as many pieces with as much accuracy as possible, and to encourage Christians to go on putting in more and more correct pieces for the rest of their lives. The Christian doctrines studied here will act as guidelines to help in the filling in of all other areas, areas that
-pertain to all aspects of truth in all aspects of life.
+*为什么基督徒应该学习它？*
 
-Third, studying systematic theology will help us grow as Christians. The more we know about God, about his Word, about his relationships to the world and humankind, the better we will trust him, the more fully we will praise him, and the more readily we will obey him. Studying systematic theology rightly will make us more mature Christians. If it does not do this, we are not studying it in the way God intends.
+*我们应该如何学习它？*
 
-In fact, the Bible often connects sound doctrine with maturity in Christian living: Paul speaks of "the teaching that accords with godliness" (1 Tim. 6:3) and says that his work as an apostle is "for the sake of the faith of God's elect and their knowledge of the truth which accords with godliness" (Titus 1:1). By contrast, he indicates that all kinds of disobedience and immorality are "contrary to sound doctrine” (1 Tim. 1:10).
+## 解释与圣经基础
 
-**3. What Is the Difference between "Major" and "Minor" Doctrines?**
-It is appropriate to ask what the difference is between a "major doctrine" and a "minor doctrine." Christians often say they want to seek agreement in the church on major doctrines but also to allow for differences on minor doctrines. I have found the following guideline useful:
-> A major doctrine is one that has a significant impact on our thinking about other doctrines, or that has a significant impact on how we live the Christian life. A minor doctrine is one that has very little impact on how we think about other doctrines, and very little impact on how we live the Christian life.
+### A. 系统神学的定义
 
-By this standard doctrines such as the authority of the Bible (chapter 4), the Trinity (chapter 14), the deity of Christ (chapter 26), justification by faith (chapter 36), and many others would rightly be considered major doctrines. People who disagree with the historic evangelical understanding of any of these doctrines will have wide areas of difference with evangelical Christians who affirm these doctrines. By contrast, it seems to me that differences over forms of
-church government (chapter 47) or some details about the Lord's Supper (chapter 50) or the timing of the great tribulation (chapter 55) concern minor doctrines. Christians who differ over these things can agree on perhaps every other area of doctrine, can live Christian lives that differ in no important way, and can have genuine fellowship with one another.
+什么是系统神学？虽然已经有许多不同的定义，但为了本书的目的，将使用以下定义：**系统神学是对"整本圣经今天对任何给定主题教导了什么？"这一问题的研究。**¹
 
-Of course, we may find doctrines that fall somewhere between "major" and "minor" according to this standard. For example, Christians may differ over the degree of significance that should attach to the doctrine of baptism (chapter 49) or the millennium (chapter 55) or the extent of the atonement (chapter 27). That is only natural, because many doctrines have some influence on other doctrines or on life, but we may differ over whether we think it to be a
-"significant" influence. We could even recognize that there will be a range of significance here and just say that the more influence a doctrine has on other doctrines and on life, the more "major" it becomes. This amount of influence may even vary according to the historical circumstances and needs of the church at any given time. In such cases, Christians will need to ask God to give them mature wisdom and sound judgment as they try to determine to what
-extent a doctrine should be considered "major" in their particular circumstances.
+这个定义表明，系统神学涉及收集和理解圣经中关于各种主题的所有相关经文，然后清晰地总结它们的教导，以便我们知道对每个主题应该相信什么。然而，必须立即指出的是，对**教会历史**（包括教会的伟大信经和教会历史中主要神学家的著作）的研究，以及对**哲学**的研究，通常能够极大地帮助我们理解整本圣经实际上对各种主题的教导。但它们所包含的权威性并不大于或等于圣经的权威性。
 
-**D. A NOTE ON THREE OBJECTIONS TO THE STUDY OF SYSTEMATIC THEOLOGY**
+#### 1. 与其他学科的关系
 
-**1. "The Conclusions Are 'Too Neat' to Be True"**
+正如我的定义所表明的，本书的重点不会放在**历史神学²**（对不同时期的基督徒如何理解各种神学主题的历史研究）或**哲学神学**（主要不使用圣经，而是使用哲学推理的工具和方法以及通过观察宇宙可以了解到的关于上帝的知识来研究神学主题）或**护教学**（为基督教信仰的真实性提供辩护，以说服非信徒）。这三个学科都是基督徒值得追求的，有时也包含在**系统神学**这一术语的更广泛定义中。事实上，在本书的各个部分都会发现对历史、哲学和护教学问题的一些考虑。这是因为历史研究告诉我们其他人以前在理解圣经时获得的见解和犯下的错误；哲学研究帮助我们理解我们的文化和其他文化中常见的正确和错误的思想形式；护教学研究帮助我们将圣经的教导应用于非信徒提出的反对意见。但这些研究领域不是本卷的重点，本卷的重点是直接与圣经文本互动，以理解圣经本身对我们讲述的关于各种神学主题的内容。
 
-Some scholars look with suspicion at systematic theology when-or even because its teachings fit together in a noncontradictory way. They object that the results are "too neat" and that systematic theologians must therefore be squeezing the Bible's teachings into an artificial mold, distorting the true meaning of Scripture to get an orderly set of beliefs.
+如果有人更喜欢在更广泛的意义上使用**系统神学**这一术语（特别是包括历史神学和哲学，以及护教学），而不是上面定义的狭义意义，那么不会有太大区别。那些使用更狭义定义的人会同意，这些其他研究领域肯定会以积极的方式为我们对系统神学的理解做出贡献，而那些使用更广泛定义的人肯定会同意，历史神学、哲学神学和护教学可以与收集和综合各种主题的所有相关圣经经文的过程区分开来。此外，尽管历史和哲学研究确实有助于我们理解神学问题，但只有圣经具有定义我们应该相信什么的最终权威性²，因此适当地花一些时间专注于分析圣经本身的教导过程。
 
-To this objection two responses can be made. (1) We must first ask the people making the objection to tell us at what specific points Scripture has been misinterpreted, and then we must deal with the understanding of those passages. Perhaps mistakes have been made, and in that case there should be corrections.
+系统神学，正如我们所定义的，也不同于**旧约神学**、**新约神学**和**圣经神学**。这三个学科按历史顺序和圣经中呈现主题的顺序来组织其主题。因此，在旧约神学中，人们可能会问："申命记对祷告教导了什么？"或"诗篇对祷告教导了什么？"或"以赛亚书对祷告教导了什么？"或者甚至，"整个旧约对祷告的教导是什么，以及这种教导在旧约历史中是如何发展的？"在新约神学中，人们可能会问："约翰福音对祷告教导了什么？"或"保罗对祷告教导了什么？"或者甚至"新约对祷告的教导是什么，以及这种教导在新约中逐步发展的历史发展是什么？"
 
-Yet it is also possible that the objector will have no specific passages in mind, or no clearly erroneous interpretations to point to in the works of the most responsible evangelical theologians. Of course, incompetent exegesis can be found in the writings of the less competent scholars in any field of biblical studies, not just in systematic theology, but those "bad examples" constitute an objection not against the scholar's field but against the incompetent scholar
-himself.
+**圣经神学**在神学研究中具有技术性含义。它是包含旧约神学和新约神学的更大类别，正如我们在上面定义的那样。圣经神学特别关注圣经**个别作者和章节**的教导，以及每个教导在圣经**历史发展**中的位置⁴。因此，人们可能会问："在整个旧约的历史中，然后是新约的历史中，关于祷告的教导的历史发展是什么？"当然，这个问题非常接近这个问题："整本圣经今天对祷告的教导是什么？"（这将是根据我们的定义的**系统神学**）。然后很明显，这些不同学科之间的界限经常在边缘重叠，一个研究领域的部分内容融入另一个研究领域。然而，圣经神学追踪了一个特定教义在整个圣经历史发展过程中的**历史发展**，而系统神学专注于对一个特定教义的**历史发展**的理解和应用。圣经神学还关注对个别圣经作者和他们的原始听众或读者所拥有的每个教义的理解。
 
-It is very important that the objector be specific at this point because this objection is sometimes made by those who-perhaps unconsciously-have adopted from our culture a skeptical view of the possibility of finding universally true conclusions about anything, even about God from his Word. This kind of skepticism regarding theological truth is especially common in the modern university world where systematic theology-if it is studied at all—is studied
-only from the perspectives of philosophical theology and historical theology (including perhaps a historical study of the various ideas that were believed by the early Christians who wrote the New Testament and by other Christians at that time and throughout church history). In this kind of intellectual climate the study of "systematic theology" as defined in this chapter would be considered impossible because the Bible would be assumed to be merely the work
-of many human authors who wrote out of diverse cultures and experiences over the course of more than one thousand years; trying to find "what the whole Bible teaches" about any subject would be nearly as hopeless as trying to find "what all philosophers teach" about some question, for the answer in both cases would include not one view but many diverse and often conflicting views. This skeptical viewpoint must be rejected by evangelicals who see Scripture
-as the product of human and divine authorship and therefore as a collection of writings that teach noncontradictory truths about God and about the universe he created.
+另一方面，系统神学利用圣经神学的材料，并经常建立在圣经神学的结果之上。在某些方面，特别是在一个教义的发展中需要极大的细节和关注的地方，系统神学甚至会使用圣经神学方法，分析一个教义在整个圣经历史发展中的发展。但系统神学的焦点仍然不同：它的焦点是收集然后总结圣经中关于特定主题的所有经文的教导。因此，系统神学例如会问："整本圣经今天对祷告的教导是什么？"它试图以简短、易懂且非常仔细制定的陈述来总结圣经的教导。
 
-(2) Second, it must be answered that in God's own mind, and in the nature of reality itself, true facts and ideas are all consistent with one another. Therefore if we have accurately understood the teachings of God in Scripture we should expect our conclusions to "fit together" and be mutually consistent. Internal consistency, then, is an argument for, not against, any individual results of systematic theology.
+#### 2. 应用于生活
 
-**2. "The Choice of Topics Dictates the Conclusions"**
+此外，系统神学专注于总结每个教义，因为它应该被当今的基督徒理解。这有时会涉及使用任何个别圣经作者都未使用的术语甚至概念，但这些术语甚至概念是结合两个或更多圣经作者关于特定主题的教导的适当结果。例如，**三位一体**、**道成肉身**和**基督的神性**这些术语在圣经中找不到，但它们有用地总结了圣经概念。
 
-Another general objection to systematic theology concerns the choice and arrangement of topics, and even the fact that such topically arranged study of Scripture, using categories sometimes different from those found in Scripture itself, is done at all. Why are these theological topics treated rather than just the topics emphasized by the biblical authors, and why are the topics arranged in this way rather than in some other way? Perhaps this objection would
-say our traditions and our cultures have determined the topics we treat and the arrangement of topics so that the results of this systematic-theological study of Scripture, though acceptable in our own theological tradition, will in fact be untrue to Scripture itself.
+将系统神学定义为包括"整本圣经**今天对我们**的教导"意味着应用于生活是正确追求系统神学的必要部分。因此，正在考虑的教义是根据其对基督徒生活的实用价值来看待的。我们在圣经中找不到为了自己的缘故而研究的教义，或与生活隔离的教义。圣经作者始终将他们的教导应用于生活。即使是圣经中具有最多教义内容的书卷（如罗马书、以弗所书和希伯来书）也包含许多直接适用于基督徒生活的材料。因此，任何阅读本书的基督徒都应该在这项研究中发现他或她的基督徒生活得到了丰富和加深；实际上，如果个人的属灵成长没有发生，那么本书就没有被作者正确地写出来，或者材料没有被读者正确地研究。
 
-A variant of this objection is the statement that our starting point often determines our conclusions on controversial topics: if we decide to start with an emphasis on the divine authorship of Scripture, for example, we will end up believing in biblical inerrancy, but if we start with an emphasis on the human authorship of Scripture, we will end up believing there are some errors in the Bible. Similarly, if we start with an emphasis on God's sovereignty, we will
-end up as Calvinists, but if we start with an emphasis on man's ability to make free choices, we will end up as Arminians,10 and so forth. This objection makes it sound as if the most important theological questions could probably be decided by flipping a coin to decide where to start, since different and equally valid conclusions will inevitably be reached from the different starting points.
+#### 3. 系统神学与混乱神学：关键区别
 
-Those who make such an objection often suggest that the best way to avoid this problem is not to study or teach systematic theology at all, but to limit our topical studies to the field of biblical theology, treating only the topics and themes the biblical authors themselves emphasize and describing the historical development of these biblical themes through the Bible.
+如果我们使用这个系统神学的定义，就会发现大多数基督徒实际上每周都会多次进行系统神学（或者至少做出系统神学陈述）。例如："圣经说，凡相信耶稣基督的人都将得救。""圣经说，耶稣基督是通往上帝的唯一道路。""圣经说，耶稣将再来。"这些都是圣经所说内容的总结，因此，它们是系统神学陈述。实际上，每次基督徒说出整本圣经所说的内容时，他或她在某种意义上都在进行系统神学——根据我们的定义——通过思考各种主题并回答"整本圣经今天对我们的教导是什么？"这个问题⁵。
 
-In response to this objection, much of the discussion in this chapter about the necessity to teach Scripture will be relevant. Our choice of topics need not be restricted to the main concerns of the biblical authors, for our goal is to find out what God requires of us in all areas of concern to us today.
+那么，本书与大多数基督徒所做的"系统神学"有何不同？首先，它以**精心组织的方式**处理圣经主题，以确保所有重要主题都会得到彻底考虑。这种组织还提供了一种针对个别主题进行不准确分析的检查，因为这意味着所有其他被处理的教义都可以与每个主题进行比较，以检查方法论的一致性和教义之间关系的无矛盾性。这也有助于确保对互补教义的平衡考虑：例如，基督的神性和人性一起研究，上帝的主权和人的责任也一起研究，这样就不会从对完整圣经呈现的仅一个方面的不平衡强调中得出错误的结论。
 
-For example, it was not the main concern of any New Testament author to explain such topics as "baptism in the Holy Spirit," women's roles in the church, or the doctrine of the Trinity, but these are valid areas of concern for us today, and we must look at all the places in Scripture that have relevance for those topics (whether those specific terms are mentioned or not, and whether those themes are of primary concern to each passage we examine or not) if we
-are going to be able to understand and explain to others "what the whole Bible teaches" about them.
+实际上，系统神学中的形容词**系统的**应该被理解为意味着类似于"按主题精心组织"，理解是所研究的主题将被看作以一致的方式组合在一起，并将包括圣经的所有主要教义主题。因此，**系统的**应该被认为与"随机排列"或"混乱的"相反。在系统神学中，主题以有序或"系统的"方式处理。
 
-The only alternative for we will think something about those subjects—is to form our opinions haphazardly from a general impression of what we feel to be a "biblical" position on each subject or perhaps to buttress our positions with careful analysis of one or two relevant texts with no guarantee that those texts present a balanced view of "the whole counsel of God" (Acts 20:27) on the subject being considered. In fact this approach-one all too common in
-evangelical circles today-could, I suppose, be called "unsystematic theology" or even "disorderly and random theology"! Such an alternative is too subjective and too subject to cultural pressures. It tends toward doctrinal fragmentation and widespread doctrinal uncertainty, leaving the church theologically immature, like "children, tossed to and fro by the waves and carried about by every wind of doctrine" (Eph. 4:14).
+本书与大多数基督徒进行系统神学的方式之间的第二个区别是，它比大多数基督徒**更详细地**处理主题。例如，作为定期阅读圣经的结果，普通基督徒可能会做出神学陈述："圣经说，凡相信耶稣基督的人都将得救。"这是对主要圣经教导的完全正确的总结。然而，在本书中，我们用了几页来详细阐述"相信耶稣基督"⁶的含义，以及十二章（第32-43章）来解释"得救"在所有含义中意味着什么。
 
-Concerning the objection about the choice and sequence of topics, there is nothing to prevent us from going to Scripture to look for answers to any doctrinal questions, considered in any sequence. The sequence of topics in this book is a very common one and has been adopted because it is orderly and lends itself well to learning and teaching. But the chapters could be read in any sequence one wanted and the conclusions should not be different, nor should the
-persuasiveness of the arguments if they are rightly derived from Scripture-be significantly diminished. In fact, I suspect that most readers of this book will not read it through from chapter 1 to chapter 57 but will begin with the chapters of most interest to them and read others later. That does not really matter because I have tried to write the chapters so that they can be read as independent units, and I have added cross-references to sections in other chapters
-where relevant. Whether one reads the chapter on the new heavens and new earth (chapter 57) first or last or somewhere in between, the arguments will be the same, the Scripture passages quoted for support will be the same, and the conclusions should be the same.
+第三，正式研究系统神学将使得能够以**更加准确**的方式制定圣经教导的总结，而不是基督徒在没有这样的研究的情况下通常会得出的结论。在系统神学中，圣经教导的总结必须措辞准确，以防止误解并排除错误的教导。
 
-**3. "You Can't Just Get Doctrine Directly from the Pages of Scripture"**
+第四，良好的神学分析必须找到并公平对待**所有相关的圣经经文**，以处理每个特定主题，而不仅仅是一些或少数相关经文。这通常意味着它必须依赖于圣经的仔细释经（或解释）的结果，正如福音派解释者普遍同意的那样，或者当存在重大的解释分歧时，系统神学将包括详细的释经。
 
-This third objection is not about systematic theology in general but about my particular approach in this book. Although many of the reviews of the first edition of this book were very positive, one criticism concerned the method I used in constructing the book. Why did I think I could go directly to Scripture, quote a number of verses, and then conclude that we should believe x or y or z, on the basis of those verses? Did I not realize that doctrines needed to be
-developed through interaction with the writings of the great theologians in the history of the church and also with the writings of contemporary theologians who were famous in the academic world?
+#### 4. 信念必须基于圣经，而不是人的权威或传统
 
-Coming from evangelical faculty members who teach and write in university contexts where they often seek to influence other scholars who hold a more liberal theological position, such an objection is understandable. I have studied in such contexts myself (at Harvard and Cambridge), and I would not write a book like this one-in which I assume the understandability and the complete truthfulness, authority, and internal consistency of Scripture-for the
-purpose of persuading other faculty members in such contexts. That is because most or all of the nonevangelicals in that context would not share my belief that the words of the Bible are the very words of God and come with his authority. The basis of shared assumptions would be much narrower for such an audience.
+由于系统神学研究中涵盖的主题数量众多，以及分析这些主题的细节，不可避免地，首次学习系统神学教科书或参加系统神学课程的人会发现他或她的许多个人信念受到挑战或修改、精炼或丰富。因此，每个开始这样课程的人坚决决心放弃任何被圣经的教导明确反驳的任何想法是极其重要的。但同样非常重要的是，每个人都决心不相信任何个别**教义**，仅仅因为本教科书或任何其他教科书或教师说它是真的，除非本书或课程中的教师能够从圣经文本本身说服学生。仅有圣经，而不是"保守的福音派传统"或任何其他人的权威，必须作为我们应该相信什么的规范权威。
 
-For most theologians who are outside the evangelical world, the words of the Bible are merely human words expressing human ideas about God.11 And the writings of the great theologians in the history of the church are, similarly, human ideas expressed in merely human words. Therefore, from their perspective, as we attempt to construct the doctrines that we should believe, all we have to work with are the human ideas about God that have been expressed
-both in the Bible and in Christian theological writings since the Bible was completed.
+#### 5. 什么是教义？
 
-That is why, today, evangelical students are still able to study the writings of theologians such as Augustine, Calvin, or Luther on an equal footing with liberal students and faculty members who also study those writings. They all agree that these are merely human writings, and so there is no fundamental disagreement on the question of authority, or whether these writers might at times have been wrong.
+在本书中，**教义**一词将以以下方式理解：**教义是整本圣经今天对某个特定主题的教导**。这个定义直接关系到我们之前对系统神学的定义，因为它表明"教义"只是对一个特定主题进行系统神学的过程的结果。以这种方式理解，教义可以非常宽泛或非常狭窄。我们可以说"上帝的教义"作为一个主要的教义类别，包括圣经今天对上帝所教导的一切的总结。这样的教义将特别大。另一方面，我们也可以更狭义地谈论三位一体的教义或上帝的公义的教义或上帝的正义的教义⁷。
 
-But in such university contexts, evangelical students would not find shared assumptions if they were to base their research and writing on the assumption that the entire Bible is the word of God and therefore absolutely truthful and absolutely authoritative. In fact, upon receiving a copy of the first edition of this book in 1994, my always-gracious doctoral supervisor at Cambridge, Professor C. F. D. Moule (1908-2007), wrote to thank me as follows (note what
-he appreciates and what he does not appreciate):
-> I am writing... to thank you for your extremely generous gift of your maximum opus.... I am filled with admiration as I always have been-for your exceptional capacity for hard and accurate work.... And Zondervan have done a very nice job, haven't they?... I know you wouldn't expect me to agree with you doctrinally! We are poles apart in our understanding of authority, which is the basis of so much; but
-we can rejoice to have the same Lord and to be fellow-members in the body."12
+本书分为七个主要部分，对应七个主要教义：
 
-But I did not write this book to gain his approval. I wrote it for evangelical Christians who believe the Bible to be the very words of God, written by ordinary human beings under the guidance of the Holy Spirit (see chapters 2, 3, 4, and 5).
+**第1部分**：上帝话语的教义
 
-In addition, I could never have written a book like this if I had tried to do it as a brand-new believer, apart from the previous work of many theologians in the history of the church. My understanding of the doctrine of Scripture was the result of reading the works of B. B. Warfield, J. Gresham Machen, and E. J. Young, and learning from Westminster Seminary professors John Frame, Edmund Clowney, Richard Gaffin, and others including my life-long friend Vern
-Poythress. My understanding of other areas of theology had been heavily influenced by the writings of John Calvin, John Murray, Louis Berkhof, Herman Bavinck, Charles Hodge, and the Westminster Confession of Faith. And all of those theologians had learned from the work of many who had gone before them, and they in turn had learned from others before them, going all the way back to the beginning of the church in the first century. At times in this book I
-cite one or another of these authors, but even where I do not (for this is an introductory textbook), those who are familiar with their writings will recognize their influence. (However, in the chapters where I deal with current differences of viewpoint among evangelical authors, I do cite and interact with the arguments of numerous other writers.)
+**第2部分**：上帝的教义
 
-In the end, however, I accepted or rejected various parts of all of their writings depending on whether, in my judgment, their viewpoints represented faithfully the teachings of the Bible itself, which I had been reading every day of my life for thirty-nine years when the first edition of this book was published in 1994. So yes, while taking into account those valuable influences, I do think it is possible to build a system of doctrine directly from the pages of Scripture.
-But I would also say that this cannot be done well without an awareness of the theological convictions of other Christian writers throughout the history of the church.
+**第3部分**：按照上帝形象造的人的教义
 
-**E. HOW SHOULD CHRISTIANS STUDY SYSTEMATIC THEOLOGY?**
+**第4部分**：基督和圣灵的教义
 
-How then should we study systematic theology? The Bible provides some guidelines for answering this question.
+**第5部分**：救赎应用的教义
 
-**1. We Should Study Systematic Theology with Prayer**
+**第6部分**：教会的教义
 
-If studying systematic theology is simply a certain way of studying the Bible, then the passages in Scripture that talk about the way in which we should study God's Word give guidance to us in this task. Just as the psalmist prays in Psalm 119:18, "Open my eyes, that I may behold wondrous things out of your law," so we should pray and seek God's help in understanding his Word. Paul tells us in 1 Corinthians 2:14 that "the natural person does not accept the
-things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned." Studying theology is therefore a spiritual activity in which we need the help of the Holy Spirit.
+**第7部分**：未来的教义
 
-No matter how intelligent a student might be, if the student does not continue to pray for God to give him or her an understanding mind and a believing and humble heart, and the student does not maintain a personal walk with the Lord, then the teachings of Scripture will be misunderstood and disbelieved, doctrinal error will result, and the mind and heart of the student will not be changed for the better but for the worse. "Keep your heart with all vigilance,
-for from it flow the springs of life" (Prov. 4:23). Students of systematic theology should resolve at the beginning to keep their lives free from any disobedience to God or any known sin that would disrupt their relationship with him. They should resolve to maintain with great regularity their own personal devotional lives. They should continually pray for wisdom and understanding of Scripture.
+在这些主要教义类别中的每一个中，都选择了许多更具体的教导作为适合包含的内容。一般来说，这些至少满足以下三个标准中的一个：(1) 它们是圣经中最强调的教义；(2) 它们是在整个教会历史中对所有基督徒最重要的教义；(3) 它们是在教会历史现状中对基督徒变得重要的教义（尽管其中一些教义可能在教会历史早期并没有如此大的兴趣）。第三类教义的一些例子是圣经无误的教义、圣灵施洗的教义、关于撒但和邪灵的教义（特别是关于属灵争战的参考）、新约时代属灵恩赐的教义，以及关于男人和女人按照上帝形象被造的教义，与理解今天男人和女人适当角色的关系。由于它们与当代情况的相关性，这些教义在本卷中获得了比其他系统神学教科书更大的强调。
 
-Charles Hodge, recognized as one of America's greatest theologians, taught at Princeton Seminary from 1820 to 1878 (Princeton was at that time conservative in its view of the authority of Scripture). But for two years (1826-28) he studied in Germany. When he returned to Princeton in 1828, he asked, in an address to students, how it was that, in the former great centers of Protestantism-especially Germany-Christianity had ceased to be even a nominal
-religion. Hodge answered that the reason was the decline of what he called "vital religion":
-> Holiness is essential to the correct knowledge of divine things and the great security from error.... Wherever you find vital piety, there you find the doctrines of the fall, of depravity, of regeneration, of atonement, and of the deity of Jesus Christ.... Keep your hearts with all diligence, for out of them are the issues of life.... Holiness is essential to correct knowledge of divine things, and the great security from
-error.... When men lose the life of religion, they can believe the most monstrous doctrines, and glory in them.13
+#### 6. 系统神学与基督教伦理学之间的区别
 
-Since it is the Holy Spirit who gives us the ability rightly to understand Scripture, we need to realize that the proper thing to do, particularly when we are unable to understand some passage or some doctrine of Scripture, is to pray for God's help. Often what we need is not more data but more insight into the data we already have available. This insight is given only by the Holy Spirit (cf. 1 Cor. 2:14; Eph. 1:17-19).
+尽管神学研究和伦理学研究之间不可避免地存在一些重叠，但我试图在强调上保持区别。系统神学的重点是上帝希望我们**相信**和**知道**什么，而**基督教伦理学**的重点是上帝希望我们**做**什么以及他希望我们拥有什么**态度**。这样的区别反映在以下定义中：**基督教伦理学是回答"整本圣经对哪些行为、态度和个人品格特征获得上帝的认可，以及哪些不获得？"这个问题的任何研究⁸**。因此，神学告诉我们应该**相信**什么，而伦理学告诉我们应该如何**生活**。神学和伦理学的主题之间存在一些重叠（例如，婚姻可以在两者中都处理），但一般来说，神学关注信念，而伦理学关注生活中的情况。
 
-**2. We Should Study Systematic Theology with Humility**
+例如，伦理学教科书会讨论诸如婚姻和离婚、说谎和说真话、偷窃和财产所有权、堕胎、节育、同性恋、政府的作用、儿童纪律、资本惩罚、战争、关心穷人、种族歧视等主题。当然，存在一些重叠：神学必须应用于生活（因此在某种程度上通常是伦理的）。伦理学必须基于对上帝和他的世界的正确观念（因此在某种程度上是神学的）。
 
-Peter tells us, "Clothe yourselves, all of you, with humility toward one another, for 'God opposes the proud, but gives grace to the humble'" (1 Peter 5:5). Those who study systematic theology will learn many things about the teachings of Scripture that are perhaps not known or not known well by other Christians in their churches or by relatives who are older in the Lord than they are. They may also find that they understand things about Scripture that some
-of their church officers do not understand and that even their pastor has perhaps forgotten or never learned well.
+本书将强调系统神学，尽管它不会犹豫在这种应用很容易出现的地方将神学应用于生活。尽管如此，为了彻底处理基督教伦理学，请参阅我的配套书籍《基督教伦理学：圣经道德推理导论》。
 
-In all of these situations it would be very easy to adopt an attitude of pride or superiority toward others who have not made such a study. But how ugly it would be if anyone were to use this knowledge of God's Word simply to win arguments or to put down a fellow Christian in conversation or to make another believer feel insignificant in the Lord's work. James's counsel is good for us at this point: "Let every person be quick to hear, slow to speak, slow to anger;
-for the anger of man does not produce the righteousness of God" (James 1:19-20). He tells us that one's understanding of Scripture is to be imparted in humility and love:
-> Who is wise and understanding among you? By his good conduct let him show his works in the meekness of wisdom.... But the wisdom from above is first pure, then peaceable, gentle, open to reason, full of mercy and good fruits, impartial and sincere. And a harvest of righteousness is sown in peace by those who make peace. (James 3:13, 17-18)
+### B. 本书的初始假设
 
-Systematic theology rightly studied will not lead to the knowledge that "puffs up" (1 Cor. 8:1) but to humility and love for others.
+我们从两个假设或**预设**开始：(1) 圣经是真实的，实际上是我们唯一的绝对真理标准，以及 (2) 圣经中所说的上帝存在，他就是圣经所说的那样——天地万物的创造者。当然，这两个预设总是可以进行调整、修改或更深入的确认，但在这一点上，这两个假设构成了我们开始的起点。
 
-**3. We Should Study Systematic Theology with Reason**
+### C. 为什么基督徒应该学习神学？
 
-First, it is right for us to reason from Scripture. We find in the New Testament that Jesus and the New Testament authors often quote a verse of Scripture and then draw logical conclusions from it. They reason from Scripture. It is therefore not wrong to use human understanding, human logic, and human reason to draw conclusions from the statements of Scripture. Nevertheless, when we reason and draw what we think to be correct logical deductions from
-Scripture, we sometimes make mistakes. The deductions we draw from the statements of Scripture are not equal to the statements of Scripture in certainty or authority, for our ability to reason and draw conclusions is not the ultimate standard of truth-only Scripture is.
+为什么基督徒应该学习系统神学？也就是说，我们为什么应该参与收集和总结关于特定主题的许多个别圣经经文的教导的过程？为什么仅仅在我们生活中的每一天继续定期阅读圣经是不够的？
 
-What then are the limits on our use of our reasoning abilities to draw deductions from the statements of Scripture? The fact that reasoning to conclusions that go beyond the mere statements of Scripture is appropriate and even necessary for studying Scripture, and the fact that Scripture itself is the ultimate standard of truth, combine to indicate to us that we are free to use our reasoning abilities to draw deductions from any passage of Scripture so long as these
-deductions do not contradict the clear teaching of some other passage of Scripture.14
+#### 1. 基本原因
 
-This principle safeguards against our misguided or incorrect logical deductions from Scripture. Our supposedly logical deductions may be erroneous, but Scripture is not erroneous. Thus, for example, we may read Scripture and find that God the Father is called God (1 Cor. 1:3), that God the Son is called God (John 20:28; Titus 2:13), and that God the Holy Spirit is called God (Acts 5:3-4). We might deduce from this that there are three Gods! But then we find the
-Bible explicitly teaching us that God is one (Deut. 6:4; James 2:19). Thus we conclude that what we thought to be a valid logical deduction about three Gods was wrong and that Scripture teaches both (a) that there are three separate persons (Father, Son, and Holy Spirit), each of whom is fully God, and (b) that there is one God. But how can this be? In our human experience, we understand what it means to know three separate persons-three friends, for example.
-But these three friends are three separate beings. How can God be three persons and yet one being?
+对这个问题已经给出了许多答案，但它们往往给人留下这样的印象：系统神学在某种程度上可以通过更好地组织圣经的教导或比圣经本身更清楚地解释它们来"改进"圣经。因此，我们可能会开始暗中否认圣经的清晰性（见第6章）或圣经的充分性（见第8章）。
 
-Second, Christian theology can tolerate a paradox, but God never asks us to believe a contradiction. We cannot understand exactly how these two statements about God can both be true, so together they constitute a paradox ("a seemingly contradictory statement that may nonetheless be true").15 We can tolerate a paradox (such as "God is three persons and one God") because we have confidence that ultimately God knows fully the truth about himself and about
-the nature of reality and that in his understanding the different elements of a paradox are fully reconciled,16 even though at this point God's thoughts are higher than our thoughts (Isa. 55:8-9). But a true contradiction (such as, "God is three persons and God is not three persons") would imply ultimate contradiction in God's understanding of himself or of reality, and this cannot be.
+然而，在**大使命**中，耶稣命令他的门徒，现在也命令我们**教导**信徒遵守他所命令的一切："所以，你们要去，使万民作我的门徒，奉父、子、圣灵的名给他们施洗，**教导他们**遵守我吩咐你们的一切。看哪，我就常与你们同在，直到世界的末了"（太28:19-20）⁹。现在，从狭义上讲，教导耶稣所命令的一切只是教导福音叙事中记录的耶稣口头教导的内容。然而，从更广泛的意义上讲，"耶稣所命令的一切"包括对他的生活和教导的解释和应用，因为在使徒行传中暗示它包含了耶稣在复活后通过使徒**继续**做和教导的叙述（注意使徒行传1:1讲的是"耶稣**开始**做和教导的一切"）。"耶稣所命令的一切"也可以包括书信，因为它们是在圣灵的监督下写成的，也被认为是"主的命令"（林前14:37；另见约14:26；16:13；帖前4:15；彼后3:2；启1:1-3）。因此，从更广泛的意义上讲，"耶稣所命令的一切"包括整个新约。
 
-When the psalmist says, "The sum of your word is truth, and every one of your righteous rules endures forever" (Ps. 119:160), he implies that God's words are not only true individually but also viewed together as a whole. Viewed collectively, their "sum" is also "truth." Ultimately, there is no internal contradiction either in Scripture or in God's own thoughts.
+此外，当我们考虑到新约著作赞同耶稣对旧约圣经的权威性和可靠性作为上帝话语的绝对信心（见第4章），以及当我们认识到新约书信也赞同这种对旧约的绝对权威性的观点作为上帝的话语时，很明显我们不能教导"耶稣所命令的一切"而不包括整个旧约（在救赎历史中的新约时代以各种方式适用）。
 
-**4. We Should Study Systematic Theology with Help from Others**
+因此，完成大使命的任务不仅包括传福音，还包括**教导**。教导耶稣所命令我们的一切，从广义上讲，就是教导整本圣经今天对我们所说的话的任务。为了有效地教导我们自己和教导他人整本圣经所说的话，有必要**收集**和**总结**关于特定主题的所有圣经经文。
 
-We need to be thankful that God has put teachers in the church ("God has appointed in the church first apostles, second prophets, third teachers..." [1 Cor. 12:28]). We should allow those with gifts of teaching to help us understand Scripture. This means that we should make use of systematic theologies and other books written by some of the teachers God has given to the church over the course of its history. It also means that our study of theology should
-include talking with other Christians about the things we study. Among those with whom we talk will often be some with gifts of teaching who can explain biblical teachings clearly and help us to understand more easily. In fact, some of the most effective learning in systematic theology courses in colleges and seminaries often occurs outside the classroom in informal conversations among students who are attempting to understand Bible doctrines for themselves.
+例如，如果有人问我："圣经对基督的再来教导了什么？"我可以说："继续读你的圣经，你会找到答案。"但如果提问者从创世记1:1开始阅读，那么他或她找到这个问题的答案将需要很长时间。到那时，许多其他问题将需要答案，未回答的问题列表将开始变得非常长。圣经对圣灵的工作教导了什么？圣经对祷告教导了什么？圣经对罪教导了什么？在我们的一生中，根本没有时间每次遇到教义问题时都自己通读整本圣经寻找答案。因此，对我们来说，要学习圣经所说的话，拥有他人通过圣经搜索并找到这些各种主题答案的工作成果是非常有帮助的。
 
-**5. We Should Study Systematic Theology by Collecting and Understanding All the Relevant Passages of Scripture on Any Topic**
+如果我们能够将他们引导到最相关的经文，并建议对这些经文的教导进行适当的总结，我们就可以最有效地教导他人。然后，质疑我们的人可以自己快速检查这些经文，并更快速地学习圣经在特定主题上的教导。因此，系统神学教导圣经所说的话的必要性主要是因为我们在记忆力和可支配时间方面是有限的。
 
-This point was mentioned in our definition of systematic theology at the beginning of the chapter, but the actual process needs to be described here. How does one go about making a doctrinal summary of what all the passages of Scripture teach on a certain topic?
+那么，学习系统神学的基本原因是，它使我们能够教导自己和他人整本圣经所说的话，从而完成大使命的"教导"部分。
 
-For topics covered in this book, many people will find that studying the relevant chapters in this book (and other systematic theology books) and reading the Bible verses noted in those chapters is enough. But some people will want to do further study of Scripture on a particular topic or study some new topic not covered here. How could a student go about using the Bible to research its teachings on some new subject, perhaps one not discussed explicitly in
-any of his or her systematic theology textbooks?
+#### 2. 对我们生活的益处
 
-The process would look like this: (1) Find all the relevant verses. The best help in this step is a good concordance or Bible search program, which enables one to look up key words and find the verses in which the subject is treated. For example, in studying what it means that man is created in the image and likeness of God, one needs to find all the verses in which image and likeness and create occur. (The words man and God occur too often to be useful for a
-concordance search.) In studying the doctrine of prayer, many words could be looked up (pray, prayer, intercede, petition, supplication, confess, confession, praise, thanks, thanksgiving, etc.)—and perhaps the list of verses would grow too long to be manageable, so that the student would have to skim the concordance entries or search results without looking up the verses, or the search would probably have to be divided into sections or limited in some other way. Verses
-can also be found by thinking through the overall history of the Bible and then turning to sections where there would be information on the topic at hand. For example, a student studying prayer would want to read passages like the one about Hannah's prayer for a son (1 Sam. 1), Solomon's prayer at the dedication of the temple (1 Kings 8), Jesus' prayer in the Garden of Gethsemane (Matt. 26 and parallels), and so forth. Then in addition to using a concordance or a
-search program and reading other passages that one can find on the subject, checking the relevant sections in some systematic theology books will often bring to light other verses that had been missed, sometimes because none of the key words used for the concordance were in those verses.17
+尽管学习系统神学的基本原因是它是顺服我们主命令的一种手段，但这样的研究还带来一些额外的具体益处。
 
-(2) The second step is to read, take notes, and summarize the points made in the relevant verses. Sometimes a theme will be repeated often and the summary of the various verses will be relatively easy. At other times, there will be verses difficult to understand, and the student will need to take some time to study a verse in depth (just by reading the verse in context over and over or by using specialized tools such as commentaries and dictionaries) until a
-satisfactory understanding is reached.
+首先，学习神学帮助我们**克服错误的观念**。如果我们心中没有罪，我们可以从头到尾阅读圣经，尽管我们不会立即学到圣经中的一切，但我们很可能只学到关于上帝和他的创造的真实事物。每次阅读时我们都会学到更多真实的东西，我们不会反叛或拒绝接受我们在那里找到的任何东西。但由于我们心中有罪，我们的文化中有错误的信念猖獗，我们对上帝保留一些反叛性。在各个方面——对我们所有人来说——都有一些圣经教导，出于某种原因，我们不想接受。系统神学的研究有助于克服这些反叛的观念。
 
-(3) Finally, the teachings of the various verses should be summarized into one or more points that the Bible affirms about that subject. The summary does not have to take the exact form of anyone else's conclusions on the subject, because we each may see things in Scripture that others have missed, or we may organize the subject differently or emphasize different things.
+例如，假设有人不想相信耶稣会亲自回到地球。也许我们可以向这个人展示一两节谈论耶稣回到地球的经文，但这个人可能仍然找到方法逃避这些经文的力量或将不同的含义读入其中。但如果我们收集二十五或三十节经文，说耶稣亲自回到地球，并把它们都写在纸上，我们犹豫相信基督再来的朋友就更有可能被这个教义的圣经证据的广度和多样性所说服。当然，我们都有这样的领域，我们对圣经教导的理解不足的领域。在这些领域，对我们来说，面对**圣经全部教导的分量**是有帮助的，这样我们就会更容易被说服，甚至违背我们最初的错误倾向。
 
-On the other hand, at this point it is also helpful to read related sections, if any can be found, in several systematic theology books. This provides a useful check against error and oversight, and often makes one aware of alternative perspectives and arguments that may cause us to modify or strengthen our position. If a student finds that others have argued for strongly differing conclusions, then these other views need to be stated fairly and then answered.
-Sometimes other theology books will alert us to historical or philosophical considerations that have been raised before in the history of the church, and these will provide additional insight or warnings against error.
+第二，学习系统神学帮助我们能够**在以后做出更好的决定**，关于可能出现的新的教义问题。如果主在那之前不回来，我们无法知道在我们将生活和服事的教会中，十年、二十年或三十年后会出现什么新的教义争议。这些新的教义争议有时会包括以前没有人非常仔细面对过的问题。基督徒会问："整本圣经对这个主题教导了什么？"（圣经无误的确切性质和对圣灵恩赐的适当理解是在过去五十年中比教会历史上任何时候都更加强烈出现的问题的两个例子。）
 
-The process outlined above is possible for any Christian who can read his or her Bible and can look up words in a concordance or use a Bible search program. Of course people will become faster and more accurate in this process with time and experience and Christian maturity, but it would be a tremendous help to the church if Christians generally would give much more time to searching out topics in Scripture for themselves and drawing conclusions in the
-way outlined above. The joy of discovery of biblical themes would be richly rewarding. Especially pastors and those who lead Bible studies would find added freshness in their understanding of Scripture and in their teaching.
+无论未来几年的新教义争议是什么，那些很好地学习了系统神学的人将能够更好地回答出现的新问题。原因在于圣经所说的一切在某种程度上都与圣经所说的其他一切相关（因为它在上帝自己对现实的理解中，以及在上帝和创造的本质中，都以一致的方式组合在一起）。因此，新问题将与已经从圣经中学到的许多内容相关。对早期材料的学习越彻底，我们就越能够处理这些新问题。
 
-**6. We Should Study Systematic Theology with Rejoicing and Praise**
+这种益处甚至更广泛地延伸。我们面临着在比正式的教义讨论更多的情境中将圣经应用于生活的问题。圣经对夫妻关系教导了什么？关于养育孩子？关于在工作中向朋友作见证？圣经给了我们什么原则来研究心理学或经济学或自然科学？它如何指导我们花钱或储蓄或什一奉献？在每个探究领域，某些神学原则都会发挥作用，那些很好地学习了圣经神学教导的人将能够更好地做出讨上帝喜悦的决定。
 
-The study of theology is not merely a theoretical exercise of the intellect. It is a study of the living God and of the wonders of all his works in creation and redemption. We cannot study this subject dispassionately! We must love all that God is, all that he says and all that he does. "You shall love the LORD your God with all your heart" (Deut. 6:5). Our response to the study of the theology of Scripture should be that of the psalmist who said, "How precious to me are
-your thoughts, O God!" (Ps. 139:17). In the study of the teachings of God's Word, it should not surprise us if we often find our hearts spontaneously breaking forth in expressions of praise and delight like those of the psalmist:
+在这一点上有一个有用的类比，就是拼图游戏的类比。如果这个拼图代表"整本圣经今天对一切事物的教导"，那么系统神学课程就像是填充拼图的边框和一些主要项目。但我们永远不会知道圣经对一切事物的所有教导，所以我们的拼图将有许多空白，许多仍有待填充的部分。解决新的现实生活问题类似于填充拼图的另一部分：一个人正确放置的拼图块越多，就越容易放入新的拼图块，并且越不容易犯错误。在这本书中，目标是使基督徒能够在他们的"神学拼图"中放入尽可能多的拼图块，并且尽可能准确，并鼓励基督徒继续为他们余生放入越来越多正确的拼图块。这里研究的基督教教义将作为指导方针，帮助填充所有其他领域，涉及生活所有方面的真理的各个方面。
 
-The precepts of the LORD are right,  
-rejoicing the heart. (Ps. 19:8)  
-In the way of your testimonies I delight  
-as much as in all riches. (Ps. 119:14)  
-How sweet are your words to my taste,  
-sweeter than honey to my mouth! (Ps. 119:103)  
-Your testimonies are my heritage forever,  
-for they are the joy of my heart. (Ps. 119:111)  
-I rejoice at your word  
-like one who finds great spoil. (Ps. 119:162)  
+第三，学习系统神学将**帮助我们作为基督徒成长**。我们越了解上帝，了解他的话语，了解他与世界和人类的关系，我们就会越信任他，越充分地赞美他，越愿意顺服他。正确地学习系统神学会使我们成为更成熟的基督徒。如果不能做到这一点，我们就没有按照上帝的意图来学习它。
 
-Often in the study of theology the response of the Christian should be similar to that of Paul in reflecting on the long theological argument that he has just completed at the end of Romans 11:32. He breaks forth into joyful praise at the richness of the doctrine which God has enabled him to express:
+实际上，圣经经常将正确的教义与基督徒生活的成熟联系起来：保罗谈到**"符合敬虔的教导"**（提前6:3），并说他作为使徒的工作是"为了上帝选民的信心和他们对**符合敬虔的真理**的知识"（提多书1:1）。相比之下，他指出各种不顺服和不道德行为是"违背纯正教义"的（提前1:10）。
 
-Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are his judgments and how inscrutable his ways!  
-"For who has known the mind of the Lord,  
-or who has been his counselor?"  
-"Or who has given a gift to him  
-that he might be repaid?"  
-For from him and through him and to him are all things. To him be glory forever. Amen. (Rom. 11:33-36)  
+#### 3. "主要"教义和"次要"教义之间有什么区别？
 
-## QUESTIONS FOR PERSONAL APPLICATION
-These questions at the end of each chapter focus on application to life. Because I think doctrine is to be felt at the emotional level as well as understood at the intellectual level, in many chapters I have included some questions about how a reader feels regarding a point of doctrine. I think these questions will prove quite valuable for those who take the time to reflect on them.
-1. In what ways (if any) has this chapter changed your understanding of what systematic theology is? What was your attitude toward the study of systematic theology before reading this chapter? What is your attitude now?
-2. What is likely to happen to a church or denomination that gives up learning systematic theology for a generation or longer? Has that been true of your church?
-3. Are there any doctrines listed on the table of contents for which a fuller understanding would help to solve a personal difficulty in your life at the present time? What are the spiritual and emotional dangers that you personally need to be aware of in studying systematic theology?
-4. Pray for God to make this study of basic Christian doctrines a time of spiritual growth and deeper fellowship with him, and a time in which you understand and apply the teachings of Scripture rightly.
+适当地问一下"**主要教义**"和"**次要教义**"之间有什么区别。基督徒经常说他们想在教会中寻求主要教义的一致，但也允许次要教义的分歧。我发现以下指导方针很有用：
 
-**Special Terms**
-- apologetics
-- biblical theology
-- Christian ethics
-- contradiction
-- doctrine
-- dogmatic theology
-- historical theology
-- major doctrine
-- minor doctrine
-- New Testament theology
-- Old Testament theology
-- paradox
-- philosophical theology
-- presupposition
-- systematic theology
+> 主要教义是对我们对其他教义的思考有重大影响的教义，或对我们如何过基督徒生活有重大影响的教义。次要教义是对我们如何思考其他教义影响很小的教义，对我们如何过基督徒生活影响很小的教义。
 
-### BIBLIOGRAPHY
+根据这个标准，诸如圣经的权威（第4章）、三位一体（第14章）、基督的神性（第26章）、因信称义（第36章）等教义，以及许多其他教义理应被视为主要教义。不同意这些教义的历史福音派理解的人将与肯定这些教义的福音派基督徒有广泛的分歧领域。相比之下，在我看来，关于教会治理形式的分歧（第47章）或主餐的一些细节（第50章）或大灾难的时间（第55章）涉及次要教义。在这些事情上有分歧的基督徒可能在几乎所有其他教义领域都同意，可以过在任何重要方面都没有差异的基督徒生活，并且可以与彼此真正团契。
 
-In these bibliographies I have usually listed only works written from what would today be called a conservative evangelical position. This is because the purpose of this section is to give the student ready access to other treatments of each topic by theologians who share with this book the same general convictions about the nature of Scripture that all of it is totally truthful and that it is God's unique and absolutely authoritative Word
-to us. Once we step outside of that conviction, the variety of theological positions becomes amazingly large, and sufficient bibliographies are easily found in the more recent works cited below. (However, I have also included two representative Roman Catholic works because of the great influence of the Roman Catholic Church in almost every society in the world.)
+当然，我们可能会发现根据这个标准，有些教义介于"主要"和"次要"之间。例如，基督徒可能在洗礼教义（第49章）或千禧年（第55章）或赎罪范围（第27章）上意见不一。这是很自然的，因为许多教义对其他教义或生活有**一些**影响，但我们可能对我们认为它是"显著"的影响存在分歧。我们甚至可以认识到，在这里会有一系列的重要性，并且只是说，一个教义对其他教义和生活的影响越大，它就变得越"主要"。这种影响的程度甚至可能根据教会在任何给定时间的历史环境和需要而变化。在这种情况下，基督徒需要求上帝给他们成熟的智慧和良好的判断力，当他们试图确定一个教义在他们特定情况下应该被视为"主要"到什么程度时。
 
-Writers are grouped according to broad denominational categories, and the writers within the groups are arranged chronologically. Of course, the categories below are not airtight, for there is often overlap—many Anglicans and many Baptists are theologically Reformed, while others in those groups are theologically Arminian; many Dispensationalists are also Baptists, while others are Presbyterians, and so forth. Yet
-the categories are fairly representative of distinguishable theological traditions within evangelicalism.
+### D. 关于系统神学研究的三个反对意见的说明
 
-Dates given are the dates of publication of the final edition of each author's systematic theology or major theological writing. Where no single major theological work was published, the dates represent the years during which the author was actively teaching and writing about systematic theology. Complete bibliographical data may be found on pp. 1489-96.
+#### 1. "结论'太整洁'以至于不可能是真的"
 
-**SECTIONS IN EVANGELICAL SYSTEMATIC THEOLOGIES**
-1. Anglican (Episcopalian)
-   | | |
-   |---|---|
-   | 1882-92 | Litton, 1-8 |
-   | 1930 | Thomas, xvii-xxviii, 146-52 |
-   | 2001 | Packer, xi-xiii |
-   | 2013 | Bird, 19-86 |
-   | 2014 | Bray, 27-68 |
-   
-2. Arminian (Wesleyan or Methodist)
-   | | |
-   |---|---|
-   | 1875-76 | Pope, 1:3-32, 42-46 |
-   | 1892-94 | Miley, 1:2-54 |
-   | 1940 | Wiley, 1:13-123 |
-   | 1960 | Purkiser, 19-38 |
-   | 1983 | Carter, 1:19-101 |
-   | 1992 | Oden, 1:11-14, 375-406 |
-   | 2002 | Cottrell, 9-36 |
-   
-3. Baptist
-   | | |
-   |---|---|
-   | 1767 | Gill, 1:vii-xxx |
-   | 1887 | Boyce, 1-8 |
-   | 1907 | Strong, 1-51 |
-   | 1976-83 | Henry, 1:13-411;6:7-34 |
-   | 1987-94 | Lewis and Demarest, 1:13-123 |
-   | 1990-95 | Garrett, 1-48 |
-   | 2007 | Akin, 2-71 |
-   | 2013 | Erickson, xi-117 |
+一些学者在系统神学——或者甚至因为——其教导以非矛盾的方式组合在一起时，持怀疑态度。他们反对说，结果"太整洁"了，因此系统神学家必定是将圣经的教导挤进一个人为的模具，扭曲了圣经的真正含义，以获得一套有序的信念。
 
-4. Dispensational
-   | | |
-   |---|---|
-   | 1947 | Chafer, 1:3-17 |
-   | 1949 | Thiessen, 1-20 |
-   | 1986 | Ryrie, 9-22 |
-   | 2002-2005 | Geisler, 1:15-226 |
-   | 2017 | MacArthur and Mayhue, 33-68 |
+对这个反对意见可以做出两个回应。（1）我们必须首先要求提出反对意见的人告诉我们圣经在哪些具体方面被误解了，然后我们必须处理对这些经文的理解。也许犯了错误，在这种情况下应该进行纠正。
 
-5. Lutheran
-   | | |
-   |---|---|
-   | 1917-24 | Pieper, 1:3-190 |
-   | 1934 | Mueller, 1-89 |
+然而，反对者也可能没有想到任何具体的经文，或者没有明显错误的解释可以指出最负责任的福音派神学家的作品。当然，在**任何**圣经研究领域，不仅仅是在系统神学中，都可以在较不称职的学者的作品中找到不称职的释经，但这些"坏例子"构成的不是反对学者领域的反对意见，而是反对不称职的学者本身的反对意见。
 
-6. Reformed (or Presbyterian)
-   | | |
-   |---|---|
-   | 1559 | Calvin, 1:3-33, 35-43 (prefaces and 1.1-2) |
-   | 1679-85 | Turretin, IET, 1:1-54 |
-   | 1724-58 | Edwards, 2:157-63 |
-   | 1871-73 | Hodge, 1:1-150 |
-   | 1878 | Dabney, 133-44 |
-   | 1887-1921 | Warfield, SSW, 2:207-320 |
-   | 1894 | Shedd, 43-84 |
-   | 1910 | Vos, 1:vii-x |
-   | 1937-66 | Murray, CW, 1:3-8, 169-73; CW, 4:1-21 |
-   | 1938 | Berkhof, Intro., 15-128, 170-86 |
-   | 1998 | Reymond, xxv-xxxvi |
-   | 2008 | Van Genderen and Velema, 1-19 |
-   | 2011 | Horton, 13-34 |
-   | 2013 | Culver, 1-18 |
-   | 2013 | Frame, 3-52 |
-   | 2016 | Allen and Swain, 1-6 |
-   | 2017 | Barrett, 43-66 |
-   | 2019 | Letham, 33-38 |
+在这一点上，反对者必须具体是非常重要的，因为这个反对意见有时是由那些——也许是无意识地——从我们的文化中采用了对找到关于任何事物的普遍真实结论的可能性的怀疑观点的人提出的，甚至是关于上帝从他的话语中得出的结论。这种关于神学真理的怀疑主义在现代大学世界中特别普遍，在那里系统神学——如果根本研究的话——只从哲学神学和历史神学的角度研究（也许包括对早期写新约的基督徒和整个教会历史中的其他基督徒当时相信的各种观念的历史研究）。在这种知识氛围中，本章中定义的"系统神学"的研究将被认为是不可能的，因为圣经将被假定为仅仅是许多人类作者的作品，他们在一千多年的过程中从不同的文化和经历中写作；试图找到"整本圣经教导"关于任何主题的内容几乎是没有希望的，就像试图找到"所有哲学家教导"关于某个问题的内容一样，因为在两种情况下，答案都不会包括一种观点，而是许多不同且经常相互冲突的观点。这种怀疑的观点必须被福音派拒绝，他们将圣经视为人类**和**神圣作者身份的产物，因此视为一个教导关于上帝和他创造的宇宙的非矛盾真理的著作集合。
 
-7. Renewal (or charismatic/Pentecostal)
-   | | |
-   |---|---|
-   | 1988-92 | Williams, 1:11-28 |
-   | 1993 | Menzies and Horton, 9-13 |
-   | 1995 | Horton, 7-60 |
-   | 2008 | Duffield and Van Cleave, 5-6 |
+（2）第二，必须回答的是，在上帝自己的思想中，在现实本质本身中，**真实的**事实和观念都是彼此一致的。因此，如果我们准确地理解了上帝在圣经中的教导，我们应该期望我们的结论能够"组合在一起"并相互一致。那么，内在一致性是支持而不是反对系统神学的任何个别结果的论据。
 
-**SECTIONS IN REPRESENTATIVE ROMAN CATHOLIC SYSTEMATIC THEOLOGIES**
+#### 2. "主题的选择决定了结论"
 
-1. Roman Catholic: Traditional
-   | | |
-   |---|---|
-   | 1955 | Ott, 1-10 |
+对系统神学的另一个普遍反对意见涉及主题的选择和安排，甚至认为使用有时与圣经本身发现的类别不同的类别进行圣经的这种按主题排列的研究是完全有必要的。为什么治疗**这些**神学主题而不仅仅是圣经作者强调的主题，为什么主题以**这种方式排列**而不是以其他方式排列？也许——这个反对意见会说——我们的传统和文化决定了我们处理的主题和主题的排列，因此这种系统神学的圣经研究的结果，尽管在我们自己的神学传统中可以接受，但实际上对圣经本身是不真实的。
 
-2. Roman Catholic: Post-Vatican II
-   | | |
-   |---|---|
-   | 1980 | McBrien, 1:3-78, 183-200 |
-   | 2012 | CCC, pp. 1-16, paragraphs 1-25 |
+这个反对意见的一个变体是这样的陈述：我们的起点往往决定了我们对有争议主题的结论：如果我们决定从强调圣经的神圣作者身份开始，例如，我们最终会相信圣经无误，但如果我们从强调圣经的人类作者身份开始，我们最终会相信圣经中有一些错误。同样，如果我们从强调上帝的主权开始，我们最终会成为加尔文主义者，但如果我们从强调人做出自由选择的能力开始，我们最终会成为阿米念主义者¹⁰，等等。这个反对意见使它听起来好像最重要的神学问题可能可以通过投掷硬币来决定从哪里开始，因为**不同的**和**同样有效的**结论将不可避免地从不同的起点得出。
+
+提出这样反对意见的人经常建议避免这个问题的最好方法是根本不学习或教导系统神学，而是将我们的主题研究限制在圣经神学领域，只处理圣经作者自己强调的主题和主题，并描述这些圣经主题在圣经中的历史发展。
+
+为了回应这个反对意见，本章中关于教导圣经的必要性的许多讨论将是相关的。我们对主题的选择不需要局限于圣经作者的主要关注点，因为我们的目标是找出上帝在我们今天关心的所有领域对我们的要求。
+
+例如，解释诸如"圣灵的施洗"、教会中妇女的角色或三位一体的教义等主题并不是任何新约作者的**主要**关注点，但这些都是我们今天关心的有效领域，如果我们要能够理解并向他人解释"整本圣经教导"关于它们的内容，我们必须查看圣经中所有与这些主题相关的地方（无论这些特定术语是否被提及，无论这些主题是否是我们检查的每个段落的主要关注点）。
+
+唯一的替代方案——因为我们**会**思考那些主题的**某些**东西——是从我们对我们感觉到的"圣经"立场的总体印象中随意形成我们对每个主题的意见，或者也许用对一两个相关文本的仔细分析来支持我们的立场，而不能保证这些文本呈现了"上帝全部旨意"（徒20:27）关于正在考虑的主题的平衡观点。事实上，这种方法——在今天的福音派圈子中太常见了——可以被称为"非系统神学"甚至"混乱和随机神学"！这样的替代方案太主观，太容易受到文化压力的影响。它倾向于教义的碎片化和广泛的教义不确定性，使教会在神学上不成熟，像"孩子，被波浪抛来抛去，被各样的教义之风吹动"（弗4:14）。
+
+关于主题选择和顺序的反对意见，没有什么可以阻止我们去圣经寻找**任何**教义问题的答案，在**任何顺序**中考虑。本书中的主题顺序是一个非常常见的顺序，已被采用，因为它是有序的，并且有助于学习和教学。但章节可以按任何想要的顺序阅读，结论应该不会不同，论证的说服力——如果它们正确地源于圣经——也不应该显著减弱。事实上，我怀疑这本书的大多数读者不会从第1章到第57章通读它，而是会从他们最感兴趣的章节开始，然后再阅读其他章节。这并不重要，因为我试图将章节写成独立的单元，并且我添加了对其他章节相关部分的交叉引用。无论是先读新天新地的章节（第57章），还是最后读，或者介于两者之间的某个地方，论证都将是相同的，引用的圣经经文将是相同的，结论应该是相同的。
+
+#### 3. "你不能直接从圣经的页面中获得教义"
+
+第三个反对意见不是关于一般的系统神学，而是关于我在这本书中的特定方法。尽管这本书第一版的许多评论非常积极，但一个批评涉及我在构建本书时使用的方法。为什么我认为我可以直接去圣经，引用许多经文，然后得出结论说我们应该相信x或y或z，基于这些经文？我没有意识到教义需要通过与教会历史上伟大神学家的著作以及在学术世界中著名的当代神学家的著作互动来发展吗？
+
+来自在大学背景下教学和写作的福音派教师成员，他们经常寻求影响持有更自由神学立场的其他学者，这样的反对意见是可以理解的。我自己曾在这样的背景下学习（在哈佛和剑桥），如果不是为了说服这样背景下的其他教师成员——在其中我假设圣经的可理解性和完全真实性、权威性和内在一致性——我不会写这样的书。那是因为在那种背景下，大多数或所有非福音派人士不会认同我的信念，即圣经的话语就是上帝的话语，并带有他的权威。共同假设的基础对这样的受众来说会窄得多。
+
+对于福音派世界之外的大多数神学家来说，圣经的话语**仅仅是人类的话语**，表达关于上帝的人类观念¹¹。教会历史上伟大神学家的著作同样是用仅仅人类的话语表达的人类观念。因此，从他们的角度来看，当我们试图构建我们应该相信的教义时，我们所要处理的都是在圣经和自圣经完成以来的基督教神学著作中表达的关于上帝的人类观念。
+
+这就是为什么今天，福音派学生仍然能够在与自由派学生和教师成员同等的基础上研究奥古斯丁、加尔文或路德等神学家的著作。他们都同意这些只是人类的著作，因此在权威性问题上没有根本分歧，或者这些作者有时可能是错误的。
+
+但在这样的大学背景下，如果福音派学生要基于整本圣经是上帝的话语，因此绝对真实和绝对权威的假设来进行他们的研究和写作，他们就不会找到共同的假设。事实上，在1994年收到这本书第一版的副本后，我在剑桥总是很亲切的博士导师C. F. D. Moule教授（1908-2007）写信感谢我，如下（注意他欣赏什么和不欣赏什么）：
+
+> 我写信……感谢你极其慷慨地赠送你的**巨著**……我充满钦佩——我一直都是——你出色的努力工作和准确工作的能力……Zondervan做得很好，不是吗？……我知道你不会期望我在教义上同意你！我们在对权威的理解上相距甚远，这是很多事情的基础；但我们可以为拥有同一位主和成为身体的成员而欢喜。¹²
+
+但我写这本书不是为了获得他的认可。我为那些相信圣经是上帝话语的福音派基督徒写的，由普通人类在圣灵的指导下写成（见第2、3、4和5章）。
+
+此外，如果我试图作为一个全新的信徒，脱离教会历史上许多神学家之前的工作，我永远不可能写出这样的书。我对圣经教义的理解是阅读B. B. Warfield、J. Gresham Machen和E. J. Young的作品，以及从威斯敏斯特神学院教授John Frame、Edmund Clowney、Richard Gaffin和其他人包括我的终身朋友Vern Poythress那里学习的结果。我对神学其他领域的理解受到了John Calvin、John Murray、Louis Berkhof、Herman Bavinck、Charles Hodge和威斯敏斯特信仰告白的著作的深刻影响。所有这些神学家都从许多在他们之前的人的工作中学习，他们又从在他们之前的其他人那里学习，一直追溯到第一世纪教会的开始。有时在这本书中我引用了这些作者中的一位或另一位，但即使在我没有引用的地方（因为这是一本入门教科书），那些熟悉他们著作的人会认识到他们的影响。（然而，在我处理福音派作者对当前观点分歧的章节中，我确实引用和互动了许多其他作者。）
+
+最后，然而，根据我的判断，我接受或拒绝了他们所有著作的各个部分，取决于它们是否忠实地代表了圣经本身的教导，我在我生命的三十九年中每天都在阅读，当时这本书的第一版于1994年出版。所以，是的，虽然考虑到那些有价值的影响，我确实认为直接从圣经的页面构建教义体系是可能的。但我也会说，如果不了解整个教会历史中其他基督教作家的神学信念，这不能做得好。
