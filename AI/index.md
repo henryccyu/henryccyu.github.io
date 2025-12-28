@@ -1,2 +1,2 @@
-- [AutoClaude](https://mp.weixin.qq.com/s/C7uD9z0oJRaXLX1ZTqLF3A)
+- [AutoClaude是一个跨平台的桌面应用（支持 Mac / Windows / Linux），它并不是简单地“帮你写代码”，而是把 AI 写代码这件事，完整地嵌入到一个工程可控的流程里。](https://mp.weixin.qq.com/s/C7uD9z0oJRaXLX1ZTqLF3A)
 - [Skyvern结合了LLM和计算机视觉的开源自动化工具，目标是让AI能够像人类一样理解网页并执行任务](https://mp.weixin.qq.com/s/2Jd50Yh_eo3MwmSkb9HARQ)
