@@ -1,1 +1,2 @@
-[AutoClaude](https://mp.weixin.qq.com/s/C7uD9z0oJRaXLX1ZTqLF3A)
+- [AutoClaude](https://mp.weixin.qq.com/s/C7uD9z0oJRaXLX1ZTqLF3A)
+- [Skyvern结合了LLM和计算机视觉的开源自动化工具，目标是让AI能够像人类一样理解网页并执行任务](https://mp.weixin.qq.com/s/2Jd50Yh_eo3MwmSkb9HARQ)
