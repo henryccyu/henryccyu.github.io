@@ -10,9 +10,9 @@
 [Chapter 8. ](https://henryccyu.github.io/SystematicTheology/chapter08.html)
 
 ## PART 2
-[Chapter 9. ](https://henryccyu.github.io/SystematicTheology/chapter09.html)  
-[Chapter 10. ](https://henryccyu.github.io/SystematicTheology/chapter10.html)  
-[Chapter 11. ](https://henryccyu.github.io/SystematicTheology/chapter11.html)  
+[Chapter 9. The Existence of God](https://henryccyu.github.io/SystematicTheology/chapter09.html)  
+[Chapter 10. The Knowability of God](https://henryccyu.github.io/SystematicTheology/chapter10.html)  
+[Chapter 11. The Character of God: “Incommunicable” Attributes](https://henryccyu.github.io/SystematicTheology/chapter11.html)  
 [Chapter 12. ](https://henryccyu.github.io/SystematicTheology/chapter12.html)  
 [Chapter 13. ](https://henryccyu.github.io/SystematicTheology/chapter13.html)  
 [Chapter 14. ](https://henryccyu.github.io/SystematicTheology/chapter14.html)  
