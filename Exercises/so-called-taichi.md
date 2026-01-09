@@ -1,5 +1,8 @@
 # 30-DAY TAI CHI PLAN FOR BEGINNERS
 
+<img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/eb87304a-74ec-42cf-95e9-bb05b9066e30" />
+
+
 ## DAY 1
 - 5 Walking Lunge
 - 10 Overhead Press
