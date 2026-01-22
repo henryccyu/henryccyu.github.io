@@ -48,7 +48,7 @@ IV. 实践跨文化门训
 练当地信徒,建立他们成为主的门徒。**
 
 ### IV. 实践跨文化门训
-1. 循环不息的门徒训练(Ministry Multiplication Cycle):  
+**1. 循环不息的门徒训练(Ministry Multiplication Cycle):**  
    就是把每位门徒训练成为可以栽培別人、可以建立別人的人,以致生生不息,不断繁衍。
 
 - 三个要素:  
