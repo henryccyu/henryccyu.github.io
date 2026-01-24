@@ -164,13 +164,13 @@
 3.  **不必是專職牧者**：強調**平信徒牧者**，信徒都是祭司，應被賦予權柄去傳福音、訓練人、甚至管理小組或教會 [[15:21](http://www.youtube.com/watch?v=IuJEZ5a4KUo&t=921)]。
 4.  **宣教士不必是全職**：鼓勵**雙職宣教士**（如保羅、講者自己），同時鼓勵信徒在本地關注居住在城市中的未得之民 [[17:50](http://www.youtube.com/watch?v=IuJEZ5a4KUo&t=1070)]。
 
-### 5. 門徒訓練的三個組成部分與MMCMC模型
+### 5. 門徒訓練的三個組成部分與MMC模型
 完整的門徒訓練不應單靠課程，還包括：
 1.  **課程** [[20:34](http://www.youtube.com/watch?v=IuJEZ5a4KUo&t=1234)]
 2.  **同行**：與門徒一同成長，處理生活、道德、婚姻等各方面的問題 [[21:10](http://www.youtube.com/watch?v=IuJEZ5a4KUo&t=1270)]。
 3.  **事工中的實踐**：師傅帶領門徒在侍奉中一邊做、一邊實習、一邊訓練 [[21:37](http://www.youtube.com/watch?v=IuJEZ5a4KUo&t=1297)]。
 
-他介紹了MMCMC（Multiple Ministry Cycle, 循環不息的門徒圈），強調門徒訓練必須包含大使命的四個元素：
+他介紹了MMC（Multiple Ministry Cycle, 循環不息的門徒圈），強調門徒訓練必須包含大使命的四個元素：
 1.  **受洗** (傳福音)：帶領人信主 [[23:00](http://www.youtube.com/watch?v=IuJEZ5a4KUo&t=1380)]。
 2.  **受教** (教導)：將神的話語和價值觀教導門徒 [[23:55](http://www.youtube.com/watch?v=IuJEZ5a4KUo&t=1435)]。
 3.  **受訓** (訓練)：親手帶著門徒去做、去實踐 [[24:22](http://www.youtube.com/watch?v=IuJEZ5a4KUo&t=1462)]。
