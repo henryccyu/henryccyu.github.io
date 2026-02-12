@@ -1,7 +1,10 @@
 Here’s a **clear, structured, engineering‑ready plan for regression prevention**, tailored to your scenario—where **risk scanning telemetry** is used to detect regressions by observing **resources that were previously mitigated but show issues again**. I’ve laid this out like something you could drop into a design doc or triage workflow. 
+
 # **Regression Prevention Plan for risk-Scanning–Based Detection**
+
 ## **1. Define Regression Types & Scopes** 
 Before building prevention mechanisms, establish what “regression” means in your context. 
+
 ### **1.1 What counts as a regression** 
 A regression occurs when: 
 - A resource was previously mitigated (e.g., configuration fix, rollout override, code patch, dependency remediation), **and** 
