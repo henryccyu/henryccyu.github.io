@@ -1,4 +1,5 @@
-# 12 我如何能充分利用余生？(How can I make the most of the rest of my life) - 周末营（Weekend）的第四场演讲。
+# 12 我如何能充分利用余生？
+How can I make the most of the rest of my life - 周末营第四场演讲。
 
 视频的主要内容围绕着基督徒如何活出有意义的人生展开，核心思想源自罗马书 12 章。以下是视频的主要章节和内容要点：
 
