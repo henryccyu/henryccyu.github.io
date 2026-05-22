@@ -61,7 +61,7 @@
 
 #### 2. 宣教的能源：依靠圣灵 [[16:23](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=983)]
 * **能力与命令：** 大使命是一个不可能靠使徒自身完成的任务，但主应许：“但圣灵降临在你们身上，你们就必得着能力” [[17:35](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1055)]。
-* **圣灵的工作：** 圣灵拆派工人、开启传道之门、引人悔罪 [[17:58](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1078)]。宣教离了圣灵，什么都不能做 [[18:09](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1089)]。
+* **圣灵的工作：** 圣灵差派工人、开启传道之门、引人悔罪 [[17:58](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1078)]。宣教离了圣灵，什么都不能做 [[18:09](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1089)]。
 * **被圣灵充满的方法：** 祷告祈求 (路 11:13) 和顺服 (徒 5:32) [[18:43](http://www.youtube.com/watch?v=gqJqhiY8GJc&t=1123)]。
 
 ### 三、 主和门徒宣教的榜样 (The Example of Jesus and His Disciples)
@@ -213,7 +213,7 @@
 * **前線宣教（前鋒）：** 各種專業（如農業、商業、教育、醫療）的宣教模式 [[18:56](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1136)]。
 * **前線支持（中場）：** 為前線宣教士提供電腦、行政、維修等支援工作 [[19:12](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1152)]。
 * **後方支持（後衛）：**
-    * **拆派者：** 提供經驗傳承和顧問意見，協助堂會拆派宣教士 [[20:52](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1252)]。
+    * **差派者：** 提供經驗傳承和顧問意見，協助堂會差派宣教士 [[20:52](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1252)]。
     * **專業關顧：** 提供宣教士督導、跨文化經驗的專業輔導等 [[21:34](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1294)]。
     * **本地跨文化事工：** 在本地接待和關懷流動人口 [[23:09](http://www.youtube.com/watch?v=2ZhTxXAnUMw&t=1389)]。
 
@@ -420,8 +420,8 @@
 
 向普世传福音是“宣教大业”，绝不是个别基督徒能独自完成的，需要三方紧密合作：
 
-1.  **教会 [[17:28](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1048)]：** 教会是宣教士的代表，将宣教士拆派出去，并在后方全力支援，包括**经济**、**关怀代祷**、**探访**宣教士父母等 [[17:35](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1055)]。
-2.  **差会 [[17:51](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1071)]：** 负责与教会合作拆派宣教士的独立组织，扮演了关键的支持角色：
+1.  **教会 [[17:28](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1048)]：** 教会是宣教士的代表，将宣教士差派出去，并在后方全力支援，包括**经济**、**关怀代祷**、**探访**宣教士父母等 [[17:35](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1055)]。
+2.  **差会 [[17:51](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1071)]：** 负责与教会合作差派宣教士的独立组织，扮演了关键的支持角色：
     * **出发前：** 协助身心评估、办理签证、**经费筹划**（与其他教会共同参与） [[18:06](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1086)]。
     * **工场上：** 关怀督导、协办短宣、转达代祷信息、安排述职、退休指引、甚至**政变措施**等 [[18:34](http://www.youtube.com/watch?v=2u1IM0If6Dk&t=1114)]。
 3.  **宣教工场：** 宣教士在工场上进行福音工作。
@@ -457,7 +457,7 @@
 #### 3. **面：不同层面的关顾者 [[14:15](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=855)]**
 关顾工作需要**教会、差会**和**不同群体**的合作，组成一个关顾网络：
 * **家人朋友和工场伙伴 [[15:00](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=900)]：** 是重要的同行者和守望者 [[16:16](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=976)]。
-* **差会与教会 [[16:43](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1003)]：** 扮演**拆派者**的角色。
+* **差会与教会 [[16:43](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1003)]：** 扮演**差派者**的角色。
 * **专业人员 [[16:54](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1014)]：** 包括心理辅导员、医疗人员、**财务投资人员**（关注退休生活）、牧者（属灵导引）、儿童教育专家等。
 * **宣教士自我关顾 [[18:07](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1087)]：** 懂得在忙碌中平衡工作和休息。
 * **天父的关顾 [[18:43](http://www.youtube.com/watch?v=9jZPqE-2DCg&t=1123)]（最核心）：** 宣教士需要与天父建立亲密关系，在困难中得着能力。
