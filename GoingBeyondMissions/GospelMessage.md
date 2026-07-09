@@ -20,6 +20,13 @@ Jesus was buried in a tomb (Matthew 27:59-60).
 Men rolled a huge stone in front of it.
 Soldiers guarded the tomb (Matthew 27:64).
 
+Jesus rose from the dead on the
+3rd day.
+Jesus appeared to His disciples
+and to more than 500 people
+before He ascended to heaven.
+Jesus conquered death
+
 Jesus is the only way we can come to God
 (John 14:6, Acts 4:12).
 Jesus opened a new way for us to have a relationship with God. Through Jesus, God forgives our sins.
