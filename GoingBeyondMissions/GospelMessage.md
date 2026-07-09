@@ -48,9 +48,9 @@ He promised (Revelation 3:20).
 If you want to receive Jesus in your heart, you can pray this prayer:
 
 When you received Jesus as your Saviour, you became a child of God and part of the family of God (John 1:12, Romans 8:16).
-You have eternal life in Jesus (1 John 5:11).
-Jesus promised that He would be with you forever (Hebrew 13:5).
-God gives you a new life. In order to live an abundant and fruitful life, you need to live out your belief in Jesus by obeying His commands.
+- You have eternal life in Jesus (1 John 5:11).
+- Jesus promised that He would be with you forever (Hebrew 13:5).
+- God gives you a new life. In order to live an abundant and fruitful life, you need to live out your belief in Jesus by obeying His commands.
 
 Love God and all people (Matthew 22:37-39).
 Because God loves us, we love God and others (1 John 4:7).
