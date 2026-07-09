@@ -1,10 +1,10 @@
 ## 个人见证
 
-I once thought that I could achieve anything as long as I worked hard enough. I moved from China to Japan to work for a high tech company and then to the US to work for Microsoft in 1995. Everything seemed to be heading to the right direction.
+I once thought that I could achieve anything as long as I worked hard enough. I worked for big companies in China, Japan and then Microsoft in the US. Everything seemed to be heading in the right direction.
 
-However, I felt a lot of presure when working with so many talented people. I was afraid of falling behind but my English wasn't good enough. My pride kept me from asking for help, and I was too afraid to let others see my weaknesses. I constantly worried about losing my job. Even after moving to a smaller company, I was laid off a few years later. When I returned to Microsoft, the pressure came back, and I began to lose hope.
+However, I was under a lot of presure when working with so many talented people. I was afraid of falling behind but my English wasn't good enough. My pride kept me from asking for help, and I was too afraid to let others see my weaknesses. I constantly worried about losing my job. Even after moving to a smaller company, I was laid off a few years later. When I returned to Microsoft, the pressure came back, and I began to lose hope.
 
-At work, I had a Christian co-worker who was also very successful. To my surprise, he faced the same pressures I did, but he wasn’t controlled by fear. I wanted the kind of peace he had.
+At work, I had a Christian coworker who was also very successful. To my surprise, he faced the same pressures I did, but he wasn’t controlled by fear. I wanted the kind of peace he had.
 
 We often had lunch together, and he shared how Jesus had helped him overcome his fears. As I listened, I realized that Jesus could help me too. I also came to see how sinful I was and how deeply I needed God’s forgiveness. Jesus died for my sins because He loves me. God created me, loved me, and was waiting for me to receive His gift of salvation. I wanted Him to change my life, so I accepted Jesus as my Savior and Lord.
 
