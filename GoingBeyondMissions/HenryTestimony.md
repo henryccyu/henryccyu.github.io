@@ -4,7 +4,7 @@ I once thought I could achieve anything as long as I worked hard enough. I worke
 
 However, I was under tremendous pressure working alongside so many talented people. My pride kept me from asking for help, so I tried to handle everything on my own. I worked extremely hard and became overwhelmed with stress.
 
-One of my coworkers from Hong Kong was very successful. Although he faced the same pressures I did, he was always calm and consistently delivered outstanding results. I wanted the kind of peace he had. Eventually, I learned that Jesus was the source of his peace and joy. That led me to accept Jesus as my Savior and Lord.
+One of my coworkers was very successful. Although he faced the same pressures I did, he was always calm and consistently delivered outstanding results. I wanted the kind of peace he had. Eventually, I learned that Jesus was the source of his peace and joy. That led me to accept Jesus as my Savior and Lord.
 
 The burden I had carried for so many years was lifted. I no longer worried about what other people thought of me. My relationships with others improved, and I became more confident at work.
 
