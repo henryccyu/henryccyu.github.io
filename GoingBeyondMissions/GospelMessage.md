@@ -1,31 +1,31 @@
 > - Do you know about God's love and His wonderful plan for your life?
 
 > - God's love is so great that He offers you eternal life with Him through Jesus. "For God so loved the world that he gave His one and only Son, that whoever believes in Him shall not perish but have eternal life" (John 3:16).
-- God's plan is to give you an abundant and meaningful life in Jesus. Jesus said, “I came that they may have life and have it abundantly" (John 10:10).
+> - God's plan is to give you an abundant and meaningful life in Jesus. Jesus said, “I came that they may have life and have it abundantly" (John 10:10).
 
 > - God is the light.
-- God is the Creator of the universe and you.
-- God loves you so much that He wants to give you eternal life in heaven and an abundant life on the earth.
+> - God is the Creator of the universe and you.
+> - God loves you so much that He wants to give you eternal life in heaven and an abundant life on the earth.
 
-- We live in darkness (John 3:19)
-- We have darkness in our hearts - like greed, pride, selfishness, hatred.
-- Therefore, our relationship with God is broken (Isaiah 59:2)
-- One day we will die and be punished for our sins.
+> - We live in darkness (John 3:19)
+> - We have darkness in our hearts - like greed, pride, selfishness, hatred.
+> - Therefore, our relationship with God is broken (Isaiah 59:2)
+> - One day we will die and be punished for our sins.
 
-- God sent His Son, Jesus Christ, to save us (1 John 4:2).
-- Jesus died on the cross to pay the penalty of our sins (Romans 5:8).
+> - God sent His Son, Jesus Christ, to save us (1 John 4:2).
+> - Jesus died on the cross to pay the penalty of our sins (Romans 5:8).
 
-- Jesus was buried in a tomb (Matthew 27:59-60).
-- Men rolled a huge stone in front of it.
-- Soldiers guarded the tomb (Matthew 27:64).
+> - Jesus was buried in a tomb (Matthew 27:59-60).
+> - Men rolled a huge stone in front of it.
+> - Soldiers guarded the tomb (Matthew 27:64).
 
-- Jesus rose from the dead on the 3rd day.
-- Jesus appeared to His disciples and to more than 500 people before He ascended to heaven.
-- Jesus conquered death
+> - Jesus rose from the dead on the 3rd day.
+> - Jesus appeared to His disciples and to more than 500 people before He ascended to heaven.
+> - Jesus conquered death
 
-- 00Jesus is the only way we can come to God (John 14:6, Acts 4:12).
-- Jesus opened the only way for us to have a relationship with God.
-- Through Jesus, God forgives our sins.
+> - Jesus is the only way we can come to God (John 14:6, Acts 4:12).
+> - Jesus opened the only way for us to have a relationship with God.
+> - Through Jesus, God forgives our sins.
 
 - Believe in Jesus as your Saviour (Romans 10:9).
 - Whoever believes in Him shall not perish but have eternal life.
