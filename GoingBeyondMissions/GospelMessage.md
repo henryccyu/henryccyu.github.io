@@ -27,22 +27,20 @@
 > - Jesus opened the only way for us to have a relationship with God.
 > - Through Jesus, God forgives our sins.
 
-- Believe in Jesus as your Saviour (Romans 10:9).
-- Whoever believes in Him shall not perish but have eternal life.
-- Salvation is a gift from God for people who have faith in Jesus (Ephesians 2:8-9).
-- What choice will you make?
-- Will you trust in Jesus Christ to be your Saviour and receive the gift of eternal life?
-- Or will you reject Jesus Christ and suffer eternal punishment?
+> - Believe in Jesus as your Saviour (Romans 10:9).
+> - Whoever believes in Him shall not perish but have eternal life.
+> - Salvation is a gift from God for people who have faith in Jesus (Ephesians 2:8-9).
+> - What choice will you make?
+> - Will you trust in Jesus Christ to be your Saviour and receive the gift of eternal life?
+> - Or will you reject Jesus Christ and suffer eternal punishment?
 
-- The Bible says if you believe in Jesus and confess with your mouth that Jesus is Lord, you shall be saved (Romans 10:9).
+> - The Bible says if you believe in Jesus and confess with your mouth that Jesus is Lord, you shall be saved (Romans 10:9).
 
-"Lord Jesus, I need you. Thank you for dying on the cross for my sins. I open the door of my life and receive You as my Saviour and my Lord. Thank you for forgiving my sins and for giving me eternal life. I pray this in Jesus' name. Amen."
-
-- Do you want to pray to receive Jesus right now?
-- Then, as you believe, pray this prayer sincerely!
-- Jesus will come into your life as 
-He promised (Revelation 3:20).
-- If you want to receive Jesus in your heart, you can pray this prayer:
+> - Do you want to pray to receive Jesus right now?
+> - Then, as you believe, pray this prayer sincerely!
+> - Jesus will come into your life as He promised (Revelation 3:20).
+> - If you want to receive Jesus in your heart, you can pray this prayer:
+>   "Lord Jesus, I need you. Thank you for dying on the cross for my sins. I open the door of my life and receive You as my Saviour and my Lord. Thank you for forgiving my sins and for giving me eternal life. I pray this in Jesus' name. Amen."
 
 - When you received Jesus as your Saviour, you became a child of God and part of the family of God (John 1:12, Romans 8:16).
 - You have eternal life in Jesus (1 John 5:11).
