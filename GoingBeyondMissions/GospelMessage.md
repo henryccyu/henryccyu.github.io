@@ -1,10 +1,9 @@
-- Do you know about God's love and His wonderful plan for your life?
+> - Do you know about God's love and His wonderful plan for your life?
 
-
-- God's love is so great that He offers you eternal life with Him through Jesus. "For God so loved the world that he gave His one and only Son, that whoever believes in Him shall not perish but have eternal life" (John 3:16).
+> - God's love is so great that He offers you eternal life with Him through Jesus. "For God so loved the world that he gave His one and only Son, that whoever believes in Him shall not perish but have eternal life" (John 3:16).
 - God's plan is to give you an abundant and meaningful life in Jesus. Jesus said, “I came that they may have life and have it abundantly" (John 10:10).
 
-- God is the light.
+> - God is the light.
 - God is the Creator of the universe and you.
 - God loves you so much that He wants to give you eternal life in heaven and an abundant life on the earth.
 
