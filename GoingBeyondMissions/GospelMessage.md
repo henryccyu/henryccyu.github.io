@@ -39,7 +39,7 @@
 > - Do you want to pray to receive Jesus right now?
 > - Then, as you believe, pray this prayer sincerely!
 > - Jesus will come into your life as He promised (Revelation 3:20).
-> - If you want to receive Jesus in your heart, you can pray this prayer:
+> - If you want to receive Jesus in your heart, you can pray this prayer:  
 >   "Lord Jesus, I need you. Thank you for dying on the cross for my sins. I open the door of my life and receive You as my Saviour and my Lord. Thank you for forgiving my sins and for giving me eternal life. I pray this in Jesus' name. Amen."
 
 - When you received Jesus as your Saviour, you became a child of God and part of the family of God (John 1:12, Romans 8:16).
