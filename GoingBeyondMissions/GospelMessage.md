@@ -40,19 +40,19 @@
 > - Then, as you believe, pray this prayer sincerely!
 > - Jesus will come into your life as He promised (Revelation 3:20).
 > - If you want to receive Jesus in your heart, you can pray this prayer:  
->   "Lord Jesus, I need you. Thank you for dying on the cross for my sins. I open the door of my life and receive You as my Saviour and my Lord. Thank you for forgiving my sins and for giving me eternal life. I pray this in Jesus' name. Amen."
+>   _"Lord Jesus, I need you. Thank you for dying on the cross for my sins. I open the door of my life and receive You as my Saviour and my Lord. Thank you for forgiving my sins and for giving me eternal life. I pray this in Jesus' name. Amen."_
 
-- When you received Jesus as your Saviour, you became a child of God and part of the family of God (John 1:12, Romans 8:16).
-- You have eternal life in Jesus (1 John 5:11).
-- Jesus promised that He would be with you forever (Hebrew 13:5).
-- God gives you a new life. - In order to live an abundant and fruitful life, you need to live out your belief in Jesus by obeying His commands.
+> - When you received Jesus as your Saviour, you became a child of God and part of the family of God (John 1:12, Romans 8:16).
+> - You have eternal life in Jesus (1 John 5:11).
+> - Jesus promised that He would be with you forever (Hebrew 13:5).
+> - God gives you a new life.
+> - In order to live an abundant and fruitful life, you need to live out your belief in Jesus by obeying His commands.
 
-1. Love God and all people (Matthew 22:37-39).
-   Because God loves us, we love God and others (1 John 4:7).
+> 1. Love God and all people (Matthew 22:37-39).
+>    Because God loves us, we love God and others (1 John 4:7).
 
-2. Read and study the Bible, the word of God, daily (Romans 15:4).
-   The word of God is our spiritual food. The word of God is the light to guide our life 
-according to His will (2 Timothy 3:16-17).
+> 2. Read and study the Bible, the word of God, daily (Romans 15:4).
+>    The word of God is our spiritual food. The word of God is the light to guide our life according to His will (2 Timothy 3:16-17).
 
 Pray to God continually (Philippians 4:6).
 God wants to have constant conversations with us (1 Thessalonians 5:17).
