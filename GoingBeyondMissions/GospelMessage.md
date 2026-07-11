@@ -54,19 +54,16 @@
 > 2. Read and study the Bible, the word of God, daily (Romans 15:4).
 >    The word of God is our spiritual food. The word of God is the light to guide our life according to His will (2 Timothy 3:16-17).
 
-Pray to God continually (Philippians 4:6).
-God wants to have constant conversations with us (1 Thessalonians 5:17).
-Talk to God about both your joy and your concern (Ephesians 6:18).
+> 3. Pray to God continually (Philippians 4:6).
+>   God wants to have constant conversations with us (1 Thessalonians 5:17).
+>   Talk to God about both your joy and your concern (Ephesians 6:18).
 
-Go to church and meet regularly with other believers (Hebrews 10:25).
-Jesus promised to be with us when two or three people gather together in His name (Matthew 18:20).
+> 4. Go to church and meet regularly with other believers (Hebrews 10:25).
+>   Jesus promised to be with us when two or three people gather together in His name (Matthew 18:20).
 
-Tell others the good news about Jesus (1 Peter 3:15).
-Go and tell your family and your friends about Jesus and about your new life in Jesus.
+> 5. Tell others the good news about Jesus (1 Peter 3:15).
+>   Go and tell your family and your friends about Jesus and about your new life in Jesus.
 
-Welcome to the family of God. God also
-wants to save our family. "Believes on the
-Lord Jesus Christ and you shall be saved,
-and your household" (Acts 16:31).
-
-Get your family and friends together to pray and to worship God.
+> - Welcome to the family of God.
+> - God also wants to save our family. "Believes on the Lord Jesus Christ and you shall be saved, and your household" (Acts 16:31).
+> - Get your family and friends together to pray and to worship God.
