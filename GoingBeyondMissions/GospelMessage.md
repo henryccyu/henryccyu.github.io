@@ -48,20 +48,20 @@
 > - God gives you a new life.
 > - In order to live an abundant and fruitful life, you need to live out your belief in Jesus by obeying His commands.
 
-> 1. Love God and all people (Matthew 22:37-39).
+> 1. Love God and all people (Matthew 22:37-39).  
 >    Because God loves us, we love God and others (1 John 4:7).
-
-> 2. Read and study the Bible, the word of God, daily (Romans 15:4).
+> 
+> 2. Read and study the Bible, the word of God, daily (Romans 15:4).  
 >    The word of God is our spiritual food. The word of God is the light to guide our life according to His will (2 Timothy 3:16-17).
-
-> 3. Pray to God continually (Philippians 4:6).
+> 
+> 3. Pray to God continually (Philippians 4:6).  
 >   God wants to have constant conversations with us (1 Thessalonians 5:17).
 >   Talk to God about both your joy and your concern (Ephesians 6:18).
-
-> 4. Go to church and meet regularly with other believers (Hebrews 10:25).
+>
+> 4. Go to church and meet regularly with other believers (Hebrews 10:25).  
 >   Jesus promised to be with us when two or three people gather together in His name (Matthew 18:20).
-
-> 5. Tell others the good news about Jesus (1 Peter 3:15).
+> 
+> 5. Tell others the good news about Jesus (1 Peter 3:15).  
 >   Go and tell your family and your friends about Jesus and about your new life in Jesus.
 
 > - Welcome to the family of God.
