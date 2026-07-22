@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CropLab — 批量裁切并合成 PDF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #15130f;
+    --panel: #1c1914;
+    --panel-alt: #221e18;
+    --hairline: #3a3327;
+    --hairline-soft: #2a251d;
+    --text: #ece7da;
+    --text-dim: #a89f8d;
+    --text-faint: #6f6858;
+    --accent: #ff9d2e;
+    --accent-dim: #c97a1e;
+    --accent-soft: rgba(255, 157, 46, 0.14);
+    --danger: #e2574c;
+    --radius: 3px;
+    --font-display: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button, input {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  .app {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    height: 100vh;
+  }
+
+  /* ============ 左侧控制栏 ============ */
+
+  .rail {
+    background: var(--panel);
+    border-right: 1px solid var(--hairline);
+    padding: 24px 20px 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--hairline-soft);
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+    border: 1.5px solid var(--accent);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 16px;
+    flex: none;
+    position: relative;
+  }
+  .brand-mark::before, .brand-mark::after {
+    content: '';
+    position: absolute;
+    background: var(--accent);
+  }
+  .brand-mark::before { width: 8px; height: 1.5px; top: 4px; left: 4px; }
+  .brand-mark::after { width: 1.5px; height: 8px; top: 4px; left: 4px; }
+
+  .brand h1 {
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+  }
+  .brand p {
+    margin: 2px 0 0;
+    font-size: 11px;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    letter-spacing: 0.03em;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .step-num {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .step-head h2 {
+    font-size: 13px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+
+  .step-desc {
+    margin: -4px 0 0;
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* ============ 按钮 ============ */
+
+  .btn {
+    appearance: none;
+    border: 1px solid var(--hairline);
+    background: var(--panel-alt);
+    color: var(--text);
+    padding: 9px 14px;
+    border-radius: var(--radius);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .btn:hover:not(:disabled) {
+    border-color: var(--accent-dim);
+  }
+  .btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  .btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #1a1206;
+    font-weight: 600;
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: #ffb254;
+    border-color: #ffb254;
+  }
+  .btn-ghost {
+    background: transparent;
+  }
+  .btn-block {
+    width: 100%;
+  }
+
+  /* ============ 载入区 ============ */
+
+  .dropzone {
+    border: 1px dashed var(--hairline);
+    border-radius: var(--radius);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  .dropzone.is-dragover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .dropzone .hint {
+    margin: 0;
+    font-size: 11px;
+    color: var(--text-faint);
+  }
+
+  .file-summary {
+    margin: 0;
+    font-size: 12px;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+  }
+
+  .file-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 180px;
+    overflow-y: auto;
+    border: 1px solid var(--hairline-soft);
+    border-radius: var(--radius);
+  }
+  .file-list:empty { display: none; }
+
+  .file-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-bottom: 1px solid var(--hairline-soft);
+  }
+  .file-item:last-child { border-bottom: none; }
+  .file-item.is-reference {
+    background: var(--accent-soft);
+  }
+
+  .file-idx {
+    font-family: var(--font-mono);
+    color: var(--text-faint);
+    font-size: 10px;
+    flex: none;
+    width: 18px;
+  }
+  .file-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .file-tag {
+    flex: none;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--accent);
+    border: 1px solid var(--accent-dim);
+    border-radius: 2px;
+    padding: 1px 5px;
+    letter-spacing: 0.02em;
+  }
+
+  /* ============ 裁剪边距十字网格 ============ */
+
+  .margin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      ".    top    ."
+      "left center right"
+      ".    bottom .";
+    gap: 6px;
+  }
+  .m-top    { grid-area: top; }
+  .m-left   { grid-area: left; }
+  .m-right  { grid-area: right; }
+  .m-bottom { grid-area: bottom; }
+  .m-center {
+    grid-area: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--hairline);
+    border-radius: var(--radius);
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 4px;
+    text-align: center;
+  }
+  .m-center-label {
+    font-size: 9px;
+    color: var(--text-faint);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    margin-bottom: 2px;
+  }
+
+  .m-cell label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+  }
+  .m-cell input {
+    width: 100%;
+    background: var(--panel-alt);
+    border: 1px solid var(--hairline);
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    padding: 6px 7px;
+    border-radius: var(--radius);
+  }
+  .m-cell input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  /* 隐藏 number input 的原生上下箭头，保持面板简洁 */
+  .m-cell input::-webkit-outer-spin-button,
+  .m-cell input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .m-cell input[type=number] { -moz-appearance: textfield; }
+
+  /* ============ 开关 ============ */
+
+  .toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--text-dim);
+    user-select: none;
+  }
+  .toggle input { position: absolute; opacity: 0; width: 0; height: 0; }
+  .toggle-track {
+    width: 34px;
+    height: 18px;
+    background: var(--panel-alt);
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    position: relative;
+    flex: none;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  .toggle-thumb {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 14px;
+    height: 14px;
+    background: var(--text-faint);
+    border-radius: 50%;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+  .toggle input:checked + .toggle-track {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .toggle input:checked + .toggle-track .toggle-thumb {
+    transform: translateX(16px);
+    background: var(--accent);
+  }
+  .toggle input:focus-visible + .toggle-track {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .toggle-label { color: var(--text); }
+
+  /* ============ 进度 / 状态 ============ */
+
+  .progress {
+    height: 4px;
+    background: var(--panel-alt);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 4px;
+  }
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--accent);
+    transition: width 0.2s ease;
+  }
+  .status {
+    margin: 0;
+    font-size: 12px;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    min-height: 16px;
+  }
+  .warnings {
+    font-size: 11px;
+    color: var(--danger);
+    background: rgba(226, 87, 76, 0.1);
+    border: 1px solid rgba(226, 87, 76, 0.3);
+    border-radius: var(--radius);
+    padding: 8px 10px;
+  }
+  .warnings ul {
+    margin: 4px 0 0;
+    padding-left: 16px;
+  }
+
+  /* ============ 主画布区域 ============ */
+
+  .stage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(255,157,46,0.05), transparent 60%),
+      var(--bg);
+  }
+
+  .canvas-wrap {
+    flex: 1;
+    position: relative;
+    padding: 32px;
+    min-height: 0;
+  }
+
+  #cropCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    touch-action: none;
+    cursor: crosshair;
+  }
+
+  .empty-state {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    text-align: center;
+    pointer-events: none;
+    border: 1px dashed var(--hairline);
+    padding: 20px 28px;
+    border-radius: var(--radius);
+  }
+
+  /* ============ 响应式 ============ */
+
+  @media (max-width: 860px) {
+    .app {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+      height: auto;
+      min-height: 100vh;
+    }
+    .rail {
+      border-right: none;
+      border-bottom: 1px solid var(--hairline);
+      max-height: 60vh;
+    }
+    .canvas-wrap {
+      min-height: 360px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="rail">
+    <header class="brand">
+      <div class="brand-mark"></div>
+      <div>
+        <h1>CropLab</h1>
+        <p>批量裁切 · 合成 PDF</p>
+      </div>
+    </header>
+
+    <section class="step" data-step="01">
+      <div class="step-head"><span class="step-num">01</span><h2>载入图片</h2></div>
+      <div class="dropzone" id="dropzone">
+        <input type="file" id="fileInput" accept="image/*" multiple hidden>
+        <button class="btn btn-primary" id="btnBrowse" type="button">选择图片文件…</button>
+        <p class="hint">或将图片拖放到此处</p>
+      </div>
+      <p class="file-summary" id="fileSummary">尚未载入图片</p>
+      <ol class="file-list" id="fileList"></ol>
+    </section>
+
+    <section class="step" data-step="02">
+      <div class="step-head"><span class="step-num">02</span><h2>裁剪范围</h2></div>
+      <p class="step-desc">在右侧图片上拖拽取景框（基于第一张图片），同一组边距会应用到全部图片。</p>
+
+      <div class="margin-grid">
+        <div class="m-cell m-top"><label for="mTop">上 Top</label><input type="number" id="mTop" min="0" inputmode="numeric"></div>
+        <div class="m-cell m-left"><label for="mLeft">左 Left</label><input type="number" id="mLeft" min="0" inputmode="numeric"></div>
+        <div class="m-cell m-center" id="mResultCell">
+          <span class="m-center-label">裁剪后尺寸 px</span>
+          <span id="mResult">–</span>
+        </div>
+        <div class="m-cell m-right"><label for="mRight">右 Right</label><input type="number" id="mRight" min="0" inputmode="numeric"></div>
+        <div class="m-cell m-bottom"><label for="mBottom">下 Bottom</label><input type="number" id="mBottom" min="0" inputmode="numeric"></div>
+      </div>
+
+      <button class="btn btn-ghost" id="btnResetCrop" type="button">重置为整张图片</button>
+
+      <label class="toggle">
+        <input type="checkbox" id="chkContrast" checked>
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+        <span class="toggle-label">最大化对比度（文字更醒目）</span>
+      </label>
+    </section>
+
+    <section class="step" data-step="03">
+      <div class="step-head"><span class="step-num">03</span><h2>导出</h2></div>
+      <button class="btn btn-primary btn-block" id="btnExport" type="button" disabled>裁切并生成 PDF</button>
+      <div class="progress" id="progressWrap" hidden>
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p class="status" id="statusText"></p>
+      <div class="warnings" id="warnings" hidden></div>
+    </section>
+  </aside>
+
+  <main class="stage">
+    <div class="canvas-wrap">
+      <canvas id="cropCanvas"></canvas>
+      <p class="empty-state" id="emptyState">载入图片后，在此处拖拽画出裁剪范围</p>
+    </div>
+  </main>
+</div>
+
+<script>
+'use strict';
+
+/* ============================== 工具函数 ============================== */
+
+function naturalCompare(a, b) {
+  const ax = [], bx = [];
+  a.replace(/(\d+)|(\D+)/g, (_, d, s) => { ax.push([d ? parseInt(d, 10) : Infinity, s || '']); return ''; });
+  b.replace(/(\d+)|(\D+)/g, (_, d, s) => { bx.push([d ? parseInt(d, 10) : Infinity, s || '']); return ''; });
+  while (ax.length && bx.length) {
+    const an = ax.shift();
+    const bn = bx.shift();
+    const nn = (an[0] - bn[0]) || an[1].localeCompare(bn[1]);
+    if (nn) return nn;
+  }
+  return ax.length - bx.length;
+}
+
+function clamp(v, min, max) {
+  return Math.max(min, Math.min(max, v));
+}
+
+function loadImageFromFile(file) {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => { URL.revokeObjectURL(url); resolve(img); };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('图片加载失败：' + file.name)); };
+    img.src = url;
+  });
+}
+
+function fileIdentityKey(file) {
+  return `${file.name}__${file.size}__${file.lastModified}`;
+}
+
+/* ============================== 对比度最大化 ============================== */
+
+function buildStretchLut(hist, total, clipPercent) {
+  const clipCount = total * (clipPercent / 100);
+  let low = 0, cum = 0;
+  for (let i = 0; i < 256; i++) {
+    cum += hist[i];
+    if (cum > clipCount) { low = i; break; }
+  }
+  let high = 255;
+  cum = 0;
+  for (let i = 255; i >= 0; i--) {
+    cum += hist[i];
+    if (cum > clipCount) { high = i; break; }
+  }
+  const lut = new Uint8ClampedArray(256);
+  if (high <= low) {
+    for (let i = 0; i < 256; i++) lut[i] = i;
+    return lut;
+  }
+  const scale = 255 / (high - low);
+  for (let i = 0; i < 256; i++) {
+    lut[i] = Math.round(clamp((i - low) * scale, 0, 255));
+  }
+  return lut;
+}
+
+function maximizeContrast(imageData, clipPercent) {
+  const data = imageData.data;
+  const total = data.length / 4;
+  const histR = new Array(256).fill(0);
+  const histG = new Array(256).fill(0);
+  const histB = new Array(256).fill(0);
+
+  for (let i = 0; i < data.length; i += 4) {
+    histR[data[i]]++;
+    histG[data[i + 1]]++;
+    histB[data[i + 2]]++;
+  }
+
+  const lutR = buildStretchLut(histR, total, clipPercent);
+  const lutG = buildStretchLut(histG, total, clipPercent);
+  const lutB = buildStretchLut(histB, total, clipPercent);
+
+  for (let i = 0; i < data.length; i += 4) {
+    data[i] = lutR[data[i]];
+    data[i + 1] = lutG[data[i + 1]];
+    data[i + 2] = lutB[data[i + 2]];
+  }
+}
+
+/* ============================== 极简 PDF 生成器 ============================== */
+
+class SimplePdfBuilder {
+  constructor() {
+    this.entries = [];
+  }
+
+  addImagePage(jpegBytes, width, height) {
+    this.entries.push({ jpegBytes, width, height });
+  }
+
+  build() {
+    const enc = new TextEncoder();
+    const parts = [];
+    let offset = 0;
+    const offsets = {};
+
+    const pushAscii = (str) => {
+      const b = enc.encode(str);
+      parts.push(b);
+      offset += b.length;
+    };
+    const pushBytes = (b) => {
+      parts.push(b);
+      offset += b.length;
+    };
+
+    pushBytes(enc.encode('%PDF-1.4\n'));
+    pushBytes(new Uint8Array([0x25, 0xE2, 0xE3, 0xCF, 0xD3, 0x0A]));
+
+    const n = this.entries.length;
+    if (n === 0) throw new Error('没有可写入 PDF 的图片。');
+
+    const totalObjects = 2 + n * 3;
+    const pageObjNums = [];
+    for (let i = 0; i < n; i++) pageObjNums.push(3 + i * 3 + 2);
+
+    offsets[1] = offset;
+    pushAscii('1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n');
+
+    offsets[2] = offset;
+    const kids = pageObjNums.map((p) => `${p} 0 R`).join(' ');
+    pushAscii(`2 0 obj\n<< /Type /Pages /Kids [ ${kids} ] /Count ${n} >>\nendobj\n`);
+
+    const ptsPerPx = 72 / 96;
+    for (let i = 0; i < n; i++) {
+      const e = this.entries[i];
+      const wPts = (e.width * ptsPerPx).toFixed(3);
+      const hPts = (e.height * ptsPerPx).toFixed(3);
+      const imageObjNum = 3 + i * 3;
+      const contentObjNum = imageObjNum + 1;
+      const pageObjNum = imageObjNum + 2;
+
+      offsets[imageObjNum] = offset;
+      pushAscii(
+        `${imageObjNum} 0 obj\n` +
+        `<< /Type /XObject /Subtype /Image /Width ${e.width} /Height ${e.height} ` +
+        `/ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${e.jpegBytes.length} >>\n` +
+        'stream\n'
+      );
+      pushBytes(e.jpegBytes);
+      pushAscii('\nendstream\nendobj\n');
+
+      const content = `q ${wPts} 0 0 ${hPts} 0 0 cm /Im${i} Do Q`;
+      const contentBytes = enc.encode(content);
+      offsets[contentObjNum] = offset;
+      pushAscii(`${contentObjNum} 0 obj\n<< /Length ${contentBytes.length} >>\nstream\n`);
+      pushBytes(contentBytes);
+      pushAscii('\nendstream\nendobj\n');
+
+      offsets[pageObjNum] = offset;
+      pushAscii(
+        `${pageObjNum} 0 obj\n` +
+        `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${wPts} ${hPts}] ` +
+        `/Resources << /XObject << /Im${i} ${imageObjNum} 0 R >> >> ` +
+        `/Contents ${contentObjNum} 0 R >>\nendobj\n`
+      );
+    }
+
+    const xrefOffset = offset;
+    pushAscii(`xref\n0 ${totalObjects + 1}\n`);
+    pushAscii('0000000000 65535 f \n');
+    for (let obj = 1; obj <= totalObjects; obj++) {
+      pushAscii(`${String(offsets[obj]).padStart(10, '0')} 00000 n \n`);
+    }
+    pushAscii(`trailer\n<< /Size ${totalObjects + 1} /Root 1 0 R >>\nstartxref\n${xrefOffset}\n%%EOF`);
+
+    let total = 0;
+    for (const p of parts) total += p.length;
+    const result = new Uint8Array(total);
+    let pos = 0;
+    for (const p of parts) { result.set(p, pos); pos += p.length; }
+    return result;
+  }
+}
+
+/* ============================== 裁剪画布 ============================== */
+
+class CropCanvas {
+  constructor(canvasEl) {
+    this.canvas = canvasEl;
+    this.ctx = canvasEl.getContext('2d');
+    this.image = null;
+    this.cropRect = null; // {x,y,w,h} 图片像素坐标
+    this.displayRect = { x: 0, y: 0, w: 0, h: 0 }; // 屏幕(CSS像素)坐标
+    this.scale = 1;
+    this.dragMode = null;
+    this.dragStartImagePt = { x: 0, y: 0 };
+    this.dragStartRect = null;
+    this.minCropSize = 10;
+    this.handleHitSize = 16;
+
+    this.onCropChanged = null; // 外部回调
+
+    this._bindEvents();
+    window.addEventListener('resize', () => this._resizeCanvas());
+  }
+
+  setImage(img) {
+    this.image = img;
+    this._resizeCanvas();
+  }
+
+  setCropRect(rect) {
+    this.cropRect = rect;
+    this._render();
+  }
+
+  resetToFullImage() {
+    if (!this.image) return;
+    this.cropRect = { x: 0, y: 0, w: this.image.naturalWidth, h: this.image.naturalHeight };
+    this._render();
+    if (this.onCropChanged) this.onCropChanged(this.cropRect);
+  }
+
+  _resizeCanvas() {
+    const wrap = this.canvas.parentElement;
+    const cssW = wrap.clientWidth;
+    const cssH = wrap.clientHeight;
+    const dpr = window.devicePixelRatio || 1;
+
+    this.canvas.width = Math.max(1, Math.round(cssW * dpr));
+    this.canvas.height = Math.max(1, Math.round(cssH * dpr));
+    this.canvas.style.width = cssW + 'px';
+    this.canvas.style.height = cssH + 'px';
+    this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    this._computeDisplayRect(cssW, cssH);
+    this._render();
+  }
+
+  _computeDisplayRect(cssW, cssH) {
+    if (!this.image) { this.displayRect = { x: 0, y: 0, w: 0, h: 0 }; return; }
+    const iw = this.image.naturalWidth;
+    const ih = this.image.naturalHeight;
+    const availW = Math.max(1, cssW - 8);
+    const availH = Math.max(1, cssH - 8);
+    const scale = Math.min(availW / iw, availH / ih);
+    const dispW = iw * scale;
+    const dispH = ih * scale;
+    this.scale = scale;
+    this.displayRect = {
+      x: (cssW - dispW) / 2,
+      y: (cssH - dispH) / 2,
+      w: dispW,
+      h: dispH,
+    };
+  }
+
+  _screenToImage(pt) {
+    const ix = (pt.x - this.displayRect.x) / this.scale;
+    const iy = (pt.y - this.displayRect.y) / this.scale;
+    return {
+      x: Math.round(clamp(ix, 0, this.image.naturalWidth)),
+      y: Math.round(clamp(iy, 0, this.image.naturalHeight)),
+    };
+  }
+
+  _imageToScreen(pt) {
+    return {
+      x: this.displayRect.x + pt.x * this.scale,
+      y: this.displayRect.y + pt.y * this.scale,
+    };
+  }
+
+  _cropRectScreen() {
+    const r = this.cropRect;
+    const tl = this._imageToScreen({ x: r.x, y: r.y });
+    const br = this._imageToScreen({ x: r.x + r.w, y: r.y + r.h });
+    return { x: tl.x, y: tl.y, w: br.x - tl.x, h: br.y - tl.y };
+  }
+
+  _handlePoints() {
+    const s = this._cropRectScreen();
+    const midX = s.x + s.w / 2;
+    const midY = s.y + s.h / 2;
+    return {
+      nw: { x: s.x, y: s.y },
+      n: { x: midX, y: s.y },
+      ne: { x: s.x + s.w, y: s.y },
+      e: { x: s.x + s.w, y: midY },
+      se: { x: s.x + s.w, y: s.y + s.h },
+      s: { x: midX, y: s.y + s.h },
+      sw: { x: s.x, y: s.y + s.h },
+      w: { x: s.x, y: midY },
+    };
+  }
+
+  _hitTest(posScreen) {
+    if (!this.cropRect || this.cropRect.w <= 0 || this.cropRect.h <= 0) return null;
+    const half = this.handleHitSize / 2;
+    const handles = this._handlePoints();
+    for (const key of Object.keys(handles)) {
+      const p = handles[key];
+      if (Math.abs(posScreen.x - p.x) <= half && Math.abs(posScreen.y - p.y) <= half) {
+        return key;
+      }
+    }
+    const s = this._cropRectScreen();
+    if (posScreen.x >= s.x && posScreen.x <= s.x + s.w && posScreen.y >= s.y && posScreen.y <= s.y + s.h) {
+      return 'move';
+    }
+    return null;
+  }
+
+  _cursorFor(hit) {
+    switch (hit) {
+      case 'nw': case 'se': return 'nwse-resize';
+      case 'ne': case 'sw': return 'nesw-resize';
+      case 'n': case 's': return 'ns-resize';
+      case 'e': case 'w': return 'ew-resize';
+      case 'move': return 'move';
+      default: return 'crosshair';
+    }
+  }
+
+  _getPos(e) {
+    const rect = this.canvas.getBoundingClientRect();
+    return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+  }
+
+  _bindEvents() {
+    this.canvas.addEventListener('pointerdown', (e) => {
+      if (!this.image) return;
+      this.canvas.setPointerCapture(e.pointerId);
+      const pos = this._getPos(e);
+      const hit = this._hitTest(pos);
+      this.dragStartImagePt = this._screenToImage(pos);
+      this.dragStartRect = this.cropRect ? { ...this.cropRect } : null;
+
+      if (hit) {
+        this.dragMode = hit;
+      } else {
+        this.dragMode = 'create';
+        this.cropRect = { x: this.dragStartImagePt.x, y: this.dragStartImagePt.y, w: 0, h: 0 };
+      }
+      this._render();
+    });
+
+    this.canvas.addEventListener('pointermove', (e) => {
+      if (!this.image) return;
+      const pos = this._getPos(e);
+
+      if (!this.dragMode) {
+        this.canvas.style.cursor = this._cursorFor(this._hitTest(pos));
+        return;
+      }
+
+      const cur = this._screenToImage(pos);
+      const iw = this.image.naturalWidth;
+      const ih = this.image.naturalHeight;
+      const r = this.dragStartRect;
+      const MIN = this.minCropSize;
+
+      switch (this.dragMode) {
+        case 'create': {
+          const x1 = Math.min(this.dragStartImagePt.x, cur.x);
+          const x2 = Math.max(this.dragStartImagePt.x, cur.x);
+          const y1 = Math.min(this.dragStartImagePt.y, cur.y);
+          const y2 = Math.max(this.dragStartImagePt.y, cur.y);
+          this.cropRect = { x: x1, y: y1, w: x2 - x1, h: y2 - y1 };
+          break;
+        }
+        case 'move': {
+          const dx = cur.x - this.dragStartImagePt.x;
+          const dy = cur.y - this.dragStartImagePt.y;
+          const newX = clamp(r.x + dx, 0, iw - r.w);
+          const newY = clamp(r.y + dy, 0, ih - r.h);
+          this.cropRect = { x: newX, y: newY, w: r.w, h: r.h };
+          break;
+        }
+        case 'nw': {
+          const newLeft = clamp(cur.x, 0, r.x + r.w - MIN);
+          const newTop = clamp(cur.y, 0, r.y + r.h - MIN);
+          this.cropRect = rectFromLTRB(newLeft, newTop, r.x + r.w, r.y + r.h);
+          break;
+        }
+        case 'ne': {
+          const newRight = clamp(cur.x, r.x + MIN, iw);
+          const newTop = clamp(cur.y, 0, r.y + r.h - MIN);
+          this.cropRect = rectFromLTRB(r.x, newTop, newRight, r.y + r.h);
+          break;
+        }
+        case 'se': {
+          const newRight = clamp(cur.x, r.x + MIN, iw);
+          const newBottom = clamp(cur.y, r.y + MIN, ih);
+          this.cropRect = rectFromLTRB(r.x, r.y, newRight, newBottom);
+          break;
+        }
+        case 'sw': {
+          const newLeft = clamp(cur.x, 0, r.x + r.w - MIN);
+          const newBottom = clamp(cur.y, r.y + MIN, ih);
+          this.cropRect = rectFromLTRB(newLeft, r.y, r.x + r.w, newBottom);
+          break;
+        }
+        case 'n': {
+          const newTop = clamp(cur.y, 0, r.y + r.h - MIN);
+          this.cropRect = rectFromLTRB(r.x, newTop, r.x + r.w, r.y + r.h);
+          break;
+        }
+        case 's': {
+          const newBottom = clamp(cur.y, r.y + MIN, ih);
+          this.cropRect = rectFromLTRB(r.x, r.y, r.x + r.w, newBottom);
+          break;
+        }
+        case 'e': {
+          const newRight = clamp(cur.x, r.x + MIN, iw);
+          this.cropRect = rectFromLTRB(r.x, r.y, newRight, r.y + r.h);
+          break;
+        }
+        case 'w': {
+          const newLeft = clamp(cur.x, 0, r.x + r.w - MIN);
+          this.cropRect = rectFromLTRB(newLeft, r.y, r.x + r.w, r.y + r.h);
+          break;
+        }
+        default:
+          break;
+      }
+
+      this._render();
+      if (this.onCropChanged) this.onCropChanged(this.cropRect);
+    });
+
+    const endDrag = (e) => {
+      if (this.dragMode === 'create' && this.cropRect && (this.cropRect.w < this.minCropSize || this.cropRect.h < this.minCropSize)) {
+        this.cropRect = null;
+      }
+      this.dragMode = null;
+      if (this.onCropChanged) this.onCropChanged(this.cropRect);
+      this._render();
+    };
+    this.canvas.addEventListener('pointerup', endDrag);
+    this.canvas.addEventListener('pointercancel', endDrag);
+  }
+
+  _render() {
+    const ctx = this.ctx;
+    const wrap = this.canvas.parentElement;
+    const cssW = wrap.clientWidth;
+    const cssH = wrap.clientHeight;
+
+    ctx.clearRect(0, 0, cssW, cssH);
+    if (!this.image) return;
+
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
+    ctx.drawImage(this.image, this.displayRect.x, this.displayRect.y, this.displayRect.w, this.displayRect.h);
+
+    if (!this.cropRect || this.cropRect.w <= 0 || this.cropRect.h <= 0) return;
+
+    const s = this._cropRectScreen();
+
+    // 裁剪框外部变暗
+    ctx.save();
+    ctx.fillStyle = 'rgba(0,0,0,0.55)';
+    ctx.beginPath();
+    ctx.rect(this.displayRect.x, this.displayRect.y, this.displayRect.w, this.displayRect.h);
+    ctx.rect(s.x, s.y, s.w, s.h);
+    ctx.fill('evenodd');
+    ctx.restore();
+
+    // 细边框
+    ctx.strokeStyle = 'rgba(255,157,46,0.55)';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(s.x + 0.5, s.y + 0.5, s.w, s.h);
+
+    // 三分线
+    ctx.strokeStyle = 'rgba(236,231,218,0.35)';
+    ctx.beginPath();
+    for (let k = 1; k <= 2; k++) {
+      const gx = s.x + (s.w * k) / 3;
+      ctx.moveTo(gx, s.y);
+      ctx.lineTo(gx, s.y + s.h);
+      const gy = s.y + (s.h * k) / 3;
+      ctx.moveTo(s.x, gy);
+      ctx.lineTo(s.x + s.w, gy);
+    }
+    ctx.stroke();
+
+    // 取景器式四角括标
+    const armLen = 18;
+    const thickness = 2.5;
+    ctx.strokeStyle = '#ff9d2e';
+    ctx.lineWidth = thickness;
+    ctx.lineCap = 'butt';
+
+    const corners = [
+      { x: s.x, y: s.y, dx: 1, dy: 1 },
+      { x: s.x + s.w, y: s.y, dx: -1, dy: 1 },
+      { x: s.x + s.w, y: s.y + s.h, dx: -1, dy: -1 },
+      { x: s.x, y: s.y + s.h, dx: 1, dy: -1 },
+    ];
+    for (const c of corners) {
+      ctx.beginPath();
+      ctx.moveTo(c.x + c.dx * armLen, c.y);
+      ctx.lineTo(c.x, c.y);
+      ctx.lineTo(c.x, c.y + c.dy * armLen);
+      ctx.stroke();
+    }
+  }
+}
+
+function rectFromLTRB(l, t, r, b) {
+  return { x: l, y: t, w: r - l, h: b - t };
+}
+
+/* ============================== 主程序 ============================== */
+
+(function main() {
+  const els = {
+    fileInput: document.getElementById('fileInput'),
+    btnBrowse: document.getElementById('btnBrowse'),
+    dropzone: document.getElementById('dropzone'),
+    fileSummary: document.getElementById('fileSummary'),
+    fileList: document.getElementById('fileList'),
+    canvas: document.getElementById('cropCanvas'),
+    emptyState: document.getElementById('emptyState'),
+    mTop: document.getElementById('mTop'),
+    mLeft: document.getElementById('mLeft'),
+    mRight: document.getElementById('mRight'),
+    mBottom: document.getElementById('mBottom'),
+    mResult: document.getElementById('mResult'),
+    btnResetCrop: document.getElementById('btnResetCrop'),
+    chkContrast: document.getElementById('chkContrast'),
+    btnExport: document.getElementById('btnExport'),
+    progressWrap: document.getElementById('progressWrap'),
+    progressBar: document.getElementById('progressBar'),
+    statusText: document.getElementById('statusText'),
+    warnings: document.getElementById('warnings'),
+  };
+
+  const state = {
+    files: [],
+    firstImage: null,
+    cropBasisKey: null,
+  };
+
+  const cropCanvas = new CropCanvas(els.canvas);
+  cropCanvas.onCropChanged = () => {
+    syncMarginInputsFromCanvas();
+    updateExportEnabled();
+  };
+
+  function updateExportEnabled() {
+    const ok = state.files.length > 0 && cropCanvas.cropRect && cropCanvas.cropRect.w > 0 && cropCanvas.cropRect.h > 0;
+    els.btnExport.disabled = !ok;
+  }
+
+  function renderFileList() {
+    els.fileList.innerHTML = '';
+    state.files.forEach((file, idx) => {
+      const li = document.createElement('li');
+      li.className = 'file-item' + (idx === 0 ? ' is-reference' : '');
+      const idxSpan = document.createElement('span');
+      idxSpan.className = 'file-idx';
+      idxSpan.textContent = String(idx + 1).padStart(2, '0');
+      const nameSpan = document.createElement('span');
+      nameSpan.className = 'file-name';
+      nameSpan.textContent = file.name;
+      li.appendChild(idxSpan);
+      li.appendChild(nameSpan);
+      if (idx === 0) {
+        const tag = document.createElement('span');
+        tag.className = 'file-tag';
+        tag.textContent = '取景基准';
+        li.appendChild(tag);
+      }
+      els.fileList.appendChild(li);
+    });
+    els.fileSummary.textContent = state.files.length > 0
+      ? `已载入 ${state.files.length} 张图片（按文件名排序）`
+      : '尚未载入图片';
+  }
+
+  async function handleFiles(fileList) {
+    const arr = Array.from(fileList).filter((f) => f.type.startsWith('image/'));
+    if (arr.length === 0) return;
+
+    arr.sort((a, b) => naturalCompare(a.name, b.name));
+    state.files = arr;
+    renderFileList();
+
+    els.statusText.textContent = '';
+    els.warnings.hidden = true;
+    els.warnings.innerHTML = '';
+
+    const firstKey = fileIdentityKey(arr[0]);
+    const keepCrop = state.cropBasisKey === firstKey && cropCanvas.cropRect;
+    const prevRect = keepCrop ? { ...cropCanvas.cropRect } : null;
+
+    try {
+      const img = await loadImageFromFile(arr[0]);
+      state.firstImage = img;
+      cropCanvas.setImage(img);
+      els.emptyState.hidden = true;
+
+      if (prevRect) {
+        cropCanvas.setCropRect(prevRect);
+      } else {
+        cropCanvas.resetToFullImage();
+        state.cropBasisKey = firstKey;
+      }
+      syncMarginInputsFromCanvas();
+    } catch (err) {
+      alert(err.message);
+    }
+
+    updateExportEnabled();
+  }
+
+  function syncMarginInputsFromCanvas() {
+    const r = cropCanvas.cropRect;
+    if (!state.firstImage || !r || r.w <= 0 || r.h <= 0) {
+      els.mResult.textContent = '–';
+      return;
+    }
+    const iw = state.firstImage.naturalWidth;
+    const ih = state.firstImage.naturalHeight;
+    els.mLeft.value = Math.round(r.x);
+    els.mTop.value = Math.round(r.y);
+    els.mRight.value = Math.round(iw - (r.x + r.w));
+    els.mBottom.value = Math.round(ih - (r.y + r.h));
+    els.mResult.textContent = `${Math.round(r.w)} × ${Math.round(r.h)}`;
+    state.cropBasisKey = fileIdentityKey(state.files[0]);
+  }
+
+  function onMarginInputChanged() {
+    if (!state.firstImage) return;
+    const iw = state.firstImage.naturalWidth;
+    const ih = state.firstImage.naturalHeight;
+    const left = clamp(parseInt(els.mLeft.value || '0', 10), 0, iw - 1);
+    const top = clamp(parseInt(els.mTop.value || '0', 10), 0, ih - 1);
+    const right = clamp(parseInt(els.mRight.value || '0', 10), 0, iw - 1);
+    const bottom = clamp(parseInt(els.mBottom.value || '0', 10), 0, ih - 1);
+
+    const w = iw - left - right;
+    const h = ih - top - bottom;
+    if (w < cropCanvas.minCropSize || h < cropCanvas.minCropSize) {
+      syncMarginInputsFromCanvas();
+      return;
+    }
+    cropCanvas.setCropRect({ x: left, y: top, w, h });
+    syncMarginInputsFromCanvas();
+    updateExportEnabled();
+  }
+
+  [els.mLeft, els.mTop, els.mRight, els.mBottom].forEach((inp) => {
+    inp.addEventListener('change', onMarginInputChanged);
+  });
+
+  els.btnResetCrop.addEventListener('click', () => {
+    cropCanvas.resetToFullImage();
+    syncMarginInputsFromCanvas();
+    updateExportEnabled();
+  });
+
+  els.btnBrowse.addEventListener('click', () => els.fileInput.click());
+  els.fileInput.addEventListener('change', (e) => handleFiles(e.target.files));
+
+  ['dragenter', 'dragover'].forEach((evt) => {
+    els.dropzone.addEventListener(evt, (e) => {
+      e.preventDefault();
+      els.dropzone.classList.add('is-dragover');
+    });
+  });
+  ['dragleave', 'drop'].forEach((evt) => {
+    els.dropzone.addEventListener(evt, (e) => {
+      e.preventDefault();
+      els.dropzone.classList.remove('is-dragover');
+    });
+  });
+  els.dropzone.addEventListener('drop', (e) => {
+    if (e.dataTransfer && e.dataTransfer.files) handleFiles(e.dataTransfer.files);
+  });
+
+  function canvasToJpegBytes(canvas, quality) {
+    return new Promise((resolve, reject) => {
+      canvas.toBlob(async (blob) => {
+        if (!blob) { reject(new Error('JPEG 编码失败')); return; }
+        const buf = await blob.arrayBuffer();
+        resolve(new Uint8Array(buf));
+      }, 'image/jpeg', quality);
+    });
+  }
+
+  async function exportPdf() {
+    const r = cropCanvas.cropRect;
+    if (!r || r.w <= 0 || r.h <= 0) return;
+
+    const cropLeft = Math.round(r.x);
+    const cropTop = Math.round(r.y);
+    const cropRight = Math.round(state.firstImage.naturalWidth - (r.x + r.w));
+    const cropBottom = Math.round(state.firstImage.naturalHeight - (r.y + r.h));
+    const enhanceContrast = els.chkContrast.checked;
+
+    els.btnExport.disabled = true;
+    els.btnBrowse.disabled = true;
+    els.progressWrap.hidden = false;
+    els.warnings.hidden = true;
+    els.warnings.innerHTML = '';
+    const errors = [];
+
+    const offCanvas = document.createElement('canvas');
+    const offCtx = offCanvas.getContext('2d');
+    const pdf = new SimplePdfBuilder();
+
+    for (let i = 0; i < state.files.length; i++) {
+      const file = state.files[i];
+      els.statusText.textContent = `正在处理 (${i + 1}/${state.files.length})：${file.name}`;
+      els.progressBar.style.width = `${Math.round(((i) / state.files.length) * 100)}%`;
+
+      try {
+        const img = (i === 0 && state.firstImage) ? state.firstImage : await loadImageFromFile(file);
+        const cropW = img.naturalWidth - cropLeft - cropRight;
+        const cropH = img.naturalHeight - cropTop - cropBottom;
+
+        if (cropW <= 0 || cropH <= 0) {
+          errors.push(`${file.name}：图片尺寸 ${img.naturalWidth}x${img.naturalHeight} 太小，裁切后无剩余区域，已跳过。`);
+          continue;
+        }
+
+        offCanvas.width = cropW;
+        offCanvas.height = cropH;
+        offCtx.clearRect(0, 0, cropW, cropH);
+        offCtx.drawImage(img, cropLeft, cropTop, cropW, cropH, 0, 0, cropW, cropH);
+
+        if (enhanceContrast) {
+          const imageData = offCtx.getImageData(0, 0, cropW, cropH);
+          maximizeContrast(imageData, 0.5);
+          offCtx.putImageData(imageData, 0, 0);
+        }
+
+        const jpegBytes = await canvasToJpegBytes(offCanvas, 0.92);
+        pdf.addImagePage(jpegBytes, cropW, cropH);
+      } catch (err) {
+        errors.push(`${file.name}：${err.message}`);
+      }
+
+      // 让出主线程，避免界面卡死
+      await new Promise((resolve) => setTimeout(resolve, 0));
+    }
+
+    els.progressBar.style.width = '100%';
+    els.statusText.textContent = '正在生成 PDF 文件…';
+
+    try {
+      const pdfBytes = pdf.build();
+      const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'output.pdf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 10000);
+
+      els.statusText.textContent = errors.length > 0
+        ? `完成，但有 ${errors.length} 个文件被跳过。`
+        : '完成！PDF 已开始下载。';
+    } catch (err) {
+      els.statusText.textContent = '生成失败：' + err.message;
+    }
+
+    if (errors.length > 0) {
+      els.warnings.hidden = false;
+      els.warnings.innerHTML = '<strong>以下文件已跳过：</strong><ul>' +
+        errors.map((e) => `<li>${escapeHtml(e)}</li>`).join('') + '</ul>';
+    }
+
+    els.btnExport.disabled = false;
+    els.btnBrowse.disabled = false;
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, (c) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+    }[c]));
+  }
+
+  els.btnExport.addEventListener('click', () => {
+    exportPdf().catch((err) => {
+      els.statusText.textContent = '发生错误：' + err.message;
+      els.btnExport.disabled = false;
+      els.btnBrowse.disabled = false;
+    });
+  });
+})();
+
+</script>
+</body>
+</html>
