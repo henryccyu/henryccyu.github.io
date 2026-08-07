@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖經經文小幫手</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --verse-bg: #eef2f5;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .verse-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .verse-header {
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .verse-header:hover {
+            background-color: #f1f4f8;
+        }
+
+        .verse-header::after {
+            content: '+';
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+
+        .verse-card.active .verse-header::after {
+            transform: rotate(45deg);
+        }
+
+        .verse-content {
+            max-height: 0;
+            overflow: hidden;
+            background-color: var(--verse-bg);
+            padding: 0 20px;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            font-size: 1.05rem;
+            color: #444;
+            white-space: pre-line;
+        }
+
+        .verse-card.active .verse-content {
+            max-height: 500px;
+            padding: 15px 20px 20px 20px;
+            border-top: 1px solid #e1e8ed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>聖經經文導覽</h1>
+            <p>點擊下方任一經節即可查看經文內容</p>
+        </header>
+
+        <div id="app"></div>
+    </div>
+
+    <script>
+        // 資料結構
+        const bibleData = [
+            {
+                group: "一、",
+                verses: [
+                    { ref: "1. 林後五:17", content: "若有人在基督裡，他就是新造的人，舊事已過，都變成新的了。" },
+                    { ref: "2. 路十九:10", content: "人子來，為要尋找拯救失喪的人。" },
+                    { ref: "3. 賽五十五:8~9", content: "耶和華說，我的意念非同你們的意念；我的道路非同你們的道路。\n天怎樣高過地，照樣，我的道路高過你們的道路；我的意念高過你們的意念。" },
+                    { ref: "4. 詩四十:12", content: "因有無數的禍患圍困我，我的罪孽追上了我，使我不能昂首；這罪孽比我的頭髮還多，我就心寒膽戰。" }
+                ]
+            },
+            {
+                group: "二、",
+                verses: [
+                    { ref: "5. 林後三:17", content: "主就是那靈，主的靈在那裡，那裡就得以自由。" },
+                    { ref: "6. 約翰二十:31", content: "但記這些事，要叫你們信耶穌是基督，是神的兒子，並且叫你們信了祂，就可以因他的名得生命。" },
+                    { ref: "7. 羅三:23", content: "因為世人都犯了罪，虧缺了神的榮耀。" },
+                    { ref: "8. 賽五十三:6", content: "我們都如羊走迷，各人偏行己路，耶和華使我們眾人的罪孽都歸在祂身上。" },
+                    { ref: "9. 羅一:20", content: "自從造天地以來，神的永能和神性是明明可知的，雖是眼不能見，但藉著所造之物，就可以曉得，叫人無可推諉。" }
+                ]
+            },
+            {
+                group: "三、",
+                verses: [
+                    { ref: "10. 林後四:4", content: "此等不信之人，被這世界的神弄瞎了心眼，不叫基督榮耀福音的光照著他們。基督本是神的像。" },
+                    { ref: "11. 徒一:8", content: "但聖靈降臨在你們身上，你們就必得著能力，並要在耶路撒冷、猶太全地和撒瑪利亞，直到地極，作我的見證。" },
+                    { ref: "12. 來七:25", content: "凡靠著他進到神面前的人，他都能拯救到底，因為他是長遠活著，替他們祈求。" },
+                    { ref: "13. 約翰三:16", content: "神愛世人，甚至將祂的獨生子賜給他們，叫一切信祂的，不致滅亡，反得永生。" },
+                    { ref: "14. 賽五十五:6", content: "當趁耶和華可尋找的時候尋找祂，相近的時候求告祂。" }
+                ]
+            },
+            {
+                group: "四、",
+                verses: [
+                    { ref: "15. 耶十七:9", content: "人心比萬物都詭詐，壞到極處，誰能識透呢？" },
+                    { ref: "15. 羅十:9", content: "你若口裡認耶穌為主，心裡信神叫祂從死裡復活，就必得救。" },
+                    { ref: "16. 詩一百三十:3", content: "主耶和華啊，你若究察罪孽，誰能站得住呢？" },
+                    { ref: "17. 弗四:18~19", content: "他們心地昏昧，與神所賜的生命隔絕了，都因自己無知，心裡剛硬；良心既然喪盡，就放縱私欲，貪行種種的污穢。" }
+                ]
+            },
+            {
+                group: "五、",
+                verses: [
+                    { ref: "19. 約翰一:12", content: "凡接待祂的，就是信祂名的人，祂就賜他們權柄，作神的兒女。" },
+                    { ref: "20. 約翰一:29", content: "次日，約翰看見耶穌來到他那裡，就說：「看哪，神的羔羊，除去（或譯：背負）世人罪孽的。」" },
+                    { ref: "21. 箴十四:12", content: "有一條路，人以為正，至終成為死亡之路。" },
+                    { ref: "22. 提前二:5", content: "因為只有一位神，在神和人中間只有一位中保，乃是降世為人的基督耶穌。" },
+                    { ref: "23. 提前一:15~16", content: "基督耶穌降世，為要拯救罪人。這話是可信的，是十分可佩服的；在罪人中我是個罪魁。然而我蒙了憐憫，是因耶穌基督要在我這罪魁身上，顯明祂一切的忍耐，給後來信祂得永生的人作榜樣。" }
+                ]
+            },
+            {
+                group: "六、",
+                verses: [
+                    { ref: "24. 約壹三:5", content: "你們知道主曾顯現，是要除掉人的罪，在祂並沒有罪。" },
+                    { ref: "25. 約壹一:9", content: "我們若認自己的罪，神是信實的，是公義的，必要赦免我們的罪，洗淨我們一切的不義。" },
+                    { ref: "26. 約五:24", content: "我實實在在地告訴你們，那聽我話，又信差我來者的，就有永生；不至於定罪，是已經出死入生了。" },
+                    { ref: "27. 可九:23", content: "耶穌對他說，你若能信，在信的人凡事都能。" },
+                    { ref: "28. 賽四十三:11", content: "唯有我是耶和華，除我以外沒有救主。" }
+                ]
+            },
+            {
+                group: "七、",
+                verses: [
+                    { ref: "29. 加六:7~8", content: "不要自欺，神是輕慢不得的；人種的是甚麼，收的也是甚麼：順著情欲撒種的，必從情欲收敗壞；順著聖靈撒種的，必從聖靈收永生。" },
+                    { ref: "30. 弗四:22~24", content: "就要脫去你們從前行為上的舊人，這舊人是因私欲的迷惑漸漸變壞的；又要將你們的心志改換一新，並且穿上新人，這新人是照著神的形象造的，有真理的仁義和聖潔。" },
+                    { ref: "31. 來九:14", content: "何況基督借著永遠的靈，將自己無瑕無疵獻給神，祂的血豈不更能洗淨你們的心（原文是良心），除去你們的死行，使你們事奉那永生神嗎？" }
+                ]
+            },
+            {
+                group: "八、",
+                verses: [
+                    { ref: "32. 傳十二:1", content: "你趁著年幼，衰敗的日子尚未來到，就是你所說，我毫無喜樂的那些年日未曾臨近之先，當紀念造你的主。" },
+                    { ref: "33. 雅四:15", content: "你們只當說，主若願意，我們就可以活著，也可以做這事，或做那事。" },
+                    { ref: "34. 來九:27", content: "按著定命，人人都有一死，死後且有審判。" },
+                    { ref: "35. 詩五十五:22", content: "你要把你的重擔卸給耶和華，祂必撫養你；祂永不叫義人動搖。" },
+                    { ref: "36. 羅八:32", content: "神既不愛惜自己的兒子，為我們眾人舍了，豈不也把萬物，和祂一同白白地賜給我們嗎？" }
+                ]
+            },
+            {
+                group: "九、",
+                verses: [
+                    { ref: "37. 詩三十四:7", content: "耶和華的使者在敬畏祂的人四圍安營，搭救他們。" },
+                    { ref: "38. 以賽亞書五十五:7", content: "惡人當離棄自己的道路；不義的人當除掉自己的意念。歸向耶和華，耶和華就必憐恤他；當歸向我們的神，因為神必廣行赦免。" },
+                    { ref: "39. 約壹四:4", content: "小子們哪，你們是屬神的，並且勝了他們；因為那在你們裡面的比那在世界上的更大。" },
+                    { ref: "40. 賽六十四:6-7", content: "我們都像不潔淨的人；所有的義都像污穢的衣服。我們都像葉子漸漸枯乾；我們的罪孽好像風把我們吹去。並且無人求告你的名；無人奮力抓住你。原來你掩面不顧我們，使我們因罪孽消化。" }
+                ]
+            },
+            {
+                group: "十、",
+                verses: [
+                    { ref: "41. 羅一:21", content: "因為他們雖然知道神，卻不當作神榮耀祂，也不感謝祂，他們的思念變為虛妄，無知的心就昏暗了。" },
+                    { ref: "42. 羅三:11-12", content: "沒有明白的；沒有尋求神的；都是偏離正路，一同變為無用。沒有行善的，連一個也沒有。" },
+                    { ref: "43. 出三十四:6-7", content: "耶和華在他面前宣告說：「耶和華，耶和華，是有憐憫，有恩典的神，不輕易發怒，並有豐盛的慈愛和誠實；為千萬人存留慈愛，赦免罪孽、過犯和罪惡，萬不以有罪的為無罪，必追討他的罪，自父及子直到三、四代。」" }
+                ]
+            },
+            {
+                group: "十一、",
+                verses: [
+                    { ref: "44. 弗二:1-5", content: "你們死 in 過犯罪惡之中，祂叫你們活過來，那時你們在其中行事為人，隨從今世的風俗，順服空中掌權者的首領，就是現今在悖逆之子心中運行的邪靈。我們從前也都在他們中間，放縱肉體的私欲，隨著肉體和心中所喜好的去行，本為可怒之子，和別人一樣，然而神既有豐富的憐憫，因祂愛我們的大愛，當我們死在過犯中的時候，便叫我們與基督一同活過來。（你們得救是本乎恩。）」" }
+                ]
+            },
+            {
+                group: "十二、",
+                verses: [
+                    { ref: "45. 雅四:17", content: "人若知道行善，卻不去行，這就是他的罪了。" },
+                    { ref: "46. 羅一:19-20", content: "神的事情，人所能知道的，原顯明在人心裡，因為神已經給他們顯明；自從造天地以來，神的永能和神性是明明可知的，雖是眼不能見，但藉著所造之物，就可以曉得，叫人無可推諉。" },
+                    { ref: "47. 詩一四五:7", content: "他們記念你的大恩就要傳出來，並要歌唱你的公義。" },
+                    { ref: "48. 林前十五:58", content: "所以我親愛的弟兄們，你們務要堅固不可搖動，常常竭力多作主工；因為知道你們的勞苦，在主裡面不是徒然的。" }
+                ]
+            },
+            {
+                group: "十三、",
+                verses: [
+                    { ref: "49. 約壹二:17", content: "這世界和其上的情欲都要過去，惟獨遵行神旨意的，是永遠常存。" },
+                    { ref: "50. 詩三十七:1-2", content: "不要為作惡的心懷不平，也不要向那行不義的生出嫉妒。因為他們如草快被割下，又如青菜快要枯乾。" },
+                    { ref: "51. 詩三十七:35-36", content: "我見過惡人大有勢力，好像一棵青翠樹在本土生發。有人從那裡經過，不料，他沒有了；我也尋找他，卻尋不著。" }
+                ]
+            },
+            {
+                group: "十四、",
+                verses: [
+                    { ref: "52. 詩五十一:5", content: "我是在罪孽裡生的，在我母親懷胎的時候就有了罪。" },
+                    { ref: "53. 詩五十八:3", content: "惡人一出母胎就與神疏遠，一離母腹，便走錯路，說謊話。" },
+                    { ref: "54. 太十五:13-14", content: "耶穌回答說：「凡栽種的物，若不是我天父栽種的，必要拔出來，任憑他們吧！他們是瞎眼領路的，若是瞎子領瞎子，兩個人都要掉在坑裡。」" },
+                    { ref: "55. 羅一:28", content: "他們既然故意不認識神，神就任憑他們存邪僻的心，行那些不合理的事。" }
+                ]
+            },
+            {
+                group: "十五、",
+                verses: [
+                    { ref: "56. 賽四十三:7", content: "就是凡稱為我名下的人，是我為自己的榮耀創造的，是我所作成，所造作的。" },
+                    { ref: "57. 羅五:6-8", content: "因我們還軟弱的時候，基督就按所定的日期為罪人死。為義人死，是少有的；為仁人死，或者有敢作的，惟有基督在我們還作罪人的時候，為我們死，神的愛就在此向我們顯明了。" },
+                    { ref: "58. 詩九十:12", content: "求你指教我們怎樣數算自己的日子，好叫我們得著智慧的心。" }
+                ]
+            },
+            {
+                group: "十六、",
+                verses: [
+                    { ref: "59. 羅六:23", content: "因為罪的工價乃是死，惟有神的恩賜，在我們的主基督耶穌裡，乃是永生。" },
+                    { ref: "60. 徒四:12", content: "除祂以外，別無拯救，因為在天下人間，沒有賜下別的名，我們可以靠著得救。」" },
+                    { ref: "61. 羅三:25", content: "神設立耶穌作挽回祭，是憑著耶穌的血，藉著人的信，要顯明神的義；因為祂用忍耐的心，寬容人先時所犯的罪。" },
+                    { ref: "62. 林前三:13", content: "各人的工程必然顯露，因為那日子要將它表明出來；有火發現，這火要試驗各人的工程怎樣。" },
+                    { ref: "63. 彼前五:7", content: "你們要將一切的憂慮卸給神，因為祂顧念你們。" }
+                ]
+            },
+            {
+                group: "十七、",
+                verses: [
+                    { ref: "64. 詩六十八:19", content: "天天背負我們重擔的主，就是拯救我們的神，是應當稱頌的！" },
+                    { ref: "65. 約十六:33", content: "我將這些事告訴你們，是要叫你們在我裡面有平安；在世上，你們有苦難，但你們可以放心，我已經勝了世界。」" },
+                    { ref: "66. 賽六十五:2", content: "我整天伸手招呼那悖逆的百姓；他們隨自己的意念行不善之道。" },
+                    { ref: "67. 羅三:10-12", content: "就如經上所記：「沒有義人，連一個也沒有。沒有明白的；沒有尋求神的；都是偏離正路，一同變為無用。沒有行善的，連一個也沒有。」" }
+                ]
+            }
+        ];
+
+        // 渲染畫面
+        const appElement = document.getElementById('app');
+
+        bibleDataforEach = bibleData.forEach(section => {
+            // 建立群組標題
+            const sectionTitle = document.createElement('h2');
+            sectionTitle.className = 'section-title';
+            sectionTitle.innerText = section.group;
+            appElement.appendChild(sectionTitle);
+
+            // 建立該群組底下的經節清單
+            section.verses.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'verse-card';
+
+                const header = document.createElement('div');
+                header.className = 'verse-header';
+                header.innerText = item.ref;
+
+                const content = document.createElement('div');
+                content.className = 'verse-content';
+                content.innerText = item.content;
+
+                // 點擊事件：切換展開/收合
+                header.addEventListener('click', () => {
+                    card.classList.toggle('active');
+                });
+
+                card.appendChild(header);
+                card.appendChild(content);
+                appElement.appendChild(card);
+            });
+        });
+    </script>
+</body>
+</html>
