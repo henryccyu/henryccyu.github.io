@@ -1,6 +1,4 @@
-The provided PDF content has been converted to markdown:
-
-# Wiersbe Bible Commentary 2 Vol Set
+# Amos
 
 ## Chapter One: The Lion Roars! (Amos 1:1–2:16)
 
