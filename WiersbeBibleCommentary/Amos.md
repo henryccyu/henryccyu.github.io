@@ -1,7 +1,34 @@
 # Amos
 
-## Chapter One: The Lion Roars! (Amos 1:1–2:16)
+## OUTLINE
+**Key theme**: A call for justice, a warning of judgments
 
+**Key verse**: Amos 5:24
+
+### I. LOOK AROUND AND SEE GOD'S JUDGMENT. 1–2
+Eight nations judged
+1. Six Gentile nations condemned. 1:1–2:3
+2. Judah condemned. 2:4–5
+3. Israel condemned. 2:6–16
+
+### II. LOOK WITHIN AND SEE THE CORRUPTION. 3–6
+Three sermons to the people of Israel
+1. Message #1: Israel's judgment certain. 3:1–15
+2. Message #2: Israel's sins denounced. 4:1–13
+3. Message #3: Israel's doom lamented. 5:1–6:14
+
+### III. LOOK AHEAD AND SEE THE END COMING. 7–9
+1. Five visions of judgment. 7:1–9:10
+* (1) The locusts. 7:13
+* (2) The fire. 7:4–6
+* (3) The plumb line. 7:7–9  
+Historical interlude: Amos at Bethel. 7:10–17
+* (4) The basket of summer fruit. 8:1–14
+* (5) The ruined temple. 9:1–10
+
+2. A vision of the glorious kingdom. 9:11–15
+
+## Chapter One: The Lion Roars! (Amos 1:1–2:16)
 If the Prophet Amos were to come to our world today, he would probably feel very much at home; for he lived at a time such as ours when society was changing radically. Both Israel and Judah were at peace with their neighbors, which meant that their wealth and energy could be used for developing their nations instead of fighting their enemies. Both kingdoms were prosperous; their cities were expanding rapidly; and a new wealthy merchant class was developing in society. The two kingdoms were moving from an agricultural to a commercial society and experiencing both the benefits and problems that come with that change.
 
 However, in spite of their material success, all was not well with God's chosen people. They were experiencing what the British poet Oliver Goldsmith wrote about back in 1770:
