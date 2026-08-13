@@ -1,173 +1,56 @@
-# Amos
+# 阿摩司書註釋 (Wiersbe Bible Commentary Vol. 2)
 
-## OUTLINE
-**Key theme**: A call for justice, a warning of judgments
-
-**Key verse**: Amos 5:24
-
-### I. LOOK AROUND AND SEE GOD'S JUDGMENT. 1–2
-Eight nations judged
-1. Six Gentile nations condemned. 1:1–2:3
-2. Judah condemned. 2:4–5
-3. Israel condemned. 2:6–16
-
-### II. LOOK WITHIN AND SEE THE CORRUPTION. 3–6
-Three sermons to the people of Israel
-1. Message #1: Israel's judgment certain. 3:1–15
-2. Message #2: Israel's sins denounced. 4:1–13
-3. Message #3: Israel's doom lamented. 5:1–6:14
-
-### III. LOOK AHEAD AND SEE THE END COMING. 7–9
-1. Five visions of judgment. 7:1–9:10
-* (1) The locusts. 7:13
-* (2) The fire. 7:4–6
-* (3) The plumb line. 7:7–9  
-Historical interlude: Amos at Bethel. 7:10–17
-* (4) The basket of summer fruit. 8:1–14
-* (5) The ruined temple. 9:1–10
-
-2. A vision of the glorious kingdom. 9:11–15
-
-## Chapter One: The Lion Roars! (Amos 1:1–2:16)
-If the Prophet Amos were to come to our world today, he would probably feel very much at home; for he lived at a time such as ours when society was changing radically. Both Israel and Judah were at peace with their neighbors, which meant that their wealth and energy could be used for developing their nations instead of fighting their enemies. Both kingdoms were prosperous; their cities were expanding rapidly; and a new wealthy merchant class was developing in society. The two kingdoms were moving from an agricultural to a commercial society and experiencing both the benefits and problems that come with that change.
-
-However, in spite of their material success, all was not well with God's chosen people. They were experiencing what the British poet Oliver Goldsmith wrote about back in 1770:
-
-> Ill fares the land, to hast'ning ills a prey,
-> Where wealth accumulates, and men decay...
-
-There were ills aplenty in all the lands of that day, the Gentile nations as well as the Jewish kingdoms of Israel and Judah; and Amos wasn't afraid to name them. He opened his book with a denunciation of the sins of six Gentile nations, and no doubt the people of Israel and Judah applauded his words. Nothing would make the Jews happier than to see the Lord judge the surrounding nations. But when Amos denounced Judah and Israel, that was a different story; and his popularity began to suffer at that point.
-
-### 1. Judgment on the Gentile nations (Amos 1:2–2:3)
-
-God wanted to get the nations' attention, but people weren't listening. You'd think they could hear a lion roar or the thunder roll and know that danger was at hand. God was speaking ("thundering") from Jerusalem, for judgment always begins at the house of the Lord (1 Peter 4:17). He had sent drought to the land so that even fruitful Carmel was withering, but it didn't bring the people to their knees. So God called a common farmer to preach to His people and warn them. "A lion has roared! Who will not fear? The Lord God has spoken! Who can but prophesy?" (Amos 3:8 NKJV)
-
-Eight times Amos used the phrase "for three transgressions and for four," a Jewish idiom that means "an indefinite number that has finally come to the end." God is long-suffering with sinners (2 Peter 3:9), but He marks what they do and His patience eventually runs out. To try God's patience is to tempt the Lord; and when we tempt the Lord, we invite judgment.
-
-* **Syria (vv. Amos 1:3–15):** Damascus was the capital of Syria, one of the Jews' persistent enemies. Amos denounced the Syrians for their inhuman treatment of the Israelites who lived in Gilead, east of the Jordan River. They cruelly "threshed them" as though they were nothing but stalks of grain. God had called the Syrians to punish Israel (2 Kings 10:32–33; 13:1–9), but the Syrians had carried it too far.
-* **Philistia (vv. Amos 1:6–8):** Gaza, Ashdod, Ashkelon, Gath, and Ekron were the five key Philistine cities (Josh. 13:3), and Amos denounced all of them for trading in human lives. They raided Jewish villages and captured people to be sold as slaves. To add insult to injury, the Philistines sold these slaves to Israel's ancient enemy, the Edomites.
-* **Tyre (vv. Amos 1:9–10):** Amos has moved from Damascus in the northeast to the Philistine cities in the southwest, and now he sets his sights straight north on Phoenicia and its major city, Tyre. During the reigns of David and Solomon, Israel had a warm relationship with the people of Tyre (1 Kings 5:1ff). Amos called it "the brotherly covenant" ("treaty of brotherhood," NIV), suggesting that the "covenant" was more than a treaty but involved a friendly partnership that went deeper than politics. Tyre, however, committed the same sins as the Philistine cities by selling Jewish captives to the Edomites as slaves (Amos 1:6–8).
-* **Edom (vv. Amos 1:11–12):** The Edomites nursed a long-standing grudge against the Jews, perpetuating the ancient rivalry between Jacob and Esau, which began before the twin boys were born (Gen. 25:21–26). Amos condemned the Edomites for their persistent hatred of the Jews, "... because his anger raged continually and his fury flamed unchecked" (Amos 1:11 NIV).
-* **Ammon (vv. Amos 1:13–15):** The Ammonites and Moabites (2:1–3) were the descendants of Lot through his incestuous union with his daughters (Gen. 19:30–38). They were a ruthless people who were the avowed enemies of the Jews (Deut. 23:3–6; 1 Sam. 11:2; Neh. 2:10–19; Jer. 40:14; 41:5–7). In order to enlarge their land, they invaded Gilead; and not satisfied with attacking the men defending their homeland, the Ammonites killed women and unborn children (see 2 Kings 8:12; 15:16).
-* **Moab (vv. Amos 2:1–3):** Animosity between Moab and Israel began very early when the Moabites refused to give the Jews passage on the major highway (Deut. 23:3–4; Jud. 11:17). The king of Moab also hired Balaam to curse Israel (Num. 22–24), and then the Moabite women seduced the Jewish men to commit fornication and idolatry (Num. 25). What was the sin of Moab? Disrespect for the dead and for royalty.
-
-### 2. Judgment on the kingdom of Judah (Amos 2:4–5)
-
-In his six messages, Amos had announced judgment to the nations surrounding Israel and Judah. As his fellow Jews heard these denunciations of the Gentiles, no doubt they applauded and wanted to hear more. But when Amos focused on Israel and Judah (his own land), that changed their attitude completely.
-
-The temple was filled with people bringing their sacrifices, but Judah was a nation given over to idolatry. "Their lies [idols] lead them astray, lies which their fathers followed" (2:4 NKJV). The Gentiles had sinned against conscience and the laws of brotherhood and humanity, but the Jews had despised and rejected the very laws of God, given to them by Moses. Theirs was the greater sin, for greater privilege always brings greater responsibility (Rom. 2:17–3:9).
-
-### 3. Judgment on the kingdom of Israel (Amos 2:6–16)
-
-Both Israel and Judah were enjoying peace and prosperity, and divine judgment was the furthest thing from their minds.
-
-Amos first exposes their sinful present and names three flagrant sins:
-
-1. **Injustice (Amos 2:6–7):** Supported by corrupt judges, the rich were suing the poor, who couldn't pay their bills, and forcing them into servitude and slavery.
-2. **Immorality (Amos 2:7b):** Fathers and sons visiting the same prostitute, possibly "cult prostitutes" part of heathen idolatrous worship.
-3. **Open Idolatry (Amos 2:8):** Wealthy men took their debtors' garments as pledges but did not return them at sundown as the law commanded (Ex. 22:26–27; Deut. 24:10–13, 17).
-
-Amos closed his message with the announcement of their terrible future (Amos 2:13–16). Israel would be crushed by their own sins just as a loaded cart crushes whatever it rolls over.
+## 章節導覽
+- 阿摩司書 5:1-17：如何避免風暴
+- 阿摩司書 5:18-6:14：“禍哉，罪人！”
+- 阿摩司書 7:1-9:15：停止—看—聽！
 
 ---
 
-## Chapter Two: Listen to What God Says (Amos 3:1–15)
+## 第一章
+### 阿摩司書 1:1-2:16
+### 獅子吼叫！
 
-Now that Amos had the attention of the people, he proceeded to deliver three messages, each of which begins with "Hear this word" (3:1; 4:1; 5:1).
+如果先知阿摩司今天來到我們的世界，他可能會感到非常親切；因為他生活的時代和我們一樣，社會正在發生根本性的變革。以色列和猶大當時都與鄰國和平共處，這意味著他們的財富和精力可以用於發展國家，而不是用於對抗敵人。兩個王國都很繁榮；城市迅速擴張；社會中出現了新的富裕商人階層。這兩個王國正從農業社會轉向商業社會，並經歷著這種變革帶來的利益和問題。
 
-### 1. God called Israel (Amos 3:1–2)
+然而，儘管取得了物質上的成功，上帝選民的情況卻並不樂觀。他們正在經歷英國詩人奧利弗·戈德史密斯 (Oliver Goldsmith) 於 1770 年所寫的那種情況：
 
-This message was delivered to "the whole family," that is, to both Israel and Judah. God's calling was:
+“禍哉那土地，因淪為罪惡的犧牲品，
+在那裡財富積累，而人卻在衰敗……”
 
-* **Gracious:** The Lord had chosen them and no other nation to be the special recipients of His bountiful gifts (Deut. 7:6–8).
-* **Effective:** The Lord had demonstrated His great power in delivering Israel from the bondage of Egypt.
-* **Exclusive:** "You only have I chosen [known] of all the families of the earth" (NIV).
-* **Responsible:** Because He had chosen them, called them, and blessed them, the people of Israel and Judah were responsible to love God and obey Him.
+那時，所有的土地上，無論是外邦列國，還是以色列和猶大的猶太王國，都有大量的弊病；而阿摩司並不畏懼指出它們。他以譴責六個外邦國家的罪惡開啟了他的書卷，毫無疑問，以色列和猶大的人民為他的話鼓掌。沒有什麼比看到主審判周圍的列國更讓猶太人高興的了。但當阿摩司譴責猶大和以色列時，情況就不同了；在那一點上，他的受歡迎程度開始下降。
 
-### 2. God called Amos (Amos 3:3–8)
+#### 1. 對外邦列國的審判 (阿摩司書 1:2-2:3)
+上帝想引起列國的注意，但人們沒有聽。你以為他們能聽到獅子吼叫或雷聲滾滾，就會知道危險就在眼前。上帝正在從耶路撒冷說話（“打雷”），因為審判總是始於主的家 (彼得前書 4:17)。祂曾使土地遭受旱災，以至於連肥沃的迦密山都在枯萎，但這並沒有使人們屈膝。所以上帝呼召一位普通的農夫去向祂的子民傳道並警告他們。“獅子吼叫，誰不懼怕呢？主耶和華發聲，誰能不說預言呢？” (阿摩司書 3:8, NKJV)
 
-Amos replied to their ridicule by arguing from effect to cause. If two people want to walk together, they have to appoint a time and place to meet (Amos 3:3). If the lion roars, it's because he's caught his prey (v. 4). If a trap springs, it means the bird has been caught (v. 5); and if the people in a city are terrified, it's because the trumpet has blown, warning them of danger (v. 6). If an untrained rustic farmer is preaching God's Word, it means God has called him.
+阿摩司八次使用了“三番四次地犯罪”這句話，這是一個猶太成語，意思是“最終結束的無限數量”。上帝對罪人是寬容的 (彼得後書 3:9)，但祂會記下他們的所作所為，祂的耐心最終會耗盡。試探上帝的耐心就是挑釁主；當我們挑釁主時，我們就在招致審判。
 
-### 3. God calls witnesses (Amos 3:9–10)
+#### 2. 對猶大和以色列的審判 (阿摩司書 2:4-16)
 
-Amos summoned the Gentile nations to witness against the Northern Kingdom of Israel whose capital was Samaria. The sin of Israel was so great that it even appalled the pagan nations.
+對於外邦人的譴責很快就結束了，焦點轉向了上帝的子民。猶大的罪是拒絕上帝的律法，而以色列的罪則是社會的不公和對窮人的壓迫。阿摩司指出了他們在物質上的成功如何導致了屬靈的麻木。他們賣掉了貧窮的義人，連一雙鞋子也不放過。他們追求享樂，踐踏窮人，甚至在神的殿中也進行這種不敬虔的行為。
 
-### 4. God calls for judgment (Amos 3:11–15)
-
-Amos announced that the kingdom of Israel would fall to an enemy and the great city of Samaria would be plundered. The people of Israel had plundered one another, but now a pagan Gentile nation would plunder them.
-
----
-
-## Chapter Three: Sins in Good Standing (Amos 4:1–13)
-
-In this second message, the Prophet Amos named three particular sins that were grieving the Lord and ruining the kingdom of Israel: luxury (4:1–3), hypocrisy (vv. 4–5), and obstinacy (vv. 6–13).
-
-### 1. Luxury (Amos 4:1–3)
-
-Amos addressed the wives of the wealthy leaders of the land, calling them "cows of Bashan." They lived in luxury while the poor of the land were suffering because these same men had exploited them and robbed them of money and land. They were fattening themselves up for the coming slaughter.
-
-### 2. Hypocrisy (Amos 4:4–5)
-
-The people were flocking to the "holy places," bringing their sacrifices and tithes and even singing songs of praise. But their gifts and songs didn't impress the Lord, for He saw what was in their hearts; and the sin in their hearts made their sacrifices unacceptable. God doesn't want the sacrifices of bulls and goats; He wants the obedience of our hearts (1 Sam. 15:22–23).
-
-### 3. Obstinacy (Amos 4:6–13)
-
-Five times in this passage, Amos says to the people, "Yet you have not returned to Me" (4:6, 8, 9, 10, 11 NKJV). The people of Israel experienced God's disciplines (famine, drought, destruction of crops, sicknesses, defeat in war, and catastrophe), but they wouldn't submit to His will. Amos ended his message with the announcement, "Prepare to meet thy God, O Israel!" (v. 12).
+上帝提醒以色列，是祂將他們從埃及領出來，並賜給他們這片土地。他們本應是公義的燈塔，但他們卻變得與那些他們理應從中脫穎而出的列國沒有兩樣。他們不僅忽視了上帝的先知，還阻止拿細耳人發預言。這種對上帝話語的蔑視必然會帶來毀滅性的審判。
 
 ---
 
-## Chapter Four: How to Avoid the Storm (Amos 5:1–17)
+## 第二章
+### 阿摩司書 3:1-15
+### 神的審判必然臨到
 
-The prophet's third message (5:1–6:14) was a lamentation, a funeral dirge over the death of the nation of Israel. However, Amos weaves into his lamentation three pleas to the people, urging them to return to the Lord.
+這一段經文強調了一個關鍵原則：特權帶來責任。以色列之所以被上帝揀選，並不是因為他們比別人優秀，而是為了讓他們成為世上的光。因此，當他們犯罪時，他們受到的審判會更加嚴厲。
 
-### 1. "Hear God's Word!" (Amos 5:1–3)
+“二個人若不同心，豈能同行呢？” (阿摩司書 3:3) 這句話揭示了以色列與上帝關係的破裂。他們已經不再與上帝同行，因為他們的心與祂的心背道而馳。阿摩司使用了許多生動的類比——獅子捉獲獵物、陷阱捕捉鳥兒——來描述審判是不可避免的。當神發出警告，先知便無法閉口不言。
 
-The way we treat God's Word is the way we treat God. Amos was wailing a funeral dirge over the death of his nation when the nation seemed to be prosperous and religious. Israel had a strong standing army, but it would be defeated, and the population decimated.
-
-### 2. "Seek the Lord!" (Amos 5:4–6)
-
-To seek the Lord means first of all to change our thinking and abandon the vain thoughts that are directing our wayward lives. Why should we seek the Lord?
-
-* That we might have life (v. 4).
-* Because there is no other way to experience spiritual blessing (v. 5).
-* Because judgment is coming (v. 6).
-
-### 3. "Seek the good!" (Amos 5:7–15)
-
-To "seek the Lord" might appear difficult, so Amos brought the challenge down to practical, everyday life. He spoke about justice, righteousness, and the importance of telling the truth. He named the sins the people needed to forsake: accepting bribes, charging the poor exorbitant rents, living in luxury while the poor starved, and sustaining a crooked legal system.
+阿摩司警告說，即使是他們引以為傲的堅固堡壘和奢華的象牙宮殿，也無法抵擋神的審判。富人欺壓窮人的罪，在上帝眼中是深重的，祂必會親自介入，推翻他們的權勢。
 
 ---
 
-## Chapter Five: "Woe to the Sinners!" (Amos 5:18–6:14)
+## 第三章
+### 阿摩司書 4:1-13
+### 聽聽神的呼喚
 
-Amos pronounces "woe" upon four kinds of people in the kingdom: the ignorant (5:18–27), the indifferent (6:1–2), the indulgent (vv. 3–7), and the impudent (vv. 8–14).
+在這一章中，阿摩司轉向譴責以色列那些只顧貪圖享受的貴婦人。他稱她們為“巴珊的母牛”，因為她們不僅肥胖，而且極其自私，為了滿足自己的慾望而壓迫窮人。
 
-### 1. "Woe to the ignorant!" (Amos 5:18–27)
+上帝多次試圖透過不同的懲罰來喚醒他們，包括饑荒、乾旱、蟲災、瘟疫和戰爭，但他們卻沒有一個回心轉意。阿摩司重複了一句令人痛心的話：“你們仍不歸向我。”這反映了上帝在審判中仍帶著慈愛和渴望，希望祂的子民能夠悔改。
 
-"The Day of the Lord" is a period of time during which God judges His enemies and establishes His kingdom on earth. The people Amos was addressing saw this as a time of great deliverance for the Jews, but the prophets realized that "the Day of the Lord" was also a time of testing and purifying for Israel.
-
-### 2. "Woe to the indifferent!" (Amos 6:1–2)
-
-This "woe" was addressed to both Judah ("Zion") and Israel ("Samaria") because both kingdoms were indifferent toward God's Word and the judgment that hung over them. False confidence based on expert advice, statistics, and material resources and that ignores the spiritual dimension of life is sure to lead to shameful defeat.
-
-### 3. "Woe to the indulgent!" (Amos 6:3–7)
-
-Amos described their indulgent way of life—a way of life that left no place for the disciplines of the spiritual life. They were living for pleasure, not for the glory of God. When nations get pleasure-mad, it's a sign that the end is near.
-
-### 4. "Woe to the impudent!" (Amos 6:8–14)
-
-"I abhor the pride of Jacob, and hate his palaces; therefore I will deliver up the city and all that is in it" (v. 8 NKJV). Pride always goes before destruction (Prov. 16:18). These impudent people would face death, destruction, and disgrace.
-
----
-
-## Chapter Six: Stop-Look-Listen! (Amos 7:1–9:15)
-
-The prophecy concludes with five special visions of judgment:
-
-1. **The locusts (7:1–3):** Poised to attack the second crop, but Amos prayed for mercy and God relented.
-2. **The fire (vv. 4–6):** An image of great drought. Amos pleaded again, and God relented.
-3. **The plumb line (vv. 7–9):** God's Law is His plumb line. Israel was found "out of plumb."
-4. **The basket of fruit (8:1–14):** Representing the ripeness of the nation for judgment.
-5. **The ruined temple (9:1–10):** The final destruction.
-
-Amos closes his message on a positive note as he describes the future glorious kingdom that God has promised to His people (vv. 11–15). Amos faced two struggles: one with the Lord and one with the authorities, especially the king and his priest. Amaziah, the king's priest, reported Amos to King Jeroboam II, who did not bother to listen to the message himself.
+最後，阿摩司發出了嚴肅的呼籲：“以色列啊，我必向你如此行。以色列啊，我既這樣行，你當預備迎見你的神！” (阿摩司書 4:12) 這不是一個邀請，而是一個必須面對創造主審判的嚴肅警告。
