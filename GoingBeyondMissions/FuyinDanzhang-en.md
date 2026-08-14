@@ -1,7 +1,3 @@
-Absolutely. For a **Seattle audience that tends to be more liberal, individualistic, and spiritually diverse**, I would not translate this word-for-word. A literal translation can sound overly religious or confrontational in a Seattle context.
-
-I’d make the English version **warm, relational, non-judgmental, and invitational**, while keeping the core gospel message—God’s love, sin, Jesus’ death and resurrection, grace, and new life—clear.
-
 # God Loves You — And Offers You a Life of Purpose, Hope, and Meaning
 
 ## Have you ever wondered what life is really about?
