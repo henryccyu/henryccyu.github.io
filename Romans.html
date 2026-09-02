@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>經文背誦小幫手</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --verse-bg: #eef2f5;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* 控制按鈕列樣式 */
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background-color: var(--card-bg);
+            border: 1px solid #cbd5e1;
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        /* 組別區塊樣式 */
+        .section-container {
+            margin-bottom: 20px;
+        }
+
+        .section-header {
+            color: var(--primary-color);
+            background-color: #e2e8f0;
+            border-left: 5px solid var(--accent-color);
+            padding: 10px 15px;
+            margin: 0 0 10px 0;
+            font-size: 1.15rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+
+        .section-header:hover {
+            background-color: #cbd5e1;
+        }
+
+        .section-header::after {
+            content: '▼';
+            font-size: 0.85rem;
+            transition: transform 0.3s ease;
+        }
+
+        .section-container.collapsed .section-header::after {
+            transform: rotate(-90deg);
+        }
+
+        /* 經節清單容器動畫 */
+        .section-body {
+            max-height: 2000px;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        .section-container.collapsed .section-body {
+            max-height: 0;
+            opacity: 0;
+        }
+
+        /* 單張經文卡片 */
+        .verse-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .verse-header {
+            padding: 12px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .verse-header:hover {
+            background-color: #f1f4f8;
+        }
+
+        .verse-header::after {
+            content: '+';
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+
+        .verse-card.active .verse-header::after {
+            transform: rotate(45deg);
+        }
+
+        .verse-content {
+            max-height: 0;
+            overflow: hidden;
+            background-color: var(--verse-bg);
+            padding: 0 20px;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            font-size: 1.05rem;
+            color: #444;
+            white-space: pre-line;
+        }
+
+        .verse-card.active .verse-content {
+            max-height: 500px;
+            padding: 15px 20px 20px 20px;
+            border-top: 1px solid #e1e8ed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>聖經經文</h1>
+            <p>點擊組別標題可摺疊/展開大組，點擊經節可查看內容</p>
+        </header>
+
+        <div class="controls">
+            <button class="btn" id="expandAllBtn">全部展開</button>
+            <button class="btn" id="collapseAllBtn">全部收合</button>
+        </div>
+
+        <div id="app"></div>
+    </div>
+
+    <script>
+        const bibleData = [
+            {
+                group: "第一章",
+                verses: [
+                    { ref: "1 耶穌基督的僕人保羅，奉召為使徒，特派傳神的福音。 2 這福音是神從前藉眾先知在聖經上所應許的，3 論到他兒子我主耶穌基督。按肉體說，是從大衛後裔生的； 4 按聖善的靈說，因從死裡復活，以大能顯明是神的兒子。5 我們從他受了恩惠並使徒的職分，在萬國之中叫人為他的名信服真道， 6 其中也有你們這蒙召屬耶穌基督的人。7 我寫信給你們在羅馬、為神所愛、奉召做聖徒的眾人。願恩惠、平安從我們的父神並主耶穌基督歸於你們！" },
+                    { ref: "8 第一，我靠著耶穌基督，為你們眾人感謝我的神，因你們的信德傳遍了天下。 9 我在他兒子福音上用心靈所侍奉的神，可以見證我怎樣不住地提到你們， 10 在禱告之間常常懇求，或者照神的旨意，終能得平坦的道路往你們那裡去。 11 因為我切切地想見你們，要把些屬靈的恩賜分給你們，使你們可以堅固； 12 這樣，我在你們中間，因你與我彼此的信心就可以同得安慰。" },
+                    { ref: "13 弟兄們，我不願意你們不知道，我屢次定意往你們那裡去，要在你們中間得些果子，如同在其餘的外邦人中一樣，只是到如今仍有阻隔。 14 無論是希臘人、化外人、聰明人、愚拙人，我都欠他們的債， 15 所以情願盡我的力量，將福音也傳給你們在羅馬的人。" },
+                    { ref: "16 我不以福音為恥，這福音本是神的大能，要救一切相信的，先是猶太人，後是希臘人。 17 因為神的義正在這福音上顯明出來，這義是本於信以至於信，如經上所記：「義人必因信得生。」" }
+                ]
+            }
+        ];
+
+        const appElement = document.getElementById('app');
+
+        // 渲染畫面
+        bibleData.forEach(section => {
+            // 包覆每一組的外層容器
+            const sectionContainer = document.createElement('div');
+            sectionContainer.className = 'section-container';
+
+            // 組別大標題
+            const sectionHeader = document.createElement('h2');
+            sectionHeader.className = 'section-header';
+            sectionHeader.innerText = section.group;
+
+            // 實際裝經節的容器
+            const sectionBody = document.createElement('div');
+            sectionBody.className = 'section-body';
+
+            // 點擊組別標題以折疊/展開該組
+            sectionHeader.addEventListener('click', () => {
+                sectionContainer.classList.toggle('collapsed');
+            });
+
+            // 建立該組底下的所有經節卡片
+            section.verses.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'verse-card';
+
+                const header = document.createElement('div');
+                header.className = 'verse-header';
+                header.innerText = item.ref;
+
+                const content = document.createElement('div');
+                content.className = 'verse-content';
+                content.innerText = item.content;
+
+                // 點擊經節：切換展開/收合經文內容
+                header.addEventListener('click', (e) => {
+                    e.stopPropagation(); // 避免觸發父層的折疊事件
+                    card.classList.toggle('active');
+                });
+
+                card.appendChild(header);
+                card.appendChild(content);
+                sectionBody.appendChild(card);
+            });
+
+            sectionContainer.appendChild(sectionHeader);
+            sectionContainer.appendChild(sectionBody);
+            appElement.appendChild(sectionContainer);
+        });
+
+        // 「全部展開」與「全部收合」按鈕功能
+        document.getElementById('expandAllBtn').addEventListener('click', () => {
+            document.querySelectorAll('.section-container').forEach(el => {
+                el.classList.remove('collapsed');
+            });
+        });
+
+        document.getElementById('collapseAllBtn').addEventListener('click', () => {
+            document.querySelectorAll('.section-container').forEach(el => {
+                el.classList.add('collapsed');
+            });
+        });
+    </script>
+</body>
+</html>
