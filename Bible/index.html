@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聖經經文導覽（支援混合彈性層級）</title>
+    <title>聖經經文導覽（全層級彈性混搭架構）</title>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -87,62 +87,63 @@
         }
 
         /* 第 1 層：大主題分類 (Level 1) */
-        .level1-container {
+        .level-container.depth-1 {
             background: #ffffff;
             border-radius: 8px;
             box-shadow: 0 3px 6px rgba(0,0,0,0.08);
             margin-bottom: 20px;
-            overflow: hidden;
             border: 1px solid #cbd5e1;
         }
-
-        .level1-header {
+        .level-container.depth-1 > .level-header {
             background-color: var(--primary-color);
             color: white;
             padding: 14px 20px;
-            margin: 0;
             font-size: 1.25rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            user-select: none;
-            transition: background-color 0.2s;
+            border-radius: 8px 8px 0 0;
         }
-
-        .level1-header:hover {
+        .level-container.depth-1 > .level-header:hover {
             background-color: #1a252f;
         }
 
-        .level1-header::after {
-            content: '▼';
-            font-size: 0.9rem;
-            transition: transform 0.3s ease;
-        }
-
-        .level1-container.collapsed > .level1-header::after {
-            transform: rotate(-90deg);
-        }
-
-        .level1-body {
-            padding: 15px;
-        }
-
-        /* 第 2 層：子單元/篇章 (Level 2) */
-        .level2-container {
+        /* 第 2 層：子單元 (Level 2) */
+        .level-container.depth-2 {
             background: #f8fafc;
             border-radius: 6px;
             margin-bottom: 15px;
-            overflow: hidden;
             border: 1px solid #e2e8f0;
         }
-
-        .level2-header {
+        .level-container.depth-2 > .level-header {
             background-color: var(--secondary-color);
             color: white;
             padding: 12px 18px;
-            margin: 0;
             font-size: 1.15rem;
+            border-radius: 6px 6px 0 0;
+        }
+        .level-container.depth-2 > .level-header:hover {
+            background-color: #2c3e50;
+        }
+
+        /* 第 3 層：組別 (Level 3) */
+        .level-container.depth-3 {
+            background: #f1f5f9;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #cbd5e1;
+        }
+        .level-container.depth-3 > .level-header {
+            color: var(--tertiary-color);
+            background-color: #e2e8f0;
+            border-left: 5px solid var(--accent-color);
+            padding: 10px 15px;
+            font-size: 1.05rem;
+        }
+        .level-container.depth-3 > .level-header:hover {
+            background-color: #cbd5e1;
+        }
+
+        /* 通用層級標頭樣式 */
+        .level-header {
+            margin: 0;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -151,67 +152,21 @@
             transition: background-color 0.2s;
         }
 
-        .level2-header:hover {
-            background-color: #2c3e50;
-        }
-
-        .level2-header::after {
+        .level-header::after {
             content: '▼';
             font-size: 0.85rem;
             transition: transform 0.3s ease;
         }
 
-        .level2-container.collapsed > .level2-header::after {
+        .level-container.collapsed > .level-header::after {
             transform: rotate(-90deg);
         }
 
-        .level2-body {
-            padding: 12px;
+        .level-body {
+            padding: 15px;
         }
 
-        /* 第 3 層：組別 (Level 3) */
-        .level3-container {
-            background: #f1f5f9;
-            border-radius: 6px;
-            margin-bottom: 10px;
-            overflow: hidden;
-            border: 1px solid #cbd5e1;
-        }
-
-        .level3-header {
-            color: var(--tertiary-color);
-            background-color: #e2e8f0;
-            border-left: 5px solid var(--accent-color);
-            padding: 10px 15px;
-            margin: 0;
-            font-size: 1.05rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            user-select: none;
-            transition: background-color 0.2s;
-        }
-
-        .level3-header:hover {
-            background-color: #cbd5e1;
-        }
-
-        .level3-header::after {
-            content: '▼';
-            font-size: 0.8rem;
-            transition: transform 0.3s ease;
-        }
-
-        .level3-container.collapsed > .level3-header::after {
-            transform: rotate(-90deg);
-        }
-
-        .level3-body {
-            padding: 10px;
-        }
-
-        /* 經節卡片 (Verse Header & Verse Content) */
+        /* 經節卡片 (Verse Card) */
         .verse-card {
             background: var(--card-bg);
             border-radius: 6px;
@@ -271,7 +226,7 @@
     <div class="container">
         <header>
             <h1>聖經經文導覽</h1>
-            <p>支援彈性層級：最高層下可直接放經文，亦可放多層子單元</p>
+            <p>全層級彈性混搭：第 1、2、3 層皆可直接放經文或子分類</p>
         </header>
 
         <!-- 快捷控制按鈕 -->
@@ -284,18 +239,16 @@
     </div>
 
     <script>
-        // 資料結構範例：示範「混合模式」
-        // - 第 1 部分有完整的 5 層結構
-        // - 假設某個最高層底下「直接就是經文」（例如下面新增的第五部分）
+        // 資料結構範例：示範「任何一層都可以直接放經文」
         const bibleData = [
             {
-                level1: "第一部分：生命與救恩基礎",
-                level2Sections: [
+                title: "第一部分：正常 5 層結構",
+                children: [
                     {
-                        level2: "第一篇：新造、救恩與神的意念 (一 ~ 二)",
-                        level3Groups: [
+                        title: "第一篇：新造與救恩",
+                        children: [
                             {
-                                group: "一、",
+                                title: "一、",
                                 verses: [
                                     { ref: "1. 林後五:17", content: "若有人在基督裡，他就是新造的人，舊事已過，都變成新的了。" },
                                     { ref: "2. 路十九:10", content: "人子來，為要尋找拯救失喪的人。" }
@@ -306,120 +259,92 @@
                 ]
             },
             {
-                level1: "示範專區：最高層底下直接就是經文（無中間子單元）",
-                // 直接給 verses 陣列，而不是 level2Sections
+                title: "第二部分：第 1 層底下「直接就是經文」",
                 verses: [
-                    { ref: "特別經節 A. 約翰三:16", content: "神愛世人，甚至將祂的獨生子賜給他們，叫一切信祂的，不致滅亡，反得永生。" },
-                    { ref: "特別經節 B. 羅六:23", content: "因為罪的工價乃是死，惟有神的恩賜，在我們的主基督耶穌裡，乃是永生。" }
+                    { ref: "直屬第1層 A. 約翰三:16", content: "神愛世人，甚至將祂的獨生子賜給他們..." },
+                    { ref: "直屬第1層 B. 羅六:23", content: "因為罪的工價乃是死..." }
+                ]
+            },
+            {
+                title: "第三部分：第 2 層底下才直接是經文",
+                children: [
+                    {
+                        title: "某個篇章（底下沒有第3層，直接放經文）",
+                        verses: [
+                            { ref: "直屬第2層 A. 詩篇二三:1", content: "耶和華是我的牧者，我必不至缺乏。" }
+                        ]
+                    }
                 ]
             }
         ];
 
         const appElement = document.getElementById('app');
 
-        // 通用建立經節卡片的函式
-        function createVerseCard(verseItem) {
-            const verseCard = document.createElement('div');
-            verseCard.className = 'verse-card';
+        // 遞迴渲染函式：用來處理任意深度的階層
+        function renderNode(nodeData, depth) {
+            const container = document.createElement('div');
+            container.className = `level-container depth-${depth}`;
 
-            const verseHeader = document.createElement('div');
-            verseHeader.className = 'verse-header';
-            verseHeader.innerText = verseItem.ref;
+            // 建立標頭
+            const header = document.createElement('div');
+            header.className = 'level-header';
+            header.innerText = nodeData.title;
 
-            const verseContent = document.createElement('div');
-            verseContent.className = 'verse-content';
-            verseContent.innerText = verseItem.content;
+            // 建立內容主體
+            const body = document.createElement('div');
+            body.className = 'level-body collapsible-body';
 
-            verseHeader.addEventListener('click', (e) => {
-                e.stopPropagation();
-                verseCard.classList.toggle('active');
+            // 點擊標頭可以收合/展開
+            header.addEventListener('click', () => {
+                container.classList.toggle('collapsed');
             });
 
-            verseCard.appendChild(verseHeader);
-            verseCard.appendChild(verseContent);
-            return verseCard;
-        }
+            container.appendChild(header);
 
-        // 渲染畫面邏輯
-        bibleData.forEach(l1Item => {
-            const l1Container = document.createElement('div');
-            l1Container.className = 'level1-container';
-
-            const l1Header = document.createElement('h2');
-            l1Header.className = 'level1-header';
-            l1Header.innerText = l1Item.level1;
-
-            const l1Body = document.createElement('div');
-            l1Body.className = 'level1-body collapsible-body';
-
-            l1Header.addEventListener('click', () => {
-                l1Container.classList.toggle('collapsed');
-            });
-
-            l1Container.appendChild(l1Header);
-
-            // 【彈性判斷】如果該最高層底下直接有 verses，就直接渲染經節
-            if (l1Item.verses && Array.isArray(l1Item.verses)) {
-                l1Item.verses.forEach(verseItem => {
-                    l1Body.appendChild(createVerseCard(verseItem));
-                });
-            } 
-            // 否則依照原本的 2~5 層結構向下渲染
-            else if (l1Item.level2Sections) {
-                l1Item.level2Sections.forEach(l2Item => {
-                    const l2Container = document.createElement('div');
-                    l2Container.className = 'level2-container';
-
-                    const l2Header = document.createElement('h3');
-                    l2Header.className = 'level2-header';
-                    l2Header.innerText = l2Item.level2;
-
-                    const l2Body = document.createElement('div');
-                    l2Body.className = 'level2-body collapsible-body';
-
-                    l2Header.addEventListener('click', () => {
-                        l2Container.classList.toggle('collapsed');
-                    });
-
-                    l2Container.appendChild(l2Header);
-
-                    l2Item.level3Groups.forEach(l3Item => {
-                        const l3Container = document.createElement('div');
-                        l3Container.className = 'level3-container';
-
-                        const l3Header = document.createElement('h4');
-                        l3Header.className = 'level3-header';
-                        l3Header.innerText = l3Item.group;
-
-                        const l3Body = document.createElement('div');
-                        l3Body.className = 'level3-body collapsible-body';
-
-                        l3Header.addEventListener('click', () => {
-                            l3Container.classList.toggle('collapsed');
-                        });
-
-                        l3Container.appendChild(l3Header);
-
-                        l3Item.verses.forEach(verseItem => {
-                            l3Body.appendChild(createVerseCard(verseItem));
-                        });
-
-                        l3Container.appendChild(l3Body);
-                        l2Body.appendChild(l3Container);
-                    });
-
-                    l2Container.appendChild(l2Body);
-                    l1Body.appendChild(l2Container);
+            // 狀況 A：如果這個節點底下有「子節點 (children)」
+            if (nodeData.children && Array.isArray(nodeData.children)) {
+                nodeData.children.forEach(childNode => {
+                    body.appendChild(renderNode(childNode, depth + 1));
                 });
             }
 
-            l1Container.appendChild(l1Body);
-            appElement.appendChild(l1Container);
+            // 狀況 B：如果這個節點底下直接有「經文 (verses)」
+            if (nodeData.verses && Array.isArray(nodeData.verses)) {
+                nodeData.verses.forEach(verseItem => {
+                    const verseCard = document.createElement('div');
+                    verseCard.className = 'verse-card';
+
+                    const verseHeader = document.createElement('div');
+                    verseHeader.className = 'verse-header';
+                    verseHeader.innerText = verseItem.ref;
+
+                    const verseContent = document.createElement('div');
+                    verseContent.className = 'verse-content';
+                    verseContent.innerText = verseItem.content;
+
+                    verseHeader.addEventListener('click', (e) => {
+                        e.stopPropagation(); // 避免觸發父層的收合
+                        verseCard.classList.toggle('active');
+                    });
+
+                    verseCard.appendChild(verseHeader);
+                    verseCard.appendChild(verseContent);
+                    body.appendChild(verseCard);
+                });
+            }
+
+            container.appendChild(body);
+            return container;
+        }
+
+        // 開始渲染最上層
+        bibleData.forEach(item => {
+            appElement.appendChild(renderNode(item, 1));
         });
 
         // 「全部展開」按鈕
         document.getElementById('expandAllBtn').addEventListener('click', () => {
-            document.querySelectorAll('.level1-container, .level2-container, .level3-container').forEach(el => {
+            document.querySelectorAll('.level-container').forEach(el => {
                 el.classList.remove('collapsed');
             });
             document.querySelectorAll('.verse-card').forEach(el => {
@@ -429,7 +354,7 @@
 
         // 「全部收合」按鈕
         document.getElementById('collapseAllBtn').addEventListener('click', () => {
-            document.querySelectorAll('.level1-container, .level2-container, .level3-container').forEach(el => {
+            document.querySelectorAll('.level-container').forEach(el => {
                 el.classList.add('collapsed');
             });
             document.querySelectorAll('.verse-card').forEach(el => {
