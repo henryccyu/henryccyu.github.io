@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聖經經文導覽（標題樣式統一化）</title>
+    <title>聖經經文導覽（標題與經文完全同格式）</title>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -88,12 +88,17 @@
             padding-left: 0;
         }
 
-        /* 各層級容器樣式 */
         .level-container {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
-        /* 讓 title 的標頭（.level-header）外觀與 .verse-card 類似 */
+        .level-body {
+            padding-top: 5px;
+        }
+
+        /* ==========================================
+           讓 .level-header (分類標題) 的樣式與 .verse-card 完全一致
+           ========================================== */
         .level-header {
             background: var(--card-bg);
             border-radius: 6px;
@@ -101,7 +106,7 @@
             margin-bottom: 8px;
             overflow: hidden;
             border: 1px solid #e2e8f0;
-            padding: 12px 15px;
+            padding: 10px 15px; /* 改成跟 verse-header 一樣的大小 */
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -109,6 +114,7 @@
             user-select: none;
             font-weight: 600;
             color: var(--primary-color);
+            font-size: 1rem; /* 字體大小與經文標題一致 */
             transition: all 0.2s ease;
         }
 
@@ -116,38 +122,21 @@
             background-color: #f8fafc;
         }
 
-        /* 根據深度微調標頭字體與裝飾 */
-        .level-container.depth-1 > .level-header {
-            font-size: 1.2rem;
-            border-left: 5px solid var(--primary-color);
-        }
-        .level-container.depth-2 > .level-header {
-            font-size: 1.1rem;
-            border-left: 5px solid var(--secondary-color);
-        }
-        .level-container.depth-3 > .level-header, 
-        .level-container.depth-deep > .level-header {
-            font-size: 1.0rem;
-            border-left: 5px solid var(--accent-color);
-        }
-
-        /* 展開/收合圖示（跟 ref 的箭頭風格一致） */
+        /* 右側圖示：改用和經文一樣的 '+' 號，展開時旋轉 45 度變成 '×' */
         .level-header::after {
-            content: '▼';
-            font-size: 0.85rem;
+            content: '+';
+            font-size: 1.1rem;
             color: var(--accent-color);
             transition: transform 0.3s ease;
         }
 
-        .level-container.collapsed > .level-header::after {
-            transform: rotate(-90deg);
+        .level-container:not(.collapsed) > .level-header::after {
+            transform: rotate(45deg);
         }
 
-        .level-body {
-            padding-top: 5px;
-        }
-
-        /* 經節卡片 (Verse Card) 樣式維持不變 */
+        /* ==========================================
+           經節卡片 (Verse Card) 樣式
+           ========================================== */
         .verse-card {
             background: var(--card-bg);
             border-radius: 6px;
@@ -207,7 +196,7 @@
     <div class="container">
         <header>
             <h1>聖經經文導覽</h1>
-            <p>標題與經節外觀統一化架構</p>
+            <p>分類標題與經文標題完全同格式架構</p>
         </header>
 
         <!-- 快捷控制按鈕 -->
@@ -263,12 +252,10 @@
 
         // 遞迴渲染函式
         function renderNode(nodeData, depth) {
-            const depthClass = depth <= 3 ? `depth-${depth}` : 'depth-deep';
-            
             const container = document.createElement('div');
-            container.className = `level-container ${depthClass}`;
+            container.className = 'level-container';
 
-            // 讓 title 的外觀與卡片一致
+            // 讓 title 的外觀與經文 header 完全一致
             const header = document.createElement('div');
             header.className = 'level-header';
             header.innerText = nodeData.title;
