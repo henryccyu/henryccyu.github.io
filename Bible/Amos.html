@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>經文背誦小幫手</title>
+    <title>聖經經文導覽（全層級彈性混搭架構）</title>
     <style>
         :root {
             --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --tertiary-color: #475569;
             --accent-color: #3498db;
             --bg-color: #f8f9fa;
             --card-bg: #ffffff;
@@ -69,66 +71,114 @@
             border-color: var(--accent-color);
         }
 
-        /* 組別區塊樣式 */
-        .section-container {
-            margin-bottom: 20px;
+        /* 通用折疊容器動畫與樣式 */
+        .collapsible-body {
+            max-height: 5000px;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+            opacity: 1;
         }
 
-        .section-header {
-            color: var(--primary-color);
+        .collapsed > .collapsible-body {
+            max-height: 0;
+            opacity: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        /* 第 1 層：大主題分類 (Level 1) */
+        .level-container.depth-1 {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            border: 1px solid #cbd5e1;
+        }
+        .level-container.depth-1 > .level-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 14px 20px;
+            font-size: 1.25rem;
+            border-radius: 8px 8px 0 0;
+        }
+        .level-container.depth-1 > .level-header:hover {
+            background-color: #1a252f;
+        }
+
+        /* 第 2 層：子單元 (Level 2) */
+        .level-container.depth-2 {
+            background: #f8fafc;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #e2e8f0;
+        }
+        .level-container.depth-2 > .level-header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 18px;
+            font-size: 1.15rem;
+            border-radius: 6px 6px 0 0;
+        }
+        .level-container.depth-2 > .level-header:hover {
+            background-color: #2c3e50;
+        }
+
+        /* 第 3 層：組別 (Level 3) */
+        .level-container.depth-3 {
+            background: #f1f5f9;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #cbd5e1;
+        }
+        .level-container.depth-3 > .level-header {
+            color: var(--tertiary-color);
             background-color: #e2e8f0;
             border-left: 5px solid var(--accent-color);
             padding: 10px 15px;
-            margin: 0 0 10px 0;
-            font-size: 1.15rem;
+            font-size: 1.05rem;
+        }
+        .level-container.depth-3 > .level-header:hover {
+            background-color: #cbd5e1;
+        }
+
+        /* 通用層級標頭樣式 */
+        .level-header {
+            margin: 0;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-radius: 4px;
             user-select: none;
             transition: background-color 0.2s;
         }
 
-        .section-header:hover {
-            background-color: #cbd5e1;
-        }
-
-        .section-header::after {
+        .level-header::after {
             content: '▼';
             font-size: 0.85rem;
             transition: transform 0.3s ease;
         }
 
-        .section-container.collapsed .section-header::after {
+        .level-container.collapsed > .level-header::after {
             transform: rotate(-90deg);
         }
 
-        /* 經節清單容器動畫 */
-        .section-body {
-            max-height: 2000px;
-            overflow: hidden;
-            transition: max-height 0.4s ease, opacity 0.3s ease;
-            opacity: 1;
+        .level-body {
+            padding: 15px;
         }
 
-        .section-container.collapsed .section-body {
-            max-height: 0;
-            opacity: 0;
-        }
-
-        /* 單張經文卡片 */
+        /* 經節卡片 (Verse Card) */
         .verse-card {
             background: var(--card-bg);
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            margin-bottom: 10px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 8px;
             overflow: hidden;
+            border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
         }
 
         .verse-header {
-            padding: 12px 20px;
+            padding: 10px 15px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -139,17 +189,17 @@
         }
 
         .verse-header:hover {
-            background-color: #f1f4f8;
+            background-color: #f8fafc;
         }
 
         .verse-header::after {
             content: '+';
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--accent-color);
             transition: transform 0.3s ease;
         }
 
-        .verse-card.active .verse-header::after {
+        .verse-card.active > .verse-header::after {
             transform: rotate(45deg);
         }
 
@@ -157,16 +207,16 @@
             max-height: 0;
             overflow: hidden;
             background-color: var(--verse-bg);
-            padding: 0 20px;
+            padding: 0 15px;
             transition: max-height 0.3s ease, padding 0.3s ease;
-            font-size: 1.05rem;
+            font-size: 1rem;
             color: #444;
             white-space: pre-line;
         }
 
-        .verse-card.active .verse-content {
+        .verse-card.active > .verse-content {
             max-height: 500px;
-            padding: 15px 20px 20px 20px;
+            padding: 12px 15px 15px 15px;
             border-top: 1px solid #e1e8ed;
         }
     </style>
@@ -175,10 +225,11 @@
 
     <div class="container">
         <header>
-            <h1>阿摩司書</h1>
-            <p>點擊組別標題可摺疊/展開大組，點擊經節可查看內容</p>
+            <h1>聖經經文導覽</h1>
+            <p>全層級彈性混搭：第 1、2、3 層皆可直接放經文或子分類</p>
         </header>
 
+        <!-- 快捷控制按鈕 -->
         <div class="controls">
             <button class="btn" id="expandAllBtn">全部展開</button>
             <button class="btn" id="collapseAllBtn">全部收合</button>
@@ -188,119 +239,137 @@
     </div>
 
     <script>
+        // 資料結構範例：示範「任何一層都可以直接放經文」
         const bibleData = [
             {
-                group: "I. Introduction (1:1–11)",
+                title: "I. 题辞 (1:1)",
                 verses: [
-                    { ref: "1) Opening Greeting (1:1–2)", content: "1 基督耶稣的仆人保罗和提摩太，写信给凡住腓立比，在基督耶稣里的众圣徒和诸位监督、诸位执事。2 愿恩惠、平安从神我们的父并主耶稣基督归于你们！" },
-                    { ref: "2) Thanksgiving (1:3–8)", content: "3 我每逢想念你们，就感谢我的神； 4 每逢为你们众人祈求的时候，常是欢欢喜喜地祈求。 5 因为从头一天直到如今，你们是同心合意地兴旺福音。 6 我深信那在你们心里动了善工的必成全这工，直到耶稣基督的日子。 7 我为你们众人有这样的意念原是应当的，因你们常在我心里，无论我是在捆锁之中，是辩明证实福音的时候，你们都与我一同得恩。 8 我体会基督耶稣的心肠，切切地想念你们众人，这是神可以给我作见证的。" },
-                    { ref: "3) Prayer (1:9–11)", content: "9 我所祷告的，就是要你们的爱心在知识和各样见识上多而又多， 10 使你们能分别是非，做诚实无过的人，直到基督的日子； 11 并靠着耶稣基督结满了仁义的果子，叫荣耀称赞归于神。" }
+                    { ref: "1:1", content: "当犹大王乌西雅、以色列王约阿施的儿子耶罗波安在位的时候，大地震前二年，提哥亚牧人中的阿摩司得默示论以色列。" }
                 ]
             },
             {
-                group: "II. Paul’s Chains Advance the Gospel (1:12–26)",
+                title: "II. 阿摩司信息的引言 (1:2)",
                 verses: [
-                    { ref: "1) The Results of Paul’s Imprisonment (1:12–14)", content: "12 弟兄们，我愿意你们知道，我所遭遇的事更是叫福音兴旺， 13 以致我受的捆锁在御营全军和其余的人中，已经显明是为基督的缘故； 14 并且那在主里的弟兄，多半因我受的捆锁就笃信不疑，越发放胆传神的道，无所惧怕。" },
-                    { ref: "2) Paul’s Rivals (1:15–18)", content: "15 有的传基督是出于嫉妒纷争，也有的是出于好意。 16 这一等是出于爱心，知道我是为辩明福音设立的； 17 那一等传基督是出于结党，并不诚实，意思要加增我捆锁的苦楚。 18 这有何妨呢？或是假意，或是真心，无论怎样，基督究竟被传开了。为此我就欢喜，并且还要欢喜。" },
-                    { ref: "3) Paul’s Confidence in Death and Life (1:19–26)", content: "19 因为我知道，这事借着你们的祈祷和耶稣基督之灵的帮助，终必叫我得救。 20 照着我所切慕、所盼望的，没有一事叫我羞愧，只要凡事放胆，无论是生是死，总叫基督在我身上照常显大。21 因我活着就是基督，我死了就有益处。 22 但我在肉身活着，若成就我工夫的果子，我就不知道该挑选什么。 23 我正在两难之间，情愿离世与基督同在，因为这是好得无比的； 24 然而我在肉身活着，为你们更是要紧的。 25 我既然这样深信，就知道仍要住在世间，且与你们众人同住，使你们在所信的道上又长进又喜乐， 26 叫你们在基督耶稣里的欢乐因我再到你们那里去，就越发加增。" }
+                    { ref: "1:2", content: "他说：耶和华必从锡安吼叫，从耶路撒冷发声，牧人的草场要悲哀，迦密的山顶要枯干。" }
                 ]
             },
             {
-                group: "III. Unity and Humility (1:27—2:18)",
-                verses: [
-                    { ref: "A. Life Worthy of the Gospel (1:27–30)", content: "27 只要你们行事为人与基督的福音相称，叫我或来见你们，或不在你们那里，可以听见你们的景况，知道你们同有一个心志，站立得稳，为所信的福音齐心努力， 28 凡事不怕敌人的惊吓，这是证明他们沉沦、你们得救，都是出于神。 29 因为你们蒙恩，不但得以信服基督，并要为他受苦。 30 你们的争战，就与你们在我身上从前所看见、现在所听见的一样。" },
-                    { ref: "B. Imitating Christ’s Humility (2:1–11)", content: "2:1 所以，在基督里若有什么劝勉，爱心有什么安慰，圣灵有什么交通，心中有什么慈悲怜悯， 2 你们就要意念相同，爱心相同，有一样的心思，有一样的意念，使我的喜乐可以满足。 3 凡事不可结党，不可贪图虚浮的荣耀，只要存心谦卑，各人看别人比自己强。 4 各人不要单顾自己的事，也要顾别人的事。 5 你们当以基督耶稣的心为心。 6 他本有神的形象，不以自己与神同等为强夺的， 7 反倒虚己，取了奴仆的形象，成为人的样式； 8 既有人的样子，就自己卑微，存心顺服以至于死，且死在十字架上。 9 所以神将他升为至高，又赐给他那超乎万名之上的名， 10 叫一切在天上的、地上的和地底下的，因耶稣的名无不屈膝， 11 无不口称耶稣基督为主，使荣耀归于父神。" },
-                    { ref: "C. Do Everything Without Grumbling (2:12–18)", content: "12 这样看来，我亲爱的弟兄，你们既是常顺服的，不但我在你们那里，就是我如今不在你们那里，更是顺服的，就当恐惧战兢，做成你们得救的工夫。 13 因为你们立志行事，都是神在你们心里运行，为要成就他的美意。14 凡所行的，都不要发怨言、起争论， 15 使你们无可指摘，诚实无伪，在这弯曲悖谬的世代做神无瑕疵的儿女。你们显在这世代中，好像明光照耀， 16 将生命的道表明出来，叫我在基督的日子好夸我没有空跑，也没有徒劳。 17 我以你们的信心为供献的祭物，我若被浇奠在其上，也是喜乐，并且与你们众人一同喜乐。 18 你们也要照样喜乐，并且与我一同喜乐。" }
+                title: "第一部分：正常 5 層結構",
+                children: [
+                    {
+                        title: "第一篇：新造與救恩",
+                        children: [
+                            {
+                                title: "一、",
+                                verses: [
+                                    { ref: "1. 林後五:17", content: "若有人在基督裡，他就是新造的人，舊事已過，都變成新的了。" },
+                                    { ref: "2. 路十九:10", content: "人子來，為要尋找拯救失喪的人。" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             },
             {
-                group: "IV. Timothy and Epaphroditus (2:19–30)",
+                title: "I. 题辞 (1:1)",
                 verses: [
-                    { ref: "19-21", content: "19 我靠主耶稣指望快打发提摩太去见你们，叫我知道你们的事，心里就得着安慰。 20 因为我没有别人与我同心，实在挂念你们的事。 21 别人都求自己的事，并不求耶稣基督的事。" },
-                    { ref: "22-24", content: "22 但你们知道提摩太的明证，他兴旺福音与我同劳，待我像儿子待父亲一样。 23 所以，我一看出我的事要怎样了结，就盼望立刻打发他去； 24 但我靠着主，自信我也必快去。" },
-                    { ref: "25-27", content: "25 然而，我想必须打发以巴弗提到你们那里去，他是我的兄弟，与我一同做工一同当兵，是你们所差遣的，也是供给我需用的。 26 他很想念你们众人，并且极其难过，因为你们听见他病了。 27 他实在是病了，几乎要死，然而神怜恤他，不但怜恤他，也怜恤我，免得我忧上加忧。" },
-                    { ref: "28-30", content: "28 所以我越发急速打发他去，叫你们再见他就可以喜乐，我也可以少些忧愁。 29 故此，你们要在主里欢欢乐乐地接待他，而且要尊重这样的人， 30 因他为做基督的工夫几乎至死，不顾性命，要补足你们供给我的不及之处。" }
+                    { ref: "1:1", content: "因為罪的工價乃是死..." }
                 ]
             },
             {
-                group: "V. Enemies of the Cross and Citizens of Heaven (3:1—4:3)",
-                verses: [
-                    { ref: "A. No Confidence in the Flesh (3:1–14)", content: "3:1 弟兄们，我还有话说，你们要靠主喜乐！我把这话再写给你们，于我并不为难，于你们却是妥当。 2 应当防备犬类，防备作恶的，防备妄自行割的。 3 因为真受割礼的，乃是我们这以神的灵敬拜，在基督耶稣里夸口，不靠着肉体的。 4 其实我也可以靠肉体，若是别人想他可以靠肉体，我更可以靠着了。 5 我第八天受割礼，我是以色列族便雅悯支派的人，是希伯来人所生的希伯来人。就律法说，我是法利赛人； 6 就热心说，我是逼迫教会的；就律法上的义说，我是无可指摘的。 7 只是我先前以为于我有益的，我现在因基督都当做有损的。 8 不但如此，我也将万事当做有损的，因我以认识我主基督耶稣为至宝。我为他已经丢弃万事，看做粪土，为要得着基督， 9 并且得以在他里面，不是有自己因律法而得的义，乃是有信基督的义，就是因信神而来的义； 10 使我认识基督，晓得他复活的大能，并且晓得和他一同受苦，效法他的死， 11 或者我也得以从死里复活。 12 这不是说我已经得着了，已经完全了，我乃是竭力追求，或者可以得着基督耶稣所以得着我的。 13 弟兄们，我不是以为自己已经得着了，我只有一件事，就是忘记背后，努力面前的， 14 向着标竿直跑，要得神在基督耶稣里从上面召我来得的奖赏。" },
-                    { ref: "B. Following Paul’s Example (3:15–21)", content: "15 所以我们中间凡是完全人，总要存这样的心；若在什么事上存别样的心，神也必以此指示你们。 16 然而我们到了什么地步，就当照着什么地步行。17 弟兄们，你们要一同效法我，也当留意看那些照我们榜样行的人。 18 因为有许多人行事是基督十字架的仇敌，我屡次告诉你们，现在又流泪地告诉你们。 19 他们的结局就是沉沦，他们的神就是自己的肚腹！他们以自己的羞辱为荣耀，专以地上的事为念。20 我们却是天上的国民，并且等候救主，就是主耶稣基督，从天上降临。 21 他要按着那能叫万有归服自己的大能，将我们这卑贱的身体改变形状，和他自己荣耀的身体相似。" },
-                    { ref: "C. Closing Appeal for Steadfastness and Unity (4:1–3)", content: "4:1 我所亲爱所想念的弟兄们，你们就是我的喜乐，我的冠冕。我亲爱的弟兄，你们应当靠主站立得稳。2 我劝尤阿迪娅和循都基要在主里同心。 3 我也求你这真实同负一轭的，帮助这两个女人；因为她们在福音上曾与我一同劳苦，还有革利免并其余和我一同做工的，他们的名字都在生命册上。" }
-                ]
-            },
-            {
-                group: "VI. Conclusions (4:4–23)",
-                verses: [
-                    { ref: "A. Final Exhortations (4:4–9)", content: "4 你们要靠主常常喜乐，我再说，你们要喜乐！ 5 当叫众人知道你们谦让的心。主已经近了。 6 应当一无挂虑，只要凡事借着祷告、祈求和感谢，将你们所要的告诉神。 7 神所赐出人意外的平安，必在基督耶稣里保守你们的心怀意念。8 弟兄们，我还有未尽的话，凡是真实的、可敬的、公义的、清洁的、可爱的、有美名的，若有什么德行，若有什么称赞，这些事你们都要思念。 9 你们在我身上所学习的、所领受的、所听见的、所看见的，这些事你们都要去行，赐平安的神就必与你们同在。" },
-                    { ref: "B. Thanks for Their Gifts (4:10–20)", content: "10 我靠主大大地喜乐，因为你们思念我的心如今又发生；你们向来就思念我，只是没得机会。 11 我并不是因缺乏说这话，我无论在什么景况都可以知足，这是我已经学会了。 12 我知道怎样处卑贱，也知道怎样处丰富，或饱足或饥饿，或有余或缺乏，随事随在，我都得了秘诀。 13 我靠着那加给我力量的，凡事都能做。 14 然而，你们和我同受患难原是美事。 15 腓立比人哪，你们也知道我初传福音，离了马其顿的时候，论到授受的事，除了你们以外并没有别的教会供给我。 16 就是我在帖撒罗尼迦，你们也一次两次地打发人供给我的需用。 17 我并不求什么馈送，所求的就是你们的果子渐渐增多，归在你们的账上。 18 但我样样都有，并且有余。我已经充足，因我从以巴弗提受了你们的馈送，当做极美的香气，为神所收纳所喜悦的祭物。 19 我的神必照他荣耀的丰富，在基督耶稣里使你们一切所需用的都充足。 20 愿荣耀归给我们的父神，直到永永远远！阿门。" },
-                    { ref: "C. Final Greetings (4:21–23)", content: "21 请问在基督耶稣里的各位圣徒安。在我这里的众弟兄都问你们安。 22 众圣徒都问你们安。在恺撒家里的人特特地问你们安。23 愿主耶稣基督的恩常在你们心里！" }
+                title: "第三部分：第 2 層底下才直接是經文",
+                children: [
+                    {
+                        title: "某個篇章（底下沒有第3層，直接放經文）",
+                        verses: [
+                            { ref: "直屬第2層 A. 詩篇二三:1", content: "耶和華是我的牧者，我必不至缺乏。" }
+                        ]
+                    }
                 ]
             }
         ];
 
         const appElement = document.getElementById('app');
 
-        // 渲染畫面
-        bibleData.forEach(section => {
-            // 包覆每一組的外層容器
-            const sectionContainer = document.createElement('div');
-            sectionContainer.className = 'section-container';
+        // 遞迴渲染函式：用來處理任意深度的階層
+        function renderNode(nodeData, depth) {
+            const container = document.createElement('div');
+            container.className = `level-container depth-${depth}`;
 
-            // 組別大標題
-            const sectionHeader = document.createElement('h2');
-            sectionHeader.className = 'section-header';
-            sectionHeader.innerText = section.group;
+            // 建立標頭
+            const header = document.createElement('div');
+            header.className = 'level-header';
+            header.innerText = nodeData.title;
 
-            // 實際裝經節的容器
-            const sectionBody = document.createElement('div');
-            sectionBody.className = 'section-body';
+            // 建立內容主體
+            const body = document.createElement('div');
+            body.className = 'level-body collapsible-body';
 
-            // 點擊組別標題以折疊/展開該組
-            sectionHeader.addEventListener('click', () => {
-                sectionContainer.classList.toggle('collapsed');
+            // 點擊標頭可以收合/展開
+            header.addEventListener('click', () => {
+                container.classList.toggle('collapsed');
             });
 
-            // 建立該組底下的所有經節卡片
-            section.verses.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'verse-card';
+            container.appendChild(header);
 
-                const header = document.createElement('div');
-                header.className = 'verse-header';
-                header.innerText = item.ref;
-
-                const content = document.createElement('div');
-                content.className = 'verse-content';
-                content.innerText = item.content;
-
-                // 點擊經節：切換展開/收合經文內容
-                header.addEventListener('click', (e) => {
-                    e.stopPropagation(); // 避免觸發父層的折疊事件
-                    card.classList.toggle('active');
+            // 狀況 A：如果這個節點底下有「子節點 (children)」
+            if (nodeData.children && Array.isArray(nodeData.children)) {
+                nodeData.children.forEach(childNode => {
+                    body.appendChild(renderNode(childNode, depth + 1));
                 });
+            }
 
-                card.appendChild(header);
-                card.appendChild(content);
-                sectionBody.appendChild(card);
-            });
+            // 狀況 B：如果這個節點底下直接有「經文 (verses)」
+            if (nodeData.verses && Array.isArray(nodeData.verses)) {
+                nodeData.verses.forEach(verseItem => {
+                    const verseCard = document.createElement('div');
+                    verseCard.className = 'verse-card';
 
-            sectionContainer.appendChild(sectionHeader);
-            sectionContainer.appendChild(sectionBody);
-            appElement.appendChild(sectionContainer);
+                    const verseHeader = document.createElement('div');
+                    verseHeader.className = 'verse-header';
+                    verseHeader.innerText = verseItem.ref;
+
+                    const verseContent = document.createElement('div');
+                    verseContent.className = 'verse-content';
+                    verseContent.innerText = verseItem.content;
+
+                    verseHeader.addEventListener('click', (e) => {
+                        e.stopPropagation(); // 避免觸發父層的收合
+                        verseCard.classList.toggle('active');
+                    });
+
+                    verseCard.appendChild(verseHeader);
+                    verseCard.appendChild(verseContent);
+                    body.appendChild(verseCard);
+                });
+            }
+
+            container.appendChild(body);
+            return container;
+        }
+
+        // 開始渲染最上層
+        bibleData.forEach(item => {
+            appElement.appendChild(renderNode(item, 1));
         });
 
-        // 「全部展開」與「全部收合」按鈕功能
+        // 「全部展開」按鈕
         document.getElementById('expandAllBtn').addEventListener('click', () => {
-            document.querySelectorAll('.section-container').forEach(el => {
+            document.querySelectorAll('.level-container').forEach(el => {
                 el.classList.remove('collapsed');
             });
+            document.querySelectorAll('.verse-card').forEach(el => {
+                el.classList.add('active');
+            });
         });
 
+        // 「全部收合」按鈕
         document.getElementById('collapseAllBtn').addEventListener('click', () => {
-            document.querySelectorAll('.section-container').forEach(el => {
+            document.querySelectorAll('.level-container').forEach(el => {
                 el.classList.add('collapsed');
+            });
+            document.querySelectorAll('.verse-card').forEach(el => {
+                el.classList.remove('active');
             });
         });
     </script>
