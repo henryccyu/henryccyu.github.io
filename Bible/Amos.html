@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聖經經文導覽（同層順序任意混排）</title>
+    <title>聖經經文導覽（標題與經文完全同格式）</title>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -77,6 +77,7 @@
             overflow: hidden;
             transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
             opacity: 1;
+            padding-left: 15px; /* 內縮讓階層更明顯 */
         }
 
         .collapsed > .collapsible-body {
@@ -84,77 +85,58 @@
             opacity: 0;
             padding-top: 0;
             padding-bottom: 0;
+            padding-left: 0;
         }
 
-        /* 階層顏色與樣式 */
-        .level-container.depth-1 {
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.08);
-            margin-bottom: 20px;
-            border: 1px solid #cbd5e1;
-        }
-        .level-container.depth-1 > .level-header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 14px 20px;
-            font-size: 1.25rem;
-            border-radius: 8px 8px 0 0;
+        .level-container {
+            margin-bottom: 8px;
         }
 
-        .level-container.depth-2 {
-            background: #f8fafc;
-            border-radius: 6px;
-            margin-bottom: 12px;
-            border: 1px solid #e2e8f0;
-        }
-        .level-container.depth-2 > .level-header {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 12px 18px;
-            font-size: 1.15rem;
-            border-radius: 6px 6px 0 0;
+        .level-body {
+            padding-top: 5px;
         }
 
-        .level-container.depth-3, .level-container.depth-deep {
-            background: #f1f5f9;
-            border-radius: 6px;
-            margin-bottom: 10px;
-            border: 1px solid #cbd5e1;
-        }
-        .level-container.depth-3 > .level-header, .level-container.depth-deep > .level-header {
-            color: var(--tertiary-color);
-            background-color: #e2e8f0;
-            border-left: 5px solid var(--accent-color);
-            padding: 10px 15px;
-            font-size: 1.05rem;
-        }
-
+        /* ==========================================
+           讓 .level-header (分類標題) 的樣式與 .verse-card 完全一致
+           ========================================== */
         .level-header {
-            margin: 0;
+            background: var(--card-bg);
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            padding: 10px 15px; /* 改成跟 verse-header 一樣的大小 */
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
             user-select: none;
-            transition: background-color 0.2s;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1rem; /* 字體大小與經文標題一致 */
+            transition: all 0.2s ease;
         }
 
+        .level-header:hover {
+            background-color: #f8fafc;
+        }
+
+        /* 右側圖示：改用和經文一樣的 '+' 號，展開時旋轉 45 度變成 '×' */
         .level-header::after {
-            content: '▼';
-            font-size: 0.85rem;
+            content: '+';
+            font-size: 1.1rem;
+            color: var(--accent-color);
             transition: transform 0.3s ease;
         }
 
-        .level-container.collapsed > .level-header::after {
-            transform: rotate(-90deg);
+        .level-container:not(.collapsed) > .level-header::after {
+            transform: rotate(45deg);
         }
 
-        .level-body {
-            padding: 15px;
-        }
-
-        /* 經節卡片 (Verse Card) */
+        /* ==========================================
+           經節卡片 (Verse Card) 樣式
+           ========================================== */
         .verse-card {
             background: var(--card-bg);
             border-radius: 6px;
@@ -214,7 +196,7 @@
     <div class="container">
         <header>
             <h1>聖經經文導覽</h1>
-            <p>順序混排架構：同一層中，經文與下層子分類可依照您的陣列順序任意穿插顯示</p>
+            <p>分類標題與經文標題完全同格式架構</p>
         </header>
 
         <!-- 快捷控制按鈕 -->
@@ -227,10 +209,6 @@
     </div>
 
     <script>
-        // 資料結構說明：
-        // 每一層可以使用一個統一的 `children` 陣列（或你也可以叫 items）。
-        // 陣列裡面的項目可以是「子分類物件」（含有 title 屬性）或「經文物件」（含有 ref 與 content 屬性）。
-        // 系統會完全依照你在陣列裡寫的「先後順序」來渲染，不會漏掉任何東西！
         const bibleData = [
             {
                 title: "I. 题辞 (1:1)",
@@ -283,7 +261,7 @@
             verseContent.innerText = verseItem.content;
 
             verseHeader.addEventListener('click', (e) => {
-                e.stopPropagation(); // 避免點擊經文時觸發父層收合
+                e.stopPropagation();
                 verseCard.classList.toggle('active');
             });
 
@@ -292,13 +270,12 @@
             return verseCard;
         }
 
-        // 遞迴渲染函式（支援任意順序混排）
+        // 遞迴渲染函式
         function renderNode(nodeData, depth) {
-            const depthClass = depth <= 3 ? `depth-${depth}` : 'depth-deep';
-            
             const container = document.createElement('div');
-            container.className = `level-container ${depthClass}`;
+            container.className = 'level-container';
 
+            // 讓 title 的外觀與經文 header 完全一致
             const header = document.createElement('div');
             header.className = 'level-header';
             header.innerText = nodeData.title;
@@ -312,15 +289,11 @@
 
             container.appendChild(header);
 
-            // 核心修改：讀取該層底下的 children 陣列
             if (nodeData.children && Array.isArray(nodeData.children)) {
                 nodeData.children.forEach(item => {
-                    // 判斷這一個項目是「經文」還是「子分類」
                     if (item.ref && item.content !== undefined) {
-                        // 如果有 ref，代表它是經文
                         body.appendChild(createVerseCard(item));
                     } else if (item.title) {
-                        // 如果有 title，代表它是下層的子分類，進行遞迴渲染
                         body.appendChild(renderNode(item, depth + 1));
                     }
                 });
