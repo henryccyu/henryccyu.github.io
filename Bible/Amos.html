@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聖經經文導覽（全層級彈性混搭架構）</title>
+    <title>聖經經文導覽（同層順序任意混排）</title>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -86,7 +86,7 @@
             padding-bottom: 0;
         }
 
-        /* 第 1 層：大主題分類 (Level 1) */
+        /* 階層顏色與樣式 */
         .level-container.depth-1 {
             background: #ffffff;
             border-radius: 8px;
@@ -101,15 +101,11 @@
             font-size: 1.25rem;
             border-radius: 8px 8px 0 0;
         }
-        .level-container.depth-1 > .level-header:hover {
-            background-color: #1a252f;
-        }
 
-        /* 第 2 層：子單元 (Level 2) */
         .level-container.depth-2 {
             background: #f8fafc;
             border-radius: 6px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             border: 1px solid #e2e8f0;
         }
         .level-container.depth-2 > .level-header {
@@ -119,29 +115,21 @@
             font-size: 1.15rem;
             border-radius: 6px 6px 0 0;
         }
-        .level-container.depth-2 > .level-header:hover {
-            background-color: #2c3e50;
-        }
 
-        /* 第 3 層：組別 (Level 3) */
-        .level-container.depth-3 {
+        .level-container.depth-3, .level-container.depth-deep {
             background: #f1f5f9;
             border-radius: 6px;
             margin-bottom: 10px;
             border: 1px solid #cbd5e1;
         }
-        .level-container.depth-3 > .level-header {
+        .level-container.depth-3 > .level-header, .level-container.depth-deep > .level-header {
             color: var(--tertiary-color);
             background-color: #e2e8f0;
             border-left: 5px solid var(--accent-color);
             padding: 10px 15px;
             font-size: 1.05rem;
         }
-        .level-container.depth-3 > .level-header:hover {
-            background-color: #cbd5e1;
-        }
 
-        /* 通用層級標頭樣式 */
         .level-header {
             margin: 0;
             cursor: pointer;
@@ -226,7 +214,7 @@
     <div class="container">
         <header>
             <h1>聖經經文導覽</h1>
-            <p>全層級彈性混搭：第 1、2、3 層皆可直接放經文或子分類</p>
+            <p>順序混排架構：同一層中，經文與下層子分類可依照您的陣列順序任意穿插顯示</p>
         </header>
 
         <!-- 快捷控制按鈕 -->
@@ -239,108 +227,81 @@
     </div>
 
     <script>
-        // 資料結構範例：示範「任何一層都可以直接放經文」
+        // 資料結構說明：
+        // 每一層可以使用一個統一的 `children` 陣列（或你也可以叫 items）。
+        // 陣列裡面的項目可以是「子分類物件」（含有 title 屬性）或「經文物件」（含有 ref 與 content 屬性）。
+        // 系統會完全依照你在陣列裡寫的「先後順序」來渲染，不會漏掉任何東西！
         const bibleData = [
             {
                 title: "I. 题辞 (1:1)",
-                verses: [
+                children: [
                     { ref: "1:1", content: "当犹大王乌西雅、以色列王约阿施的儿子耶罗波安在位的时候，大地震前二年，提哥亚牧人中的阿摩司得默示论以色列。" }
                 ]
             },
             {
                 title: "II. 阿摩司信息的引言 (1:2)",
-                verses: [
-                    { ref: "1:2", content: "他说：耶和华必从锡安吼叫，从耶路撒冷发声，牧人的草场要悲哀，迦密的山顶要枯干。" }
-                ]
-            },
-            {
-                title: "第一部分：正常 5 層結構",
                 children: [
-                    {
-                        title: "第一篇：新造與救恩",
-                        children: [
-                            {
-                                title: "一、",
-                                verses: [
-                                    { ref: "1. 林後五:17", content: "若有人在基督裡，他就是新造的人，舊事已過，都變成新的了。" },
-                                    { ref: "2. 路十九:10", content: "人子來，為要尋找拯救失喪的人。" }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                title: "I. 题辞 (1:1)",
-                verses: [
-                    { ref: "1:1", content: "因為罪的工價乃是死..." }
-                ]
-            },
-            {
-                title: "第三部分：第 2 層底下才直接是經文",
-                children: [
-                    {
-                        title: "某個篇章（底下沒有第3層，直接放經文）",
-                        verses: [
-                            { ref: "直屬第2層 A. 詩篇二三:1", content: "耶和華是我的牧者，我必不至缺乏。" }
-                        ]
-                    }
+                    { ref: "1:2", content: "2 他说：耶和华必从锡安吼叫，从耶路撒冷发声，牧人的草场要悲哀，迦密的山顶要枯干。" }
                 ]
             }
         ];
 
         const appElement = document.getElementById('app');
 
-        // 遞迴渲染函式：用來處理任意深度的階層
-        function renderNode(nodeData, depth) {
-            const container = document.createElement('div');
-            container.className = `level-container depth-${depth}`;
+        // 建立單張經節卡片
+        function createVerseCard(verseItem) {
+            const verseCard = document.createElement('div');
+            verseCard.className = 'verse-card';
 
-            // 建立標頭
+            const verseHeader = document.createElement('div');
+            verseHeader.className = 'verse-header';
+            verseHeader.innerText = verseItem.ref;
+
+            const verseContent = document.createElement('div');
+            verseContent.className = 'verse-content';
+            verseContent.innerText = verseItem.content;
+
+            verseHeader.addEventListener('click', (e) => {
+                e.stopPropagation(); // 避免點擊經文時觸發父層收合
+                verseCard.classList.toggle('active');
+            });
+
+            verseCard.appendChild(verseHeader);
+            verseCard.appendChild(verseContent);
+            return verseCard;
+        }
+
+        // 遞迴渲染函式（支援任意順序混排）
+        function renderNode(nodeData, depth) {
+            const depthClass = depth <= 3 ? `depth-${depth}` : 'depth-deep';
+            
+            const container = document.createElement('div');
+            container.className = `level-container ${depthClass}`;
+
             const header = document.createElement('div');
             header.className = 'level-header';
             header.innerText = nodeData.title;
 
-            // 建立內容主體
             const body = document.createElement('div');
             body.className = 'level-body collapsible-body';
 
-            // 點擊標頭可以收合/展開
             header.addEventListener('click', () => {
                 container.classList.toggle('collapsed');
             });
 
             container.appendChild(header);
 
-            // 狀況 A：如果這個節點底下有「子節點 (children)」
+            // 核心修改：讀取該層底下的 children 陣列
             if (nodeData.children && Array.isArray(nodeData.children)) {
-                nodeData.children.forEach(childNode => {
-                    body.appendChild(renderNode(childNode, depth + 1));
-                });
-            }
-
-            // 狀況 B：如果這個節點底下直接有「經文 (verses)」
-            if (nodeData.verses && Array.isArray(nodeData.verses)) {
-                nodeData.verses.forEach(verseItem => {
-                    const verseCard = document.createElement('div');
-                    verseCard.className = 'verse-card';
-
-                    const verseHeader = document.createElement('div');
-                    verseHeader.className = 'verse-header';
-                    verseHeader.innerText = verseItem.ref;
-
-                    const verseContent = document.createElement('div');
-                    verseContent.className = 'verse-content';
-                    verseContent.innerText = verseItem.content;
-
-                    verseHeader.addEventListener('click', (e) => {
-                        e.stopPropagation(); // 避免觸發父層的收合
-                        verseCard.classList.toggle('active');
-                    });
-
-                    verseCard.appendChild(verseHeader);
-                    verseCard.appendChild(verseContent);
-                    body.appendChild(verseCard);
+                nodeData.children.forEach(item => {
+                    // 判斷這一個項目是「經文」還是「子分類」
+                    if (item.ref && item.content !== undefined) {
+                        // 如果有 ref，代表它是經文
+                        body.appendChild(createVerseCard(item));
+                    } else if (item.title) {
+                        // 如果有 title，代表它是下層的子分類，進行遞迴渲染
+                        body.appendChild(renderNode(item, depth + 1));
+                    }
                 });
             }
 
@@ -348,7 +309,7 @@
             return container;
         }
 
-        // 開始渲染最上層
+        // 開始渲染
         bibleData.forEach(item => {
             appElement.appendChild(renderNode(item, 1));
         });
