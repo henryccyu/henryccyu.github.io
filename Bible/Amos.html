@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聖經經文導覽（標題與經文完全同格式）</title>
+    <title>聖經經文導覽（絕對穩定的無限多層級）</title>
     <style>
         :root {
             --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --tertiary-color: #475569;
             --accent-color: #3498db;
             --bg-color: #f8f9fa;
             --card-bg: #ffffff;
@@ -45,7 +43,6 @@
             font-size: 0.95rem;
         }
 
-        /* 控制按鈕列樣式 */
         .controls {
             display: flex;
             justify-content: center;
@@ -71,83 +68,29 @@
             border-color: var(--accent-color);
         }
 
-        /* 通用折疊容器動畫與樣式 */
+        /* 巢狀容器：預設收合時隱藏內容主體 */
         .collapsible-body {
-            max-height: 5000px;
-            overflow: hidden;
-            transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
-            opacity: 1;
-            padding-left: 15px; /* 內縮讓階層更明顯 */
+            display: none;
+            padding-left: 15px; /* 每一層自動內縮 */
+            padding-top: 5px;
         }
 
-        .collapsed > .collapsible-body {
-            max-height: 0;
-            opacity: 0;
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 0;
+        /* 當容器有 active 狀態時顯示內容 */
+        .level-container.active > .collapsible-body {
+            display: block;
         }
 
         .level-container {
             margin-bottom: 8px;
         }
 
-        .level-body {
-            padding-top: 5px;
-        }
-
-        /* ==========================================
-           讓 .level-header (分類標題) 的樣式與 .verse-card 完全一致
-           ========================================== */
-        .level-header {
+        /* 標題卡片外觀 */
+        .level-header, .verse-header {
             background: var(--card-bg);
             border-radius: 6px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
             margin-bottom: 8px;
-            overflow: hidden;
             border: 1px solid #e2e8f0;
-            padding: 10px 15px; /* 改成跟 verse-header 一樣的大小 */
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            user-select: none;
-            font-weight: 600;
-            color: var(--primary-color);
-            font-size: 1rem; /* 字體大小與經文標題一致 */
-            transition: all 0.2s ease;
-        }
-
-        .level-header:hover {
-            background-color: #f8fafc;
-        }
-
-        /* 右側圖示：改用和經文一樣的 '+' 號，展開時旋轉 45 度變成 '×' */
-        .level-header::after {
-            content: '+';
-            font-size: 1.1rem;
-            color: var(--accent-color);
-            transition: transform 0.3s ease;
-        }
-
-        .level-container:not(.collapsed) > .level-header::after {
-            transform: rotate(45deg);
-        }
-
-        /* ==========================================
-           經節卡片 (Verse Card) 樣式
-           ========================================== */
-        .verse-card {
-            background: var(--card-bg);
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            margin-bottom: 8px;
-            overflow: hidden;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-        }
-
-        .verse-header {
             padding: 10px 15px;
             cursor: pointer;
             display: flex;
@@ -156,38 +99,48 @@
             user-select: none;
             font-weight: 600;
             color: var(--primary-color);
+            font-size: 1rem;
+            transition: background-color 0.2s ease;
         }
 
-        .verse-header:hover {
+        .level-header:hover, .verse-header:hover {
             background-color: #f8fafc;
         }
 
-        .verse-header::after {
+        /* 右側圖示：加號，展開時旋轉 45 度 */
+        .level-header::after, .verse-header::after {
             content: '+';
             font-size: 1.1rem;
             color: var(--accent-color);
             transition: transform 0.3s ease;
         }
 
+        .level-container.active > .level-header::after,
         .verse-card.active > .verse-header::after {
             transform: rotate(45deg);
         }
 
+        .verse-card {
+            background: var(--card-bg);
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* 經文內容預設隱藏 */
         .verse-content {
-            max-height: 0;
-            overflow: hidden;
+            display: none;
             background-color: var(--verse-bg);
-            padding: 0 15px;
-            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 12px 15px;
             font-size: 1rem;
             color: #444;
             white-space: pre-line;
+            border-top: 1px solid #e1e8ed;
         }
 
         .verse-card.active > .verse-content {
-            max-height: 500px;
-            padding: 12px 15px 15px 15px;
-            border-top: 1px solid #e1e8ed;
+            display: block;
         }
     </style>
 </head>
@@ -196,10 +149,9 @@
     <div class="container">
         <header>
             <h1>聖經經文導覽</h1>
-            <p>分類標題與經文標題完全同格式架構</p>
+            <p>完美支援 6 層以上無限深度與巢狀展開</p>
         </header>
 
-        <!-- 快捷控制按鈕 -->
         <div class="controls">
             <button class="btn" id="expandAllBtn">全部展開</button>
             <button class="btn" id="collapseAllBtn">全部收合</button>
@@ -209,6 +161,7 @@
     </div>
 
     <script>
+        // 測試 6 層深度的結構
         const bibleData = [
             {
                 title: "I. 题辞 (1:1)",
@@ -274,60 +227,12 @@
                         ]
                     }
                 ]
-            },
-            {
-                title: "V. 流亡的宣告 (5:18–6:14)",
-                children: [
-                    { ref: "A. 关于以色列堕落宗教的信息 (5:18–27)", content: "18 想望耶和华日子来到的有祸了！你们为何想望耶和华的日子呢？那日黑暗没有光明， 19 景况好像人躲避狮子又遇见熊，或是进房屋以手靠墙，就被蛇咬。 20 耶和华的日子不是黑暗没有光明吗？不是幽暗毫无光辉吗？21 “我厌恶你们的节期，也不喜悦你们的严肃会。 22 你们虽然向我献燔祭和素祭，我却不悦纳，也不顾你们用肥畜献的平安祭。 23 要使你们歌唱的声音远离我，因为我不听你们弹琴的响声。 24 唯愿公平如大水滚滚，使公义如江河滔滔。25 “以色列家啊，你们在旷野四十年，岂是将祭物和供物献给我呢？ 26 你们抬着为自己所造之摩洛的帐幕和偶像的龛，并你们的神星。 27 所以，我要把你们掳到大马士革以外。”这是耶和华，名为万军之神说的。" },
-                    { ref: "B. 关于以色列自满骄傲的信息 (6:1–7)", content: "6:1 国为列国之首，人最著名，且为以色列家所归向，在锡安和撒马利亚山安逸无虑的，有祸了！ 2 你们要过到甲尼察看，从那里往大城哈马去，又下到非利士人的迦特，看那些国比你们的国还强吗？境界比你们的境界还宽吗？ 3 你们以为降祸的日子还远，坐在位上尽行强暴。 4 你们躺卧在象牙床上，舒身在榻上，吃群中的羊羔、棚里的牛犊。 5 弹琴鼓瑟唱消闲的歌曲，为自己制造乐器，如同大卫所造的。 6 以大碗喝酒，用上等的油抹身，却不为约瑟的苦难担忧。7 所以这些人必在被掳的人中首先被掳，舒身的人荒宴之乐必消灭了。" },
-                    { ref: "C. 对骄傲和不义之民的严厉审判 (6:8–14)", content: "8 主耶和华万军之神指着自己起誓说：“我憎恶雅各的荣华，厌弃他的宫殿，因此我必将城和其中所有的都交付敌人。” 9 那时，若在一房之内剩下十个人，也都必死。 10 死人的伯叔，就是烧他尸首的，要将这尸首搬到房外，问房屋内间的人说：“你那里还有人没有？”他必说：“没有。”又说：“不要作声！因为我们不可提耶和华的名。” 11 看哪，耶和华出令，大房就被攻破，小屋就被打裂。12 马岂能在崖石上奔跑？人岂能在那里用牛耕种呢？你们却使公平变为苦胆，使公义的果子变为茵陈。 13 你们喜爱虚浮的事，自夸说：“我们不是凭自己的力量取了角吗？”14 耶和华万军之神说：“以色列家啊，我必兴起一国攻击你们，他们必欺压你们，从哈马口直到亚拉巴的河。”" }
-                ]
-            },
-            {
-                title: "VI. 神圣报应的异象 (7:1–9:10)",
-                children: [
-                    {
-                        title: "A. 暂缓审判 (7:1–6)",
-                        children: [
-                            { ref: "1. 一群蝗虫 (7:1–3)", content: "" },
-                            { ref: "2. 吞噬之火 (7:4–6)", content: "" }
-                        ]
-                    }
-                ],
-                children: [
-                    {
-                        title: "B. 未能暂缓的审判 (7:7–9:10)",
-                        children: [
-                            {
-                                title: "1. 铅垂线 (7:7–17)",
-                                children: [
-                                    { ref: "a. 异象 (9:1–4)", content: "" },
-                                    { ref: "b. 阐述 (9:5–10)", content: "" }
-                                ]
-                            },
-                            {
-                                title: "2. 一篮成熟的果子 (第 8 章)",
-                                children: [
-                                    { ref: "a. 异象 (8:1–3)", "" },
-                                    { ref: "b. 阐述 (8:4–14)", "" }
-                                ]
-                            },
-                            {
-                                title: "3. 坛旁的主 (9:1–10)",
-                                children: [
-                                    { ref: "a. 异象 (9:1–4)", content: "" },
-                                    { ref: "b. 阐述 (9:5–10)", content: "" }
-                                ]
-                            }
-                        ]
-                    }
-                ]
             }
         ];
 
         const appElement = document.getElementById('app');
 
-        // 建立單張經節卡片
+        // 建立經節卡片
         function createVerseCard(verseItem) {
             const verseCard = document.createElement('div');
             verseCard.className = 'verse-card';
@@ -355,7 +260,6 @@
             const container = document.createElement('div');
             container.className = 'level-container';
 
-            // 讓 title 的外觀與經文 header 完全一致
             const header = document.createElement('div');
             header.className = 'level-header';
             header.innerText = nodeData.title;
@@ -363,8 +267,9 @@
             const body = document.createElement('div');
             body.className = 'level-body collapsible-body';
 
-            header.addEventListener('click', () => {
-                container.classList.toggle('collapsed');
+            header.addEventListener('click', (e) => {
+                e.stopPropagation();
+                container.classList.toggle('active');
             });
 
             container.appendChild(header);
@@ -391,7 +296,7 @@
         // 「全部展開」按鈕
         document.getElementById('expandAllBtn').addEventListener('click', () => {
             document.querySelectorAll('.level-container').forEach(el => {
-                el.classList.remove('collapsed');
+                el.classList.add('active');
             });
             document.querySelectorAll('.verse-card').forEach(el => {
                 el.classList.add('active');
@@ -401,7 +306,7 @@
         // 「全部收合」按鈕
         document.getElementById('collapseAllBtn').addEventListener('click', () => {
             document.querySelectorAll('.level-container').forEach(el => {
-                el.classList.add('collapsed');
+                el.classList.remove('active');
             });
             document.querySelectorAll('.verse-card').forEach(el => {
                 el.classList.remove('active');
