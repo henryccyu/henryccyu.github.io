@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聖經經文導覽（支援無限多層級）</title>
+    <title>聖經經文導覽（支援無限多層級與連鎖高度）</title>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -68,11 +68,11 @@
             border-color: var(--accent-color);
         }
 
-        /* 核心：利用 JavaScript 動態切換高度的滑順動畫 */
+        /* 巢狀主體樣式：利用 max-height 做滑順動畫 */
         .collapsible-body {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.35s ease-out, padding 0.35s ease-out;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
             padding-left: 15px; /* 每一層自動內縮 */
             padding-top: 0;
             padding-bottom: 0;
@@ -82,7 +82,7 @@
             margin-bottom: 8px;
         }
 
-        /* 統一的標題卡片外觀（分類與經文完全一致） */
+        /* 標題卡片外觀 */
         .level-header, .verse-header {
             background: var(--card-bg);
             border-radius: 6px;
@@ -105,7 +105,7 @@
             background-color: #f8fafc;
         }
 
-        /* 右側圖示：統一使用加號，展開時旋轉 45 度 */
+        /* 右側圖示：加號，展開時旋轉 45 度 */
         .level-header::after, .verse-header::after {
             content: '+';
             font-size: 1.1rem;
@@ -131,15 +131,14 @@
             overflow: hidden;
             background-color: var(--verse-bg);
             padding: 0 15px;
-            transition: max-height 0.35s ease-out, padding 0.35s ease-out;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
             font-size: 1rem;
             color: #444;
             white-space: pre-line;
-            border-top: 0px solid transparent;
         }
 
         .verse-card.active > .verse-content {
-            max-height: 1000px; /* 單一經文高度很小，直接給定足夠空間即可 */
+            max-height: 1000px;
             padding: 12px 15px;
             border-top: 1px solid #e1e8ed;
         }
@@ -150,7 +149,7 @@
     <div class="container">
         <header>
             <h1>聖經經文導覽</h1>
-            <p>支援 6 層以上無限深度與混排</p>
+            <p>支援 6 層以上無限深度與連鎖高度計算</p>
         </header>
 
         <div class="controls">
@@ -162,7 +161,7 @@
     </div>
 
     <script>
-        // 測試：模擬 6 層深度的結構
+        // 測試 6 層深度的結構
         const bibleData = [
             {
                 title: "第 1 層：大主題",
@@ -182,7 +181,7 @@
                                                     {
                                                         title: "第 6 層：最末階分類",
                                                         children: [
-                                                            { ref: "第6層直屬經文: 約翰三:16", content: "神愛世人，甚至將祂的獨生子賜給他們..." }
+                                                            { ref: "第6層直屬經文: 約翰三:16", content: "神愛世人，甚至將祂的獨生子賜給他們，叫一切信祂的，不致滅亡，反得永生。" }
                                                         ]
                                                     }
                                                 ]
@@ -214,12 +213,30 @@
 
             verseHeader.addEventListener('click', (e) => {
                 e.stopPropagation();
-                verseCard.classList.toggle('active');
+                const isActive = verseCard.classList.toggle('active');
+                
+                // 當經文展開或收合時，向上更新所有祖先容器的高度
+                updateParentHeights(verseCard);
             });
 
             verseCard.appendChild(verseHeader);
             verseCard.appendChild(verseContent);
             return verseCard;
+        }
+
+        // 核心函式：向上尋找所有祖先的 collapsible-body 並重新計算其高度
+        function updateParentHeights(element) {
+            let parentBody = element.parentElement;
+            while (parentBody && parentBody.id !== 'app') {
+                if (parentBody.classList.contains('collapsible-body')) {
+                    // 只有當該父容器本身是展開狀態時，才更新其 max-height
+                    const parentContainer = parentBody.parentElement;
+                    if (parentContainer && parentContainer.classList.contains('active')) {
+                        parentBody.style.maxHeight = parentBody.scrollHeight + 'px';
+                    }
+                }
+                parentBody = parentBody.parentElement;
+            }
         }
 
         // 遞迴渲染函式
@@ -234,7 +251,6 @@
             const body = document.createElement('div');
             body.className = 'level-body collapsible-body';
 
-            // 核心：點擊時動態計算並設定真實展開高度（完美支援 6 層以上嵌套）
             header.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const isActive = container.classList.toggle('active');
@@ -248,6 +264,9 @@
                     body.style.paddingTop = '0px';
                     body.style.paddingBottom = '0px';
                 }
+
+                // 關鍵：當前層級展開/收合後，連帶更新所有上層祖先的高度
+                updateParentHeights(container);
             });
 
             container.appendChild(header);
@@ -273,7 +292,10 @@
 
         // 「全部展開」按鈕
         document.getElementById('expandAllBtn').addEventListener('click', () => {
-            document.querySelectorAll('.level-container').forEach(el => {
+            // 從最深層往外展開，確保每一層都能正確計算高度
+            const containers = document.querySelectorAll('.level-container');
+            // 反向執行（從深層到淺層）
+            Array.from(containers).reverse().forEach(el => {
                 el.classList.add('active');
                 const body = el.querySelector('.collapsible-body');
                 if (body) {
@@ -284,6 +306,13 @@
             });
             document.querySelectorAll('.verse-card').forEach(el => {
                 el.classList.add('active');
+            });
+            // 最後再由外而內統一校正一次
+            containers.forEach(el => {
+                const body = el.querySelector('.collapsible-body');
+                if (body && el.classList.contains('active')) {
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                }
             });
         });
 
