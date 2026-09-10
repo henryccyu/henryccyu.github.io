@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖經經文導覽（支援無限多層級）</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --verse-bg: #eef2f5;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background-color: var(--card-bg);
+            border: 1px solid #cbd5e1;
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        /* 核心：利用 JavaScript 動態切換高度的滑順動畫 */
+        .collapsible-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease-out, padding 0.35s ease-out;
+            padding-left: 15px; /* 每一層自動內縮 */
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .level-container {
+            margin-bottom: 8px;
+        }
+
+        /* 統一的標題卡片外觀（分類與經文完全一致） */
+        .level-header, .verse-header {
+            background: var(--card-bg);
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 8px;
+            border: 1px solid #e2e8f0;
+            padding: 10px 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .level-header:hover, .verse-header:hover {
+            background-color: #f8fafc;
+        }
+
+        /* 右側圖示：統一使用加號，展開時旋轉 45 度 */
+        .level-header::after, .verse-header::after {
+            content: '+';
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+
+        .level-container.active > .level-header::after,
+        .verse-card.active > .verse-header::after {
+            transform: rotate(45deg);
+        }
+
+        .verse-card {
+            background: var(--card-bg);
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .verse-content {
+            max-height: 0;
+            overflow: hidden;
+            background-color: var(--verse-bg);
+            padding: 0 15px;
+            transition: max-height 0.35s ease-out, padding 0.35s ease-out;
+            font-size: 1rem;
+            color: #444;
+            white-space: pre-line;
+            border-top: 0px solid transparent;
+        }
+
+        .verse-card.active > .verse-content {
+            max-height: 1000px; /* 單一經文高度很小，直接給定足夠空間即可 */
+            padding: 12px 15px;
+            border-top: 1px solid #e1e8ed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>聖經經文導覽</h1>
+            <p>支援 6 層以上無限深度與混排</p>
+        </header>
+
+        <div class="controls">
+            <button class="btn" id="expandAllBtn">全部展開</button>
+            <button class="btn" id="collapseAllBtn">全部收合</button>
+        </div>
+
+        <div id="app"></div>
+    </div>
+
+    <script>
+        // 測試：模擬 6 層深度的結構
+        const bibleData = [
+            {
+                title: "第 1 層：大主題",
+                children: [
+                    {
+                        title: "第 2 層：次主題",
+                        children: [
+                            {
+                                title: "第 3 層：篇章",
+                                children: [
+                                    {
+                                        title: "第 4 層：小節",
+                                        children: [
+                                            {
+                                                title: "第 5 層：群組",
+                                                children: [
+                                                    {
+                                                        title: "第 6 層：最末階分類",
+                                                        children: [
+                                                            { ref: "第6層直屬經文: 約翰三:16", content: "神愛世人，甚至將祂的獨生子賜給他們..." }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ];
+
+        const appElement = document.getElementById('app');
+
+        // 建立經節卡片
+        function createVerseCard(verseItem) {
+            const verseCard = document.createElement('div');
+            verseCard.className = 'verse-card';
+
+            const verseHeader = document.createElement('div');
+            verseHeader.className = 'verse-header';
+            verseHeader.innerText = verseItem.ref;
+
+            const verseContent = document.createElement('div');
+            verseContent.className = 'verse-content';
+            verseContent.innerText = verseItem.content;
+
+            verseHeader.addEventListener('click', (e) => {
+                e.stopPropagation();
+                verseCard.classList.toggle('active');
+            });
+
+            verseCard.appendChild(verseHeader);
+            verseCard.appendChild(verseContent);
+            return verseCard;
+        }
+
+        // 遞迴渲染函式
+        function renderNode(nodeData, depth) {
+            const container = document.createElement('div');
+            container.className = 'level-container';
+
+            const header = document.createElement('div');
+            header.className = 'level-header';
+            header.innerText = nodeData.title;
+
+            const body = document.createElement('div');
+            body.className = 'level-body collapsible-body';
+
+            // 核心：點擊時動態計算並設定真實展開高度（完美支援 6 層以上嵌套）
+            header.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isActive = container.classList.toggle('active');
+                
+                if (isActive) {
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                    body.style.paddingTop = '5px';
+                    body.style.paddingBottom = '5px';
+                } else {
+                    body.style.maxHeight = '0px';
+                    body.style.paddingTop = '0px';
+                    body.style.paddingBottom = '0px';
+                }
+            });
+
+            container.appendChild(header);
+
+            if (nodeData.children && Array.isArray(nodeData.children)) {
+                nodeData.children.forEach(item => {
+                    if (item.ref && item.content !== undefined) {
+                        body.appendChild(createVerseCard(item));
+                    } else if (item.title) {
+                        body.appendChild(renderNode(item, depth + 1));
+                    }
+                });
+            }
+
+            container.appendChild(body);
+            return container;
+        }
+
+        // 開始渲染
+        bibleData.forEach(item => {
+            appElement.appendChild(renderNode(item, 1));
+        });
+
+        // 「全部展開」按鈕
+        document.getElementById('expandAllBtn').addEventListener('click', () => {
+            document.querySelectorAll('.level-container').forEach(el => {
+                el.classList.add('active');
+                const body = el.querySelector('.collapsible-body');
+                if (body) {
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                    body.style.paddingTop = '5px';
+                    body.style.paddingBottom = '5px';
+                }
+            });
+            document.querySelectorAll('.verse-card').forEach(el => {
+                el.classList.add('active');
+            });
+        });
+
+        // 「全部收合」按鈕
+        document.getElementById('collapseAllBtn').addEventListener('click', () => {
+            document.querySelectorAll('.level-container').forEach(el => {
+                el.classList.remove('active');
+                const body = el.querySelector('.collapsible-body');
+                if (body) {
+                    body.style.maxHeight = '0px';
+                    body.style.paddingTop = '0px';
+                    body.style.paddingBottom = '0px';
+                }
+            });
+            document.querySelectorAll('.verse-card').forEach(el => {
+                el.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
