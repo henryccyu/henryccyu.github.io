@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聖經經文導覽產生器 (Web App)</title>
+    <title>聖經經文導覽產生器 (支援同層混排經文與子層)</title>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -14,6 +14,7 @@
             --verse-bg: #eef2f5;
             --danger-color: #e74c3c;
             --success-color: #2ecc71;
+            --verse-color: #8e44ad;
         }
 
         body {
@@ -26,10 +27,10 @@
         }
 
         .app-container {
-            max-width: 1200px;
+            max-width: 1300px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.1fr 0.9fr;
             gap: 20px;
         }
 
@@ -83,21 +84,23 @@
             border-radius: 6px;
             padding: 10px;
             margin-bottom: 10px;
-            position: relative;
         }
 
-        .node-editor.level-0 { border-left: 4px solid #3498db; }
-        .node-editor.level-1 { border-left: 4px solid #2ecc71; }
-        .node-editor.level-2 { border-left: 4px solid #f1c40f; }
-        .node-editor.level-3 { border-left: 4px solid #e67e22; }
-        .node-editor.level-4 { border-left: 4px solid #9b59b6; }
-        .node-editor.level-5 { border-left: 4px solid #e74c3c; }
+        .node-editor.level-type-node {
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .node-editor.level-type-verse {
+            border-left: 4px solid var(--verse-color);
+            background: #fbf9fc;
+        }
 
         .input-group {
             display: flex;
             gap: 8px;
             margin-bottom: 8px;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         input[type="text"], textarea {
@@ -130,11 +133,13 @@
             cursor: pointer;
             font-size: 0.85rem;
             transition: opacity 0.2s;
+            white-space: nowrap;
         }
 
         .btn:hover { opacity: 0.85; }
         .btn-danger { background-color: var(--danger-color); }
         .btn-success { background-color: var(--success-color); }
+        .btn-verse { background-color: var(--verse-color); }
         .btn-secondary { background-color: #64748b; }
 
         .toolbar {
@@ -142,7 +147,7 @@
             gap: 10px;
         }
 
-        /* 預覽網頁樣式 (與前次相同的高穩定展開系統) */
+        /* 預覽網頁樣式 (支援同層混排) */
         .preview-app .collapsible-body {
             display: none;
             padding-left: 15px;
@@ -170,6 +175,9 @@
             color: var(--primary-color);
             font-size: 0.95rem;
         }
+        .preview-app .verse-header {
+            color: #722f37; /* 經文標題用不同顏色突顯 */
+        }
         .preview-app .level-header:hover, .preview-app .verse-header:hover {
             background-color: #f8fafc;
         }
@@ -177,6 +185,9 @@
             content: '+';
             color: var(--accent-color);
             transition: transform 0.3s ease;
+        }
+        .preview-app .verse-header::after {
+            color: var(--verse-color);
         }
         .preview-app .level-container.active > .level-header::after,
         .preview-app .verse-card.active > .verse-header::after {
@@ -207,7 +218,7 @@
 
     <div style="text-align:center; margin-bottom: 15px;">
         <h1 style="color:var(--primary-color); margin:0;">聖經經文導覽內容產生器</h1>
-        <p style="color:#666; font-size:0.9rem; margin:5px 0;">在左側自由編輯多層級資料，右側立即預覽互動網頁成果</p>
+        <p style="color:#666; font-size:0.9rem; margin:5px 0;">支援任何層級「同時混排子分類與直屬經文」</p>
     </div>
 
     <div class="app-container">
@@ -216,14 +227,12 @@
             <h2>
                 資料編輯區
                 <div class="toolbar">
-                    <button class="btn btn-success" id="addRootBtn">+ 新增根目錄</button>
-                    <button class="btn btn-secondary" id="loadDemoBtn">載入範例</button>
+                    <button class="btn btn-success" id="addRootNodeBtn">+ 新增根目錄分類</button>
+                    <button class="btn btn-verse" id="addRootVerseBtn">+ 新增根目錄經文</button>
                 </div>
             </h2>
-            <div class="editor-scroll" id="editorContainer">
-                <!-- 動態產生的編輯節點會放在這裡 -->
-            </div>
-            <button class="btn" style="width: 100%; padding: 10px; font-size: 1rem;" id="generateBtn">更新右側預覽</button>
+            <div class="editor-scroll" id="editorContainer"></div>
+            <button class="btn btn-secondary" style="width: 100%; padding: 10px; font-size: 1rem;" id="loadDemoBtn">載入範例資料</button>
         </div>
 
         <!-- 右側：即時預覽面板 -->
@@ -242,16 +251,16 @@
     </div>
 
     <script>
-        // 預設示範資料
+        // 預設示範資料：展示「最上層同時有子分類與直屬經文」
         let appData = [
             {
                 title: "第一章：救恩的確據",
                 children: [
+                    { ref: "約翰一書 5:11-12", content: "這見證就是神賜給我們永生...人有了神的兒子就有生命..." }, // 第一層的直屬經文
                     {
-                        title: "1. 神的愛與計劃",
+                        title: "1. 神的愛與計劃", // 第一層底下的子分類
                         children: [
-                            { ref: "約翰福音 3:16", content: "神愛世人，甚至將祂的獨生子賜給他們..." },
-                            { ref: "羅馬書 5:8", content: "惟有基督在我還作罪人的時候為我們死..." }
+                            { ref: "約翰福音 3:16", content: "神愛世人，甚至將祂的獨生子賜給他們..." }
                         ]
                     }
                 ]
@@ -261,54 +270,62 @@
         const editorContainer = document.getElementById('editorContainer');
         const previewApp = document.getElementById('previewApp');
 
-        // 遞迴渲染編輯器畫面
+        // 遞迴渲染編輯器
         function renderEditor(dataArray, parentContainer, depth = 0) {
             parentContainer.innerHTML = '';
             
             dataArray.forEach((item, index) => {
                 const nodeDiv = document.createElement('div');
-                nodeDiv.className = `node-editor level-${depth % 6}`;
-
-                // 判斷是分類節點還是經文節點
                 const isVerse = item.ref !== undefined;
+                
+                nodeDiv.className = `node-editor ${isVerse ? 'level-type-verse' : 'level-type-node'}`;
 
                 if (isVerse) {
+                    // 經文編輯介面
                     nodeDiv.innerHTML = `
                         <div class="input-group">
-                            <span style="font-size:0.8rem; font-weight:bold; color:#e67e22;">[經文]</span>
+                            <span style="font-size:0.8rem; font-weight:bold; color:var(--verse-color);">[經文]</span>
                             <input type="text" class="edit-ref" value="${item.ref || ''}" placeholder="經文出處 (例: 約翰三:16)">
                             <button class="btn btn-danger remove-btn">刪除</button>
                         </div>
-                        <div class="input-group">
-                            <textarea class="edit-content" placeholder="經文內容...">${item.content || ''}</textarea>
+                        <div class="input-group" style="margin-bottom:0;">
+                            <textarea class="edit-content" placeholder="請輸入經文內容...">${item.content || ''}</textarea>
                         </div>
                     `;
+
+                    // 綁定事件
+                    nodeDiv.querySelector('.edit-ref').addEventListener('input', (e) => { item.ref = e.target.value; });
+                    nodeDiv.querySelector('.edit-content').addEventListener('input', (e) => { item.content = e.target.value; });
+
                 } else {
+                    // 分類節點編輯介面
                     nodeDiv.innerHTML = `
                         <div class="input-group">
-                            <span style="font-size:0.8rem; font-weight:bold; color:#2980b9;">[第${depth+1}層]</span>
+                            <span style="font-size:0.8rem; font-weight:bold; color:var(--accent-color);">[第${depth+1}層分類]</span>
                             <input type="text" class="edit-title" value="${item.title || ''}" placeholder="輸入層級標題...">
                             <button class="btn btn-success add-sub-node">+ 子分類</button>
-                            <button class="btn btn-success add-sub-verse" style="background-color:#8e44ad;">+ 經文</button>
+                            <button class="btn btn-verse add-sub-verse">+ 經文</button>
                             <button class="btn btn-danger remove-btn">刪除</button>
                         </div>
                         <div class="children-box"></div>
                     `;
 
-                    // 綁定子節點容器
-                    const childrenBox = nodeDiv.querySelector('.children-box');
-                    if (item.children && Array.isArray(item.children)) {
-                        renderEditor(item.children, childrenBox, depth + 1);
-                    }
+                    // 綁定標題變更
+                    nodeDiv.querySelector('.edit-title').addEventListener('input', (e) => { item.title = e.target.value; });
 
-                    // 按鈕事件：新增子分類
+                    // 遞迴渲染子項目容器
+                    const childrenBox = nodeDiv.querySelector('.children-box');
+                    if (!item.children) item.children = [];
+                    renderEditor(item.children, childrenBox, depth + 1);
+
+                    // 新增子分類按鈕
                     nodeDiv.querySelector('.add-sub-node').addEventListener('click', () => {
                         if (!item.children) item.children = [];
-                        item.children.push({ title: "新分類標題", children: [] });
+                        item.children.push({ title: "新子分類標題", children: [] });
                         updateEditorAndPreview();
                     });
 
-                    // 按鈕事件：新增經文
+                    // 新增子經文按鈕
                     nodeDiv.querySelector('.add-sub-verse').addEventListener('click', () => {
                         if (!item.children) item.children = [];
                         item.children.push({ ref: "經文出處", content: "請輸入經文內容..." });
@@ -316,31 +333,17 @@
                     });
                 }
 
-                // 刪除按鈕事件
+                // 刪除按鈕
                 nodeDiv.querySelector('.remove-btn').addEventListener('click', () => {
                     dataArray.splice(index, 1);
                     updateEditorAndPreview();
                 });
 
-                // 輸入即時同步回資料結構
-                const titleInput = nodeDiv.querySelector('.edit-title');
-                if (titleInput) {
-                    titleInput.addEventListener('input', (e) => { item.title = e.target.value; });
-                }
-                const refInput = nodeDiv.querySelector('.edit-ref');
-                if (refInput) {
-                    refInput.addEventListener('input', (e) => { item.ref = e.target.value; });
-                }
-                const contentInput = nodeDiv.querySelector('.edit-content');
-                if (contentInput) {
-                    contentInput.addEventListener('input', (e) => { item.content = e.target.value; });
-                }
-
                 parentContainer.appendChild(nodeDiv);
             });
         }
 
-        // 遞迴渲染右側預覽網頁
+        // 遞迴渲染預覽網頁 (支援分類與經文混排)
         function renderPreview(dataArray, targetElement) {
             targetElement.innerHTML = '';
             dataArray.forEach(nodeData => {
@@ -391,52 +394,33 @@
             renderPreview(appData, previewApp);
         }
 
-        // 頂層按鈕事件
-        document.getElementById('addRootBtn').addEventListener('click', () => {
-            appData.push({ title: "新大主題", children: [] });
+        // 根目錄頂部按鈕事件
+        document.getElementById('addRootNodeBtn').addEventListener('click', () => {
+            appData.push({ title: "新大主題分類", children: [] });
+            updateEditorAndPreview();
+        });
+
+        document.getElementById('addRootVerseBtn').addEventListener('click', () => {
+            appData.push({ ref: "根目錄經文出處", content: "請輸入經文內容..." });
             updateEditorAndPreview();
         });
 
         document.getElementById('loadDemoBtn').addEventListener('click', () => {
             appData = [
                 {
-                    title: "第 1 層：大主題",
+                    title: "第一章：救恩的確據",
                     children: [
+                        { ref: "約翰一書 5:11-12", content: "這見證就是神賜給我們永生...人有了神的兒子就有生命..." },
                         {
-                            title: "第 2 層：次主題",
+                            title: "1. 神的愛與計劃",
                             children: [
-                                {
-                                    title: "第 3 層：篇章",
-                                    children: [
-                                        {
-                                            title: "第 4 層：小節",
-                                            children: [
-                                                {
-                                                    title: "第 5 層：群組",
-                                                    children: [
-                                                        {
-                                                            title: "第 6 層：最末階分類",
-                                                            children: [
-                                                                { ref: "約翰福音 3:16", content: "神愛世人，甚至將祂的獨生子賜給他們..." }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
+                                { ref: "約翰福音 3:16", content: "神愛世人，甚至將祂的獨生子賜給他們..." }
                             ]
                         }
                     ]
                 }
             ];
             updateEditorAndPreview();
-        });
-
-        document.getElementById('generateBtn').addEventListener('click', () => {
-            renderPreview(appData, previewApp);
-            alert("右側預覽已重新整理完成！");
         });
 
         document.getElementById('expandAllPreview').addEventListener('click', () => {
