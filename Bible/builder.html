@@ -88,6 +88,13 @@
         .node-editor.level-type-node { border-left: 4px solid var(--accent-color); }
         .node-editor.level-type-verse { border-left: 4px solid var(--verse-color); background: #fbf9fc; }
 
+        /* 編輯器折疊功能 */
+        .node-editor > .children-box { display: block; }
+        .node-editor.collapsed > .children-box,
+        .node-editor.collapsed > .input-group:not(:first-child),
+        .node-editor.collapsed textarea { display: none !important; }
+        .node-editor.collapsed { background: #f1f5f9; }
+
         .input-group {
             display: flex;
             gap: 6px;
@@ -117,10 +124,10 @@
             background-color: var(--accent-color);
             color: white;
             border: none;
-            padding: 5px 10px;
+            padding: 4px 8px;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             white-space: nowrap;
         }
         .btn:hover { opacity: 0.85; }
@@ -128,10 +135,12 @@
         .btn-success { background-color: var(--success-color); }
         .btn-verse { background-color: var(--verse-color); }
         .btn-secondary { background-color: #64748b; }
+        .btn-move { background-color: #3b82f6; }
         .btn-export { background-color: #e67e22; font-weight: bold; font-size: 0.9rem; padding: 6px 12px; }
         .btn-import { background-color: #8e44ad; font-weight: bold; font-size: 0.9rem; padding: 6px 12px; }
 
         .toolbar { display: flex; gap: 6px; align-items: center; }
+        .node-toolbar { display: flex; gap: 4px; align-items: center; margin-bottom: 8px; background: #e2e8f0; padding: 4px 8px; border-radius: 4px; flex-wrap: wrap; }
 
         /* 預覽區樣式 */
         .preview-app .collapsible-body { display: none; padding-left: 15px; padding-top: 5px; }
@@ -176,7 +185,7 @@
 
     <div style="text-align:center; margin-bottom: 15px;">
         <h1 style="color:var(--primary-color); margin:0;">聖經經文導覽內容產生器</h1>
-        <p style="color:#666; font-size:0.9rem; margin:5px 0;">自由編排多層級資料，一鍵匯出或讀取已匯出的互動網頁</p>
+        <p style="color:#666; font-size:0.9rem; margin:5px 0;">支援折疊、跨層級搬移與一鍵匯出互動網頁</p>
     </div>
 
     <div class="app-container">
@@ -220,7 +229,7 @@
             {
                 title: "第一章：救恩的確據",
                 children: [
-                    { ref: "約翰一書 5:11-12", content: "這見證就是神賜給我們永生...人有了神的兒子就有生命..." },
+                    { ref: "約翰一書 5:11-12", content: "這見證就是神賜給我們永生..." },
                     {
                         title: "1. 神的愛與計劃",
                         children: [
@@ -234,7 +243,7 @@
         const editorContainer = document.getElementById('editorContainer');
         const previewApp = document.getElementById('previewApp');
 
-        function renderEditor(dataArray, parentContainer, depth = 0) {
+        function renderEditor(dataArray, parentContainer, depth = 0, parentArrayRef = null, currentIndex = -1) {
             parentContainer.innerHTML = '';
             
             dataArray.forEach((item, index) => {
@@ -242,6 +251,77 @@
                 const isVerse = item.ref !== undefined;
                 
                 nodeDiv.className = 'node-editor ' + (isVerse ? 'level-type-verse' : 'level-type-node');
+
+                // 建立專屬操作工具列（折疊、移動、刪除）
+                const nodeToolbar = document.createElement('div');
+                nodeToolbar.className = 'node-toolbar';
+
+                // 折疊按鈕 (針對分類或經文)
+                const toggleCollapseBtn = document.createElement('button');
+                toggleCollapseBtn.className = 'btn btn-secondary';
+                toggleCollapseBtn.textContent = '📂 摺疊/展開';
+                toggleCollapseBtn.addEventListener('click', () => {
+                    nodeDiv.classList.toggle('collapsed');
+                });
+                nodeToolbar.appendChild(toggleCollapseBtn);
+
+                // 上移按鈕
+                if (index > 0) {
+                    const upBtn = document.createElement('button');
+                    upBtn.className = 'btn btn-move';
+                    upBtn.textContent = '⬆ 上移';
+                    upBtn.addEventListener('click', () => {
+                        const temp = dataArray[index];
+                        dataArray[index] = dataArray[index - 1];
+                        dataArray[index - 1] = temp;
+                        updateEditorAndPreview();
+                    });
+                    nodeToolbar.appendChild(upBtn);
+                }
+
+                // 下移按鈕
+                if (index < dataArray.length - 1) {
+                    const downBtn = document.createElement('button');
+                    downBtn.className = 'btn btn-move';
+                    downBtn.textContent = '⬇ 下移';
+                    downBtn.addEventListener('click', () => {
+                        const temp = dataArray[index];
+                        dataArray[index] = dataArray[index + 1];
+                        dataArray[index + 1] = temp;
+                        updateEditorAndPreview();
+                    });
+                    nodeToolbar.appendChild(downBtn);
+                }
+
+                // 升層（向左移：移到上一層的平輩）
+                if (depth > 0 && parentArrayRef) {
+                    const outdentBtn = document.createElement('button');
+                    outdentBtn.className = 'btn btn-move';
+                    outdentBtn.textContent = '◀ 升層';
+                    outdentBtn.addEventListener('click', () => {
+                        const movedItem = dataArray.splice(index, 1)[0];
+                        parentArrayRef.splice(currentIndex + 1, 0, movedItem);
+                        updateEditorAndPreview();
+                    });
+                    nodeToolbar.appendChild(outdentBtn);
+                }
+
+                // 降層（向右移：變成同層前一個分類的子項目）
+                if (index > 0 && !isVerse && !dataArray[index - 1].ref) {
+                    const indentBtn = document.createElement('button');
+                    indentBtn.className = 'btn btn-move';
+                    indentBtn.textContent = '▶ 降層為子';
+                    indentBtn.addEventListener('click', () => {
+                        const movedItem = dataArray.splice(index, 1)[0];
+                        const prevNode = dataArray[index - 1];
+                        if (!prevNode.children) prevNode.children = [];
+                        prevNode.children.push(movedItem);
+                        updateEditorAndPreview();
+                    });
+                    nodeToolbar.appendChild(indentBtn);
+                }
+
+                nodeDiv.appendChild(nodeToolbar);
 
                 if (isVerse) {
                     const group1 = document.createElement('div');
@@ -339,7 +419,7 @@
                     childrenBox.className = 'children-box';
 
                     if (!item.children) item.children = [];
-                    renderEditor(item.children, childrenBox, depth + 1);
+                    renderEditor(item.children, childrenBox, depth + 1, dataArray, index);
 
                     nodeDiv.appendChild(group1);
                     nodeDiv.appendChild(childrenBox);
@@ -401,7 +481,7 @@
         }
 
         function updateEditorAndPreview() {
-            renderEditor(appData, editorContainer, 0);
+            renderEditor(appData, editorContainer, 0, null, -1);
             renderPreview(appData, previewApp);
         }
 
@@ -449,7 +529,6 @@
             reader.onload = function(e) {
                 const htmlContent = e.target.result;
                 try {
-                    // 利用正規表達式從 HTML 中抓取 const rawData = [...] 的資料
                     const match = htmlContent.match(/const\s+rawData\s*=\s*(\[\[\s*[\s\S]*?\]\]|\[[\s\S]*?\]);\s*const\s+appElement/);
                     if (match && match[1]) {
                         const parsedData = JSON.parse(match[1]);
@@ -467,7 +546,6 @@
                     alert('讀取失敗：此檔案可能不是由本系統所匯出的有效 HTML 檔案。');
                     console.error(err);
                 }
-                // 清空檔案選擇，允許重複上傳同一個檔案
                 importHtmlFile.value = '';
             };
             reader.readAsText(file);
