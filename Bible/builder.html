@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖經經文導覽產生器 (Web App)</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --verse-bg: #eef2f5;
+            --danger-color: #e74c3c;
+            --success-color: #2ecc71;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .app-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .app-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .panel {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 85vh;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .editor-scroll {
+            overflow-y: auto;
+            flex-grow: 1;
+            padding-right: 5px;
+            margin-bottom: 15px;
+        }
+
+        .preview-scroll {
+            overflow-y: auto;
+            flex-grow: 1;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        /* 編輯器內巢狀區塊樣式 */
+        .node-editor {
+            background: #fdfdfd;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .node-editor.level-0 { border-left: 4px solid #3498db; }
+        .node-editor.level-1 { border-left: 4px solid #2ecc71; }
+        .node-editor.level-2 { border-left: 4px solid #f1c40f; }
+        .node-editor.level-3 { border-left: 4px solid #e67e22; }
+        .node-editor.level-4 { border-left: 4px solid #9b59b6; }
+        .node-editor.level-5 { border-left: 4px solid #e74c3c; }
+
+        .input-group {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 6px 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 50px;
+        }
+
+        .children-box {
+            margin-left: 15px;
+            border-left: 2px dashed #cbd5e1;
+            padding-left: 10px;
+            margin-top: 8px;
+        }
+
+        /* 按鈕樣式 */
+        .btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover { opacity: 0.85; }
+        .btn-danger { background-color: var(--danger-color); }
+        .btn-success { background-color: var(--success-color); }
+        .btn-secondary { background-color: #64748b; }
+
+        .toolbar {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* 預覽網頁樣式 (與前次相同的高穩定展開系統) */
+        .preview-app .collapsible-body {
+            display: none;
+            padding-left: 15px;
+            padding-top: 5px;
+        }
+        .preview-app .level-container.active > .collapsible-body {
+            display: block;
+        }
+        .preview-app .level-container {
+            margin-bottom: 8px;
+        }
+        .preview-app .level-header, .preview-app .verse-header {
+            background: var(--card-bg);
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 8px;
+            border: 1px solid #e2e8f0;
+            padding: 10px 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 0.95rem;
+        }
+        .preview-app .level-header:hover, .preview-app .verse-header:hover {
+            background-color: #f8fafc;
+        }
+        .preview-app .level-header::after, .preview-app .verse-header::after {
+            content: '+';
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+        .preview-app .level-container.active > .level-header::after,
+        .preview-app .verse-card.active > .verse-header::after {
+            transform: rotate(45deg);
+        }
+        .preview-app .verse-card {
+            background: var(--card-bg);
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .preview-app .verse-content {
+            display: none;
+            background-color: var(--verse-bg);
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            color: #444;
+            white-space: pre-line;
+            border-top: 1px solid #e1e8ed;
+        }
+        .preview-app .verse-card.active > .verse-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="text-align:center; margin-bottom: 15px;">
+        <h1 style="color:var(--primary-color); margin:0;">聖經經文導覽內容產生器</h1>
+        <p style="color:#666; font-size:0.9rem; margin:5px 0;">在左側自由編輯多層級資料，右側立即預覽互動網頁成果</p>
+    </div>
+
+    <div class="app-container">
+        <!-- 左側：資料編輯面板 -->
+        <div class="panel">
+            <h2>
+                資料編輯區
+                <div class="toolbar">
+                    <button class="btn btn-success" id="addRootBtn">+ 新增根目錄</button>
+                    <button class="btn btn-secondary" id="loadDemoBtn">載入範例</button>
+                </div>
+            </h2>
+            <div class="editor-scroll" id="editorContainer">
+                <!-- 動態產生的編輯節點會放在這裡 -->
+            </div>
+            <button class="btn" style="width: 100%; padding: 10px; font-size: 1rem;" id="generateBtn">更新右側預覽</button>
+        </div>
+
+        <!-- 右側：即時預覽面板 -->
+        <div class="panel">
+            <h2>
+                網頁互動預覽
+                <div>
+                    <button class="btn btn-secondary" id="expandAllPreview">全部展開</button>
+                    <button class="btn btn-secondary" id="collapseAllPreview">全部收合</button>
+                </div>
+            </h2>
+            <div class="preview-scroll">
+                <div id="previewApp" class="preview-app"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 預設示範資料
+        let appData = [
+            {
+                title: "第一章：救恩的確據",
+                children: [
+                    {
+                        title: "1. 神的愛與計劃",
+                        children: [
+                            { ref: "約翰福音 3:16", content: "神愛世人，甚至將祂的獨生子賜給他們..." },
+                            { ref: "羅馬書 5:8", content: "惟有基督在我還作罪人的時候為我們死..." }
+                        ]
+                    }
+                ]
+            }
+        ];
+
+        const editorContainer = document.getElementById('editorContainer');
+        const previewApp = document.getElementById('previewApp');
+
+        // 遞迴渲染編輯器畫面
+        function renderEditor(dataArray, parentContainer, depth = 0) {
+            parentContainer.innerHTML = '';
+            
+            dataArray.forEach((item, index) => {
+                const nodeDiv = document.createElement('div');
+                nodeDiv.className = `node-editor level-${depth % 6}`;
+
+                // 判斷是分類節點還是經文節點
+                const isVerse = item.ref !== undefined;
+
+                if (isVerse) {
+                    nodeDiv.innerHTML = `
+                        <div class="input-group">
+                            <span style="font-size:0.8rem; font-weight:bold; color:#e67e22;">[經文]</span>
+                            <input type="text" class="edit-ref" value="${item.ref || ''}" placeholder="經文出處 (例: 約翰三:16)">
+                            <button class="btn btn-danger remove-btn">刪除</button>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="edit-content" placeholder="經文內容...">${item.content || ''}</textarea>
+                        </div>
+                    `;
+                } else {
+                    nodeDiv.innerHTML = `
+                        <div class="input-group">
+                            <span style="font-size:0.8rem; font-weight:bold; color:#2980b9;">[第${depth+1}層]</span>
+                            <input type="text" class="edit-title" value="${item.title || ''}" placeholder="輸入層級標題...">
+                            <button class="btn btn-success add-sub-node">+ 子分類</button>
+                            <button class="btn btn-success add-sub-verse" style="background-color:#8e44ad;">+ 經文</button>
+                            <button class="btn btn-danger remove-btn">刪除</button>
+                        </div>
+                        <div class="children-box"></div>
+                    `;
+
+                    // 綁定子節點容器
+                    const childrenBox = nodeDiv.querySelector('.children-box');
+                    if (item.children && Array.isArray(item.children)) {
+                        renderEditor(item.children, childrenBox, depth + 1);
+                    }
+
+                    // 按鈕事件：新增子分類
+                    nodeDiv.querySelector('.add-sub-node').addEventListener('click', () => {
+                        if (!item.children) item.children = [];
+                        item.children.push({ title: "新分類標題", children: [] });
+                        updateEditorAndPreview();
+                    });
+
+                    // 按鈕事件：新增經文
+                    nodeDiv.querySelector('.add-sub-verse').addEventListener('click', () => {
+                        if (!item.children) item.children = [];
+                        item.children.push({ ref: "經文出處", content: "請輸入經文內容..." });
+                        updateEditorAndPreview();
+                    });
+                }
+
+                // 刪除按鈕事件
+                nodeDiv.querySelector('.remove-btn').addEventListener('click', () => {
+                    dataArray.splice(index, 1);
+                    updateEditorAndPreview();
+                });
+
+                // 輸入即時同步回資料結構
+                const titleInput = nodeDiv.querySelector('.edit-title');
+                if (titleInput) {
+                    titleInput.addEventListener('input', (e) => { item.title = e.target.value; });
+                }
+                const refInput = nodeDiv.querySelector('.edit-ref');
+                if (refInput) {
+                    refInput.addEventListener('input', (e) => { item.ref = e.target.value; });
+                }
+                const contentInput = nodeDiv.querySelector('.edit-content');
+                if (contentInput) {
+                    contentInput.addEventListener('input', (e) => { item.content = e.target.value; });
+                }
+
+                parentContainer.appendChild(nodeDiv);
+            });
+        }
+
+        // 遞迴渲染右側預覽網頁
+        function renderPreview(dataArray, targetElement) {
+            targetElement.innerHTML = '';
+            dataArray.forEach(nodeData => {
+                if (nodeData.ref !== undefined) {
+                    // 渲染經文卡片
+                    const verseCard = document.createElement('div');
+                    verseCard.className = 'verse-card';
+                    verseCard.innerHTML = `
+                        <div class="verse-header">${nodeData.ref}</div>
+                        <div class="verse-content">${nodeData.content}</div>
+                    `;
+                    verseCard.querySelector('.verse-header').addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        verseCard.classList.toggle('active');
+                    });
+                    targetElement.appendChild(verseCard);
+                } else if (nodeData.title) {
+                    // 渲染層級容器
+                    const container = document.createElement('div');
+                    container.className = 'level-container';
+
+                    const header = document.createElement('div');
+                    header.className = 'level-header';
+                    header.innerText = nodeData.title;
+
+                    const body = document.createElement('div');
+                    body.className = 'collapsible-body';
+
+                    header.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        container.classList.toggle('active');
+                    });
+
+                    container.appendChild(header);
+
+                    if (nodeData.children && Array.isArray(nodeData.children)) {
+                        renderPreview(nodeData.children, body);
+                    }
+
+                    container.appendChild(body);
+                    targetElement.appendChild(container);
+                }
+            });
+        }
+
+        function updateEditorAndPreview() {
+            renderEditor(appData, editorContainer, 0);
+            renderPreview(appData, previewApp);
+        }
+
+        // 頂層按鈕事件
+        document.getElementById('addRootBtn').addEventListener('click', () => {
+            appData.push({ title: "新大主題", children: [] });
+            updateEditorAndPreview();
+        });
+
+        document.getElementById('loadDemoBtn').addEventListener('click', () => {
+            appData = [
+                {
+                    title: "第 1 層：大主題",
+                    children: [
+                        {
+                            title: "第 2 層：次主題",
+                            children: [
+                                {
+                                    title: "第 3 層：篇章",
+                                    children: [
+                                        {
+                                            title: "第 4 層：小節",
+                                            children: [
+                                                {
+                                                    title: "第 5 層：群組",
+                                                    children: [
+                                                        {
+                                                            title: "第 6 層：最末階分類",
+                                                            children: [
+                                                                { ref: "約翰福音 3:16", content: "神愛世人，甚至將祂的獨生子賜給他們..." }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ];
+            updateEditorAndPreview();
+        });
+
+        document.getElementById('generateBtn').addEventListener('click', () => {
+            renderPreview(appData, previewApp);
+            alert("右側預覽已重新整理完成！");
+        });
+
+        document.getElementById('expandAllPreview').addEventListener('click', () => {
+            previewApp.querySelectorAll('.level-container').forEach(el => el.classList.add('active'));
+            previewApp.querySelectorAll('.verse-card').forEach(el => el.classList.add('active'));
+        });
+
+        document.getElementById('collapseAllPreview').addEventListener('click', () => {
+            previewApp.querySelectorAll('.level-container').forEach(el => el.classList.remove('active'));
+            previewApp.querySelectorAll('.verse-card').forEach(el => el.classList.remove('active'));
+        });
+
+        // 初始化
+        updateEditorAndPreview();
+    </script>
+</body>
+</html>
