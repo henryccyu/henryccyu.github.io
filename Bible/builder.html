@@ -178,13 +178,28 @@
             border-top: 1px solid #e1e8ed;
         }
         .preview-app .verse-card.active > .verse-content { display: block; }
+
+        /* 匯出選單彈窗 */
+        #exportModal {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 1000;
+        }
+        .modal-content {
+            background: white; padding: 25px; border-radius: 8px; width: 350px; text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .modal-content h3 { margin-top: 0; color: var(--primary-color); }
+        .modal-btn { display: block; width: 100%; padding: 10px; margin: 10px 0; border: none; border-radius: 6px; cursor: pointer; font-size: 0.95rem; font-weight: bold; }
+        .modal-btn-collapsible { background-color: var(--accent-color); color: white; }
+        .modal-btn-static { background-color: #27ae60; color: white; }
+        .modal-btn-cancel { background-color: #95a5a6; color: white; }
     </style>
 </head>
 <body>
 
     <div style="text-align:center; margin-bottom: 15px;">
         <h1 style="color:var(--primary-color); margin:0;">聖經經文導覽內容產生器</h1>
-        <p style="color:#666; font-size:0.9rem; margin:5px 0;">支援自訂網頁標題、折疊、層級搬移與一鍵匯出</p>
+        <p style="color:#666; font-size:0.9rem; margin:5px 0;">支援折疊、跨層級搬移與雙版本獨立網頁匯出</p>
     </div>
 
     <div class="app-container">
@@ -198,7 +213,6 @@
                 </div>
             </h2>
             
-            <!-- 新增：自訂網頁標題輸入區 -->
             <div style="margin-bottom: 12px; background: #f1f5f9; padding: 10px; border-radius: 6px;">
                 <label for="pageTitleInput" style="font-size: 0.85rem; font-weight: bold; color: var(--primary-color); display: block; margin-bottom: 4px;">🏷️ 網頁主標題（匯出後顯示於頁面頂端）：</label>
                 <input type="text" id="pageTitleInput" value="聖經經文導覽" placeholder="請輸入標題...">
@@ -220,7 +234,6 @@
                     <button class="btn btn-export" id="exportHtmlBtn">📥 匯出獨立網頁</button>
                 </div>
             </h2>
-            <!-- 預覽區頂端動態標題 -->
             <div id="previewHeaderTitle" style="text-align: center; font-weight: bold; font-size: 1.2rem; color: var(--primary-color); margin-bottom: 10px;">聖經經文導覽</div>
             
             <div style="margin-bottom: 10px; display: flex; gap: 8px;">
@@ -233,13 +246,24 @@
         </div>
     </div>
 
+    <!-- 匯出選項彈窗 -->
+    <div id="exportModal">
+        <div class="modal-content">
+            <h3>選擇匯出網頁版本</h3>
+            <p style="font-size: 0.85rem; color: #666;">請選擇您希望產生的網頁呈現方式：</p>
+            <button class="modal-btn modal-btn-collapsible" id="exportCollapsibleVersion">🔵 互動折疊版（支援點擊收合）</button>
+            <button class="modal-btn modal-btn-static" id="exportStaticVersion">🟢 傳統文件版（使用 h1~h6 標題）</button>
+            <button class="modal-btn modal-btn-cancel" id="closeExportModal">取消</button>
+        </div>
+    </div>
+
     <script>
         let pageTitle = "聖經經文導覽";
         let appData = [
             {
                 title: "第一章：救恩的確據",
                 children: [
-                    { ref: "約翰一書 5:11-12", content: "這見證就是神賜給我們永生...人有了神的兒子就有生命..." },
+                    { ref: "約翰一書 5:11-12", content: "這見證就是神賜給我們永生..." },
                     {
                         title: "1. 神的愛與計劃",
                         children: [
@@ -254,6 +278,7 @@
         const previewApp = document.getElementById('previewApp');
         const pageTitleInput = document.getElementById('pageTitleInput');
         const previewHeaderTitle = document.getElementById('previewHeaderTitle');
+        const exportModal = document.getElementById('exportModal');
 
         pageTitleInput.addEventListener('input', (e) => {
             pageTitle = e.target.value;
@@ -262,11 +287,9 @@
 
         function renderEditor(dataArray, parentContainer, depth = 0, parentArrayRef = null, currentIndex = -1) {
             parentContainer.innerHTML = '';
-            
             dataArray.forEach((item, index) => {
                 const nodeDiv = document.createElement('div');
                 const isVerse = item.ref !== undefined;
-                
                 nodeDiv.className = 'node-editor ' + (isVerse ? 'level-type-verse' : 'level-type-node');
 
                 const nodeToolbar = document.createElement('div');
@@ -275,9 +298,7 @@
                 const toggleCollapseBtn = document.createElement('button');
                 toggleCollapseBtn.className = 'btn btn-secondary';
                 toggleCollapseBtn.textContent = '📂 摺疊/展開';
-                toggleCollapseBtn.addEventListener('click', () => {
-                    nodeDiv.classList.toggle('collapsed');
-                });
+                toggleCollapseBtn.addEventListener('click', () => { nodeDiv.classList.toggle('collapsed'); });
                 nodeToolbar.appendChild(toggleCollapseBtn);
 
                 if (index > 0) {
@@ -337,66 +358,42 @@
                 if (isVerse) {
                     const group1 = document.createElement('div');
                     group1.className = 'input-group';
-                    
                     const span = document.createElement('span');
-                    span.style.fontSize = '0.8rem';
-                    span.style.fontWeight = 'bold';
-                    span.style.color = 'var(--verse-color)';
+                    span.style.fontSize = '0.8rem'; span.style.fontWeight = 'bold'; span.style.color = 'var(--verse-color)';
                     span.textContent = '[經文]';
-                    
                     const input = document.createElement('input');
-                    input.type = 'text';
-                    input.className = 'edit-ref';
-                    input.value = item.ref || '';
+                    input.type = 'text'; input.className = 'edit-ref'; input.value = item.ref || '';
                     input.placeholder = '經文出處';
                     input.addEventListener('input', (e) => { item.ref = e.target.value; });
 
                     const delBtn = document.createElement('button');
-                    delBtn.className = 'btn btn-danger remove-btn';
-                    delBtn.textContent = '刪除';
-                    delBtn.addEventListener('click', () => {
-                        dataArray.splice(index, 1);
-                        updateEditorAndPreview();
-                    });
+                    delBtn.className = 'btn btn-danger remove-btn'; delBtn.textContent = '刪除';
+                    delBtn.addEventListener('click', () => { dataArray.splice(index, 1); updateEditorAndPreview(); });
 
-                    group1.appendChild(span);
-                    group1.appendChild(input);
-                    group1.appendChild(delBtn);
+                    group1.appendChild(span); group1.appendChild(input); group1.appendChild(delBtn);
 
                     const group2 = document.createElement('div');
-                    group2.className = 'input-group';
-                    group2.style.marginBottom = '0';
-
+                    group2.className = 'input-group'; group2.style.marginBottom = '0';
                     const textarea = document.createElement('textarea');
-                    textarea.className = 'edit-content';
-                    textarea.placeholder = '經文內容...';
+                    textarea.className = 'edit-content'; textarea.placeholder = '經文內容...';
                     textarea.textContent = item.content || '';
                     textarea.addEventListener('input', (e) => { item.content = e.target.value; });
-
                     group2.appendChild(textarea);
 
-                    nodeDiv.appendChild(group1);
-                    nodeDiv.appendChild(group2);
+                    nodeDiv.appendChild(group1); nodeDiv.appendChild(group2);
                 } else {
                     const group1 = document.createElement('div');
                     group1.className = 'input-group';
-
                     const span = document.createElement('span');
-                    span.style.fontSize = '0.8rem';
-                    span.style.fontWeight = 'bold';
-                    span.style.color = 'var(--accent-color)';
+                    span.style.fontSize = '0.8rem'; span.style.fontWeight = 'bold'; span.style.color = 'var(--accent-color)';
                     span.textContent = '[第' + (depth + 1) + '層]';
-
                     const input = document.createElement('input');
-                    input.type = 'text';
-                    input.className = 'edit-title';
-                    input.value = item.title || '';
+                    input.type = 'text'; input.className = 'edit-title'; input.value = item.title || '';
                     input.placeholder = '輸入標題...';
                     input.addEventListener('input', (e) => { item.title = e.target.value; });
 
                     const subNodeBtn = document.createElement('button');
-                    subNodeBtn.className = 'btn btn-success';
-                    subNodeBtn.textContent = '+子分類';
+                    subNodeBtn.className = 'btn btn-success'; subNodeBtn.textContent = '+子分類';
                     subNodeBtn.addEventListener('click', () => {
                         if (!item.children) item.children = [];
                         item.children.push({ title: "新子分類", children: [] });
@@ -404,8 +401,7 @@
                     });
 
                     const subVerseBtn = document.createElement('button');
-                    subVerseBtn.className = 'btn btn-verse';
-                    subVerseBtn.textContent = '+經文';
+                    subVerseBtn.className = 'btn btn-verse'; subVerseBtn.textContent = '+經文';
                     subVerseBtn.addEventListener('click', () => {
                         if (!item.children) item.children = [];
                         item.children.push({ ref: "經文出處", content: "經文內容..." });
@@ -413,29 +409,18 @@
                     });
 
                     const delBtn = document.createElement('button');
-                    delBtn.className = 'btn btn-danger remove-btn';
-                    delBtn.textContent = '刪除';
-                    delBtn.addEventListener('click', () => {
-                        dataArray.splice(index, 1);
-                        updateEditorAndPreview();
-                    });
+                    delBtn.className = 'btn btn-danger remove-btn'; delBtn.textContent = '刪除';
+                    delBtn.addEventListener('click', () => { dataArray.splice(index, 1); updateEditorAndPreview(); });
 
-                    group1.appendChild(span);
-                    group1.appendChild(input);
-                    group1.appendChild(subNodeBtn);
-                    group1.appendChild(subVerseBtn);
-                    group1.appendChild(delBtn);
+                    group1.appendChild(span); group1.appendChild(input); group1.appendChild(subNodeBtn); group1.appendChild(subVerseBtn); group1.appendChild(delBtn);
 
                     const childrenBox = document.createElement('div');
                     childrenBox.className = 'children-box';
-
                     if (!item.children) item.children = [];
                     renderEditor(item.children, childrenBox, depth + 1, dataArray, index);
 
-                    nodeDiv.appendChild(group1);
-                    nodeDiv.appendChild(childrenBox);
+                    nodeDiv.appendChild(group1); nodeDiv.appendChild(childrenBox);
                 }
-
                 parentContainer.appendChild(nodeDiv);
             });
         }
@@ -446,45 +431,29 @@
                 if (nodeData.ref !== undefined) {
                     const verseCard = document.createElement('div');
                     verseCard.className = 'verse-card';
-
                     const verseHeader = document.createElement('div');
                     verseHeader.className = 'verse-header';
                     verseHeader.textContent = nodeData.ref;
-
                     const verseContent = document.createElement('div');
                     verseContent.className = 'verse-content';
                     verseContent.textContent = nodeData.content;
-
-                    verseHeader.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        verseCard.classList.toggle('active');
-                    });
-
+                    verseHeader.addEventListener('click', (e) => { e.stopPropagation(); verseCard.classList.toggle('active'); });
                     verseCard.appendChild(verseHeader);
                     verseCard.appendChild(verseContent);
                     targetElement.appendChild(verseCard);
                 } else if (nodeData.title) {
                     const container = document.createElement('div');
                     container.className = 'level-container';
-
                     const header = document.createElement('div');
                     header.className = 'level-header';
                     header.textContent = nodeData.title;
-
                     const body = document.createElement('div');
                     body.className = 'collapsible-body';
-
-                    header.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        container.classList.toggle('active');
-                    });
-
+                    header.addEventListener('click', (e) => { e.stopPropagation(); container.classList.toggle('active'); });
                     container.appendChild(header);
-
                     if (nodeData.children && Array.isArray(nodeData.children)) {
                         renderPreview(nodeData.children, body);
                     }
-
                     container.appendChild(body);
                     targetElement.appendChild(container);
                 }
@@ -529,41 +498,30 @@
 
         const importHtmlTriggerBtn = document.getElementById('importHtmlTriggerBtn');
         const importHtmlFile = document.getElementById('importHtmlFile');
-
-        importHtmlTriggerBtn.addEventListener('click', () => {
-            importHtmlFile.click();
-        });
+        importHtmlTriggerBtn.addEventListener('click', () => { importHtmlFile.click(); });
 
         importHtmlFile.addEventListener('change', (event) => {
             const file = event.target.files[0];
             if (!file) return;
-
             const reader = new FileReader();
             reader.onload = function(e) {
                 const htmlContent = e.target.result;
                 try {
-                    // 抓取自訂標題
                     const titleMatch = htmlContent.match(/<title>(.*?)<\/title>/);
                     if (titleMatch && titleMatch[1]) {
                         pageTitle = titleMatch[1];
                         pageTitleInput.value = pageTitle;
                         previewHeaderTitle.textContent = pageTitle;
                     }
-
-                    // 抓取資料
-                    const match = htmlContent.match(/const\s+rawData\s*=\s*(\[\[\s*[\s\S]*?\]\]|\[[\s\S]*?\]);\s*const\s+appElement/);
+                    const match = htmlContent.match(/const\s+rawData\s*=\s*(\[\[\s*[\s\S]*?\]\]|\[[\s\S]*?\]);\s*(const\s+appElement|function)/);
                     if (match && match[1]) {
                         const parsedData = JSON.parse(match[1]);
                         if (Array.isArray(parsedData)) {
                             appData = parsedData;
                             updateEditorAndPreview();
                             alert('成功讀取網頁檔案與標題，已載入編輯區！');
-                        } else {
-                            throw new Error('資料格式不符');
-                        }
-                    } else {
-                        throw new Error('找不到對應的資料結構');
-                    }
+                        } else { throw new Error('資料格式不符'); }
+                    } else { throw new Error('找不到對應的資料結構'); }
                 } catch (err) {
                     alert('讀取失敗：此檔案可能不是由本系統所匯出的有效 HTML 檔案。');
                     console.error(err);
@@ -583,105 +541,128 @@
             previewApp.querySelectorAll('.verse-card').forEach(el => el.classList.remove('active'));
         });
 
-        document.getElementById('exportHtmlBtn').addEventListener('click', () => {
+        // 彈窗控制
+        const exportHtmlBtn = document.getElementById('exportHtmlBtn');
+        exportHtmlBtn.addEventListener('click', () => { exportModal.style.display = 'flex'; });
+        document.getElementById('closeExportModal').addEventListener('click', () => { exportModal.style.display = 'none'; });
+
+        // 1. 匯出互動折疊版
+        document.getElementById('exportCollapsibleVersion').addEventListener('click', () => {
+            exportModal.style.display = 'none';
             const jsonStr = JSON.stringify(appData, null, 2);
             const currentTitle = pageTitle || '聖經經文導覽';
-            
-            const standaloneCode = '<!DOCTYPE html>\n' +
-'<html lang="zh-Hant">\n' +
-'<head>\n' +
-'    <meta charset="UTF-8">\n' +
-'    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
-'    <title>' + currentTitle + '</title>\n' +
-'    <style>\n' +
-'        :root { --primary-color: #2c3e50; --accent-color: #3498db; --bg-color: #f8f9fa; --card-bg: #ffffff; --text-color: #333333; --verse-bg: #eef2f5; --verse-color: #722f37; }\n' +
-'        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 20px; line-height: 1.6; }\n' +
-'        .container { max-width: 800px; margin: 0 auto; }\n' +
-'        header { text-align: center; margin-bottom: 20px; }\n' +
-'        header h1 { color: var(--primary-color); margin-bottom: 5px; }\n' +
-'        .controls { display: flex; justify-content: center; gap: 10px; margin-bottom: 25px; }\n' +
-'        .btn { background-color: var(--card-bg); border: 1px solid #cbd5e1; color: var(--primary-color); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; }\n' +
-'        .btn:hover { background-color: var(--accent-color); color: white; border-color: var(--accent-color); }\n' +
-'        .collapsible-body { display: none; padding-left: 15px; padding-top: 5px; }\n' +
-'        .level-container.active > .collapsible-body { display: block; }\n' +
-'        .level-container { margin-bottom: 8px; }\n' +
-'        .level-header, .verse-header { background: var(--card-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 8px; border: 1px solid #e2e8f0; padding: 10px 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--primary-color); }\n' +
-'        .verse-header { color: var(--verse-color); }\n' +
-'        .level-header:hover, .verse-header:hover { background-color: #f8fafc; }\n' +
-'        .level-header::after, .verse-header::after { content: "+"; color: var(--accent-color); transition: transform 0.3s ease; }\n' +
-'        .verse-header::after { color: var(--verse-color); }\n' +
-'        .level-container.active > .level-header::after, .verse-card.active > .verse-header::after { transform: rotate(45deg); }\n' +
-'        .verse-card { background: var(--card-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 8px; border: 1px solid #e2e8f0; }\n' +
-'        .verse-content { display: none; background-color: var(--verse-bg); padding: 12px 15px; font-size: 1rem; color: #444; white-space: pre-line; border-top: 1px solid #e1e8ed; }\n' +
-'        .verse-card.active > .verse-content { display: block; }\n' +
-'    </style>\n' +
-'</head>\n' +
-'<body>\n' +
-'    <div class="container">\n' +
-'        <header><h1>' + currentTitle + '</h1></header>\n' +
-'        <div class="controls">\n' +
-'            <button class="btn" id="expandAllBtn">全部展開</button>\n' +
-'            <button class="btn" id="collapseAllBtn">全部收合</button>\n' +
-'        </div>\n' +
-'        <div id="app"></div>\n' +
-'    </div>\n' +
-'    <script>\n' +
-'        const rawData = ' + jsonStr + ';\n' +
-'        const appElement = document.getElementById("app");\n' +
-'        function renderNode(nodeData, targetElement) {\n' +
-'            if (nodeData.ref !== undefined) {\n' +
-'                const verseCard = document.createElement("div");\n' +
-'                verseCard.className = "verse-card";\n' +
-'                const verseHeader = document.createElement("div");\n' +
-'                verseHeader.className = "verse-header";\n' +
-'                verseHeader.textContent = nodeData.ref;\n' +
-'                const verseContent = document.createElement("div");\n' +
-'                verseContent.className = "verse-content";\n' +
-'                verseContent.textContent = nodeData.content;\n' +
-'                verseHeader.addEventListener("click", (e) => { e.stopPropagation(); verseCard.classList.toggle("active"); });\n' +
-'                verseCard.appendChild(verseHeader);\n' +
-'                verseCard.appendChild(verseContent);\n' +
-'                targetElement.appendChild(verseCard);\n' +
-'            } else if (nodeData.title) {\n' +
-'                const container = document.createElement("div");\n' +
-'                container.className = "level-container";\n' +
-'                const header = document.createElement("div");\n' +
-'                header.className = "level-header";\n' +
-'                header.textContent = nodeData.title;\n' +
-'                const body = document.createElement("div");\n' +
-'                body.className = "collapsible-body";\n' +
-'                header.addEventListener("click", (e) => { e.stopPropagation(); container.classList.toggle("active"); });\n' +
-'                container.appendChild(header);\n' +
-'                if (nodeData.children && Array.isArray(nodeData.children)) {\n' +
-'                    nodeData.children.forEach(child => renderNode(child, body));\n' +
-'                }\n' +
-'                container.appendChild(body);\n' +
-'                targetElement.appendChild(container);\n' +
-'            }\n' +
-'        }\n' +
-'        rawData.forEach(item => renderNode(item, appElement));\n' +
-'        document.getElementById("expandAllBtn").addEventListener("click", () => {\n' +
-'            document.querySelectorAll(".level-container").forEach(el => el.classList.add("active"));\n' +
-'            document.querySelectorAll(".verse-card").forEach(el => el.classList.add("active"));\n' +
-'        });\n' +
-'        document.getElementById("collapseAllBtn").addEventListener("click", () => {\n' +
-'            document.querySelectorAll(".level-container").forEach(el => el.classList.remove("active"));\n' +
-'            document.querySelectorAll(".verse-card").forEach(el => el.classList.remove("active"));\n' +
-'        });\n' +
-'    <' + '/script>\n' +
-'</body>\n' +
-'</html>';
+            const code = '<!DOCTYPE html>\n<html lang="zh-Hant">\n<head>\n' +
+'<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+'<title>' + currentTitle + '</title>\n' +
+'<style>\n' +
+':root { --primary-color: #2c3e50; --accent-color: #3498db; --bg-color: #f8f9fa; --card-bg: #ffffff; --text-color: #333333; --verse-bg: #eef2f5; --verse-color: #722f37; }\n' +
+'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 20px; line-height: 1.6; }\n' +
+'.container { max-width: 800px; margin: 0 auto; }\n' +
+'header { text-align: center; margin-bottom: 20px; }\n' +
+'header h1 { color: var(--primary-color); margin-bottom: 5px; }\n' +
+'.controls { display: flex; justify-content: center; gap: 10px; margin-bottom: 25px; }\n' +
+'.btn { background-color: var(--card-bg); border: 1px solid #cbd5e1; color: var(--primary-color); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; }\n' +
+'.btn:hover { background-color: var(--accent-color); color: white; border-color: var(--accent-color); }\n' +
+'.collapsible-body { display: none; padding-left: 15px; padding-top: 5px; }\n' +
+'.level-container.active > .collapsible-body { display: block; }\n' +
+'.level-container { margin-bottom: 8px; }\n' +
+'.level-header, .verse-header { background: var(--card-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 8px; border: 1px solid #e2e8f0; padding: 10px 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--primary-color); }\n' +
+'.verse-header { color: var(--verse-color); }\n' +
+'.level-header:hover, .verse-header:hover { background-color: #f8fafc; }\n' +
+'.level-header::after, .verse-header::after { content: "+"; color: var(--accent-color); transition: transform 0.3s ease; }\n' +
+'.verse-header::after { color: var(--verse-color); }\n' +
+'.level-container.active > .level-header::after, .verse-card.active > .verse-header::after { transform: rotate(45deg); }\n' +
+'.verse-card { background: var(--card-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 8px; border: 1px solid #e2e8f0; }\n' +
+'.verse-content { display: none; background-color: var(--verse-bg); padding: 12px 15px; font-size: 1rem; color: #444; white-space: pre-line; border-top: 1px solid #e1e8ed; }\n' +
+'.verse-card.active > .verse-content { display: block; }\n' +
+'</style>\n</head>\n<body>\n<div class="container">\n' +
+'<header><h1>' + currentTitle + '</h1></header>\n' +
+'<div class="controls"><button class="btn" id="expandAllBtn">全部展開</button><button class="btn" id="collapseAllBtn">全部收合</button></div>\n' +
+'<div id="app"></div>\n</div>\n<script>\n' +
+'const rawData = ' + jsonStr + ';\n' +
+'const appElement = document.getElementById("app");\n' +
+'function renderNode(nodeData, targetElement) {\n' +
+'    if (nodeData.ref !== undefined) {\n' +
+'        const verseCard = document.createElement("div"); verseCard.className = "verse-card";\n' +
+'        const verseHeader = document.createElement("div"); verseHeader.className = "verse-header"; verseHeader.textContent = nodeData.ref;\n' +
+'        const verseContent = document.createElement("div"); verseContent.className = "verse-content"; verseContent.textContent = nodeData.content;\n' +
+'        verseHeader.addEventListener("click", (e) => { e.stopPropagation(); verseCard.classList.toggle("active"); });\n' +
+'        verseCard.appendChild(verseHeader); verseCard.appendChild(verseContent); targetElement.appendChild(verseCard);\n' +
+'    } else if (nodeData.title) {\n' +
+'        const container = document.createElement("div"); container.className = "level-container";\n' +
+'        const header = document.createElement("div"); header.className = "level-header"; header.textContent = nodeData.title;\n' +
+'        const body = document.createElement("div"); body.className = "collapsible-body";\n' +
+'        header.addEventListener("click", (e) => { e.stopPropagation(); container.classList.toggle("active"); });\n' +
+'        container.appendChild(header);\n' +
+'        if (nodeData.children && Array.isArray(nodeData.children)) { nodeData.children.forEach(child => renderNode(child, body)); }\n' +
+'        container.appendChild(body); targetElement.appendChild(container);\n' +
+'    }\n' +
+'}\n' +
+'rawData.forEach(item => renderNode(item, appElement));\n' +
+'document.getElementById("expandAllBtn").addEventListener("click", () => {\n' +
+'    document.querySelectorAll(".level-container").forEach(el => el.classList.add("active"));\n' +
+'    document.querySelectorAll(".verse-card").forEach(el => el.classList.add("active"));\n' +
+'});\n' +
+'document.getElementById("collapseAllBtn").addEventListener("click", () => {\n' +
+'    document.querySelectorAll(".level-container").forEach(el => el.classList.remove("active"));\n' +
+'    document.querySelectorAll(".verse-card").forEach(el => el.classList.remove("active"));\n' +
+'});\n<' + '/script>\n</body>\n</html>';
 
-            const blob = new Blob([standaloneCode], { type: 'text/html;charset=utf-8' });
+            downloadFile(code, 'bible_guide_collapsible.html');
+        });
+
+        // 2. 匯出傳統文件版 (使用 h1~h6 且不折疊)
+        document.getElementById('exportStaticVersion').addEventListener('click', () => {
+            exportModal.style.display = 'none';
+            const jsonStr = JSON.stringify(appData, null, 2);
+            const currentTitle = pageTitle || '聖經經文導覽';
+            const code = '<!DOCTYPE html>\n<html lang="zh-Hant">\n<head>\n' +
+'<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+'<title>' + currentTitle + '</title>\n' +
+'<style>\n' +
+'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f8f9fa; color: #333333; margin: 0; padding: 30px; line-height: 1.8; }\n' +
+'.container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }\n' +
+'h1.main-title { text-align: center; color: #2c3e50; margin-bottom: 30px; border-bottom: 2px solid #eee; padding-bottom: 15px; }\n' +
+'h1, h2, h3, h4, h5, h6 { color: #2c3e50; margin-top: 1.5em; margin-bottom: 0.5em; }\n' +
+'.verse-box { background-color: #fef9e7; border-left: 4px solid #f39c12; padding: 12px 18px; margin: 15px 0; border-radius: 4px; }\n' +
+'.verse-ref { font-weight: bold; color: #d35400; margin-bottom: 5px; }\n' +
+'.verse-text { white-space: pre-line; color: #444; font-size: 1rem; }\n' +
+'</style>\n</head>\n<body>\n<div class="container">\n' +
+'<h1 class="main-title">' + currentTitle + '</h1>\n' +
+'<div id="app"></div>\n</div>\n<script>\n' +
+'const rawData = ' + jsonStr + ';\n' +
+'const appElement = document.getElementById("app");\n' +
+'function renderStaticNode(nodeData, targetElement, depth) {\n' +
+'    let tagNum = Math.min(depth, 6);\n' +
+'    if (nodeData.ref !== undefined) {\n' +
+'        const verseDiv = document.createElement("div"); verseDiv.className = "verse-box";\n' +
+'        const refDiv = document.createElement("div"); refDiv.className = "verse-ref"; refDiv.textContent = "📖 " + nodeData.ref;\n' +
+'        const textDiv = document.createElement("div"); textDiv.className = "verse-text"; textDiv.textContent = nodeData.content;\n' +
+'        verseDiv.appendChild(refDiv); verseDiv.appendChild(textDiv); targetElement.appendChild(verseDiv);\n' +
+'    } else if (nodeData.title) {\n' +
+'        const heading = document.createElement("h" + tagNum);\n' +
+'        heading.textContent = nodeData.title;\n' +
+'        targetElement.appendChild(heading);\n' +
+'        if (nodeData.children && Array.isArray(nodeData.children)) {\n' +
+'            nodeData.children.forEach(child => renderStaticNode(child, targetElement, depth + 1));\n' +
+'        }\n' +
+'    }\n' +
+'}\n' +
+'rawData.forEach(item => renderStaticNode(item, appElement, 1));\n' +
+'<' + '/script>\n</body>\n</html>';
+
+            downloadFile(code, 'bible_guide_document.html');
+        });
+
+        function downloadFile(content, filename) {
+            const blob = new Blob([content], { type: 'text/html;charset=utf-8' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
-            a.href = url;
-            a.download = 'bible_guide.html';
-            document.body.appendChild(a);
-            a.click();
+            a.href = url; a.download = filename;
+            document.body.appendChild(a); a.click();
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
-        });
+        }
 
         updateEditorAndPreview();
     </script>
