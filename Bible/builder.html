@@ -236,55 +236,109 @@
                 const nodeDiv = document.createElement('div');
                 const isVerse = item.ref !== undefined;
                 
-                nodeDiv.className = `node-editor ${isVerse ? 'level-type-verse' : 'level-type-node'}`;
+                nodeDiv.className = 'node-editor ' + (isVerse ? 'level-type-verse' : 'level-type-node');
 
                 if (isVerse) {
-                    nodeDiv.innerHTML = `
-                        <div class="input-group">
-                            <span style="font-size:0.8rem; font-weight:bold; color:var(--verse-color);">[經文]</span>
-                            <input type="text" class="edit-ref" value="${item.ref || ''}" placeholder="經文出處">
-                            <button class="btn btn-danger remove-btn">刪除</button>
-                        </div>
-                        <div class="input-group" style="margin-bottom:0;">
-                            <textarea class="edit-content" placeholder="經文內容...">${item.content || ''}</textarea>
-                        </div>
-                    `;
-                    nodeDiv.querySelector('.edit-ref').addEventListener('input', (e) => { item.ref = e.target.value; });
-                    nodeDiv.querySelector('.edit-content').addEventListener('input', (e) => { item.content = e.target.value; });
+                    const group1 = document.createElement('div');
+                    group1.className = 'input-group';
+                    
+                    const span = document.createElement('span');
+                    span.style.fontSize = '0.8rem';
+                    span.style.fontWeight = 'bold';
+                    span.style.color = 'var(--verse-color)';
+                    span.textContent = '[經文]';
+                    
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.className = 'edit-ref';
+                    input.value = item.ref || '';
+                    input.placeholder = '經文出處';
+                    input.addEventListener('input', (e) => { item.ref = e.target.value; });
+
+                    const delBtn = document.createElement('button');
+                    delBtn.className = 'btn btn-danger remove-btn';
+                    delBtn.textContent = '刪除';
+                    delBtn.addEventListener('click', () => {
+                        dataArray.splice(index, 1);
+                        updateEditorAndPreview();
+                    });
+
+                    group1.appendChild(span);
+                    group1.appendChild(input);
+                    group1.appendChild(delBtn);
+
+                    const group2 = document.createElement('div');
+                    group2.className = 'input-group';
+                    group2.style.marginBottom = '0';
+
+                    const textarea = document.createElement('textarea');
+                    textarea.className = 'edit-content';
+                    textarea.placeholder = '經文內容...';
+                    textarea.textContent = item.content || '';
+                    textarea.addEventListener('input', (e) => { item.content = e.target.value; });
+
+                    group2.appendChild(textarea);
+
+                    nodeDiv.appendChild(group1);
+                    nodeDiv.appendChild(group2);
                 } else {
-                    nodeDiv.innerHTML = `
-                        <div class="input-group">
-                            <span style="font-size:0.8rem; font-weight:bold; color:var(--accent-color);">[第${depth+1}層]</span>
-                            <input type="text" class="edit-title" value="${item.title || ''}" placeholder="輸入標題...">
-                            <button class="btn btn-success add-sub-node">+子分類</button>
-                            <button class="btn btn-verse add-sub-verse">+經文</button>
-                            <button class="btn btn-danger remove-btn">刪除</button>
-                        </div>
-                        <div class="children-box"></div>
-                    `;
-                    nodeDiv.querySelector('.edit-title').addEventListener('input', (e) => { item.title = e.target.value; });
+                    const group1 = document.createElement('div');
+                    group1.className = 'input-group';
 
-                    const childrenBox = nodeDiv.querySelector('.children-box');
-                    if (!item.children) item.children = [];
-                    renderEditor(item.children, childrenBox, depth + 1);
+                    const span = document.createElement('span');
+                    span.style.fontSize = '0.8rem';
+                    span.style.fontWeight = 'bold';
+                    span.style.color = 'var(--accent-color)';
+                    span.textContent = '[第' + (depth + 1) + '層]';
 
-                    nodeDiv.querySelector('.add-sub-node').addEventListener('click', () => {
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.className = 'edit-title';
+                    input.value = item.title || '';
+                    input.placeholder = '輸入標題...';
+                    input.addEventListener('input', (e) => { item.title = e.target.value; });
+
+                    const subNodeBtn = document.createElement('button');
+                    subNodeBtn.className = 'btn btn-success';
+                    subNodeBtn.textContent = '+子分類';
+                    subNodeBtn.addEventListener('click', () => {
                         if (!item.children) item.children = [];
                         item.children.push({ title: "新子分類", children: [] });
                         updateEditorAndPreview();
                     });
 
-                    nodeDiv.querySelector('.add-sub-verse').addEventListener('click', () => {
+                    const subVerseBtn = document.createElement('button');
+                    subVerseBtn.className = 'btn btn-verse';
+                    subVerseBtn.textContent = '+經文';
+                    subVerseBtn.addEventListener('click', () => {
                         if (!item.children) item.children = [];
                         item.children.push({ ref: "經文出處", content: "經文內容..." });
                         updateEditorAndPreview();
                     });
-                }
 
-                nodeDiv.querySelector('.remove-btn').addEventListener('click', () => {
-                    dataArray.splice(index, 1);
-                    updateEditorAndPreview();
-                });
+                    const delBtn = document.createElement('button');
+                    delBtn.className = 'btn btn-danger remove-btn';
+                    delBtn.textContent = '刪除';
+                    delBtn.addEventListener('click', () => {
+                        dataArray.splice(index, 1);
+                        updateEditorAndPreview();
+                    });
+
+                    group1.appendChild(span);
+                    group1.appendChild(input);
+                    group1.appendChild(subNodeBtn);
+                    group1.appendChild(subVerseBtn);
+                    group1.appendChild(delBtn);
+
+                    const childrenBox = document.createElement('div');
+                    childrenBox.className = 'children-box';
+
+                    if (!item.children) item.children = [];
+                    renderEditor(item.children, childrenBox, depth + 1);
+
+                    nodeDiv.appendChild(group1);
+                    nodeDiv.appendChild(childrenBox);
+                }
 
                 parentContainer.appendChild(nodeDiv);
             });
@@ -296,14 +350,22 @@
                 if (nodeData.ref !== undefined) {
                     const verseCard = document.createElement('div');
                     verseCard.className = 'verse-card';
-                    verseCard.innerHTML = `
-                        <div class="verse-header">${nodeData.ref}</div>
-                        <div class="verse-content">${nodeData.content}</div>
-                    `;
-                    verseCard.querySelector('.verse-header').addEventListener('click', (e) => {
+
+                    const verseHeader = document.createElement('div');
+                    verseHeader.className = 'verse-header';
+                    verseHeader.textContent = nodeData.ref;
+
+                    const verseContent = document.createElement('div');
+                    verseContent.className = 'verse-content';
+                    verseContent.textContent = nodeData.content;
+
+                    verseHeader.addEventListener('click', (e) => {
                         e.stopPropagation();
                         verseCard.classList.toggle('active');
                     });
+
+                    verseCard.appendChild(verseHeader);
+                    verseCard.appendChild(verseContent);
                     targetElement.appendChild(verseCard);
                 } else if (nodeData.title) {
                     const container = document.createElement('div');
@@ -311,7 +373,7 @@
 
                     const header = document.createElement('div');
                     header.className = 'level-header';
-                    header.innerText = nodeData.title;
+                    header.textContent = nodeData.title;
 
                     const body = document.createElement('div');
                     body.className = 'collapsible-body';
@@ -377,83 +439,91 @@
         });
 
         document.getElementById('exportHtmlBtn').addEventListener('click', () => {
-            const standaloneCode = `<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聖經經文導覽</title>
-    <style>
-        :root { --primary-color: #2c3e50; --accent-color: #3498db; --bg-color: #f8f9fa; --card-bg: #ffffff; --text-color: #333333; --verse-bg: #eef2f5; --verse-color: #722f37; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 20px; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; }
-        header { text-align: center; margin-bottom: 20px; }
-        header h1 { color: var(--primary-color); margin-bottom: 5px; }
-        .controls { display: flex; justify-content: center; gap: 10px; margin-bottom: 25px; }
-        .btn { background-color: var(--card-bg); border: 1px solid #cbd5e1; color: var(--primary-color); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; }
-        .btn:hover { background-color: var(--accent-color); color: white; border-color: var(--accent-color); }
-        .collapsible-body { display: none; padding-left: 15px; padding-top: 5px; }
-        .level-container.active > .collapsible-body { display: block; }
-        .level-container { margin-bottom: 8px; }
-        .level-header, .verse-header { background: var(--card-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 8px; border: 1px solid #e2e8f0; padding: 10px 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--primary-color); }
-        .verse-header { color: var(--verse-color); }
-        .level-header:hover, .verse-header:hover { background-color: #f8fafc; }
-        .level-header::after, .verse-header::after { content: '+'; color: var(--accent-color); transition: transform 0.3s ease; }
-        .verse-header::after { color: var(--verse-color); }
-        .level-container.active > .level-header::after, .verse-card.active > .verse-header::after { transform: rotate(45deg); }
-        .verse-card { background: var(--card-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 8px; border: 1px solid #e2e8f0; }
-        .verse-content { display: none; background-color: var(--verse-bg); padding: 12px 15px; font-size: 1rem; color: #444; white-space: pre-line; border-top: 1px solid #e1e8ed; }
-        .verse-card.active > .verse-content { display: block; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header><h1>聖經經文導覽</h1></header>
-        <div class="controls">
-            <button class="btn" id="expandAllBtn">全部展開</button>
-            <button class="btn" id="collapseAllBtn">全部收合</button>
-        </div>
-        <div id="app"></div>
-    </div>
-    <script>
-        const rawData = ${JSON.stringify(appData)};
-        const appElement = document.getElementById('app');
-        function renderNode(nodeData, targetElement) {
-            if (nodeData.ref !== undefined) {
-                const verseCard = document.createElement('div');
-                verseCard.className = 'verse-card';
-                verseCard.innerHTML = \`<div class="verse-header">\${nodeData.ref}</div><div class="verse-content">\${nodeData.content}</div>\`;
-                verseCard.querySelector('.verse-header').addEventListener('click', (e) => { e.stopPropagation(); verseCard.classList.toggle('active'); });
-                targetElement.appendChild(verseCard);
-            } else if (nodeData.title) {
-                const container = document.createElement('div');
-                container.className = 'level-container';
-                const header = document.createElement('div');
-                header.className = 'level-header';
-                header.innerText = nodeData.title;
-                const body = document.createElement('div');
-                body.className = 'collapsible-body';
-                header.addEventListener('click', (e) => { e.stopPropagation(); container.classList.toggle('active'); });
-                container.appendChild(header);
-                if (nodeData.children && Array.isArray(nodeData.children)) {
-                    nodeData.children.forEach(child => renderNode(child, body));
-                }
-                container.appendChild(body);
-                targetElement.appendChild(container);
-            }
-        }
-        rawData.forEach(item => renderNode(item, appElement));
-        document.getElementById('expandAllBtn').addEventListener('click', () => {
-            document.querySelectorAll('.level-container').forEach(el => el.classList.add('active'));
-            document.querySelectorAll('.verse-card').forEach(el => el.classList.add('active'));
-        });
-        document.getElementById('collapseAllBtn').addEventListener('click', () => {
-            document.querySelectorAll('.level-container').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.verse-card').forEach(el => el.classList.remove('active'));
-        });
-    </script>
-</body>
-</html>`;
+            const jsonStr = JSON.stringify(appData, null, 2);
+            const standaloneCode = '<!DOCTYPE html>\n' +
+'<html lang="zh-Hant">\n' +
+'<head>\n' +
+'    <meta charset="UTF-8">\n' +
+'    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+'    <title>聖經經文導覽</title>\n' +
+'    <style>\n' +
+'        :root { --primary-color: #2c3e50; --accent-color: #3498db; --bg-color: #f8f9fa; --card-bg: #ffffff; --text-color: #333333; --verse-bg: #eef2f5; --verse-color: #722f37; }\n' +
+'        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 20px; line-height: 1.6; }\n' +
+'        .container { max-width: 800px; margin: 0 auto; }\n' +
+'        header { text-align: center; margin-bottom: 20px; }\n' +
+'        header h1 { color: var(--primary-color); margin-bottom: 5px; }\n' +
+'        .controls { display: flex; justify-content: center; gap: 10px; margin-bottom: 25px; }\n' +
+'        .btn { background-color: var(--card-bg); border: 1px solid #cbd5e1; color: var(--primary-color); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; }\n' +
+'        .btn:hover { background-color: var(--accent-color); color: white; border-color: var(--accent-color); }\n' +
+'        .collapsible-body { display: none; padding-left: 15px; padding-top: 5px; }\n' +
+'        .level-container.active > .collapsible-body { display: block; }\n' +
+'        .level-container { margin-bottom: 8px; }\n' +
+'        .level-header, .verse-header { background: var(--card-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 8px; border: 1px solid #e2e8f0; padding: 10px 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--primary-color); }\n' +
+'        .verse-header { color: var(--verse-color); }\n' +
+'        .level-header:hover, .verse-header:hover { background-color: #f8fafc; }\n' +
+'        .level-header::after, .verse-header::after { content: "+"; color: var(--accent-color); transition: transform 0.3s ease; }\n' +
+'        .verse-header::after { color: var(--verse-color); }\n' +
+'        .level-container.active > .level-header::after, .verse-card.active > .verse-header::after { transform: rotate(45deg); }\n' +
+'        .verse-card { background: var(--card-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 8px; border: 1px solid #e2e8f0; }\n' +
+'        .verse-content { display: none; background-color: var(--verse-bg); padding: 12px 15px; font-size: 1rem; color: #444; white-space: pre-line; border-top: 1px solid #e1e8ed; }\n' +
+'        .verse-card.active > .verse-content { display: block; }\n' +
+'    </style>\n' +
+'</head>\n' +
+'<body>\n' +
+'    <div class="container">\n' +
+'        <header><h1>聖經經文導覽</h1></header>\n' +
+'        <div class="controls">\n' +
+'            <button class="btn" id="expandAllBtn">全部展開</button>\n' +
+'            <button class="btn" id="collapseAllBtn">全部收合</button>\n' +
+'        </div>\n' +
+'        <div id="app"></div>\n' +
+'    </div>\n' +
+'    <script>\n' +
+'        const rawData = ' + jsonStr + ';\n' +
+'        const appElement = document.getElementById("app");\n' +
+'        function renderNode(nodeData, targetElement) {\n' +
+'            if (nodeData.ref !== undefined) {\n' +
+'                const verseCard = document.createElement("div");\n' +
+'                verseCard.className = "verse-card";\n' +
+'                const verseHeader = document.createElement("div");\n' +
+'                verseHeader.className = "verse-header";\n' +
+'                verseHeader.textContent = nodeData.ref;\n' +
+'                const verseContent = document.createElement("div");\n' +
+'                verseContent.className = "verse-content";\n' +
+'                verseContent.textContent = nodeData.content;\n' +
+'                verseHeader.addEventListener("click", (e) => { e.stopPropagation(); verseCard.classList.toggle("active"); });\n' +
+'                verseCard.appendChild(verseHeader);\n' +
+'                verseCard.appendChild(verseContent);\n' +
+'                targetElement.appendChild(verseCard);\n' +
+'            } else if (nodeData.title) {\n' +
+'                const container = document.createElement("div");\n' +
+'                container.className = "level-container";\n' +
+'                const header = document.createElement("div");\n' +
+'                header.className = "level-header";\n' +
+'                header.textContent = nodeData.title;\n' +
+'                const body = document.createElement("div");\n' +
+'                body.className = "collapsible-body";\n' +
+'                header.addEventListener("click", (e) => { e.stopPropagation(); container.classList.toggle("active"); });\n' +
+'                container.appendChild(header);\n' +
+'                if (nodeData.children && Array.isArray(nodeData.children)) {\n' +
+'                    nodeData.children.forEach(child => renderNode(child, body));\n' +
+'                }\n' +
+'                container.appendChild(body);\n' +
+'                targetElement.appendChild(container);\n' +
+'            }\n' +
+'        }\n' +
+'        rawData.forEach(item => renderNode(item, appElement));\n' +
+'        document.getElementById("expandAllBtn").addEventListener("click", () => {\n' +
+'            document.querySelectorAll(".level-container").forEach(el => el.classList.add("active"));\n' +
+'            document.querySelectorAll(".verse-card").forEach(el => el.classList.add("active"));\n' +
+'        });\n' +
+'        document.getElementById("collapseAllBtn").addEventListener("click", () => {\n' +
+'            document.querySelectorAll(".level-container").forEach(el => el.classList.remove("active"));\n' +
+'            document.querySelectorAll(".verse-card").forEach(el => el.classList.remove("active"));\n' +
+'        });\n' +
+'    <' + '/script>\n' +
+'</body>\n' +
+'</html>';
 
             const blob = new Blob([standaloneCode], { type: 'text/html;charset=utf-8' });
             const url = URL.createObjectURL(blob);
