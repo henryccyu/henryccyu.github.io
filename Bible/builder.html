@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聖經經文導覽產生器 (支援同層混排經文與子層)</title>
+    <title>聖經經文導覽產生器 (支援匯出獨立網頁)</title>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -141,13 +141,14 @@
         .btn-success { background-color: var(--success-color); }
         .btn-verse { background-color: var(--verse-color); }
         .btn-secondary { background-color: #64748b; }
+        .btn-export { background-color: #e67e22; font-weight: bold; }
 
         .toolbar {
             display: flex;
             gap: 10px;
         }
 
-        /* 預覽網頁樣式 (支援同層混排) */
+        /* 預覽網頁樣式 (與匯出網頁共用結構) */
         .preview-app .collapsible-body {
             display: none;
             padding-left: 15px;
@@ -176,7 +177,7 @@
             font-size: 0.95rem;
         }
         .preview-app .verse-header {
-            color: #722f37; /* 經文標題用不同顏色突顯 */
+            color: #722f37;
         }
         .preview-app .level-header:hover, .preview-app .verse-header:hover {
             background-color: #f8fafc;
@@ -218,7 +219,7 @@
 
     <div style="text-align:center; margin-bottom: 15px;">
         <h1 style="color:var(--primary-color); margin:0;">聖經經文導覽內容產生器</h1>
-        <p style="color:#666; font-size:0.9rem; margin:5px 0;">支援任何層級「同時混排子分類與直屬經文」</p>
+        <p style="color:#666; font-size:0.9rem; margin:5px 0;">自由編排多層級資料，一鍵匯出獨立可用的互動網頁</p>
     </div>
 
     <div class="app-container">
@@ -227,23 +228,26 @@
             <h2>
                 資料編輯區
                 <div class="toolbar">
-                    <button class="btn btn-success" id="addRootNodeBtn">+ 新增根目錄分類</button>
-                    <button class="btn btn-verse" id="addRootVerseBtn">+ 新增根目錄經文</button>
+                    <button class="btn btn-success" id="addRootNodeBtn">+ 根分類</button>
+                    <button class="btn btn-verse" id="addRootVerseBtn">+ 根經文</button>
                 </div>
             </h2>
             <div class="editor-scroll" id="editorContainer"></div>
-            <button class="btn btn-secondary" style="width: 100%; padding: 10px; font-size: 1rem;" id="loadDemoBtn">載入範例資料</button>
+            <button class="btn btn-secondary" style="width: 100%; padding: 8px; font-size: 0.9rem; margin-top:5px;" id="loadDemoBtn">載入範例資料</button>
         </div>
 
-        <!-- 右側：即時預覽面板 -->
+        <!-- 右側：即時預覽與匯出面板 -->
         <div class="panel">
             <h2>
-                網頁互動預覽
-                <div>
-                    <button class="btn btn-secondary" id="expandAllPreview">全部展開</button>
-                    <button class="btn btn-secondary" id="collapseAllPreview">全部收合</button>
+                網頁預覽與匯出
+                <div class="toolbar">
+                    <button class="btn btn-export" id="exportHtmlBtn">📥 匯出獨立網頁</button>
                 </div>
             </h2>
+            <div style="margin-bottom: 10px; display: flex; gap: 8px;">
+                <button class="btn btn-secondary" style="font-size:0.8rem; padding:4px 8px;" id="expandAllPreview">全部展開</button>
+                <button class="btn btn-secondary" style="font-size:0.8rem; padding:4px 8px;" id="collapseAllPreview">全部收合</button>
+            </div>
             <div class="preview-scroll">
                 <div id="previewApp" class="preview-app"></div>
             </div>
@@ -251,14 +255,14 @@
     </div>
 
     <script>
-        // 預設示範資料：展示「最上層同時有子分類與直屬經文」
+        // 預設示範資料
         let appData = [
             {
                 title: "第一章：救恩的確據",
                 children: [
-                    { ref: "約翰一書 5:11-12", content: "這見證就是神賜給我們永生...人有了神的兒子就有生命..." }, // 第一層的直屬經文
+                    { ref: "約翰一書 5:11-12", content: "這見證就是神賜給我們永生...人有了神的兒子就有生命..." },
                     {
-                        title: "1. 神的愛與計劃", // 第一層底下的子分類
+                        title: "1. 神的愛與計劃",
                         children: [
                             { ref: "約翰福音 3:16", content: "神愛世人，甚至將祂的獨生子賜給他們..." }
                         ]
@@ -281,59 +285,48 @@
                 nodeDiv.className = `node-editor ${isVerse ? 'level-type-verse' : 'level-type-node'}`;
 
                 if (isVerse) {
-                    // 經文編輯介面
                     nodeDiv.innerHTML = `
                         <div class="input-group">
                             <span style="font-size:0.8rem; font-weight:bold; color:var(--verse-color);">[經文]</span>
-                            <input type="text" class="edit-ref" value="${item.ref || ''}" placeholder="經文出處 (例: 約翰三:16)">
+                            <input type="text" class="edit-ref" value="${item.ref || ''}" placeholder="經文出處">
                             <button class="btn btn-danger remove-btn">刪除</button>
                         </div>
                         <div class="input-group" style="margin-bottom:0;">
-                            <textarea class="edit-content" placeholder="請輸入經文內容...">${item.content || ''}</textarea>
+                            <textarea class="edit-content" placeholder="經文內容...">${item.content || ''}</textarea>
                         </div>
                     `;
-
-                    // 綁定事件
                     nodeDiv.querySelector('.edit-ref').addEventListener('input', (e) => { item.ref = e.target.value; });
                     nodeDiv.querySelector('.edit-content').addEventListener('input', (e) => { item.content = e.target.value; });
-
                 } else {
-                    // 分類節點編輯介面
                     nodeDiv.innerHTML = `
                         <div class="input-group">
-                            <span style="font-size:0.8rem; font-weight:bold; color:var(--accent-color);">[第${depth+1}層分類]</span>
-                            <input type="text" class="edit-title" value="${item.title || ''}" placeholder="輸入層級標題...">
-                            <button class="btn btn-success add-sub-node">+ 子分類</button>
-                            <button class="btn btn-verse add-sub-verse">+ 經文</button>
+                            <span style="font-size:0.8rem; font-weight:bold; color:var(--accent-color);">[第${depth+1}層]</span>
+                            <input type="text" class="edit-title" value="${item.title || ''}" placeholder="輸入標題...">
+                            <button class="btn btn-success add-sub-node">+子分類</button>
+                            <button class="btn btn-verse add-sub-verse">+經文</button>
                             <button class="btn btn-danger remove-btn">刪除</button>
                         </div>
                         <div class="children-box"></div>
                     `;
-
-                    // 綁定標題變更
                     nodeDiv.querySelector('.edit-title').addEventListener('input', (e) => { item.title = e.target.value; });
 
-                    // 遞迴渲染子項目容器
                     const childrenBox = nodeDiv.querySelector('.children-box');
                     if (!item.children) item.children = [];
                     renderEditor(item.children, childrenBox, depth + 1);
 
-                    // 新增子分類按鈕
                     nodeDiv.querySelector('.add-sub-node').addEventListener('click', () => {
                         if (!item.children) item.children = [];
-                        item.children.push({ title: "新子分類標題", children: [] });
+                        item.children.push({ title: "新子分類", children: [] });
                         updateEditorAndPreview();
                     });
 
-                    // 新增子經文按鈕
                     nodeDiv.querySelector('.add-sub-verse').addEventListener('click', () => {
                         if (!item.children) item.children = [];
-                        item.children.push({ ref: "經文出處", content: "請輸入經文內容..." });
+                        item.children.push({ ref: "經文出處", content: "經文內容..." });
                         updateEditorAndPreview();
                     });
                 }
 
-                // 刪除按鈕
                 nodeDiv.querySelector('.remove-btn').addEventListener('click', () => {
                     dataArray.splice(index, 1);
                     updateEditorAndPreview();
@@ -343,12 +336,11 @@
             });
         }
 
-        // 遞迴渲染預覽網頁 (支援分類與經文混排)
+        // 遞迴渲染預覽網頁
         function renderPreview(dataArray, targetElement) {
             targetElement.innerHTML = '';
             dataArray.forEach(nodeData => {
                 if (nodeData.ref !== undefined) {
-                    // 渲染經文卡片
                     const verseCard = document.createElement('div');
                     verseCard.className = 'verse-card';
                     verseCard.innerHTML = `
@@ -361,7 +353,6 @@
                     });
                     targetElement.appendChild(verseCard);
                 } else if (nodeData.title) {
-                    // 渲染層級容器
                     const container = document.createElement('div');
                     container.className = 'level-container';
 
@@ -394,14 +385,213 @@
             renderPreview(appData, previewApp);
         }
 
-        // 根目錄頂部按鈕事件
+        // 產生獨立 HTML 字串的核心函式
+        function generateStandaloneHtml(data) {
+            return `<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖經經文導覽</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --verse-bg: #eef2f5;
+            --verse-color: #722f37;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .btn {
+            background-color: var(--card-bg);
+            border: 1px solid #cbd5e1;
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .btn:hover {
+            background-color: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+        .collapsible-body {
+            display: none;
+            padding-left: 15px;
+            padding-top: 5px;
+        }
+        .level-container.active > .collapsible-body {
+            display: block;
+        }
+        .level-container {
+            margin-bottom: 8px;
+        }
+        .level-header, .verse-header {
+            background: var(--card-bg);
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 8px;
+            border: 1px solid #e2e8f0;
+            padding: 10px 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1rem;
+        }
+        .verse-header {
+            color: var(--verse-color);
+        }
+        .level-header:hover, .verse-header:hover {
+            background-color: #f8fafc;
+        }
+        .level-header::after, .verse-header::after {
+            content: '+';
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+        .verse-header::after {
+            color: var(--verse-color);
+        }
+        .level-container.active > .level-header::after,
+        .verse-card.active > .verse-header::after {
+            transform: rotate(45deg);
+        }
+        .verse-card {
+            background: var(--card-bg);
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .verse-content {
+            display: none;
+            background-color: var(--verse-bg);
+            padding: 12px 15px;
+            font-size: 1rem;
+            color: #444;
+            white-space: pre-line;
+            border-top: 1px solid #e1e8ed;
+        }
+        .verse-card.active > .verse-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>聖經經文導覽</h1>
+            <p>多層級互動內容</p>
+        </header>
+        <div class="controls">
+            <button class="btn" id="expandAllBtn">全部展開</button>
+            <button class="btn" id="collapseAllBtn">全部收合</button>
+        </div>
+        <div id="app"></div>
+    </div>
+    <script>
+        const rawData = ${JSON.stringify(data, null, 2)};
+        const appElement = document.getElementById('app');
+
+        function renderNode(nodeData, targetElement) {
+            if (nodeData.ref !== undefined) {
+                const verseCard = document.createElement('div');
+                verseCard.className = 'verse-card';
+                verseCard.innerHTML = \`
+                    <div class="verse-header">\${nodeData.ref}</div>
+                    <div class="verse-content">\${nodeData.content}</div>
+                \`;
+                verseCard.querySelector('.verse-header').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    verseCard.classList.toggle('active');
+                });
+                targetElement.appendChild(verseCard);
+            } else if (nodeData.title) {
+                const container = document.createElement('div');
+                container.className = 'level-container';
+
+                const header = document.createElement('div');
+                header.className = 'level-header';
+                header.innerText = nodeData.title;
+
+                const body = document.createElement('div');
+                body.className = 'collapsible-body';
+
+                header.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    container.classList.toggle('active');
+                });
+
+                container.appendChild(header);
+
+                if (nodeData.children && Array.isArray(nodeData.children)) {
+                    nodeData.children.forEach(child => renderNode(child, body));
+                }
+
+                container.appendChild(body);
+                targetElement.appendChild(container);
+            }
+        }
+
+        rawData.forEach(item => renderNode(item, appElement));
+
+        document.getElementById('expandAllBtn').addEventListener('click', () => {
+            document.querySelectorAll('.level-container').forEach(el => el.classList.add('active'));
+            document.querySelectorAll('.verse-card').forEach(el => el.classList.add('active'));
+        });
+
+        document.getElementById('collapseAllBtn').addEventListener('click', () => {
+            document.querySelectorAll('.level-container').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.verse-card').forEach(el => el.classList.remove('active'));
+        });
+    </script>
+</body>
+</html>`;
+        }
+
+        // 按鈕事件
         document.getElementById('addRootNodeBtn').addEventListener('click', () => {
             appData.push({ title: "新大主題分類", children: [] });
             updateEditorAndPreview();
         });
 
         document.getElementById('addRootVerseBtn').addEventListener('click', () => {
-            appData.push({ ref: "根目錄經文出處", content: "請輸入經文內容..." });
+            appData.push({ ref: "根目錄經文", content: "經文內容..." });
             updateEditorAndPreview();
         });
 
@@ -410,7 +600,7 @@
                 {
                     title: "第一章：救恩的確據",
                     children: [
-                        { ref: "約翰一書 5:11-12", content: "這見證就是神賜給我們永生...人有了神的兒子就有生命..." },
+                        { ref: "約翰一書 5:11-12", content: "這見證就是神賜給我們永生..." },
                         {
                             title: "1. 神的愛與計劃",
                             children: [
@@ -431,6 +621,21 @@
         document.getElementById('collapseAllPreview').addEventListener('click', () => {
             previewApp.querySelectorAll('.level-container').forEach(el => el.classList.remove('active'));
             previewApp.querySelectorAll('.verse-card').forEach(el => el.classList.remove('active'));
+        });
+
+        // 點擊「匯出獨立網頁」
+        document.getElementById('exportHtmlBtn').addEventListener('click', () => {
+            const htmlContent = generateStandaloneHtml(appData);
+            const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'bible_guide.html'; // 下載的檔案名稱
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         });
 
         // 初始化
