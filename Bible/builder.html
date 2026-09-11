@@ -179,27 +179,29 @@
         }
         .preview-app .verse-card.active > .verse-content { display: block; }
 
-        /* 匯出選單彈窗 */
+        /* 匯出選項彈窗 */
         #exportModal {
             display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 1000;
         }
         .modal-content {
-            background: white; padding: 25px; border-radius: 8px; width: 350px; text-align: center;
+            background: white; padding: 25px; border-radius: 8px; width: 380px; text-align: left;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
-        .modal-content h3 { margin-top: 0; color: var(--primary-color); }
-        .modal-btn { display: block; width: 100%; padding: 10px; margin: 10px 0; border: none; border-radius: 6px; cursor: pointer; font-size: 0.95rem; font-weight: bold; }
+        .modal-content h3 { margin-top: 0; color: var(--primary-color); text-align: center; }
+        .modal-group { margin-bottom: 15px; }
+        .modal-group label { display: block; font-size: 0.85rem; font-weight: bold; color: var(--primary-color); margin-bottom: 5px; }
+        .modal-btn { display: block; width: 100%; padding: 10px; margin: 8px 0; border: none; border-radius: 6px; cursor: pointer; font-size: 0.95rem; font-weight: bold; text-align: center; }
         .modal-btn-collapsible { background-color: var(--accent-color); color: white; }
         .modal-btn-static { background-color: #27ae60; color: white; }
-        .modal-btn-cancel { background-color: #95a5a6; color: white; }
+        .modal-btn-cancel { background-color: #95a5a6; color: white; margin-top: 15px; }
     </style>
 </head>
 <body>
 
     <div style="text-align:center; margin-bottom: 15px;">
         <h1 style="color:var(--primary-color); margin:0;">聖經經文導覽內容產生器</h1>
-        <p style="color:#666; font-size:0.9rem; margin:5px 0;">支援折疊、跨層級搬移與雙版本獨立網頁匯出</p>
+        <p style="color:#666; font-size:0.9rem; margin:5px 0;">支援折疊、跨層級搬移與自訂檔名匯出</p>
     </div>
 
     <div class="app-container">
@@ -249,8 +251,12 @@
     <!-- 匯出選項彈窗 -->
     <div id="exportModal">
         <div class="modal-content">
-            <h3>選擇匯出網頁版本</h3>
-            <p style="font-size: 0.85rem; color: #666;">請選擇您希望產生的網頁呈現方式：</p>
+            <h3>匯出網頁設定</h3>
+            <div class="modal-group">
+                <label for="exportFilenameInput">📝 檔案名稱：</label>
+                <input type="text" id="exportFilenameInput" value="bible_guide" placeholder="請輸入檔名...">
+            </div>
+            <p style="font-size: 0.8rem; color: #666; margin-bottom: 15px;">請選擇您希望產生的網頁版本：</p>
             <button class="modal-btn modal-btn-collapsible" id="exportCollapsibleVersion">🔵 互動折疊版（支援點擊收合）</button>
             <button class="modal-btn modal-btn-static" id="exportStaticVersion">🟢 傳統文件版（使用 h1~h6 標題）</button>
             <button class="modal-btn modal-btn-cancel" id="closeExportModal">取消</button>
@@ -279,10 +285,15 @@
         const pageTitleInput = document.getElementById('pageTitleInput');
         const previewHeaderTitle = document.getElementById('previewHeaderTitle');
         const exportModal = document.getElementById('exportModal');
+        const exportFilenameInput = document.getElementById('exportFilenameInput');
 
         pageTitleInput.addEventListener('input', (e) => {
             pageTitle = e.target.value;
             previewHeaderTitle.textContent = pageTitle || '聖經經文導覽';
+            // 同步將主標題帶入預設匯出檔名（轉成英文或保留原文）
+            if(exportFilenameInput.value === "bible_guide" || exportFilenameInput.value === "") {
+                exportFilenameInput.value = pageTitle;
+            }
         });
 
         function renderEditor(dataArray, parentContainer, depth = 0, parentArrayRef = null, currentIndex = -1) {
@@ -478,6 +489,7 @@
         document.getElementById('loadDemoBtn').addEventListener('click', () => {
             pageTitle = "聖經經文導覽";
             pageTitleInput.value = pageTitle;
+            exportFilenameInput.value = "bible_guide";
             previewHeaderTitle.textContent = pageTitle;
             appData = [
                 {
@@ -503,6 +515,11 @@
         importHtmlFile.addEventListener('change', (event) => {
             const file = event.target.files[0];
             if (!file) return;
+            
+            // 自動把上傳的檔名帶入匯出輸入框（去掉附檔名）
+            const originalName = file.name.replace(/\.[^/.]+$/, "");
+            exportFilenameInput.value = originalName;
+
             const reader = new FileReader();
             reader.onload = function(e) {
                 const htmlContent = e.target.result;
@@ -543,14 +560,32 @@
 
         // 彈窗控制
         const exportHtmlBtn = document.getElementById('exportHtmlBtn');
-        exportHtmlBtn.addEventListener('click', () => { exportModal.style.display = 'flex'; });
+        exportHtmlBtn.addEventListener('click', () => { 
+            if(exportFilenameInput.value.trim() === "") {
+                exportFilenameInput.value = pageTitle || "bible_guide";
+            }
+            exportModal.style.display = 'flex'; 
+        });
         document.getElementById('closeExportModal').addEventListener('click', () => { exportModal.style.display = 'none'; });
+
+        // 取得安全檔名
+        function getSafeFilename(defaultName) {
+            let userVal = exportFilenameInput.value.trim();
+            if (!userVal) userVal = defaultName;
+            // 確保有 .html 結尾
+            if (!userVal.toLowerCase().endsWith('.html')) {
+                userVal += '.html';
+            }
+            return userVal;
+        }
 
         // 1. 匯出互動折疊版
         document.getElementById('exportCollapsibleVersion').addEventListener('click', () => {
             exportModal.style.display = 'none';
             const jsonStr = JSON.stringify(appData, null, 2);
             const currentTitle = pageTitle || '聖經經文導覽';
+            const filename = getSafeFilename('bible_guide_collapsible.html');
+
             const code = '<!DOCTYPE html>\n<html lang="zh-Hant">\n<head>\n' +
 '<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
 '<title>' + currentTitle + '</title>\n' +
@@ -608,7 +643,7 @@
 '    document.querySelectorAll(".verse-card").forEach(el => el.classList.remove("active"));\n' +
 '});\n<' + '/script>\n</body>\n</html>';
 
-            downloadFile(code, 'bible_guide_collapsible.html');
+            downloadFile(code, filename);
         });
 
         // 2. 匯出傳統文件版 (使用 h1~h6 且不折疊)
@@ -616,6 +651,8 @@
             exportModal.style.display = 'none';
             const jsonStr = JSON.stringify(appData, null, 2);
             const currentTitle = pageTitle || '聖經經文導覽';
+            const filename = getSafeFilename('bible_guide_document.html');
+
             const code = '<!DOCTYPE html>\n<html lang="zh-Hant">\n<head>\n' +
 '<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
 '<title>' + currentTitle + '</title>\n' +
@@ -651,7 +688,7 @@
 'rawData.forEach(item => renderStaticNode(item, appElement, 1));\n' +
 '<' + '/script>\n</body>\n</html>';
 
-            downloadFile(code, 'bible_guide_document.html');
+            downloadFile(code, filename);
         });
 
         function downloadFile(content, filename) {
