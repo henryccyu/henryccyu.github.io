@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聖經經文導覽產生器</title>
+    <title>聖經經文導覽內容產生器</title>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -129,8 +129,9 @@
         .btn-verse { background-color: var(--verse-color); }
         .btn-secondary { background-color: #64748b; }
         .btn-export { background-color: #e67e22; font-weight: bold; font-size: 0.9rem; padding: 6px 12px; }
+        .btn-import { background-color: #8e44ad; font-weight: bold; font-size: 0.9rem; padding: 6px 12px; }
 
-        .toolbar { display: flex; gap: 6px; }
+        .toolbar { display: flex; gap: 6px; align-items: center; }
 
         /* 預覽區樣式 */
         .preview-app .collapsible-body { display: none; padding-left: 15px; padding-top: 5px; }
@@ -175,7 +176,7 @@
 
     <div style="text-align:center; margin-bottom: 15px;">
         <h1 style="color:var(--primary-color); margin:0;">聖經經文導覽內容產生器</h1>
-        <p style="color:#666; font-size:0.9rem; margin:5px 0;">自由編排多層級資料，一鍵匯出獨立可用的互動網頁</p>
+        <p style="color:#666; font-size:0.9rem; margin:5px 0;">自由編排多層級資料，一鍵匯出或讀取已匯出的互動網頁</p>
     </div>
 
     <div class="app-container">
@@ -189,7 +190,11 @@
                 </div>
             </h2>
             <div class="editor-scroll" id="editorContainer"></div>
-            <button class="btn btn-secondary" style="width: 100%; padding: 8px; font-size: 0.9rem; margin-top:5px;" id="loadDemoBtn">載入範例資料</button>
+            <div style="display: flex; gap: 8px; margin-top:5px;">
+                <button class="btn btn-secondary" style="flex: 1; padding: 8px; font-size: 0.9rem;" id="loadDemoBtn">載入範例資料</button>
+                <button class="btn btn-import" style="flex: 1; padding: 8px; font-size: 0.9rem;" id="importHtmlTriggerBtn">📂 讀取已匯出網頁</button>
+                <input type="file" id="importHtmlFile" accept=".html" style="display: none;">
+            </div>
         </div>
 
         <!-- 右側：即時預覽與匯出面板 -->
@@ -426,6 +431,46 @@
                 }
             ];
             updateEditorAndPreview();
+        });
+
+        // 讀取已匯出 HTML 檔案的功能
+        const importHtmlTriggerBtn = document.getElementById('importHtmlTriggerBtn');
+        const importHtmlFile = document.getElementById('importHtmlFile');
+
+        importHtmlTriggerBtn.addEventListener('click', () => {
+            importHtmlFile.click();
+        });
+
+        importHtmlFile.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const htmlContent = e.target.result;
+                try {
+                    // 利用正規表達式從 HTML 中抓取 const rawData = [...] 的資料
+                    const match = htmlContent.match(/const\s+rawData\s*=\s*(\[\[\s*[\s\S]*?\]\]|\[[\s\S]*?\]);\s*const\s+appElement/);
+                    if (match && match[1]) {
+                        const parsedData = JSON.parse(match[1]);
+                        if (Array.isArray(parsedData)) {
+                            appData = parsedData;
+                            updateEditorAndPreview();
+                            alert('成功讀取網頁檔案，已載入編輯區！');
+                        } else {
+                            throw new Error('資料格式不符');
+                        }
+                    } else {
+                        throw new Error('找不到對應的資料結構');
+                    }
+                } catch (err) {
+                    alert('讀取失敗：此檔案可能不是由本系統所匯出的有效 HTML 檔案。');
+                    console.error(err);
+                }
+                // 清空檔案選擇，允許重複上傳同一個檔案
+                importHtmlFile.value = '';
+            };
+            reader.readAsText(file);
         });
 
         document.getElementById('expandAllPreview').addEventListener('click', () => {
