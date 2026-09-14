@@ -1,269 +1,93 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>羅馬書背誦小幫手</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --text-color: #333333;
-            --verse-bg: #eef2f5;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            color: var(--primary-color);
-            margin-bottom: 5px;
-        }
-
-        header p {
-            color: #666;
-            font-size: 0.95rem;
-        }
-
-        /* 控制按鈕列樣式 */
-        .controls {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 25px;
-        }
-
-        .btn {
-            background-color: var(--card-bg);
-            border: 1px solid #cbd5e1;
-            color: var(--primary-color);
-            padding: 8px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s ease;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-        }
-
-        .btn:hover {
-            background-color: var(--accent-color);
-            color: white;
-            border-color: var(--accent-color);
-        }
-
-        /* 組別區塊樣式 */
-        .section-container {
-            margin-bottom: 20px;
-        }
-
-        .section-header {
-            color: var(--primary-color);
-            background-color: #e2e8f0;
-            border-left: 5px solid var(--accent-color);
-            padding: 10px 15px;
-            margin: 0 0 10px 0;
-            font-size: 1.15rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-radius: 4px;
-            user-select: none;
-            transition: background-color 0.2s;
-        }
-
-        .section-header:hover {
-            background-color: #cbd5e1;
-        }
-
-        .section-header::after {
-            content: '▼';
-            font-size: 0.85rem;
-            transition: transform 0.3s ease;
-        }
-
-        .section-container.collapsed .section-header::after {
-            transform: rotate(-90deg);
-        }
-
-        /* 經節清單容器動畫 */
-        .section-body {
-            max-height: 2000px;
-            overflow: hidden;
-            transition: max-height 0.4s ease, opacity 0.3s ease;
-            opacity: 1;
-        }
-
-        .section-container.collapsed .section-body {
-            max-height: 0;
-            opacity: 0;
-        }
-
-        /* 單張經文卡片 */
-        .verse-card {
-            background: var(--card-bg);
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            margin-bottom: 10px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .verse-header {
-            padding: 12px 20px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            user-select: none;
-            font-weight: 600;
-            color: var(--primary-color);
-        }
-
-        .verse-header:hover {
-            background-color: #f1f4f8;
-        }
-
-        .verse-header::after {
-            content: '+';
-            font-size: 1.2rem;
-            color: var(--accent-color);
-            transition: transform 0.3s ease;
-        }
-
-        .verse-card.active .verse-header::after {
-            transform: rotate(45deg);
-        }
-
-        .verse-content {
-            max-height: 0;
-            overflow: hidden;
-            background-color: var(--verse-bg);
-            padding: 0 20px;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-            font-size: 1.05rem;
-            color: #444;
-            white-space: pre-line;
-        }
-
-        .verse-card.active .verse-content {
-            max-height: 500px;
-            padding: 15px 20px 20px 20px;
-            border-top: 1px solid #e1e8ed;
-        }
-    </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>罗马书：從罪咎到恩典</title>
+<style>
+:root { --primary-color: #2c3e50; --accent-color: #3498db; --bg-color: #f8f9fa; --card-bg: #ffffff; --text-color: #333333; --verse-bg: #eef2f5; --verse-color: #722f37; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 20px; line-height: 1.6; }
+.container { max-width: 800px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 20px; }
+header h1 { color: var(--primary-color); margin-bottom: 5px; }
+.controls { display: flex; justify-content: center; gap: 10px; margin-bottom: 25px; }
+.btn { background-color: var(--card-bg); border: 1px solid #cbd5e1; color: var(--primary-color); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; }
+.btn:hover { background-color: var(--accent-color); color: white; border-color: var(--accent-color); }
+.collapsible-body { display: none; padding-left: 15px; padding-top: 5px; }
+.level-container.active > .collapsible-body { display: block; }
+.level-container { margin-bottom: 8px; }
+.level-header, .verse-header { background: var(--card-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 8px; border: 1px solid #e2e8f0; padding: 10px 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--primary-color); }
+.verse-header { color: var(--verse-color); }
+.level-header:hover, .verse-header:hover { background-color: #f8fafc; }
+.level-header::after, .verse-header::after { content: "+"; color: var(--accent-color); transition: transform 0.3s ease; }
+.verse-header::after { color: var(--verse-color); }
+.level-container.active > .level-header::after, .verse-card.active > .verse-header::after { transform: rotate(45deg); }
+.verse-card { background: var(--card-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 8px; border: 1px solid #e2e8f0; }
+.verse-content { display: none; background-color: var(--verse-bg); padding: 12px 15px; font-size: 1rem; color: #444; white-space: pre-line; border-top: 1px solid #e1e8ed; }
+.verse-card.active > .verse-content { display: block; }
+</style>
 </head>
 <body>
-
-    <div class="container">
-        <header>
-            <h1>羅馬書</h1>
-        </header>
-
-        <div class="controls">
-            <button class="btn" id="expandAllBtn">全部展開</button>
-            <button class="btn" id="collapseAllBtn">全部收合</button>
-        </div>
-
-        <div id="app"></div>
-    </div>
-
-    <script>
-        const bibleData = [
-            {
-                group: "第一章",
-                verses: [
-                    { ref: "祝福", content: "1 耶穌基督的僕人保羅，奉召為使徒，特派傳神的福音。 2 這福音是神從前藉眾先知在聖經上所應許的，3 論到他兒子我主耶穌基督。按肉體說，是從大衛後裔生的； 4 按聖善的靈說，因從死裡復活，以大能顯明是神的兒子。5 我們從他受了恩惠並使徒的職分，在萬國之中叫人為他的名信服真道， 6 其中也有你們這蒙召屬耶穌基督的人。7 我寫信給你們在羅馬、為神所愛、奉召做聖徒的眾人。願恩惠、平安從我們的父神並主耶穌基督歸於你們！" },
-                    { ref: "述說自己的景況", content: "8 第一，我靠著耶穌基督，為你們眾人感謝我的神，因你們的信德傳遍了天下。 9 我在他兒子福音上用心靈所侍奉的神，可以見證我怎樣不住地提到你們， 10 在禱告之間常常懇求，或者照神的旨意，終能得平坦的道路往你們那裡去。 11 因為我切切地想見你們，要把些屬靈的恩賜分給你們，使你們可以堅固； 12 這樣，我在你們中間，因你與我彼此的信心就可以同得安慰。" },
-                    { ref: "情願盡力傳福音", content: "13 弟兄們，我不願意你們不知道，我屢次定意往你們那裡去，要在你們中間得些果子，如同在其餘的外邦人中一樣，只是到如今仍有阻隔。 14 無論是希臘人、化外人、聰明人、愚拙人，我都欠他們的債， 15 所以情願盡我的力量，將福音也傳給你們在羅馬的人。" },
-                    { ref: "福音是神的大能", content: "16 我不以福音為恥，這福音本是神的大能，要救一切相信的，先是猶太人，後是希臘人。 17 因為神的義正在這福音上顯明出來，這義是本於信以至於信，如經上所記：「義人必因信得生。」18 原來，神的憤怒從天上顯明在一切不虔不義的人身上，就是那些行不義阻擋真理的人。 19 神的事情人所能知道的，原顯明在人心裡，因為神已經給他們顯明。 20 自從造天地以來，神的永能和神性是明明可知的，雖是眼不能見，但藉著所造之物就可以曉得，叫人無可推諉。 21 因為他們雖然知道神，卻不當做神榮耀他，也不感謝他，他們的思念變為虛妄，無知的心就昏暗了。 22 自稱為聰明，反成了愚拙， 23 將不能朽壞之神的榮耀變為偶像，彷彿必朽壞的人和飛禽、走獸、昆蟲的樣式。24 所以，神任憑他們逞著心裡的情慾行汙穢的事，以致彼此玷辱自己的身體。 25 他們將神的真實變為虛謊，去敬拜侍奉受造之物，不敬奉那造物的主——主乃是可稱頌的，直到永遠！阿們。" },
-                    { ref: "外邦種種罪惡", content: "26 因此，神任憑他們放縱可羞恥的情慾。他們的女人把順性的用處變為逆性的用處。 27 男人也是如此，棄了女人順性的用處，慾火攻心，彼此貪戀，男和男行可羞恥的事，就在自己身上受這妄為當得的報應。28 他們既然故意不認識神，神就任憑他們存邪僻的心，行那些不合理的事： 29 裝滿了各樣不義、邪惡、貪婪、惡毒[a]；滿心是嫉妒、凶殺、爭競、詭詐、毒恨； 30 又是讒毀的、背後說人的、怨恨神的[b]、侮慢人的、狂傲的、自誇的、捏造惡事的、違背父母的、 31 無知的、背約的、無親情的、不憐憫人的。 32 他們雖知道神判定行這樣事的人是當死的，然而他們不但自己去行，還喜歡別人去行。" }
-                ]
-                
-            }
-        ];
-
-        const appElement = document.getElementById('app');
-
-        // 渲染畫面
-        bibleData.forEach(section => {
-            // 包覆每一組的外層容器
-            const sectionContainer = document.createElement('div');
-            sectionContainer.className = 'section-container';
-
-            // 組別大標題
-            const sectionHeader = document.createElement('h2');
-            sectionHeader.className = 'section-header';
-            sectionHeader.innerText = section.group;
-
-            // 實際裝經節的容器
-            const sectionBody = document.createElement('div');
-            sectionBody.className = 'section-body';
-
-            // 點擊組別標題以折疊/展開該組
-            sectionHeader.addEventListener('click', () => {
-                sectionContainer.classList.toggle('collapsed');
-            });
-
-            // 建立該組底下的所有經節卡片
-            section.verses.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'verse-card';
-
-                const header = document.createElement('div');
-                header.className = 'verse-header';
-                header.innerText = item.ref;
-
-                const content = document.createElement('div');
-                content.className = 'verse-content';
-                content.innerText = item.content;
-
-                // 點擊經節：切換展開/收合經文內容
-                header.addEventListener('click', (e) => {
-                    e.stopPropagation(); // 避免觸發父層的折疊事件
-                    card.classList.toggle('active');
-                });
-
-                card.appendChild(header);
-                card.appendChild(content);
-                sectionBody.appendChild(card);
-            });
-
-            sectionContainer.appendChild(sectionHeader);
-            sectionContainer.appendChild(sectionBody);
-            appElement.appendChild(sectionContainer);
-        });
-
-        // 「全部展開」與「全部收合」按鈕功能
-        document.getElementById('expandAllBtn').addEventListener('click', () => {
-            document.querySelectorAll('.section-container').forEach(el => {
-                el.classList.remove('collapsed');
-            });
-        });
-
-        document.getElementById('collapseAllBtn').addEventListener('click', () => {
-            document.querySelectorAll('.section-container').forEach(el => {
-                el.classList.add('collapsed');
-            });
-        });
-    </script>
+<div class="container">
+<header><h1>罗马书：從罪咎到恩典</h1></header>
+<div class="controls"><button class="btn" id="expandAllBtn">全部展開</button><button class="btn" id="collapseAllBtn">全部收合</button></div>
+<div id="app"></div>
+</div>
+<script>
+const rawData = [
+  {
+    "title": "羅馬書1:1 - 3:20 人類的不義以及對真正的義之極大需要(第一課至第 四課)",
+    "children": [
+      {
+        "title": "第一課 人类需要福音",
+        "children": [
+          {
+            "ref": "1:1-7 上帝呼召了保罗向罗马的信徒讲福音",
+            "content": "1 耶稣基督的仆人保罗，奉召为使徒，特派传神的福音。 \n2 这福音是神从前借众先知在圣经上所应许的， \n3 论到他儿子我主耶稣基督。按肉体说，是从大卫后裔生的； \n4 按圣善的灵说，因从死里复活，以大能显明是神的儿子。 \n5 我们从他受了恩惠并使徒的职分，在万国之中叫人为他的名信服真道， \n6 其中也有你们这蒙召属耶稣基督的人。 \n7 我写信给你们在罗马、为神所爱、奉召做圣徒的众人。愿恩惠、平安从我们的父神并主耶稣基督归于你们！"
+          },
+          {
+            "ref": "1:8-10  保罗为罗马的信徒感谢上帝",
+            "content": "8 第一，我靠着耶稣基督，为你们众人感谢我的神，因你们的信德传遍了天下。 \n9 我在他儿子福音上用心灵所侍奉的神，可以见证我怎样不住地提到你们， \n10 在祷告之间常常恳求，或者照神的旨意，终能得平坦的道路往你们那里去。"
+          },
+          {
+            "ref": "1:11-15  保罗渴望探望罗马的信徒",
+            "content": "11 因为我切切地想见你们，要把些属灵的恩赐分给你们，使你们可以坚固； \n12 这样，我在你们中间，因你与我彼此的信心就可以同得安慰。\n13 弟兄们，我不愿意你们不知道，我屡次定意往你们那里去，要在你们中间得些果子，如同在其余的外邦人中一样，只是到如今仍有阻隔。 \n14 无论是希腊人、化外人、聪明人、愚拙人，我都欠他们的债， \n15 所以情愿尽我的力量，将福音也传给你们在罗马的人。"
+          },
+          {
+            "ref": "1:16-17  保罗强调福音的价值",
+            "content": "16 我不以福音为耻，这福音本是神的大能，要救一切相信的，先是犹太人，后是希腊人。 \n17 因为神的义正在这福音上显明出来，这义是本于信以至于信，如经上所记：“义人必因信得生。”"
+          }
+        ]
+      }
+    ]
+  }
+];
+const appElement = document.getElementById("app");
+function renderNode(nodeData, targetElement) {
+    if (nodeData.ref !== undefined) {
+        const verseCard = document.createElement("div"); verseCard.className = "verse-card";
+        const verseHeader = document.createElement("div"); verseHeader.className = "verse-header"; verseHeader.textContent = nodeData.ref;
+        const verseContent = document.createElement("div"); verseContent.className = "verse-content"; verseContent.textContent = nodeData.content;
+        verseHeader.addEventListener("click", (e) => { e.stopPropagation(); verseCard.classList.toggle("active"); });
+        verseCard.appendChild(verseHeader); verseCard.appendChild(verseContent); targetElement.appendChild(verseCard);
+    } else if (nodeData.title) {
+        const container = document.createElement("div"); container.className = "level-container";
+        const header = document.createElement("div"); header.className = "level-header"; header.textContent = nodeData.title;
+        const body = document.createElement("div"); body.className = "collapsible-body";
+        header.addEventListener("click", (e) => { e.stopPropagation(); container.classList.toggle("active"); });
+        container.appendChild(header);
+        if (nodeData.children && Array.isArray(nodeData.children)) { nodeData.children.forEach(child => renderNode(child, body)); }
+        container.appendChild(body); targetElement.appendChild(container);
+    }
+}
+rawData.forEach(item => renderNode(item, appElement));
+document.getElementById("expandAllBtn").addEventListener("click", () => {
+    document.querySelectorAll(".level-container").forEach(el => el.classList.add("active"));
+    document.querySelectorAll(".verse-card").forEach(el => el.classList.add("active"));
+});
+document.getElementById("collapseAllBtn").addEventListener("click", () => {
+    document.querySelectorAll(".level-container").forEach(el => el.classList.remove("active"));
+    document.querySelectorAll(".verse-card").forEach(el => el.classList.remove("active"));
+});
+</script>
 </body>
 </html>
